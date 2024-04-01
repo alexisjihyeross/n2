@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+
+
+<!-- Load css -->
+<link rel="stylesheet" type="text/css" href="bubble.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<!-- Header -->
+<h1>Bubble Chart</h1>
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+<div id="slider-container">
+    <input type="range" min="2010" max="2021" value="2019" class="slider" id="yearSlider">
+    <span id="selectedYear">2019</span>
+</div>
+
+
+<!-- Load local -->
+<script src="bubble.js"></script>
+

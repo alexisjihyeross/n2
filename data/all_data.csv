@@ -1,0 +1,1030 @@
+zip,naics,est,n1_4,n5_9,n10_19,n20_49,n50_99,n100_249,n250_499,n500_999,n1000,year,sector,n<5,name,city,stabbr,cty_name
+02109,22----,1,1,0,0,0,0,0,0,0,0,2010,Utilities,,,,,
+02109,23----,15,10,1,0,2,1,1,0,0,0,2010,Construction,,,,,
+02109,31----,5,3,1,1,0,0,0,0,0,0,2010,Manufacturing,,,,,
+02109,42----,18,12,1,4,1,0,0,0,0,0,2010,Wholesale Trade,,,,,
+02109,44----,92,42,19,17,12,1,1,0,0,0,2010,Retail Trade,,,,,
+02109,48----,5,3,0,1,0,0,0,1,0,0,2010,Transportation and Warehousing,,,,,
+02109,51----,27,13,4,1,5,3,1,0,0,0,2010,Information,,,,,
+02109,52----,240,96,50,31,25,9,14,6,3,6,2010,Finance and Insurance,,,,,
+02109,53----,81,36,18,11,11,3,2,0,0,0,2010,Real Estate and Rental and Leasing,,,,,
+02109,54----,375,213,63,41,40,8,6,2,2,0,2010,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,12,4,0,1,2,1,2,2,0,0,2010,Management of Companies and Enterprises,,,,,
+02109,56----,89,34,13,10,14,8,6,2,1,1,2010,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,9,4,1,3,1,0,0,0,0,0,2010,Educational Services,,,,,
+02109,62----,27,11,8,2,3,0,2,1,0,0,2010,Health Care and Social Assistance,,,,,
+02109,71----,9,5,0,1,3,0,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,110,31,17,22,26,7,6,1,0,0,2010,Accommodation and Food Services,,,,,
+02109,81----,65,35,14,14,2,0,0,0,0,0,2010,Other Services (except Public Administration),,,,,
+02109,99----,2,2,0,0,0,0,0,0,0,0,2010,Unclassified,,,,,
+02118,22----,1,1,0,0,0,0,0,0,0,0,2010,Utilities,,,,,
+02118,23----,22,13,3,3,1,0,1,1,0,0,2010,Construction,,,,,
+02118,31----,21,6,1,4,4,4,2,0,0,0,2010,Manufacturing,,,,,
+02118,42----,87,27,20,20,13,6,1,0,0,0,2010,Wholesale Trade,,,,,
+02118,44----,97,56,25,11,3,1,1,0,0,0,2010,Retail Trade,,,,,
+02118,48----,7,4,0,2,1,0,0,0,0,0,2010,Transportation and Warehousing,,,,,
+02118,51----,19,11,3,2,2,0,0,1,0,0,2010,Information,,,,,
+02118,52----,21,9,8,4,0,0,0,0,0,0,2010,Finance and Insurance,,,,,
+02118,53----,42,26,7,6,3,0,0,0,0,0,2010,Real Estate and Rental and Leasing,,,,,
+02118,54----,123,81,22,10,7,3,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,3,1,0,1,0,0,1,0,0,0,2010,Management of Companies and Enterprises,,,,,
+02118,56----,23,9,6,2,3,2,1,0,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,7,4,1,1,1,0,0,0,0,0,2010,Educational Services,,,,,
+02118,62----,86,27,13,13,17,9,4,2,0,1,2010,Health Care and Social Assistance,,,,,
+02118,71----,14,8,1,1,2,2,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,88,35,15,11,22,4,1,0,0,0,2010,Accommodation and Food Services,,,,,
+02118,81----,77,35,11,23,7,1,0,0,0,0,2010,Other Services (except Public Administration),,,,,
+02118,99----,3,3,0,0,0,0,0,0,0,0,2010,Unclassified,,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2010,Utilities,,,,,
+02125,23----,42,28,5,2,5,1,1,0,0,0,2010,Construction,,,,,
+02125,31----,7,1,0,2,1,3,0,0,0,0,2010,Manufacturing,,,,,
+02125,42----,8,6,0,1,1,0,0,0,0,0,2010,Wholesale Trade,,,,,
+02125,44----,84,44,14,15,8,1,1,1,0,0,2010,Retail Trade,,,,,
+02125,48----,7,6,1,0,0,0,0,0,0,0,2010,Transportation and Warehousing,,,,,
+02125,51----,14,8,1,1,0,2,1,0,0,1,2010,Information,,,,,
+02125,52----,18,6,7,2,0,0,1,2,0,0,2010,Finance and Insurance,,,,,
+02125,53----,26,17,7,0,1,0,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,,
+02125,54----,20,16,0,2,1,1,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,3,2,0,1,0,0,0,0,0,0,2010,Management of Companies and Enterprises,,,,,
+02125,56----,16,9,3,3,0,1,0,0,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,9,3,1,2,2,0,0,1,0,0,2010,Educational Services,,,,,
+02125,62----,42,11,10,16,2,1,1,1,0,0,2010,Health Care and Social Assistance,,,,,
+02125,71----,4,3,1,0,0,0,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,56,29,9,8,8,1,1,0,0,0,2010,Accommodation and Food Services,,,,,
+02125,81----,57,29,12,8,4,2,2,0,0,0,2010,Other Services (except Public Administration),,,,,
+02127,21----,1,0,0,1,0,0,0,0,0,0,2010,"Mining, Quarrying, and Oil and Gas Extraction",,,,,
+02127,22----,2,1,0,0,0,1,0,0,0,0,2010,Utilities,,,,,
+02127,23----,56,24,16,5,8,3,0,0,0,0,2010,Construction,,,,,
+02127,31----,21,6,3,4,5,1,1,0,1,0,2010,Manufacturing,,,,,
+02127,42----,42,20,10,7,4,1,0,0,0,0,2010,Wholesale Trade,,,,,
+02127,44----,68,42,15,6,4,1,0,0,0,0,2010,Retail Trade,,,,,
+02127,48----,24,12,3,2,3,2,1,1,0,0,2010,Transportation and Warehousing,,,,,
+02127,51----,19,12,2,1,2,1,1,0,0,0,2010,Information,,,,,
+02127,52----,30,12,8,4,3,2,1,0,0,0,2010,Finance and Insurance,,,,,
+02127,53----,30,19,4,3,3,0,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,,
+02127,54----,55,39,10,3,1,1,1,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,8,3,0,2,1,0,1,0,0,1,2010,Management of Companies and Enterprises,,,,,
+02127,56----,24,13,1,3,3,3,0,1,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,9,3,0,3,2,0,0,1,0,0,2010,Educational Services,,,,,
+02127,62----,40,17,9,5,3,4,1,1,0,0,2010,Health Care and Social Assistance,,,,,
+02127,71----,12,6,2,1,2,1,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,88,40,20,11,15,2,0,0,0,0,2010,Accommodation and Food Services,,,,,
+02127,81----,94,63,22,4,2,0,3,0,0,0,2010,Other Services (except Public Administration),,,,,
+02127,99----,1,1,0,0,0,0,0,0,0,0,2010,Unclassified,,,,,
+02128,23----,35,20,7,3,4,0,1,0,0,0,2010,Construction,,,,,
+02128,31----,17,4,3,3,2,4,0,1,0,0,2010,Manufacturing,,,,,
+02128,42----,16,8,4,1,2,1,0,0,0,0,2010,Wholesale Trade,,,,,
+02128,44----,100,55,24,10,7,3,1,0,0,0,2010,Retail Trade,,,,,
+02128,48----,128,45,25,15,18,15,4,1,2,3,2010,Transportation and Warehousing,,,,,
+02128,51----,12,8,2,1,0,1,0,0,0,0,2010,Information,,,,,
+02128,52----,28,10,10,4,4,0,0,0,0,0,2010,Finance and Insurance,,,,,
+02128,53----,32,12,7,6,2,4,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,,
+02128,54----,35,30,2,1,2,0,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,5,3,1,1,0,0,0,0,0,0,2010,Management of Companies and Enterprises,,,,,
+02128,56----,31,14,8,0,4,2,2,1,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,7,3,3,0,1,0,0,0,0,0,2010,Educational Services,,,,,
+02128,62----,49,16,10,12,7,1,2,0,1,0,2010,Health Care and Social Assistance,,,,,
+02128,71----,6,3,1,1,0,0,1,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,129,42,31,25,17,6,5,3,0,0,2010,Accommodation and Food Services,,,,,
+02128,81----,81,57,14,8,1,1,0,0,0,0,2010,Other Services (except Public Administration),,,,,
+02228,48----,1,1,0,0,0,0,0,0,0,0,2010,Transportation and Warehousing,,,,,
+02109,22----,1,1,0,0,0,0,0,0,0,0,2011,Utilities,,,,,
+02109,23----,18,12,0,2,2,1,1,0,0,0,2011,Construction,,,,,
+02109,31----,5,3,1,1,0,0,0,0,0,0,2011,Manufacturing,,,,,
+02109,42----,17,10,3,3,0,1,0,0,0,0,2011,Wholesale Trade,,,,,
+02109,44----,83,32,26,14,9,1,1,0,0,0,2011,Retail Trade,,,,,
+02109,48----,5,2,1,1,0,0,0,1,0,0,2011,Transportation and Warehousing,,,,,
+02109,51----,39,20,6,2,7,2,2,0,0,0,2011,Information,,,,,
+02109,52----,245,97,51,35,24,10,14,4,4,6,2011,Finance and Insurance,,,,,
+02109,53----,84,38,17,14,11,2,2,0,0,0,2011,Real Estate and Rental and Leasing,,,,,
+02109,54----,376,214,68,36,37,10,4,5,2,0,2011,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,8,3,0,0,1,1,2,1,0,0,2011,Management of Companies and Enterprises,,,,,
+02109,56----,120,48,17,10,22,10,7,3,2,1,2011,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,11,5,1,4,1,0,0,0,0,0,2011,Educational Services,,,,,
+02109,62----,28,10,10,2,2,1,3,0,0,0,2011,Health Care and Social Assistance,,,,,
+02109,71----,7,3,1,1,2,0,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,111,31,18,21,26,9,5,1,0,0,2011,Accommodation and Food Services,,,,,
+02109,81----,63,32,23,6,1,1,0,0,0,0,2011,Other Services (except Public Administration),,,,,
+02109,99----,3,3,0,0,0,0,0,0,0,0,2011,Unclassified,,,,,
+02118,23----,21,14,0,2,3,0,1,1,0,0,2011,Construction,,,,,
+02118,31----,23,8,1,5,2,7,0,0,0,0,2011,Manufacturing,,,,,
+02118,42----,89,30,21,15,17,5,1,0,0,0,2011,Wholesale Trade,,,,,
+02118,44----,92,53,23,12,1,3,0,0,0,0,2011,Retail Trade,,,,,
+02118,48----,7,3,1,2,1,0,0,0,0,0,2011,Transportation and Warehousing,,,,,
+02118,51----,17,7,6,2,1,0,0,1,0,0,2011,Information,,,,,
+02118,52----,24,13,5,6,0,0,0,0,0,0,2011,Finance and Insurance,,,,,
+02118,53----,43,28,6,5,4,0,0,0,0,0,2011,Real Estate and Rental and Leasing,,,,,
+02118,54----,134,87,30,8,8,1,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,3,1,0,1,0,0,1,0,0,0,2011,Management of Companies and Enterprises,,,,,
+02118,56----,23,9,4,4,3,2,1,0,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,9,5,1,2,0,1,0,0,0,0,2011,Educational Services,,,,,
+02118,62----,86,24,18,11,17,9,5,1,0,1,2011,Health Care and Social Assistance,,,,,
+02118,71----,14,8,1,2,1,2,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,90,35,15,15,18,6,1,0,0,0,2011,Accommodation and Food Services,,,,,
+02118,81----,80,38,27,7,7,1,0,0,0,0,2011,Other Services (except Public Administration),,,,,
+02118,99----,4,4,0,0,0,0,0,0,0,0,2011,Unclassified,,,,,
+02125,22----,2,1,0,0,0,0,0,0,1,0,2011,Utilities,,,,,
+02125,23----,34,20,5,3,3,3,0,0,0,0,2011,Construction,,,,,
+02125,31----,9,3,1,0,3,2,0,0,0,0,2011,Manufacturing,,,,,
+02125,42----,8,6,0,1,1,0,0,0,0,0,2011,Wholesale Trade,,,,,
+02125,44----,83,41,15,15,8,2,1,1,0,0,2011,Retail Trade,,,,,
+02125,48----,6,4,1,1,0,0,0,0,0,0,2011,Transportation and Warehousing,,,,,
+02125,51----,14,7,2,1,0,2,1,0,0,1,2011,Information,,,,,
+02125,52----,21,9,6,2,1,0,1,2,0,0,2011,Finance and Insurance,,,,,
+02125,53----,26,16,7,1,1,0,1,0,0,0,2011,Real Estate and Rental and Leasing,,,,,
+02125,54----,21,16,1,2,1,1,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,3,2,0,0,1,0,0,0,0,0,2011,Management of Companies and Enterprises,,,,,
+02125,56----,19,14,0,4,1,0,0,0,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,9,2,1,3,2,0,0,1,0,0,2011,Educational Services,,,,,
+02125,62----,46,16,9,15,2,2,1,1,0,0,2011,Health Care and Social Assistance,,,,,
+02125,71----,5,4,1,0,0,0,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,58,30,13,7,6,1,1,0,0,0,2011,Accommodation and Food Services,,,,,
+02125,81----,59,29,14,9,2,3,2,0,0,0,2011,Other Services (except Public Administration),,,,,
+02127,21----,1,0,1,0,0,0,0,0,0,0,2011,"Mining, Quarrying, and Oil and Gas Extraction",,,,,
+02127,22----,2,1,0,0,0,1,0,0,0,0,2011,Utilities,,,,,
+02127,23----,51,22,10,7,8,4,0,0,0,0,2011,Construction,,,,,
+02127,31----,21,8,1,5,5,1,0,0,1,0,2011,Manufacturing,,,,,
+02127,42----,41,19,11,5,5,1,0,0,0,0,2011,Wholesale Trade,,,,,
+02127,44----,68,40,17,6,4,0,1,0,0,0,2011,Retail Trade,,,,,
+02127,48----,26,12,5,3,2,1,2,1,0,0,2011,Transportation and Warehousing,,,,,
+02127,51----,21,12,3,3,1,1,1,0,0,0,2011,Information,,,,,
+02127,52----,29,11,8,3,4,2,1,0,0,0,2011,Finance and Insurance,,,,,
+02127,53----,29,16,6,3,3,0,1,0,0,0,2011,Real Estate and Rental and Leasing,,,,,
+02127,54----,62,40,16,3,1,1,1,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,8,2,1,0,2,3,0,0,0,0,2011,Management of Companies and Enterprises,,,,,
+02127,56----,25,13,3,3,1,4,0,1,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,9,3,0,2,3,0,0,1,0,0,2011,Educational Services,,,,,
+02127,62----,41,19,8,5,3,4,1,1,0,0,2011,Health Care and Social Assistance,,,,,
+02127,71----,13,6,2,2,2,1,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,80,38,12,12,15,3,0,0,0,0,2011,Accommodation and Food Services,,,,,
+02127,81----,89,59,18,6,3,0,3,0,0,0,2011,Other Services (except Public Administration),,,,,
+02127,99----,2,2,0,0,0,0,0,0,0,0,2011,Unclassified,,,,,
+02128,23----,38,21,8,2,5,2,0,0,0,0,2011,Construction,,,,,
+02128,31----,16,5,2,3,1,4,0,1,0,0,2011,Manufacturing,,,,,
+02128,42----,15,8,4,0,2,1,0,0,0,0,2011,Wholesale Trade,,,,,
+02128,44----,113,71,21,10,6,4,1,0,0,0,2011,Retail Trade,,,,,
+02128,48----,129,47,25,17,16,12,5,3,1,3,2011,Transportation and Warehousing,,,,,
+02128,51----,5,3,0,1,0,1,0,0,0,0,2011,Information,,,,,
+02128,52----,27,11,10,3,3,0,0,0,0,0,2011,Finance and Insurance,,,,,
+02128,53----,33,15,6,6,2,2,2,0,0,0,2011,Real Estate and Rental and Leasing,,,,,
+02128,54----,36,29,2,2,3,0,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,2,1,0,1,0,0,0,0,0,0,2011,Management of Companies and Enterprises,,,,,
+02128,56----,29,13,6,1,4,2,2,1,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,8,5,2,0,1,0,0,0,0,0,2011,Educational Services,,,,,
+02128,62----,45,13,12,9,7,1,2,0,1,0,2011,Health Care and Social Assistance,,,,,
+02128,71----,6,3,1,1,0,1,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,121,35,31,23,15,10,4,3,0,0,2011,Accommodation and Food Services,,,,,
+02128,81----,83,55,19,5,3,1,0,0,0,0,2011,Other Services (except Public Administration),,,,,
+02128,99----,1,1,0,0,0,0,0,0,0,0,2011,Unclassified,,,,,
+02228,48----,1,1,0,0,0,0,0,0,0,0,2011,Transportation and Warehousing,,,,,
+02228,81----,1,1,0,0,0,0,0,0,0,0,2011,Other Services (except Public Administration),,,,,
+02109,11----,1,0,0,1,0,0,0,0,0,0,2012,"Agriculture, Forestry, Fishing and Hunting",,,,,
+02109,22----,1,1,0,0,0,0,0,0,0,0,2012,Utilities,,,,,
+02109,23----,15,11,1,1,1,0,1,0,0,0,2012,Construction,,,,,
+02109,31----,7,5,1,1,0,0,0,0,0,0,2012,Manufacturing,,,,,
+02109,42----,23,12,6,1,3,0,1,0,0,0,2012,Wholesale Trade,,,,,
+02109,44----,91,39,25,15,10,1,1,0,0,0,2012,Retail Trade,,,,,
+02109,48----,14,6,2,1,2,1,1,1,0,0,2012,Transportation and Warehousing,,,,,
+02109,51----,42,19,8,4,9,0,2,0,0,0,2012,Information,,,,,
+02109,52----,236,95,48,28,25,12,11,5,3,9,2012,Finance and Insurance,,,,,
+02109,53----,88,45,17,13,8,3,2,0,0,0,2012,Real Estate and Rental and Leasing,,,,,
+02109,54----,383,210,69,45,36,11,5,3,3,1,2012,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,12,6,0,1,1,2,1,1,0,0,2012,Management of Companies and Enterprises,,,,,
+02109,56----,138,60,27,12,17,11,6,2,2,1,2012,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,18,8,5,3,2,0,0,0,0,0,2012,Educational Services,,,,,
+02109,62----,33,14,7,8,1,0,3,0,0,0,2012,Health Care and Social Assistance,,,,,
+02109,71----,7,3,0,2,2,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,115,33,20,20,27,7,7,1,0,0,2012,Accommodation and Food Services,,,,,
+02109,81----,72,36,22,9,3,2,0,0,0,0,2012,Other Services (except Public Administration),,,,,
+02109,99----,1,1,0,0,0,0,0,0,0,0,2012,Unclassified,,,,,
+02118,23----,22,13,2,2,3,1,0,1,0,0,2012,Construction,,,,,
+02118,31----,21,6,1,3,4,7,0,0,0,0,2012,Manufacturing,,,,,
+02118,42----,78,24,18,16,15,4,1,0,0,0,2012,Wholesale Trade,,,,,
+02118,44----,98,58,20,14,1,3,2,0,0,0,2012,Retail Trade,,,,,
+02118,48----,9,3,2,2,2,0,0,0,0,0,2012,Transportation and Warehousing,,,,,
+02118,51----,14,6,5,1,2,0,0,0,0,0,2012,Information,,,,,
+02118,52----,23,11,7,5,0,0,0,0,0,0,2012,Finance and Insurance,,,,,
+02118,53----,45,29,9,4,3,0,0,0,0,0,2012,Real Estate and Rental and Leasing,,,,,
+02118,54----,139,90,27,13,7,2,0,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,3,1,1,1,0,0,0,0,0,0,2012,Management of Companies and Enterprises,,,,,
+02118,56----,21,10,4,2,3,0,2,0,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,10,5,3,1,1,0,0,0,0,0,2012,Educational Services,,,,,
+02118,62----,88,32,12,10,19,8,4,2,0,1,2012,Health Care and Social Assistance,,,,,
+02118,71----,13,8,1,0,2,1,1,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,92,34,18,13,22,5,0,0,0,0,2012,Accommodation and Food Services,,,,,
+02118,81----,74,35,27,5,6,1,0,0,0,0,2012,Other Services (except Public Administration),,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2012,Utilities,,,,,
+02125,23----,31,23,3,1,1,3,0,0,0,0,2012,Construction,,,,,
+02125,31----,9,2,1,1,2,3,0,0,0,0,2012,Manufacturing,,,,,
+02125,42----,12,7,2,1,1,1,0,0,0,0,2012,Wholesale Trade,,,,,
+02125,44----,79,38,16,14,6,3,1,1,0,0,2012,Retail Trade,,,,,
+02125,48----,7,5,2,0,0,0,0,0,0,0,2012,Transportation and Warehousing,,,,,
+02125,51----,15,9,1,0,0,2,2,0,0,1,2012,Information,,,,,
+02125,52----,17,6,6,1,1,0,1,2,0,0,2012,Finance and Insurance,,,,,
+02125,53----,25,13,7,1,2,1,1,0,0,0,2012,Real Estate and Rental and Leasing,,,,,
+02125,54----,16,11,0,2,1,0,2,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,4,3,0,0,1,0,0,0,0,0,2012,Management of Companies and Enterprises,,,,,
+02125,56----,19,11,2,3,2,1,0,0,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,10,2,3,2,2,0,0,1,0,0,2012,Educational Services,,,,,
+02125,62----,52,20,15,11,2,2,1,1,0,0,2012,Health Care and Social Assistance,,,,,
+02125,71----,3,2,1,0,0,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,66,37,8,6,12,2,1,0,0,0,2012,Accommodation and Food Services,,,,,
+02125,81----,60,35,11,6,4,3,1,0,0,0,2012,Other Services (except Public Administration),,,,,
+02127,21----,1,0,0,1,0,0,0,0,0,0,2012,"Mining, Quarrying, and Oil and Gas Extraction",,,,,
+02127,22----,2,1,0,0,0,1,0,0,0,0,2012,Utilities,,,,,
+02127,23----,53,27,10,7,7,2,0,0,0,0,2012,Construction,,,,,
+02127,31----,20,7,2,3,5,2,0,0,1,0,2012,Manufacturing,,,,,
+02127,42----,31,9,12,3,6,1,0,0,0,0,2012,Wholesale Trade,,,,,
+02127,44----,71,42,18,8,2,0,1,0,0,0,2012,Retail Trade,,,,,
+02127,48----,24,11,5,0,1,3,3,1,0,0,2012,Transportation and Warehousing,,,,,
+02127,51----,21,13,2,2,1,2,1,0,0,0,2012,Information,,,,,
+02127,52----,29,11,9,2,5,1,1,0,0,0,2012,Finance and Insurance,,,,,
+02127,53----,26,16,5,2,2,0,1,0,0,0,2012,Real Estate and Rental and Leasing,,,,,
+02127,54----,73,47,13,7,4,1,1,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,9,2,1,1,2,1,2,0,0,0,2012,Management of Companies and Enterprises,,,,,
+02127,56----,24,9,5,4,3,2,0,1,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,8,4,0,1,2,0,0,1,0,0,2012,Educational Services,,,,,
+02127,62----,42,22,4,7,3,4,1,1,0,0,2012,Health Care and Social Assistance,,,,,
+02127,71----,11,4,3,3,1,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,82,37,14,14,15,2,0,0,0,0,2012,Accommodation and Food Services,,,,,
+02127,81----,94,52,29,8,2,2,1,0,0,0,2012,Other Services (except Public Administration),,,,,
+02127,99----,1,1,0,0,0,0,0,0,0,0,2012,Unclassified,,,,,
+02128,23----,40,25,7,3,2,3,0,0,0,0,2012,Construction,,,,,
+02128,31----,12,4,3,0,1,3,0,1,0,0,2012,Manufacturing,,,,,
+02128,42----,15,8,4,0,2,1,0,0,0,0,2012,Wholesale Trade,,,,,
+02128,44----,104,63,22,9,7,2,1,0,0,0,2012,Retail Trade,,,,,
+02128,48----,130,50,22,18,16,11,4,4,2,3,2012,Transportation and Warehousing,,,,,
+02128,51----,4,4,0,0,0,0,0,0,0,0,2012,Information,,,,,
+02128,52----,21,7,10,2,2,0,0,0,0,0,2012,Finance and Insurance,,,,,
+02128,53----,32,17,4,5,1,3,2,0,0,0,2012,Real Estate and Rental and Leasing,,,,,
+02128,54----,32,25,3,2,2,0,0,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,6,2,1,1,1,0,0,0,0,1,2012,Management of Companies and Enterprises,,,,,
+02128,56----,33,13,7,3,5,2,2,1,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,6,4,1,0,1,0,0,0,0,0,2012,Educational Services,,,,,
+02128,62----,45,12,10,13,5,3,1,0,1,0,2012,Health Care and Social Assistance,,,,,
+02128,71----,7,3,1,2,0,0,1,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,125,31,32,29,21,4,5,3,0,0,2012,Accommodation and Food Services,,,,,
+02128,81----,86,60,16,6,3,1,0,0,0,0,2012,Other Services (except Public Administration),,,,,
+02228,71----,1,1,0,0,0,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,,
+02228,81----,1,1,0,0,0,0,0,0,0,0,2012,Other Services (except Public Administration),,,,,
+02109,11----,1,0,0,1,0,0,0,0,0,0,2013,"Agriculture, Forestry, Fishing and Hunting",,,,,
+02109,22----,1,1,0,0,0,0,0,0,0,0,2013,Utilities,,,,,
+02109,23----,12,9,0,1,1,0,1,0,0,0,2013,Construction,,,,,
+02109,31----,7,4,2,1,0,0,0,0,0,0,2013,Manufacturing,,,,,
+02109,42----,32,19,4,6,1,1,1,0,0,0,2013,Wholesale Trade,,,,,
+02109,44----,85,35,26,11,10,2,1,0,0,0,2013,Retail Trade,,,,,
+02109,48----,7,5,1,1,0,0,0,0,0,0,2013,Transportation and Warehousing,,,,,
+02109,51----,47,17,12,5,8,2,2,0,0,1,2013,Information,,,,,
+02109,52----,239,100,44,25,26,15,14,5,3,7,2013,Finance and Insurance,,,,,
+02109,53----,85,42,16,15,7,2,3,0,0,0,2013,Real Estate and Rental and Leasing,,,,,
+02109,54----,394,217,68,46,33,16,9,2,3,0,2013,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,13,7,1,0,1,2,1,1,0,0,2013,Management of Companies and Enterprises,,,,,
+02109,56----,138,63,24,9,16,15,4,5,1,1,2013,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,17,9,3,3,1,1,0,0,0,0,2013,Educational Services,,,,,
+02109,62----,32,15,5,8,1,1,2,0,0,0,2013,Health Care and Social Assistance,,,,,
+02109,71----,9,5,0,2,2,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,120,29,21,25,28,13,3,1,0,0,2013,Accommodation and Food Services,,,,,
+02109,81----,69,36,18,7,5,3,0,0,0,0,2013,Other Services (except Public Administration),,,,,
+02118,23----,26,16,2,1,5,1,0,1,0,0,2013,Construction,,,,,
+02118,31----,19,6,0,4,3,5,1,0,0,0,2013,Manufacturing,,,,,
+02118,42----,79,26,18,15,16,3,1,0,0,0,2013,Wholesale Trade,,,,,
+02118,44----,93,53,23,11,1,3,2,0,0,0,2013,Retail Trade,,,,,
+02118,48----,10,6,0,2,2,0,0,0,0,0,2013,Transportation and Warehousing,,,,,
+02118,51----,19,10,5,1,2,1,0,0,0,0,2013,Information,,,,,
+02118,52----,23,10,9,3,0,0,1,0,0,0,2013,Finance and Insurance,,,,,
+02118,53----,50,32,10,5,3,0,0,0,0,0,2013,Real Estate and Rental and Leasing,,,,,
+02118,54----,146,91,32,10,11,1,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,7,1,2,2,2,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,,
+02118,56----,20,9,4,2,2,3,0,0,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,12,6,4,1,1,0,0,0,0,0,2013,Educational Services,,,,,
+02118,62----,94,35,12,16,16,7,5,2,0,1,2013,Health Care and Social Assistance,,,,,
+02118,71----,15,10,1,0,3,0,1,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,90,27,17,14,24,8,0,0,0,0,2013,Accommodation and Food Services,,,,,
+02118,81----,70,42,16,4,7,1,0,0,0,0,2013,Other Services (except Public Administration),,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2013,Utilities,,,,,
+02125,23----,32,21,5,2,2,1,1,0,0,0,2013,Construction,,,,,
+02125,31----,10,3,1,1,2,3,0,0,0,0,2013,Manufacturing,,,,,
+02125,42----,10,5,3,1,1,0,0,0,0,0,2013,Wholesale Trade,,,,,
+02125,44----,86,46,14,14,6,4,1,1,0,0,2013,Retail Trade,,,,,
+02125,48----,8,4,2,2,0,0,0,0,0,0,2013,Transportation and Warehousing,,,,,
+02125,51----,22,11,4,1,2,1,2,0,1,0,2013,Information,,,,,
+02125,52----,19,7,7,2,0,0,1,2,0,0,2013,Finance and Insurance,,,,,
+02125,53----,27,15,6,2,2,1,1,0,0,0,2013,Real Estate and Rental and Leasing,,,,,
+02125,54----,19,14,0,1,3,0,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,3,2,0,0,1,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,,
+02125,56----,20,10,2,4,2,2,0,0,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,11,3,2,3,2,0,0,1,0,0,2013,Educational Services,,,,,
+02125,62----,54,19,15,12,4,2,1,1,0,0,2013,Health Care and Social Assistance,,,,,
+02125,71----,4,3,1,0,0,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,56,25,9,8,12,1,1,0,0,0,2013,Accommodation and Food Services,,,,,
+02125,81----,66,42,10,6,5,2,1,0,0,0,2013,Other Services (except Public Administration),,,,,
+02125,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,,
+02127,22----,1,0,0,0,0,1,0,0,0,0,2013,Utilities,,,,,
+02127,23----,53,27,11,5,6,3,1,0,0,0,2013,Construction,,,,,
+02127,31----,22,10,0,3,6,1,1,0,1,0,2013,Manufacturing,,,,,
+02127,42----,31,9,13,2,5,2,0,0,0,0,2013,Wholesale Trade,,,,,
+02127,44----,73,42,19,8,2,2,0,0,0,0,2013,Retail Trade,,,,,
+02127,48----,21,9,4,1,1,4,1,1,0,0,2013,Transportation and Warehousing,,,,,
+02127,51----,22,16,0,2,2,1,1,0,0,0,2013,Information,,,,,
+02127,52----,31,15,8,2,3,2,1,0,0,0,2013,Finance and Insurance,,,,,
+02127,53----,29,19,5,1,3,1,0,0,0,0,2013,Real Estate and Rental and Leasing,,,,,
+02127,54----,78,48,18,6,3,2,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,9,3,1,1,2,0,2,0,0,0,2013,Management of Companies and Enterprises,,,,,
+02127,56----,25,11,3,4,2,3,1,1,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,9,3,1,1,3,1,0,0,0,0,2013,Educational Services,,,,,
+02127,62----,40,20,6,5,3,3,2,1,0,0,2013,Health Care and Social Assistance,,,,,
+02127,71----,12,7,1,3,1,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,85,35,17,13,15,4,1,0,0,0,2013,Accommodation and Food Services,,,,,
+02127,81----,98,56,27,8,4,1,2,0,0,0,2013,Other Services (except Public Administration),,,,,
+02127,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,,
+02128,23----,41,27,6,3,3,2,0,0,0,0,2013,Construction,,,,,
+02128,31----,12,4,3,0,2,2,1,0,0,0,2013,Manufacturing,,,,,
+02128,42----,13,6,5,0,1,1,0,0,0,0,2013,Wholesale Trade,,,,,
+02128,44----,110,63,23,13,6,3,2,0,0,0,2013,Retail Trade,,,,,
+02128,48----,131,43,31,17,17,8,6,3,3,3,2013,Transportation and Warehousing,,,,,
+02128,51----,4,4,0,0,0,0,0,0,0,0,2013,Information,,,,,
+02128,52----,24,8,11,3,1,0,0,0,0,1,2013,Finance and Insurance,,,,,
+02128,53----,34,20,3,5,1,2,3,0,0,0,2013,Real Estate and Rental and Leasing,,,,,
+02128,54----,37,27,7,1,2,0,0,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,5,3,1,1,0,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,,
+02128,56----,36,14,8,2,5,4,2,1,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,6,3,2,0,1,0,0,0,0,0,2013,Educational Services,,,,,
+02128,62----,46,14,11,11,6,2,1,0,1,0,2013,Health Care and Social Assistance,,,,,
+02128,71----,6,2,2,1,0,0,1,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,129,35,28,32,21,5,4,4,0,0,2013,Accommodation and Food Services,,,,,
+02128,81----,84,59,15,7,2,1,0,0,0,0,2013,Other Services (except Public Administration),,,,,
+02128,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,,
+02228,71----,1,1,0,0,0,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,,
+02109,11----,1,0,0,1,0,0,0,0,0,0,2014,"Agriculture, Forestry, Fishing and Hunting",,,,,
+02109,22----,1,1,0,0,0,0,0,0,0,0,2014,Utilities,,,,,
+02109,23----,13,11,0,0,1,0,1,0,0,0,2014,Construction,,,,,
+02109,31----,8,6,1,1,0,0,0,0,0,0,2014,Manufacturing,,,,,
+02109,42----,30,19,4,2,1,2,2,0,0,0,2014,Wholesale Trade,,,,,
+02109,44----,81,36,17,15,10,2,1,0,0,0,2014,Retail Trade,,,,,
+02109,48----,8,5,2,1,0,0,0,0,0,0,2014,Transportation and Warehousing,,,,,
+02109,51----,46,16,9,7,8,1,3,2,0,0,2014,Information,,,,,
+02109,52----,241,111,42,27,24,13,14,3,6,1,2014,Finance and Insurance,,,,,
+02109,53----,80,47,10,12,8,2,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,,
+02109,54----,397,212,68,52,41,10,9,2,3,0,2014,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,11,7,0,0,2,1,1,0,0,0,2014,Management of Companies and Enterprises,,,,,
+02109,56----,134,71,18,8,13,11,7,5,1,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,19,8,6,3,1,1,0,0,0,0,2014,Educational Services,,,,,
+02109,62----,32,15,7,7,1,0,1,1,0,0,2014,Health Care and Social Assistance,,,,,
+02109,71----,9,5,0,2,2,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,117,23,23,28,27,12,3,1,0,0,2014,Accommodation and Food Services,,,,,
+02109,81----,73,38,15,13,4,3,0,0,0,0,2014,Other Services (except Public Administration),,,,,
+02109,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,,
+02118,23----,26,15,3,1,4,2,0,0,1,0,2014,Construction,,,,,
+02118,31----,24,10,0,5,3,5,1,0,0,0,2014,Manufacturing,,,,,
+02118,42----,76,20,20,17,13,4,2,0,0,0,2014,Wholesale Trade,,,,,
+02118,44----,101,59,25,10,2,4,1,0,0,0,2014,Retail Trade,,,,,
+02118,48----,9,5,0,1,3,0,0,0,0,0,2014,Transportation and Warehousing,,,,,
+02118,51----,15,9,2,3,0,1,0,0,0,0,2014,Information,,,,,
+02118,52----,24,13,7,3,0,0,1,0,0,0,2014,Finance and Insurance,,,,,
+02118,53----,48,29,10,4,4,1,0,0,0,0,2014,Real Estate and Rental and Leasing,,,,,
+02118,54----,148,100,23,12,10,2,1,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,6,0,3,1,2,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,,
+02118,56----,25,15,3,2,2,2,1,0,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,12,7,3,1,0,1,0,0,0,0,2014,Educational Services,,,,,
+02118,62----,93,30,15,15,17,8,4,3,0,1,2014,Health Care and Social Assistance,,,,,
+02118,71----,16,9,2,1,3,1,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,94,30,17,17,24,6,0,0,0,0,2014,Accommodation and Food Services,,,,,
+02118,81----,69,43,11,6,6,3,0,0,0,0,2014,Other Services (except Public Administration),,,,,
+02118,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2014,Utilities,,,,,
+02125,23----,37,24,6,3,1,2,0,1,0,0,2014,Construction,,,,,
+02125,31----,8,2,1,0,2,3,0,0,0,0,2014,Manufacturing,,,,,
+02125,42----,10,5,2,2,1,0,0,0,0,0,2014,Wholesale Trade,,,,,
+02125,44----,80,36,17,14,7,4,0,2,0,0,2014,Retail Trade,,,,,
+02125,48----,5,2,2,1,0,0,0,0,0,0,2014,Transportation and Warehousing,,,,,
+02125,51----,21,10,2,2,1,2,2,0,2,0,2014,Information,,,,,
+02125,52----,21,13,3,3,0,0,0,1,1,0,2014,Finance and Insurance,,,,,
+02125,53----,25,14,6,1,3,0,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,,
+02125,54----,24,19,1,1,2,0,1,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,3,2,0,0,1,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,,
+02125,56----,24,14,3,4,2,1,0,0,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,10,3,1,3,2,0,0,1,0,0,2014,Educational Services,,,,,
+02125,62----,52,18,12,13,3,5,0,1,0,0,2014,Health Care and Social Assistance,,,,,
+02125,71----,4,3,1,0,0,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,59,25,11,8,10,4,1,0,0,0,2014,Accommodation and Food Services,,,,,
+02125,81----,66,38,13,7,4,3,1,0,0,0,2014,Other Services (except Public Administration),,,,,
+02125,99----,4,4,0,0,0,0,0,0,0,0,2014,Unclassified,,,,,
+02127,22----,1,0,0,0,0,1,0,0,0,0,2014,Utilities,,,,,
+02127,23----,54,31,9,5,4,3,2,0,0,0,2014,Construction,,,,,
+02127,31----,22,9,1,2,6,1,2,0,1,0,2014,Manufacturing,,,,,
+02127,42----,36,12,15,2,5,2,0,0,0,0,2014,Wholesale Trade,,,,,
+02127,44----,76,42,19,10,3,2,0,0,0,0,2014,Retail Trade,,,,,
+02127,48----,20,8,5,1,1,3,1,1,0,0,2014,Transportation and Warehousing,,,,,
+02127,51----,21,12,2,3,1,1,2,0,0,0,2014,Information,,,,,
+02127,52----,30,13,7,2,5,2,1,0,0,0,2014,Finance and Insurance,,,,,
+02127,53----,35,24,6,1,3,0,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,,
+02127,54----,84,53,15,11,2,3,0,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,10,4,1,1,2,0,2,0,0,0,2014,Management of Companies and Enterprises,,,,,
+02127,56----,29,17,3,2,2,2,2,1,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,9,3,0,2,3,1,0,0,0,0,2014,Educational Services,,,,,
+02127,62----,42,21,6,5,4,2,3,1,0,0,2014,Health Care and Social Assistance,,,,,
+02127,71----,14,8,2,3,1,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,81,29,14,16,17,5,0,0,0,0,2014,Accommodation and Food Services,,,,,
+02127,81----,98,55,29,5,6,1,2,0,0,0,2014,Other Services (except Public Administration),,,,,
+02127,99----,3,3,0,0,0,0,0,0,0,0,2014,Unclassified,,,,,
+02128,23----,38,21,10,3,0,4,0,0,0,0,2014,Construction,,,,,
+02128,31----,13,5,2,1,1,3,0,1,0,0,2014,Manufacturing,,,,,
+02128,42----,12,5,5,0,1,1,0,0,0,0,2014,Wholesale Trade,,,,,
+02128,44----,110,66,25,9,5,3,2,0,0,0,2014,Retail Trade,,,,,
+02128,48----,135,48,23,21,18,11,6,3,2,3,2014,Transportation and Warehousing,,,,,
+02128,51----,7,6,1,0,0,0,0,0,0,0,2014,Information,,,,,
+02128,52----,22,8,8,4,1,0,0,0,0,1,2014,Finance and Insurance,,,,,
+02128,53----,37,19,7,5,0,3,2,1,0,0,2014,Real Estate and Rental and Leasing,,,,,
+02128,54----,35,25,7,2,1,0,0,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,4,2,1,1,0,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,,
+02128,56----,37,11,11,4,4,4,2,1,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,7,4,2,0,1,0,0,0,0,0,2014,Educational Services,,,,,
+02128,62----,45,14,11,9,5,4,1,0,1,0,2014,Health Care and Social Assistance,,,,,
+02128,71----,5,2,0,1,0,1,1,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,131,36,25,38,18,6,4,4,0,0,2014,Accommodation and Food Services,,,,,
+02128,81----,85,59,15,8,2,1,0,0,0,0,2014,Other Services (except Public Administration),,,,,
+02128,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,,
+02228,71----,1,1,0,0,0,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,,
+02109,11----,1,0,0,1,0,0,0,0,0,0,2015,"Agriculture, Forestry, Fishing and Hunting",,,,,
+02109,22----,1,1,0,0,0,0,0,0,0,0,2015,Utilities,,,,,
+02109,23----,14,9,1,1,1,0,1,1,0,0,2015,Construction,,,,,
+02109,31----,8,5,2,1,0,0,0,0,0,0,2015,Manufacturing,,,,,
+02109,42----,27,15,5,2,0,2,3,0,0,0,2015,Wholesale Trade,,,,,
+02109,44----,84,36,22,11,11,3,1,0,0,0,2015,Retail Trade,,,,,
+02109,48----,6,4,2,0,0,0,0,0,0,0,2015,Transportation and Warehousing,,,,,
+02109,51----,49,18,7,6,11,3,4,0,0,0,2015,Information,,,,,
+02109,52----,266,120,41,27,37,16,12,8,4,1,2015,Finance and Insurance,,,,,
+02109,53----,81,49,5,15,8,3,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,,
+02109,54----,421,241,52,57,42,12,9,4,3,1,2015,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,13,6,3,0,1,1,1,1,0,0,2015,Management of Companies and Enterprises,,,,,
+02109,56----,128,64,17,11,14,12,6,4,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,18,7,4,3,3,1,0,0,0,0,2015,Educational Services,,,,,
+02109,62----,29,14,4,8,1,0,2,0,0,0,2015,Health Care and Social Assistance,,,,,
+02109,71----,15,9,0,2,4,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,118,32,20,24,27,10,4,1,0,0,2015,Accommodation and Food Services,,,,,
+02109,81----,71,42,13,8,5,3,0,0,0,0,2015,Other Services (except Public Administration),,,,,
+02109,99----,3,3,0,0,0,0,0,0,0,0,2015,Unclassified,,,,,
+02118,23----,25,13,4,2,2,3,0,0,1,0,2015,Construction,,,,,
+02118,31----,24,10,0,5,3,5,1,0,0,0,2015,Manufacturing,,,,,
+02118,42----,76,19,22,17,10,6,2,0,0,0,2015,Wholesale Trade,,,,,
+02118,44----,110,64,26,11,3,4,2,0,0,0,2015,Retail Trade,,,,,
+02118,48----,12,8,0,3,1,0,0,0,0,0,2015,Transportation and Warehousing,,,,,
+02118,51----,15,10,2,2,0,1,0,0,0,0,2015,Information,,,,,
+02118,52----,25,14,7,4,0,0,0,0,0,0,2015,Finance and Insurance,,,,,
+02118,53----,56,38,10,2,4,2,0,0,0,0,2015,Real Estate and Rental and Leasing,,,,,
+02118,54----,156,100,28,15,9,2,2,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,7,0,2,3,1,1,0,0,0,0,2015,Management of Companies and Enterprises,,,,,
+02118,56----,24,12,4,4,1,1,2,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,15,8,4,2,1,0,0,0,0,0,2015,Educational Services,,,,,
+02118,62----,91,32,15,10,20,6,4,3,0,1,2015,Health Care and Social Assistance,,,,,
+02118,71----,17,10,2,1,3,1,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,94,29,18,15,23,9,0,0,0,0,2015,Accommodation and Food Services,,,,,
+02118,81----,75,47,14,5,6,3,0,0,0,0,2015,Other Services (except Public Administration),,,,,
+02118,99----,4,4,0,0,0,0,0,0,0,0,2015,Unclassified,,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2015,Utilities,,,,,
+02125,23----,37,25,5,1,4,1,1,0,0,0,2015,Construction,,,,,
+02125,31----,8,3,1,0,1,3,0,0,0,0,2015,Manufacturing,,,,,
+02125,42----,9,4,2,1,2,0,0,0,0,0,2015,Wholesale Trade,,,,,
+02125,44----,87,48,16,9,9,3,0,2,0,0,2015,Retail Trade,,,,,
+02125,48----,6,3,1,2,0,0,0,0,0,0,2015,Transportation and Warehousing,,,,,
+02125,51----,18,7,2,2,3,0,2,0,1,1,2015,Information,,,,,
+02125,52----,19,9,6,2,0,0,0,1,1,0,2015,Finance and Insurance,,,,,
+02125,53----,24,12,7,2,2,0,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,,
+02125,54----,30,24,2,1,2,0,1,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,3,2,0,0,1,0,0,0,0,0,2015,Management of Companies and Enterprises,,,,,
+02125,56----,22,14,2,3,2,1,0,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,13,6,0,4,1,1,0,1,0,0,2015,Educational Services,,,,,
+02125,62----,49,17,10,13,4,4,0,1,0,0,2015,Health Care and Social Assistance,,,,,
+02125,71----,4,3,1,0,0,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,62,30,9,7,12,3,1,0,0,0,2015,Accommodation and Food Services,,,,,
+02125,81----,63,35,12,7,5,3,1,0,0,0,2015,Other Services (except Public Administration),,,,,
+02125,99----,3,3,0,0,0,0,0,0,0,0,2015,Unclassified,,,,,
+02127,22----,1,0,0,0,0,1,0,0,0,0,2015,Utilities,,,,,
+02127,23----,57,35,8,6,3,5,0,0,0,0,2015,Construction,,,,,
+02127,31----,19,8,0,4,3,1,2,0,1,0,2015,Manufacturing,,,,,
+02127,42----,37,13,14,3,4,3,0,0,0,0,2015,Wholesale Trade,,,,,
+02127,44----,73,41,15,12,3,2,0,0,0,0,2015,Retail Trade,,,,,
+02127,48----,21,7,5,1,2,4,1,1,0,0,2015,Transportation and Warehousing,,,,,
+02127,51----,21,13,3,1,1,1,2,0,0,0,2015,Information,,,,,
+02127,52----,30,16,3,3,5,2,1,0,0,0,2015,Finance and Insurance,,,,,
+02127,53----,38,28,6,1,2,0,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,,
+02127,54----,93,58,16,11,5,3,0,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,10,3,2,1,1,1,2,0,0,0,2015,Management of Companies and Enterprises,,,,,
+02127,56----,26,14,4,2,1,2,2,1,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,10,3,1,2,2,2,0,0,0,0,2015,Educational Services,,,,,
+02127,62----,40,17,10,5,3,2,2,1,0,0,2015,Health Care and Social Assistance,,,,,
+02127,71----,12,6,3,2,1,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,86,31,19,13,19,4,0,0,0,0,2015,Accommodation and Food Services,,,,,
+02127,81----,86,49,24,4,6,1,2,0,0,0,2015,Other Services (except Public Administration),,,,,
+02127,99----,5,5,0,0,0,0,0,0,0,0,2015,Unclassified,,,,,
+02128,23----,38,21,9,4,1,3,0,0,0,0,2015,Construction,,,,,
+02128,31----,13,7,1,0,1,3,1,0,0,0,2015,Manufacturing,,,,,
+02128,42----,15,8,5,0,1,1,0,0,0,0,2015,Wholesale Trade,,,,,
+02128,44----,112,67,25,8,7,3,2,0,0,0,2015,Retail Trade,,,,,
+02128,48----,135,53,20,22,16,13,3,2,4,2,2015,Transportation and Warehousing,,,,,
+02128,51----,8,6,1,0,1,0,0,0,0,0,2015,Information,,,,,
+02128,52----,19,6,8,3,1,0,0,0,0,1,2015,Finance and Insurance,,,,,
+02128,53----,37,18,6,7,0,3,2,1,0,0,2015,Real Estate and Rental and Leasing,,,,,
+02128,54----,36,27,6,2,1,0,0,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,6,2,2,2,0,0,0,0,0,0,2015,Management of Companies and Enterprises,,,,,
+02128,56----,40,15,13,3,4,2,3,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,8,6,1,0,1,0,0,0,0,0,2015,Educational Services,,,,,
+02128,62----,47,16,11,8,7,3,1,0,1,0,2015,Health Care and Social Assistance,,,,,
+02128,71----,6,3,0,1,0,2,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,144,41,25,44,19,7,4,3,1,0,2015,Accommodation and Food Services,,,,,
+02128,81----,87,62,13,8,3,1,0,0,0,0,2015,Other Services (except Public Administration),,,,,
+02228,71----,1,1,0,0,0,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,,
+02109,11----,1,0,0,1,0,0,0,0,0,0,2016,"Agriculture, Forestry, Fishing and Hunting",,,,,
+02109,22----,2,1,0,0,1,0,0,0,0,0,2016,Utilities,,,,,
+02109,23----,16,10,2,1,1,0,1,1,0,0,2016,Construction,,,,,
+02109,31----,10,5,5,0,0,0,0,0,0,0,2016,Manufacturing,,,,,
+02109,42----,26,15,5,2,1,2,1,0,0,0,2016,Wholesale Trade,,,,,
+02109,44----,88,38,21,17,8,4,0,0,0,0,2016,Retail Trade,,,,,
+02109,48----,7,4,3,0,0,0,0,0,0,0,2016,Transportation and Warehousing,,,,,
+02109,51----,56,22,9,6,11,3,3,2,0,0,2016,Information,,,,,
+02109,52----,251,105,42,24,37,17,14,8,3,1,2016,Finance and Insurance,,,,,
+02109,53----,81,47,8,15,7,3,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,,
+02109,54----,435,247,63,52,39,15,10,4,4,1,2016,"Professional, Scientific, and Technical Services",,,,,
+02109,55----,16,8,3,1,1,0,2,1,0,0,2016,Management of Companies and Enterprises,,,,,
+02109,56----,127,64,22,5,15,10,6,5,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,,
+02109,61----,22,11,5,2,3,1,0,0,0,0,2016,Educational Services,,,,,
+02109,62----,30,14,5,6,3,0,2,0,0,0,2016,Health Care and Social Assistance,,,,,
+02109,71----,16,9,2,1,3,1,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02109,72----,121,33,16,25,31,12,3,1,0,0,2016,Accommodation and Food Services,,,,,
+02109,81----,67,38,11,10,5,3,0,0,0,0,2016,Other Services (except Public Administration),,,,,
+02109,99----,4,4,0,0,0,0,0,0,0,0,2016,Unclassified,,,,,
+02118,23----,24,11,4,5,2,1,0,0,1,0,2016,Construction,,,,,
+02118,31----,18,4,1,5,3,4,1,0,0,0,2016,Manufacturing,,,,,
+02118,42----,72,20,18,17,10,4,3,0,0,0,2016,Wholesale Trade,,,,,
+02118,44----,111,67,27,9,3,3,1,1,0,0,2016,Retail Trade,,,,,
+02118,48----,10,7,0,1,2,0,0,0,0,0,2016,Transportation and Warehousing,,,,,
+02118,51----,13,10,1,2,0,0,0,0,0,0,2016,Information,,,,,
+02118,52----,24,12,6,4,0,0,2,0,0,0,2016,Finance and Insurance,,,,,
+02118,53----,61,45,8,3,4,1,0,0,0,0,2016,Real Estate and Rental and Leasing,,,,,
+02118,54----,146,93,25,13,9,5,1,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,,
+02118,55----,6,0,1,3,1,1,0,0,0,0,2016,Management of Companies and Enterprises,,,,,
+02118,56----,24,11,4,3,3,1,2,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,,
+02118,61----,14,8,3,1,2,0,0,0,0,0,2016,Educational Services,,,,,
+02118,62----,91,33,13,14,16,6,5,3,0,1,2016,Health Care and Social Assistance,,,,,
+02118,71----,16,9,3,1,2,1,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02118,72----,103,41,15,15,22,10,0,0,0,0,2016,Accommodation and Food Services,,,,,
+02118,81----,74,48,11,8,4,3,0,0,0,0,2016,Other Services (except Public Administration),,,,,
+02118,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,,
+02125,22----,1,0,0,0,0,0,0,0,1,0,2016,Utilities,,,,,
+02125,23----,40,25,6,3,4,1,0,1,0,0,2016,Construction,,,,,
+02125,31----,8,4,1,0,0,3,0,0,0,0,2016,Manufacturing,,,,,
+02125,42----,9,3,2,2,2,0,0,0,0,0,2016,Wholesale Trade,,,,,
+02125,44----,82,43,15,11,7,4,0,2,0,0,2016,Retail Trade,,,,,
+02125,48----,7,4,2,1,0,0,0,0,0,0,2016,Transportation and Warehousing,,,,,
+02125,51----,17,4,3,2,4,0,2,0,2,0,2016,Information,,,,,
+02125,52----,21,11,6,2,0,0,1,0,0,1,2016,Finance and Insurance,,,,,
+02125,53----,27,16,3,5,2,0,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,,
+02125,54----,26,20,1,2,1,1,1,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,,
+02125,55----,2,1,0,0,1,0,0,0,0,0,2016,Management of Companies and Enterprises,,,,,
+02125,56----,20,10,2,4,3,1,0,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,,
+02125,61----,11,4,0,3,3,0,0,1,0,0,2016,Educational Services,,,,,
+02125,62----,52,21,12,10,4,2,3,0,0,0,2016,Health Care and Social Assistance,,,,,
+02125,71----,5,4,1,0,0,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02125,72----,63,27,13,7,11,4,1,0,0,0,2016,Accommodation and Food Services,,,,,
+02125,81----,63,34,13,6,7,2,1,0,0,0,2016,Other Services (except Public Administration),,,,,
+02125,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,,
+02127,22----,1,0,0,0,0,1,0,0,0,0,2016,Utilities,,,,,
+02127,23----,58,35,9,6,3,3,2,0,0,0,2016,Construction,,,,,
+02127,31----,21,8,4,2,3,2,1,0,1,0,2016,Manufacturing,,,,,
+02127,42----,36,14,14,2,4,2,0,0,0,0,2016,Wholesale Trade,,,,,
+02127,44----,80,49,15,11,4,1,0,0,0,0,2016,Retail Trade,,,,,
+02127,48----,21,10,3,1,1,4,1,1,0,0,2016,Transportation and Warehousing,,,,,
+02127,51----,21,13,3,1,1,1,2,0,0,0,2016,Information,,,,,
+02127,52----,32,15,7,3,4,2,1,0,0,0,2016,Finance and Insurance,,,,,
+02127,53----,37,26,6,2,2,0,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,,
+02127,54----,96,64,13,9,8,2,0,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,,
+02127,55----,9,2,2,0,2,1,2,0,0,0,2016,Management of Companies and Enterprises,,,,,
+02127,56----,27,16,4,2,0,2,1,1,1,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,,
+02127,61----,10,4,1,2,2,1,0,0,0,0,2016,Educational Services,,,,,
+02127,62----,41,16,12,5,3,1,3,1,0,0,2016,Health Care and Social Assistance,,,,,
+02127,71----,12,6,3,2,1,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02127,72----,89,30,14,17,19,7,2,0,0,0,2016,Accommodation and Food Services,,,,,
+02127,81----,83,43,23,9,5,1,2,0,0,0,2016,Other Services (except Public Administration),,,,,
+02127,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,,
+02128,23----,46,30,9,3,1,3,0,0,0,0,2016,Construction,,,,,
+02128,31----,16,8,2,1,1,3,0,1,0,0,2016,Manufacturing,,,,,
+02128,42----,17,8,6,0,2,0,1,0,0,0,2016,Wholesale Trade,,,,,
+02128,44----,117,69,26,10,7,4,1,0,0,0,2016,Retail Trade,,,,,
+02128,48----,130,51,21,18,17,11,5,2,2,3,2016,Transportation and Warehousing,,,,,
+02128,51----,12,11,1,0,0,0,0,0,0,0,2016,Information,,,,,
+02128,52----,21,10,5,5,1,0,0,0,0,0,2016,Finance and Insurance,,,,,
+02128,53----,38,17,7,7,3,1,3,0,0,0,2016,Real Estate and Rental and Leasing,,,,,
+02128,54----,36,25,7,3,1,0,0,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,,
+02128,55----,5,3,0,1,1,0,0,0,0,0,2016,Management of Companies and Enterprises,,,,,
+02128,56----,50,24,13,2,4,3,4,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,,
+02128,61----,7,5,1,0,1,0,0,0,0,0,2016,Educational Services,,,,,
+02128,62----,45,17,9,8,7,2,1,0,0,1,2016,Health Care and Social Assistance,,,,,
+02128,71----,7,3,1,0,1,2,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02128,72----,138,41,22,35,25,8,2,4,1,0,2016,Accommodation and Food Services,,,,,
+02128,81----,89,60,17,9,2,1,0,0,0,0,2016,Other Services (except Public Administration),,,,,
+02128,99----,1,1,0,0,0,0,0,0,0,0,2016,Unclassified,,,,,
+02228,71----,1,1,0,0,0,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,,
+02109,23----,15,,N,N,N,N,N,N,N,N,2017,Construction,8,,,,
+02109,31----,11,,N,N,N,N,N,N,N,N,2017,Manufacturing,9,,,,
+02109,42----,33,,5,3,N,N,N,N,N,N,2017,Wholesale Trade,21,,,,
+02109,44----,90,,24,15,9,5,N,N,N,N,2017,Retail Trade,37,,,,
+02109,48----,8,,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,5,,,,
+02109,51----,67,,10,8,11,4,4,N,N,N,2017,Information,28,,,,
+02109,52----,239,,42,27,33,15,12,9,N,N,2017,Finance and Insurance,99,,,,
+02109,53----,77,,7,12,7,4,N,N,N,N,2017,Real Estate and Rental and Leasing,46,,,,
+02109,54----,463,,78,55,46,22,11,5,3,N,2017,"Professional, Scientific, and Technical Services",242,,,,
+02109,55----,16,,3,3,N,N,3,N,N,N,2017,Management of Companies and Enterprises,6,,,,
+02109,56----,124,,15,9,13,8,4,4,N,N,2017,Administrative and Support and Waste Management and Remediation Services,71,,,,
+02109,61----,28,,6,N,3,5,N,N,N,N,2017,Educational Services,12,,,,
+02109,62----,41,,7,7,3,N,N,N,N,N,2017,Health Care and Social Assistance,22,,,,
+02109,71----,12,,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",7,,,,
+02109,72----,112,,19,21,27,12,3,N,N,N,2017,Accommodation and Food Services,29,,,,
+02109,81----,70,,7,12,5,3,N,N,N,N,2017,Other Services (except Public Administration),43,,,,
+02118,23----,24,,N,N,3,3,N,N,N,N,2017,Construction,14,,,,
+02118,31----,18,,N,3,3,4,N,N,N,N,2017,Manufacturing,5,,,,
+02118,42----,60,,15,13,12,3,N,N,N,N,2017,Wholesale Trade,15,,,,
+02118,44----,113,,25,11,4,5,N,N,N,N,2017,Retail Trade,66,,,,
+02118,48----,9,,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,6,,,,
+02118,51----,10,,N,N,N,N,N,N,N,N,2017,Information,6,,,,
+02118,52----,27,,6,4,N,N,N,N,N,N,2017,Finance and Insurance,14,,,,
+02118,53----,58,,10,N,4,N,N,N,N,N,2017,Real Estate and Rental and Leasing,41,,,,
+02118,54----,140,,26,17,10,N,3,N,N,N,2017,"Professional, Scientific, and Technical Services",82,,,,
+02118,55----,5,,N,N,N,N,N,N,N,N,2017,Management of Companies and Enterprises,N,,,,
+02118,56----,25,,5,N,3,N,3,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,12,,,,
+02118,61----,17,,N,4,N,N,N,N,N,N,2017,Educational Services,11,,,,
+02118,62----,93,,8,15,18,9,4,N,N,N,2017,Health Care and Social Assistance,36,,,,
+02118,71----,15,,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",10,,,,
+02118,72----,105,,22,13,29,12,N,N,N,N,2017,Accommodation and Food Services,29,,,,
+02118,81----,78,,18,6,3,4,N,N,N,N,2017,Other Services (except Public Administration),46,,,,
+02125,23----,36,,4,N,5,N,N,N,N,N,2017,Construction,23,,,,
+02125,31----,7,,N,N,N,3,N,N,N,N,2017,Manufacturing,N,,,,
+02125,42----,8,,N,N,N,N,N,N,N,N,2017,Wholesale Trade,3,,,,
+02125,44----,84,,12,12,6,4,N,N,N,N,2017,Retail Trade,48,,,,
+02125,48----,10,,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,6,,,,
+02125,51----,18,,3,N,N,N,N,N,N,N,2017,Information,5,,,,
+02125,52----,22,,7,4,N,N,N,N,N,N,2017,Finance and Insurance,8,,,,
+02125,53----,27,,5,3,N,N,N,N,N,N,2017,Real Estate and Rental and Leasing,16,,,,
+02125,54----,23,,3,N,N,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",17,,,,
+02125,56----,25,,4,3,3,N,N,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,14,,,,
+02125,61----,10,,N,N,N,N,N,N,N,N,2017,Educational Services,3,,,,
+02125,62----,53,,12,8,5,N,3,N,N,N,2017,Health Care and Social Assistance,24,,,,
+02125,71----,4,,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",3,,,,
+02125,72----,72,,13,8,14,5,N,N,N,N,2017,Accommodation and Food Services,32,,,,
+02125,81----,75,,16,8,8,N,N,N,N,N,2017,Other Services (except Public Administration),40,,,,
+02127,23----,55,,7,5,5,4,N,N,N,N,2017,Construction,33,,,,
+02127,31----,19,,3,N,N,N,N,N,N,N,2017,Manufacturing,8,,,,
+02127,42----,35,,8,4,9,N,N,N,N,N,2017,Wholesale Trade,14,,,,
+02127,44----,77,,16,11,3,3,N,N,N,N,2017,Retail Trade,44,,,,
+02127,48----,19,,N,N,N,4,N,N,N,N,2017,Transportation and Warehousing,9,,,,
+02127,51----,16,,N,N,N,N,3,N,N,N,2017,Information,9,,,,
+02127,52----,38,,10,5,N,3,N,N,N,N,2017,Finance and Insurance,17,,,,
+02127,53----,45,,6,3,3,N,N,N,N,N,2017,Real Estate and Rental and Leasing,32,,,,
+02127,54----,91,,12,9,8,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",59,,,,
+02127,55----,9,,N,N,3,N,N,N,N,N,2017,Management of Companies and Enterprises,N,,,,
+02127,56----,28,,8,N,N,N,N,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,15,,,,
+02127,61----,6,,N,N,N,N,N,N,N,N,2017,Educational Services,N,,,,
+02127,62----,52,,9,9,9,N,N,N,N,N,2017,Health Care and Social Assistance,21,,,,
+02127,71----,14,,3,N,3,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",6,,,,
+02127,72----,90,,16,14,22,5,3,N,N,N,2017,Accommodation and Food Services,30,,,,
+02127,81----,83,,21,9,N,N,N,N,N,N,2017,Other Services (except Public Administration),47,,,,
+02127,99----,3,,N,N,N,N,N,N,N,N,2017,Unclassified,3,,,,
+02128,23----,50,,11,3,N,4,N,N,N,N,2017,Construction,32,,,,
+02128,31----,15,,N,N,N,N,N,N,N,N,2017,Manufacturing,7,,,,
+02128,42----,21,,4,N,N,N,N,N,N,N,2017,Wholesale Trade,14,,,,
+02128,44----,115,,29,8,4,5,N,N,N,N,2017,Retail Trade,67,,,,
+02128,48----,112,,12,17,15,7,8,N,N,3,2017,Transportation and Warehousing,46,,,,
+02128,51----,11,,N,N,N,N,N,N,N,N,2017,Information,11,,,,
+02128,52----,18,,5,5,N,N,N,N,N,N,2017,Finance and Insurance,7,,,,
+02128,53----,44,,6,8,4,N,3,N,N,N,2017,Real Estate and Rental and Leasing,22,,,,
+02128,54----,37,,6,3,N,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",27,,,,
+02128,55----,6,,N,N,N,N,N,N,N,N,2017,Management of Companies and Enterprises,3,,,,
+02128,56----,53,,12,6,3,3,4,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,25,,,,
+02128,61----,5,,N,N,N,N,N,N,N,N,2017,Educational Services,3,,,,
+02128,62----,47,,8,11,6,3,N,N,N,N,2017,Health Care and Social Assistance,17,,,,
+02128,71----,10,,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",8,,,,
+02128,72----,146,,25,43,24,8,3,4,N,N,2017,Accommodation and Food Services,38,,,,
+02128,81----,89,,19,8,4,N,N,N,N,N,2017,Other Services (except Public Administration),57,,,,
+02109,23----,12,,N,N,N,N,N,N,N,N,2018,Construction,6,,,,
+02109,31----,14,,3,N,N,N,N,N,N,N,2018,Manufacturing,10,,,,
+02109,42----,35,,5,N,N,5,N,N,N,N,2018,Wholesale Trade,22,,,,
+02109,44----,91,,20,21,8,4,N,N,N,N,2018,Retail Trade,37,,,,
+02109,48----,10,,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,8,,,,
+02109,51----,61,,11,9,10,5,N,N,N,N,2018,Information,22,,,,
+02109,52----,242,,36,34,29,20,11,9,3,N,2018,Finance and Insurance,99,,,,
+02109,53----,83,,11,11,7,N,N,N,N,N,2018,Real Estate and Rental and Leasing,51,,,,
+02109,54----,475,,75,60,47,24,8,7,N,N,2018,"Professional, Scientific, and Technical Services",251,,,,
+02109,55----,16,,4,N,N,N,3,N,N,N,2018,Management of Companies and Enterprises,6,,,,
+02109,56----,122,,18,10,15,7,5,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,65,,,,
+02109,61----,31,,7,N,3,5,N,N,N,N,2018,Educational Services,15,,,,
+02109,62----,46,,4,12,N,N,N,N,N,N,2018,Health Care and Social Assistance,25,,,,
+02109,71----,12,,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",6,,,,
+02109,72----,117,,16,26,25,13,3,N,N,N,2018,Accommodation and Food Services,33,,,,
+02109,81----,77,,13,8,6,N,N,N,N,N,2018,Other Services (except Public Administration),48,,,,
+02109,99----,3,,N,N,N,N,N,N,N,N,2018,Unclassified,3,,,,
+02118,23----,24,,3,3,3,N,N,N,N,N,2018,Construction,12,,,,
+02118,31----,20,,3,4,3,3,N,N,N,N,2018,Manufacturing,5,,,,
+02118,42----,57,,16,12,11,5,N,N,N,N,2018,Wholesale Trade,11,,,,
+02118,44----,105,,27,8,5,5,N,N,N,N,2018,Retail Trade,58,,,,
+02118,48----,9,,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,5,,,,
+02118,51----,10,,N,N,N,N,N,N,N,N,2018,Information,6,,,,
+02118,52----,27,,5,5,N,N,N,N,N,N,2018,Finance and Insurance,15,,,,
+02118,53----,71,,9,3,3,N,N,N,N,N,2018,Real Estate and Rental and Leasing,54,,,,
+02118,54----,141,,25,15,8,N,3,N,N,N,2018,"Professional, Scientific, and Technical Services",88,,,,
+02118,55----,4,,N,N,N,N,N,N,N,N,2018,Management of Companies and Enterprises,N,,,,
+02118,56----,25,,4,4,N,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,12,,,,
+02118,61----,16,,N,N,3,N,N,N,N,N,2018,Educational Services,10,,,,
+02118,62----,101,,11,17,15,12,4,N,N,N,2018,Health Care and Social Assistance,39,,,,
+02118,71----,13,,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",7,,,,
+02118,72----,108,,22,15,27,10,N,N,N,N,2018,Accommodation and Food Services,34,,,,
+02118,81----,81,,12,8,4,4,N,N,N,N,2018,Other Services (except Public Administration),53,,,,
+02125,23----,34,,5,3,6,N,N,N,N,N,2018,Construction,19,,,,
+02125,31----,9,,N,N,N,3,N,N,N,N,2018,Manufacturing,4,,,,
+02125,42----,9,,N,N,N,N,N,N,N,N,2018,Wholesale Trade,4,,,,
+02125,44----,85,,13,14,6,3,N,N,N,N,2018,Retail Trade,47,,,,
+02125,48----,12,,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,8,,,,
+02125,51----,20,,N,3,N,N,N,N,N,N,2018,Information,7,,,,
+02125,52----,22,,5,5,N,N,N,N,N,N,2018,Finance and Insurance,9,,,,
+02125,53----,30,,N,N,N,N,N,N,N,N,2018,Real Estate and Rental and Leasing,23,,,,
+02125,54----,26,,N,3,N,N,N,N,N,N,2018,"Professional, Scientific, and Technical Services",19,,,,
+02125,56----,22,,4,3,3,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,11,,,,
+02125,61----,11,,4,N,3,N,N,N,N,N,2018,Educational Services,3,,,,
+02125,62----,55,,11,9,7,N,3,N,N,N,2018,Health Care and Social Assistance,24,,,,
+02125,71----,4,,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",3,,,,
+02125,72----,66,,9,14,10,3,N,N,N,N,2018,Accommodation and Food Services,29,,,,
+02125,81----,64,,13,6,7,N,N,N,N,N,2018,Other Services (except Public Administration),35,,,,
+02127,23----,53,,9,6,5,N,N,N,N,N,2018,Construction,29,,,,
+02127,31----,19,,5,3,N,N,N,N,N,N,2018,Manufacturing,5,,,,
+02127,42----,32,,9,6,5,N,N,N,N,N,2018,Wholesale Trade,12,,,,
+02127,44----,74,,21,7,3,N,N,N,N,N,2018,Retail Trade,41,,,,
+02127,48----,19,,N,N,N,4,N,N,N,N,2018,Transportation and Warehousing,9,,,,
+02127,51----,17,,4,N,N,N,N,N,N,N,2018,Information,8,,,,
+02127,52----,37,,12,5,3,N,N,N,N,N,2018,Finance and Insurance,14,,,,
+02127,53----,45,,N,5,N,N,N,N,N,N,2018,Real Estate and Rental and Leasing,35,,,,
+02127,54----,89,,13,6,11,3,N,N,N,N,2018,"Professional, Scientific, and Technical Services",56,,,,
+02127,55----,9,,N,N,N,N,N,N,N,N,2018,Management of Companies and Enterprises,N,,,,
+02127,56----,28,,4,7,N,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,14,,,,
+02127,61----,8,,N,N,3,N,N,N,N,N,2018,Educational Services,3,,,,
+02127,62----,53,,14,6,12,N,N,N,N,N,2018,Health Care and Social Assistance,19,,,,
+02127,71----,15,,N,3,3,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",8,,,,
+02127,72----,91,,18,13,25,5,3,N,N,N,2018,Accommodation and Food Services,27,,,,
+02127,81----,79,,15,10,N,N,N,N,N,N,2018,Other Services (except Public Administration),48,,,,
+02127,99----,3,,N,N,N,N,N,N,N,N,2018,Unclassified,3,,,,
+02128,23----,63,,9,N,N,4,N,N,N,N,2018,Construction,46,,,,
+02128,31----,12,,3,N,N,4,N,N,N,N,2018,Manufacturing,3,,,,
+02128,42----,22,,6,N,N,N,N,N,N,N,2018,Wholesale Trade,13,,,,
+02128,44----,108,,23,9,6,3,N,N,N,N,2018,Retail Trade,66,,,,
+02128,48----,118,,19,16,11,15,5,N,4,3,2018,Transportation and Warehousing,44,,,,
+02128,51----,14,,N,N,N,N,N,N,N,N,2018,Information,12,,,,
+02128,52----,19,,4,5,N,N,N,N,N,N,2018,Finance and Insurance,9,,,,
+02128,53----,45,,6,6,4,N,3,N,N,N,2018,Real Estate and Rental and Leasing,25,,,,
+02128,54----,43,,10,N,N,N,N,N,N,N,2018,"Professional, Scientific, and Technical Services",30,,,,
+02128,55----,6,,N,N,3,N,N,N,N,N,2018,Management of Companies and Enterprises,N,,,,
+02128,56----,62,,7,7,5,3,4,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,36,,,,
+02128,61----,5,,N,N,N,N,N,N,N,N,2018,Educational Services,N,,,,
+02128,62----,49,,9,9,5,4,N,N,N,N,2018,Health Care and Social Assistance,20,,,,
+02128,71----,11,,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",5,,,,
+02128,72----,144,,31,32,33,7,4,3,N,N,2018,Accommodation and Food Services,33,,,,
+02128,81----,88,,20,8,5,N,N,N,N,N,2018,Other Services (except Public Administration),53,,,,
+02109,23----,15,,N,N,N,N,N,N,N,N,2019,Construction,9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,31----,12,,3,N,N,N,N,N,N,N,2019,Manufacturing,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,42----,33,,4,3,N,5,N,N,N,N,2019,Wholesale Trade,20,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,44----,90,,21,12,11,5,N,N,N,N,2019,Retail Trade,41,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,48----,11,,3,N,N,N,N,N,N,N,2019,Transportation and Warehousing,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,51----,61,,13,10,11,4,N,N,N,N,2019,Information,19,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,52----,238,,36,35,30,20,11,9,N,N,2019,Finance and Insurance,94,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,53----,77,,8,8,6,N,3,N,N,N,2019,Real Estate and Rental and Leasing,51,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,54----,445,,75,58,48,22,10,6,3,N,2019,"Professional, Scientific, and Technical Services",222,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,55----,15,,3,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,8,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,56----,118,,20,9,17,6,5,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,59,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,61----,30,,7,N,3,3,N,N,N,N,2019,Educational Services,12,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,62----,46,,8,12,N,N,N,N,N,N,2019,Health Care and Social Assistance,21,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,71----,13,,3,N,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation",6,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,72----,112,,18,22,24,13,3,N,N,N,2019,Accommodation and Food Services,31,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,81----,77,,15,12,4,N,N,N,N,N,2019,Other Services (except Public Administration),43,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,23----,27,,6,N,N,N,N,N,N,N,2019,Construction,14,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,31----,19,,N,3,4,N,N,N,N,N,2019,Manufacturing,8,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,42----,57,,16,12,14,3,N,N,N,N,2019,Wholesale Trade,10,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,44----,107,,22,11,8,3,N,N,N,N,2019,Retail Trade,61,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,48----,8,,N,N,N,N,N,N,N,N,2019,Transportation and Warehousing,4,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,51----,11,,N,N,N,N,N,N,N,N,2019,Information,6,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,52----,30,,6,5,N,N,N,N,N,N,2019,Finance and Insurance,17,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,53----,70,,13,3,4,N,N,N,N,N,2019,Real Estate and Rental and Leasing,48,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,54----,138,,25,16,8,3,N,N,N,N,2019,"Professional, Scientific, and Technical Services",85,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,55----,3,,N,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,N,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,56----,28,,8,5,N,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,10,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,61----,16,,N,N,3,N,N,N,N,N,2019,Educational Services,9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,62----,111,,16,18,17,9,6,N,N,N,2019,Health Care and Social Assistance,42,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,71----,16,,N,3,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation",9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,72----,195,,24,24,27,15,N,N,N,N,2019,Accommodation and Food Services,103,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,81----,85,,11,8,N,3,N,N,N,N,2019,Other Services (except Public Administration),60,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,99----,5,,N,N,N,N,N,N,N,N,2019,Unclassified,5,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02125,23----,39,,5,N,5,N,N,N,N,N,2019,Construction,26,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,31----,10,,N,N,N,3,N,N,N,N,2019,Manufacturing,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,42----,9,,3,N,N,N,N,N,N,N,2019,Wholesale Trade,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,44----,86,,14,15,8,N,N,N,N,N,2019,Retail Trade,45,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,48----,10,,N,N,N,N,N,N,N,N,2019,Transportation and Warehousing,7,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,51----,19,,3,3,N,N,N,N,N,N,2019,Information,5,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,52----,22,,5,5,N,N,N,N,N,N,2019,Finance and Insurance,10,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,53----,29,,5,N,N,N,N,N,N,N,2019,Real Estate and Rental and Leasing,20,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,54----,32,,5,3,N,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services",23,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,56----,22,,N,4,4,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,12,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,61----,12,,3,3,N,N,N,N,N,N,2019,Educational Services,3,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,62----,62,,11,11,7,3,3,N,N,N,2019,Health Care and Social Assistance,27,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,71----,7,,N,N,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation",6,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,72----,64,,11,12,10,6,N,N,N,N,2019,Accommodation and Food Services,24,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,81----,61,,13,7,7,N,N,N,N,N,2019,Other Services (except Public Administration),31,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02127,23----,53,,12,5,6,3,N,N,N,N,2019,Construction,26,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,31----,19,,4,N,N,N,N,N,N,N,2019,Manufacturing,8,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,42----,32,,11,6,5,N,N,N,N,N,2019,Wholesale Trade,9,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,44----,76,,21,9,4,N,N,N,N,N,2019,Retail Trade,41,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,48----,20,,3,N,N,4,N,N,N,N,2019,Transportation and Warehousing,8,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,51----,18,,3,N,N,N,N,N,N,N,2019,Information,10,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,52----,39,,8,7,N,N,N,N,N,N,2019,Finance and Insurance,19,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,53----,49,,6,6,N,N,N,N,N,N,2019,Real Estate and Rental and Leasing,35,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,54----,93,,10,8,12,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services",60,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,55----,9,,N,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,N,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,56----,28,,6,3,3,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,13,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,61----,8,,N,N,N,N,N,N,N,N,2019,Educational Services,4,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,62----,56,,15,10,11,N,N,N,N,N,2019,Health Care and Social Assistance,17,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,71----,14,,N,4,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation",7,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,72----,95,,13,15,24,5,3,N,N,N,2019,Accommodation and Food Services,35,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,81----,77,,15,11,N,N,N,N,N,N,2019,Other Services (except Public Administration),46,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02128,23----,74,,12,N,N,3,N,N,N,N,2019,Construction,54,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,31----,14,,N,N,N,4,N,N,N,N,2019,Manufacturing,6,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,42----,21,,6,N,N,N,N,N,N,N,2019,Wholesale Trade,12,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,44----,108,,30,5,5,4,N,N,N,N,2019,Retail Trade,63,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,48----,118,,17,15,11,10,11,N,3,4,2019,Transportation and Warehousing,46,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,51----,15,,5,N,N,N,N,N,N,N,2019,Information,10,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,52----,17,,5,4,N,N,N,N,N,N,2019,Finance and Insurance,7,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,53----,48,,5,8,6,N,3,N,N,N,2019,Real Estate and Rental and Leasing,26,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,54----,49,,10,N,N,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services",36,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,55----,5,,N,N,3,N,N,N,N,N,2019,Management of Companies and Enterprises,N,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,56----,70,,11,7,4,5,3,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,40,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,61----,4,,N,N,N,N,N,N,N,N,2019,Educational Services,N,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,62----,53,,8,14,4,5,N,N,N,N,2019,Health Care and Social Assistance,20,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,71----,12,,N,3,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation",6,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,72----,151,,23,33,33,8,4,5,N,N,2019,Accommodation and Food Services,45,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,81----,90,,21,6,6,N,N,N,N,N,2019,Other Services (except Public Administration),56,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02109,23----,15,,N,3,N,N,N,N,N,N,2020,Construction,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,31----,9,,4,N,N,N,N,N,N,N,2020,Manufacturing,4,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,42----,29,,4,N,N,3,N,N,N,N,2020,Wholesale Trade,17,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,44----,91,,13,12,10,5,N,N,N,N,2020,Retail Trade,51,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,48----,10,,N,N,N,N,N,N,N,N,2020,Transportation and Warehousing,9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,51----,63,,11,11,13,3,3,N,N,N,2020,Information,20,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,52----,235,,33,28,31,21,15,5,N,N,2020,Finance and Insurance,99,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,53----,81,,9,10,7,N,3,N,N,N,2020,Real Estate and Rental and Leasing,50,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,54----,445,,69,49,49,21,15,5,4,N,2020,"Professional, Scientific, and Technical Services",232,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,55----,17,,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,10,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,56----,117,,17,7,18,4,5,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,64,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,61----,33,,5,N,3,5,N,N,N,N,2020,Educational Services,16,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,62----,49,,9,10,N,N,3,N,N,N,2020,Health Care and Social Assistance,24,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,71----,16,,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation",12,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,72----,108,,16,24,20,14,4,N,N,N,2020,Accommodation and Food Services,29,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,81----,84,,20,10,4,N,N,N,N,N,2020,Other Services (except Public Administration),48,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,23----,25,,6,N,N,3,N,N,N,N,2020,Construction,11,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,31----,19,,N,3,3,N,N,N,N,N,2020,Manufacturing,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,42----,56,,14,12,12,3,N,N,N,N,2020,Wholesale Trade,13,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,44----,97,,21,9,8,3,N,N,N,N,2020,Retail Trade,54,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,48----,6,,N,N,N,N,N,N,N,N,2020,Transportation and Warehousing,N,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,51----,12,,N,N,N,N,N,N,N,N,2020,Information,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,52----,31,,9,5,N,N,N,N,N,N,2020,Finance and Insurance,16,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,53----,72,,12,6,4,N,N,N,N,N,2020,Real Estate and Rental and Leasing,49,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,54----,138,,22,15,9,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services",89,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,55----,3,,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,N,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,56----,29,,4,6,N,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,14,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,61----,14,,N,N,N,N,N,N,N,N,2020,Educational Services,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,62----,109,,19,19,13,12,4,N,N,N,2020,Health Care and Social Assistance,39,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,71----,12,,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation",6,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,72----,198,,33,22,25,13,N,N,N,N,2020,Accommodation and Food Services,103,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,81----,95,,19,8,5,3,N,N,N,N,2020,Other Services (except Public Administration),60,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,99----,4,,N,N,N,N,N,N,N,N,2020,Unclassified,4,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02125,23----,39,,5,N,4,N,N,N,N,N,2020,Construction,26,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,31----,8,,N,N,N,N,N,N,N,N,2020,Manufacturing,N,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,42----,9,,N,N,N,N,N,N,N,N,2020,Wholesale Trade,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,44----,88,,13,10,11,N,N,N,N,N,2020,Retail Trade,50,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,48----,14,,3,N,N,N,N,N,N,N,2020,Transportation and Warehousing,10,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,51----,19,,3,3,N,N,N,N,N,N,2020,Information,5,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,52----,21,,5,5,N,N,N,N,N,N,2020,Finance and Insurance,8,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,53----,28,,3,N,N,N,N,N,N,N,2020,Real Estate and Rental and Leasing,20,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,54----,35,,N,5,N,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services",27,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,56----,22,,N,N,5,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,13,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,61----,12,,N,4,N,N,N,N,N,N,2020,Educational Services,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,62----,61,,11,11,5,N,3,N,N,N,2020,Health Care and Social Assistance,29,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,71----,8,,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation",5,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,72----,64,,13,13,10,6,N,N,N,N,2020,Accommodation and Food Services,21,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,81----,70,,13,10,7,N,N,N,N,N,2020,Other Services (except Public Administration),37,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02127,23----,53,,7,6,5,4,N,N,N,N,2020,Construction,30,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,31----,17,,4,4,N,4,N,N,N,N,2020,Manufacturing,4,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,42----,31,,8,7,5,N,N,N,N,N,2020,Wholesale Trade,10,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,44----,69,,22,5,4,N,N,N,N,N,2020,Retail Trade,37,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,48----,19,,N,N,3,N,3,N,N,N,2020,Transportation and Warehousing,8,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,51----,19,,4,N,N,N,N,N,N,N,2020,Information,10,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,52----,37,,10,5,N,N,N,N,N,N,2020,Finance and Insurance,17,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,53----,44,,6,4,N,N,N,N,N,N,2020,Real Estate and Rental and Leasing,32,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,54----,95,,13,6,13,3,N,N,N,N,2020,"Professional, Scientific, and Technical Services",60,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,55----,10,,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,3,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,56----,26,,5,4,3,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,11,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,61----,6,,N,N,N,N,N,N,N,N,2020,Educational Services,N,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,62----,55,,13,6,11,N,N,N,N,N,2020,Health Care and Social Assistance,21,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,71----,14,,N,5,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation",6,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,72----,83,,9,16,22,5,4,N,N,N,2020,Accommodation and Food Services,27,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,81----,81,,16,8,N,N,N,N,N,N,2020,Other Services (except Public Administration),52,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,99----,3,,N,N,N,N,N,N,N,N,2020,Unclassified,N,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02128,23----,65,,8,6,N,3,N,N,N,N,2020,Construction,47,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,31----,13,,5,N,N,N,N,N,N,N,2020,Manufacturing,5,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,42----,23,,7,N,N,N,N,N,N,N,2020,Wholesale Trade,13,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,44----,107,,18,5,4,3,N,N,N,N,2020,Retail Trade,76,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,48----,116,,17,13,10,11,11,N,N,4,2020,Transportation and Warehousing,46,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,51----,15,,N,N,N,N,N,N,N,N,2020,Information,12,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,52----,19,,5,4,N,N,N,N,N,N,2020,Finance and Insurance,9,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,53----,47,,4,8,4,N,3,N,N,N,2020,Real Estate and Rental and Leasing,27,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,54----,49,,10,N,N,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services",36,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,55----,5,,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,N,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,56----,70,,13,5,4,4,3,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,41,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,61----,4,,N,N,N,N,N,N,N,N,2020,Educational Services,N,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,62----,54,,10,11,4,4,N,N,N,N,2020,Health Care and Social Assistance,23,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,71----,14,,N,3,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation",7,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,72----,145,,23,31,31,8,5,5,N,N,2020,Accommodation and Food Services,42,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,81----,91,,18,6,7,N,N,N,N,N,2020,Other Services (except Public Administration),58,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,99----,3,,N,N,N,N,N,N,N,N,2020,Unclassified,3,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02109,23----,16,,N,N,N,N,N,N,N,N,2021,Construction,9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,31----,11,,N,N,N,N,N,N,N,N,2021,Manufacturing,9,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,42----,29,,4,3,N,3,N,N,N,N,2021,Wholesale Trade,16,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,44----,80,,12,13,7,N,N,N,N,N,2021,Retail Trade,45,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,48----,9,,N,N,N,N,N,N,N,N,2021,Transportation and Warehousing,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,51----,68,,12,8,12,6,N,N,N,N,2021,Information,27,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,52----,197,,23,25,19,16,7,N,N,N,2021,Finance and Insurance,103,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,53----,77,,11,8,7,N,N,N,N,N,2021,Real Estate and Rental and Leasing,48,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,54----,443,,72,48,50,14,18,5,4,N,2021,"Professional, Scientific, and Technical Services",231,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,55----,14,,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,7,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,56----,120,,19,9,15,6,4,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,66,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,61----,30,,5,3,N,5,N,N,N,N,2021,Educational Services,13,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,62----,49,,5,7,N,N,3,N,N,N,2021,Health Care and Social Assistance,30,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,71----,12,,3,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation",8,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,72----,100,,14,10,18,6,N,N,N,N,2021,Accommodation and Food Services,51,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02109,81----,81,,15,8,3,N,N,N,N,N,2021,Other Services (except Public Administration),54,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,23----,23,,4,N,N,N,N,N,N,N,2021,Construction,12,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,31----,18,,3,4,3,N,N,N,N,N,2021,Manufacturing,4,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,42----,52,,15,12,9,N,N,N,N,N,2021,Wholesale Trade,12,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,44----,94,,18,10,5,3,N,N,N,N,2021,Retail Trade,56,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,48----,8,,N,N,N,N,N,N,N,N,2021,Transportation and Warehousing,5,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,51----,9,,N,N,N,N,N,N,N,N,2021,Information,5,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,52----,31,,10,4,N,N,N,N,N,N,2021,Finance and Insurance,14,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,53----,75,,10,7,3,N,N,N,N,N,2021,Real Estate and Rental and Leasing,54,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,54----,143,,29,19,8,3,N,N,N,N,2021,"Professional, Scientific, and Technical Services",83,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,55----,3,,N,N,3,N,N,N,N,N,2021,Management of Companies and Enterprises,N,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,56----,28,,6,4,3,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,13,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,61----,14,,N,N,N,N,N,N,N,N,2021,Educational Services,8,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,62----,109,,13,21,20,10,3,N,N,N,2021,Health Care and Social Assistance,40,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,71----,13,,N,4,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation",5,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,72----,184,,31,16,27,5,N,N,N,N,2021,Accommodation and Food Services,104,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,81----,87,,12,11,3,N,N,N,N,N,2021,Other Services (except Public Administration),60,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02118,99----,3,,N,N,N,N,N,N,N,N,2021,Unclassified,3,"BOSTON, MA",BOSTON,MA,SUFFOLK
+02125,23----,41,,6,N,3,N,N,N,N,N,2021,Construction,28,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,31----,8,,N,N,N,N,N,N,N,N,2021,Manufacturing,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,42----,9,,N,N,N,N,N,N,N,N,2021,Wholesale Trade,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,44----,90,,15,13,7,N,N,N,N,N,2021,Retail Trade,51,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,48----,14,,3,N,N,N,N,N,N,N,2021,Transportation and Warehousing,9,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,51----,19,,N,3,N,3,N,N,N,N,2021,Information,8,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,52----,25,,5,5,N,N,N,N,N,N,2021,Finance and Insurance,12,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,53----,29,,5,N,N,N,N,N,N,N,2021,Real Estate and Rental and Leasing,20,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,54----,35,,4,3,N,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services",27,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,56----,19,,N,3,3,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,12,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,61----,11,,3,N,N,N,N,N,N,N,2021,Educational Services,4,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,62----,62,,9,9,11,3,3,N,N,N,2021,Health Care and Social Assistance,27,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,71----,7,,N,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation",7,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,72----,67,,9,13,12,4,N,N,N,N,2021,Accommodation and Food Services,29,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02125,81----,76,,12,9,6,N,N,N,N,N,2021,Other Services (except Public Administration),47,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
+02127,23----,56,,14,6,3,3,N,N,N,N,2021,Construction,29,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,31----,17,,4,5,N,3,N,N,N,N,2021,Manufacturing,3,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,42----,35,,10,7,5,N,N,N,N,N,2021,Wholesale Trade,13,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,44----,75,,16,8,3,N,N,N,N,N,2021,Retail Trade,47,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,48----,24,,N,N,4,N,N,N,N,N,2021,Transportation and Warehousing,12,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,51----,17,,5,N,N,N,N,N,N,N,2021,Information,7,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,52----,38,,12,3,3,N,N,N,N,N,2021,Finance and Insurance,18,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,53----,50,,8,4,N,N,N,N,N,N,2021,Real Estate and Rental and Leasing,35,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,54----,100,,10,7,12,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services",68,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,55----,8,,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,N,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,56----,26,,7,N,6,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,10,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,61----,6,,N,N,N,N,N,N,N,N,2021,Educational Services,N,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,62----,58,,15,9,12,N,N,N,N,N,2021,Health Care and Social Assistance,19,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,71----,18,,N,5,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation",10,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,72----,90,,19,12,20,5,3,N,N,N,2021,Accommodation and Food Services,31,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02127,81----,80,,18,6,N,N,N,N,N,N,2021,Other Services (except Public Administration),51,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
+02128,23----,68,,9,5,N,3,N,N,N,N,2021,Construction,49,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,31----,11,,3,N,N,N,N,N,N,N,2021,Manufacturing,4,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,42----,22,,5,N,N,N,N,N,N,N,2021,Wholesale Trade,13,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,44----,102,,17,3,8,N,N,N,N,N,2021,Retail Trade,73,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,48----,112,,18,9,16,11,4,3,N,4,2021,Transportation and Warehousing,46,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,51----,10,,N,N,N,N,N,N,N,N,2021,Information,7,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,52----,21,,7,3,N,N,N,N,N,N,2021,Finance and Insurance,11,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,53----,52,,5,5,5,N,N,N,N,N,2021,Real Estate and Rental and Leasing,36,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,54----,55,,13,N,3,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services",39,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,55----,5,,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,N,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,56----,71,,10,4,8,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,47,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,61----,4,,N,N,N,N,N,N,N,N,2021,Educational Services,3,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,62----,64,,12,9,7,3,9,N,N,N,2021,Health Care and Social Assistance,24,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,71----,12,,4,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation",5,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,72----,139,,31,24,21,3,5,N,N,N,2021,Accommodation and Food Services,54,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,81----,100,,20,6,3,N,N,N,N,N,2021,Other Services (except Public Administration),71,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+02128,99----,4,,N,N,N,N,N,N,N,N,2021,Unclassified,4,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
