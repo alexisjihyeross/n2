@@ -7,4 +7,4 @@ The data is from: [link](https://www.census.gov/data/datasets/2020/econ/cbp/2020
 
 Information on records in data: [link](https://www2.census.gov/programs-surveys/cbp/technical-documentation/records-layouts/2019_record_layouts/zip_code_industry_detail_record_layout_2019.txt).
 
-(wrangle.py)[wrangle.py] contains a script for parsing the data into code that can be read in by the javascript code. Assumes the files are in the `data/` folder.
+The script [wrangle.py](wrangle.py) parses the data into code that can be read in by the javascript code. Assumes the files are in the `data/` folder.
