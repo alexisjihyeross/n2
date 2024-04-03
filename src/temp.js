@@ -10,7 +10,7 @@ function bubbleChart() {
     console.log('bubbleChart function called');
     // Constants for sizing
     var width = 1340;
-    var height = 600;
+    var height = 400;
 
     // tooltip for mouseover functionality
     var tooltip = floatingTooltip('gates_tooltip', 240);
@@ -141,7 +141,7 @@ function bubbleChart() {
                 radius: radiusScale(+d.est),
                 value: +d.est,
                 color: fillColor(d.sector),
-                zipcode: d.zip,
+                zipcode: d.zipcode,
                 year: +d.year,
                 sector: d.sector,
                 group: d.sector,
@@ -238,6 +238,7 @@ function bubbleChart() {
      * x force.
      */
     function nodeYearPos(d) {
+        console.log(d);
         console.log(d.zipcode);
         console.log(yearCenters[d.zipcode]);
         console.log(yearCenters[d.zipcode].x);
@@ -358,10 +359,56 @@ function bubbleChart() {
         }
     };
 
+    // Update function to update the bubbles based on filtered data
+    chart.updateBubbles = function (filteredData) {
+        // Recreate nodes based on the filtered data
+        nodes = createNodes(filteredData);
+
+        // Update the bubbles data
+        bubbles = svg.selectAll('.bubble')
+            .data(nodes, function (d) { return d.id; });
+
+        // Remove bubbles that no longer exist in the filtered data
+        bubbles.exit().remove();
+
+        // Transition existing bubbles to new positions and sizes
+        bubbles.transition()
+            .duration(1000)
+            .attr('r', function (d) { return d.radius; })
+            .attr('cx', function (d) { return d.x; })
+            .attr('cy', function (d) { return d.y; });
+
+        // Add new bubbles for new data points
+        var bubblesE = bubbles.enter().append('circle')
+            .classed('bubble', true)
+            .attr('r', 0)
+            .attr('fill', function (d) { return d.color; })
+            .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
+            .attr('stroke-width', 2)
+            .on('mouseover', showDetail)
+            .on('mouseout', hideDetail);
+
+        // Merge existing bubbles with new ones
+        bubbles = bubbles.merge(bubblesE);
+
+        // Transition new bubbles to appropriate size
+        bubbles.transition()
+            .duration(1000)
+            .attr('r', function (d) { return d.radius; });
+
+        // Set the simulation's nodes to our newly created nodes array.
+        simulation.nodes(nodes);
+
+        // Set initial layout to single group.
+        groupBubbles();
+    };
+
 
     // return the chart function from closure.
     return chart;
 }
+
+
 
 
 
@@ -443,21 +490,23 @@ function display(error, rawData) {
     data = rawData;
     console.log(data);
 
-    update(2015, data); // initial year to be displayed when page loads
+    initialize(2015, data); // initial year to be displayed when page loads
+}
+
+function initialize(year, data) {
+    // Load data and initialize visualization
+
+    parsedData = data.map(parseData);
+    var filteredData = parsedData.filter(function (d) { return d.year === year; });
+
+    myBubbleChart('#vis', filteredData);
 }
 
 function update(year, data) {
-    console.log(data);
     parsedData = data.map(parseData);
-    console.log(parsedData);
-
     var filteredData = parsedData.filter(function (d) { return d.year === year; });
 
-    console.log(filteredData);
-
-    // Update the bubble chart with the filtered data
-    myBubbleChart('#vis', filteredData);
-    // var myBubbleChart = bubbleChart();
+    myBubbleChart.updateBubbles(filteredData);
 }
 
 d3.select("#yearSlider")
