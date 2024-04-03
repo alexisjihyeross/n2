@@ -431,4 +431,3 @@ d3.csv('../data/all_data.csv', display);
 
 // setup the buttons.
 setupButtons();
-
