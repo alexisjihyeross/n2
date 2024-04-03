@@ -150,7 +150,7 @@ function bubbleChart() {
                 // group: d.group,
                 // year: d.start_year,
                 x: Math.random() * 900,
-                y: Math.random() * 800
+                y: Math.random() * 800,
             };
         });
 
