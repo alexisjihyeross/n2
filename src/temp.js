@@ -20,7 +20,7 @@ var fillColor;
 function bubbleChart() {
     console.log('bubbleChart function called');
     // Constants for sizing
-    var width = 1000;
+    var width = 1100;
     var height = 400;
 
     // tooltip for mouseover functionality
@@ -43,7 +43,7 @@ function bubbleChart() {
         '02127': { x: 3 * width / 8, y: height / 2 },
         '02118': { x: 4 * width / 8, y: height / 2 },
         '02128': { x: 5 * width / 8, y: height / 2 },
-        '02228': { x: 6 * width / 8, y: height / 2 }
+        // '02228': { x: 6 * width / 8, y: height / 2 }
     };
 
     // // X locations of the year titles.
@@ -60,7 +60,7 @@ function bubbleChart() {
         '02127': 3 * width / 8 - 5,
         '02118': 4 * width / 8 + 5,
         '02128': 5 * width / 8 + 10,
-        '02228': 6 * width / 8 + 15,
+        // '02228': 6 * width / 8 + 15,
     };
 
     // @v4 strength to apply to the position forces
@@ -250,10 +250,10 @@ function bubbleChart() {
      * x force.
      */
     function nodeYearPos(d) {
-        console.log(d);
-        console.log(d.zipcode);
-        console.log(yearCenters[d.zipcode]);
-        console.log(yearCenters[d.zipcode].x);
+        // console.log(d);
+        // console.log(d.zipcode);
+        // console.log(yearCenters[d.zipcode]);
+        // console.log(yearCenters[d.zipcode].x);
         return yearCenters[d.zipcode].x;
     }
 
@@ -282,6 +282,7 @@ function bubbleChart() {
      * yearCenter of their data's year.
      */
     function splitBubbles() {
+        console.log('splitting bubbles...');
         showYearTitles();
 
         // @v4 Reset the 'x' force to draw the bubbles to their year centers
@@ -375,15 +376,22 @@ function bubbleChart() {
 
     // Update function to update the bubbles based on filtered data
     chart.updateBubbles = function (filteredData) {
+        console.log('filteredData', filteredData);
+
         // Update the existing nodes' data with filtered data
         nodes = createNodes(filteredData);
 
         // Update the bubbles data
-        var bubbles = svg.selectAll('.bubble')
-            .data(nodes);
+        var bubbles = svg.selectAll('.bubble');
+
+        // Set the data by joining the nodes with the data
+        bubbles = bubbles.data(nodes, function (d) { return d.id; });
+        // .data(nodes);
 
         // Remove bubbles that no longer exist in the filtered data
         bubbles.exit().remove();
+
+        console.log('updating nodes...');
 
         // Enter new bubbles
         var bubblesE = bubbles.enter().append('circle')
@@ -405,14 +413,18 @@ function bubbleChart() {
             nodes[i].x = cx;
             nodes[i].y = cy;
         });
+
+        // Make sure the length of the nodes array is the same as the length of the bubbles array
+        console.log('nodes', nodes.length);
+        console.log('bubbles', bubbles.size());
+
+
         // Transition existing bubbles to new positions
         bubbles.transition()
-            .duration(100)
+            .duration(1000)
             // .attr('cx', function (d) { return d.x; })
             // .attr('cy', function (d) { return d.y; })
             .attr('r', function (d) { return d.radius; });
-
-
 
         // Set the simulation's nodes to our newly created nodes array.
         simulation.nodes(nodes);
@@ -504,7 +516,11 @@ function display(error, rawData) {
 
     // Assign loaded data to the data variable. Now it is globally accessible.
 
-    console.log(data);
+    // console.log(data);
+
+    // remove zip 02228
+    rawData = rawData.filter(function (d) { return d.zip != '02228'; });
+
     data = rawData;
     console.log(data);
 
