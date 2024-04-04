@@ -138,7 +138,7 @@ function bubbleChart() {
         // working with data.
         var myNodes = rawData.map(function (d) {
             return {
-                // id: d.id,
+                id: d.zipcode + d.sector,
                 radius: radiusScale(+d.est),
                 value: +d.est,
                 color: fillColor(d.sector),
@@ -375,15 +375,28 @@ function bubbleChart() {
 
     // Update function to update the bubbles based on filtered data
     chart.updateBubbles = function (filteredData) {
+        console.log('First node before update', nodes[0]);
         // Update the existing nodes' data with filtered data
         nodes = createNodes(filteredData);
 
+        // Log first node
+        console.log('First node after update', nodes[0]);
+        console.log(nodes);
+
         // Update the bubbles data
-        bubbles = svg.selectAll('.bubble')
-            .data(nodes, function (d) { return d.id; });
+        // bubbles = svg.selectAll('.bubble')
+        //     .data(nodes);
+
+
+        var bubbles = svg.selectAll('.bubble');
+
+        bubbles.data(nodes);
+        // .attr('cx', function (d) { return d.x; });
+        // .data(nodes, function (d) { return d.id; });
 
         // Remove bubbles that no longer exist in the filtered data
         bubbles.exit().remove();
+
 
         // Enter new bubbles
         var bubblesE = bubbles.enter().append('circle')
@@ -392,18 +405,28 @@ function bubbleChart() {
             .attr('fill', function (d) { return d.color; })
             .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
             .attr('stroke-width', 2)
-            .attr('cx', function (d) { return d.previousX; }) // Set initial x position
-            .attr('cy', function (d) { return d.previousY; }) // Set initial y position
+            .attr('cx', function (d) { console.log(d); return d.x; }) // Set initial x position
+            .attr('cy', function (d) { return d.y; }) // Set initial y position
             .on('mouseover', showDetail)
             .on('mouseout', hideDetail);
 
         // Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
 
+        bubbles.each(function (d, i) {
+            var cx = +d3.select(this).attr('cx');
+            var cy = +d3.select(this).attr('cy');
+            // Update the x and y properties of the corresponding data object
+            nodes[i].x = cx;
+            nodes[i].y = cy;
+        });
+
+        console.log('bubbles:', bubbles);
+
         // Transition existing bubbles to new positions
         bubbles.transition()
             .duration(1000)
-            .attr('cx', function (d) { console.log(d.x); return d.x; })
+            .attr('cx', function (d) { console.log(d); return d.x; })
             .attr('cy', function (d) { return d.y; });
 
         // Transition the radius of the bubbles
@@ -412,7 +435,7 @@ function bubbleChart() {
             .attr('r', function (d) { return d.radius; });
 
         // Set the simulation's nodes to our newly created nodes array.
-        simulation.nodes(nodes);
+        // simulation.nodes(nodes);
 
         // Restart the simulation
         simulation.alpha(1).restart();
@@ -524,7 +547,7 @@ function initialize(year, data) {
 
     radiusScale = d3.scalePow()
         .exponent(0.5)
-        .range([2, 25])
+        .range([5, 30])
         .domain([0, maxEstablishments]);
 
     fillColor = d3.scaleOrdinal()
@@ -604,8 +627,8 @@ function getXY(d) {
             x = randomXArray[index];
             y = randomYArray[index];
 
-            console.log('x', x);
-            console.log('sector', sector);
+            // console.log('x', x);
+            // console.log('sector', sector);
             // console.log('y', y);
 
             return { x: x, y: y };
