@@ -7,6 +7,7 @@
  *
  */
 function bubbleChart() {
+    console.log('bubbleChart function called');
     // Constants for sizing
     var width = 1340;
     var height = 600;
@@ -111,6 +112,7 @@ function bubbleChart() {
      * array for each element in the rawData input.
      */
     function createNodes(rawData) {
+        console.log('rawData', rawData);
         // Use the max total_amount in the data as the max in the scale's domain
         // note we have to ensure the total_amount is a number.
         var maxEstablishments = d3.max(rawData, function (d) { return +d.est; });
@@ -361,12 +363,7 @@ function bubbleChart() {
     return chart;
 }
 
-/*
- * Below is the initialization code as well as some helper functions
- * to create a new bubble chart instance, load the data, and display it.
- */
 
-var myBubbleChart = bubbleChart();
 
 /*
  * Function called once data is loaded from CSV.
@@ -380,7 +377,7 @@ function display(error, data) {
     console.log(data);
 
     // Filter by year
-    data = data.filter(function (d) { return d.year == 2012; });
+    // data = data.filter(function (d) { return d.year == 2012; });
 
     myBubbleChart('#vis', data);
 }
@@ -431,3 +428,44 @@ d3.csv('../data/all_data.csv', display);
 
 // setup the buttons.
 setupButtons();
+
+// We define data here so it's accessible within update function and the load function.
+var data;
+
+function display(error, rawData) {
+    if (error) {
+        console.log(error);
+    }
+
+    // Assign loaded data to the data variable. Now it is globally accessible.
+    data = rawData;
+    console.log(data);
+
+    update(2012); // initial year to be displayed when page loads
+}
+
+function update(year) {
+    var filteredData = data.filter(function (d) { return d.year === year; });
+
+    // Update the bubble chart with the filtered data
+    myBubbleChart('#vis', filteredData);
+    // var myBubbleChart = bubbleChart();
+}
+
+d3.select("#yearSlider")
+    .on("input", function () {
+        var selectedYear = this.value;
+
+        // Update the chart with the selected year
+        update(selectedYear);
+
+        // Update the year displayed next to the slider
+        d3.select("#selectedYear").text(selectedYear);
+    });
+
+/*
+ * Below is the initialization code as well as some helper functions
+ * to create a new bubble chart instance, load the data, and display it.
+ */
+
+var myBubbleChart = bubbleChart();
