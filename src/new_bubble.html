@@ -7,8 +7,9 @@
   <meta name="author" content="Jim Vallandingham">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <!-- <link rel="stylesheet" href="css/bubble_chart.css"> -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/bubble_chart.css">
+
 </head>
 <body>
   <div class="container">
@@ -19,10 +20,13 @@
     </div>
     <div id="vis"></div>
 
+    <div id="pieChart"></div>
+
     <div id="slider-container">
         <input type="range" min="2010" max="2021" value="2019" class="slider" id="yearSlider">
         <span id="selectedYear">2019</span>
     </div>
+    
     
 
     <div class="footer">
@@ -35,19 +39,6 @@
   <script src="//d3js.org/d3.v4.min.js"></script>
   <script src="new_bubble_tooltip.js"></script>
   <script src="new_bubble.js"></script>
-
-  <!-- PLEASE REMOVE AFTER CLONING -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-17355070-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-  <!-- END REMOVE -->
 
 
 </body>

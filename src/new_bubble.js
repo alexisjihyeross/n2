@@ -8,8 +8,8 @@
  */
 function bubbleChart() {
     // Constants for sizing
-    var width = 1340;
-    var height = 600;
+    var width = 500;
+    var height = 500;
 
     // tooltip for mouseover functionality
     var tooltip = floatingTooltip('gates_tooltip', 240);
@@ -17,6 +17,12 @@ function bubbleChart() {
     // Locations to move bubbles towards, depending
     // on which view mode is selected.
     var center = { x: width / 2, y: height / 2 };
+
+    // Create SVG element for the pie chart
+    const pieSvg = d3.select("#pieChart")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
 
     // var yearCenters = {
     //     '02109': { x: width / 3, y: height / 2 },
@@ -143,6 +149,16 @@ function bubbleChart() {
                 year: +d.year,
                 sector: d.sector,
                 group: d.sector,
+                n1_4: +d.n1_4,
+                n5_9: +d.n5_9,
+                n10_19: +d.n10_19,
+                n20_49: +d.n20_49,
+                n50_99: +d.n50_99,
+                n100_249: +d.n100_249,
+                n250_499: +d.n250_499,
+                n500_999: +d.n500_999,
+                n1000: +d.n1000,
+
                 // name: d.grant_title,
                 // org: d.organization,
                 // group: d.group,
@@ -198,7 +214,9 @@ function bubbleChart() {
             .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
             .attr('stroke-width', 2)
             .on('mouseover', showDetail)
-            .on('mouseout', hideDetail);
+            .on('mouseout', hideDetail)
+            .on('click', function(event, d) {clicked(event, d);});
+
 
         // @v4 Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
@@ -217,6 +235,75 @@ function bubbleChart() {
         // Set initial layout to single group.
         groupBubbles();
     };
+
+
+    function clicked(d) {
+        // Remove any existing pie chart
+        pieSvg.selectAll("*").remove();
+    
+        // Extract data for the clicked bubble
+        const rowData = [
+            { size: '1-4', est: +d.n1_4 },
+            { size: '5-9', est: +d.n5_9 },
+            { size: '10-19', est: +d.n10_19 },
+            { size: '20-49', est: +d.n20_49 },
+            { size: '50-99', est: +d.n50_99 },
+            { size: '100-249', est: +d.n100_249 },
+            { size: '250-499', est: +d.n250_499 },
+            { size: '500-999', est: +d.n500_999 },
+            { size: '1000+', est: +d.n1000 }
+        ];
+    
+        // Set up dimensions for the pie chart
+        const pieWidth = 300;
+        const pieHeight = 300;
+        const radius = Math.min(pieWidth, pieHeight) / 2;
+    
+        // Create SVG for the pie chart
+        const svgPie = pieSvg.append("svg")
+            .attr("width", pieWidth)
+            .attr("height", pieHeight)
+            .append("g")
+            .attr("transform", `translate(${pieWidth / 2}, ${pieHeight / 2})`);
+    
+        // Set up the pie layout
+        const pieLayout = d3.pie()
+            .value(d => d.est);
+    
+        // Set up the arc generator
+        const arcGenerator = d3.arc()
+            .innerRadius(0)
+            .outerRadius(radius);
+    
+        // Get the color of the clicked bubble
+        const baseColor = d.color;
+    
+        // Generate arcs and bind pie data to them
+        const arcs = svgPie.selectAll(".arc")
+            .data(pieLayout(rowData))
+            .enter()
+            .append("g")
+            .attr("class", "arc");
+    
+        // Append paths for the arcs with varying opacity
+        arcs.append("path")
+            .attr("d", arcGenerator)
+            .attr("fill", (d, i) => {
+                const opacity = 0.2 + (0.8 / rowData.length) * i;
+                return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
+            })
+            .attr("stroke", "white")
+            .style("stroke-width", "2px");
+    
+        // Append text labels for the arcs
+        arcs.append("text")
+            .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
+            .attr("text-anchor", "middle")
+            .text(d => `${d.data.size}: ${d.data.est}`);
+    }
+    
+    
+    
 
     /*
      * Callback function that is called after every tick of the
