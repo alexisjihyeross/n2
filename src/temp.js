@@ -421,7 +421,7 @@ function bubbleChart() {
 
         // Transition existing bubbles to new positions
         bubbles.transition()
-            .duration(1000)
+            .duration(100)
             // .attr('cx', function (d) { return d.x; })
             // .attr('cy', function (d) { return d.y; })
             .attr('r', function (d) { return d.radius; });
