@@ -20,7 +20,7 @@ var fillColor;
 function bubbleChart() {
     console.log('bubbleChart function called');
     // Constants for sizing
-    var width = 1100;
+    var width = 800;
     var height = 400;
 
     // tooltip for mouseover functionality
@@ -31,9 +31,9 @@ function bubbleChart() {
     var center = { x: width / 2, y: height / 2 };
 
     const pieSvg = d3.select("#pieChart")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .style("width", width + "px") // Set the width using style
+    .style("height", height + "px") // Set the height using style
+    .style("float", "right"); // Float the pie chart to the right
 
     // var yearCenters = {
     //     '02109': { x: width / 3, y: height / 2 },
@@ -257,9 +257,7 @@ function bubbleChart() {
             { size: '500-999', est: +d.n500_999 },
             { size: '1000+', est: +d.n1000 }
         ];
-        console.log('d', d)
-        console.log('n1_4:', d.n1_4);
-        console.log('n5_9:', d.n5_9);
+
         // Set up dimensions for the pie chart
         const pieWidth = 300;
         const pieHeight = 300;
@@ -293,19 +291,37 @@ function bubbleChart() {
     
         // Append paths for the arcs with varying opacity
         arcs.append("path")
-            .attr("d", arcGenerator)
-            .attr("fill", (d, i) => {
-                const opacity = 0.2 + (0.8 / rowData.length) * i;
-                return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
-            })
-            .attr("stroke", "white")
-            .style("stroke-width", "2px");
+        .attr("d", arcGenerator)
+        .attr("fill", (d, i) => {
+            const opacity = 0.1 + (0.9 / rowData.length) * i; // Adjust opacity calculation
+            return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
+        })
+        .attr("stroke", "black") // Add stroke color
+        .style("stroke-width", "2px") // Set stroke width
+        .style("opacity", 1) // Fade in the arcs
+        .transition() // Apply transition for better visual effect
+        .duration(1000)
+        .attrTween("d", function(d) {
+            var interpolate = d3.interpolate({startAngle: 0, endAngle: 0}, d);
+            return function(t) {
+                return arcGenerator(interpolate(t));
+            };
+        });
     
-        // Append text labels for the arcs
+        // // Append text labels for the arcs
         arcs.append("text")
-            .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
-            .attr("text-anchor", "middle")
-            .text(d => `${d.data.size}: ${d.data.est}`);
+        .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
+        .attr("text-anchor", "middle")
+        .text(d => {
+            if (!isNaN(d.data.est) && d.data.est !== 0) {
+                return `${d.data.size}: ${d.data.est}`;
+            } else {
+                return ''; // Return empty string for NaN or zero values
+            }
+        });
+        //Append text labels for the arcs
+
+
     }
     /*
      * Callback function that is called after every tick of the
