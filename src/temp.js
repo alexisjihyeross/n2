@@ -308,7 +308,7 @@ function bubbleChart() {
             };
         });
     
-        // // Append text labels for the arcs
+        // // // Append text labels for the arcs
         arcs.append("text")
         .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
         .attr("text-anchor", "middle")
@@ -319,8 +319,7 @@ function bubbleChart() {
                 return ''; // Return empty string for NaN or zero values
             }
         });
-        //Append text labels for the arcs
-
+        // //Append text labels for the arcs
 
     }
     /*
