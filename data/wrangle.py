@@ -75,6 +75,9 @@ if __name__ == "__main__":
         # map the sector code to a text description
         data["sector"] = data.apply(map_sector, axis=1)
 
+        # map n<5 col to n1_4
+        data = data.rename(columns={"n<5": "n1_4"})
+
         dataframes.append(data)
     print("Done.")
 

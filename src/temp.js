@@ -9,6 +9,9 @@ var maxEstablishments;
 var radiusScale;
 var fillColor;
 
+var pieChartZipcode;
+var pieChartSector;
+
 /* bubbleChart creation function. Returns a function that will
  * instantiate a new bubble chart given a DOM element to display
  * it in and a dataset to visualize.
@@ -31,9 +34,9 @@ function bubbleChart() {
     var center = { x: width / 2, y: height / 2 };
 
     const pieSvg = d3.select("#pieChart")
-    .style("width", width + "px") // Set the width using style
-    .style("height", height + "px") // Set the height using style
-    .style("float", "right"); // Float the pie chart to the right
+        .style("width", width + "px") // Set the width using style
+        .style("height", height + "px") // Set the height using style
+        .style("float", "right"); // Float the pie chart to the right
 
     // var yearCenters = {
     //     '02109': { x: width / 3, y: height / 2 },
@@ -145,6 +148,7 @@ function bubbleChart() {
                 id: d.zipcode + d.sector,
                 radius: radiusScale(+d.est),
                 value: +d.est,
+                est: +d.est,
                 color: fillColor(d.sector),
                 zipcode: d.zipcode,
                 year: +d.year,
@@ -159,6 +163,10 @@ function bubbleChart() {
                 n250_499: +d.n250_499,
                 n500_999: +d.n500_999,
                 n1000: +d.n1000,
+                small: +d.n1_4 + d.n5_9 + d.n10_19,
+                medium: +d.n20_49 + d.n50_99,
+                large: +d.n100_249 + d.n250_499 + d.n500_999 + d.n1000,
+                unknown: +d.est - (+d.n1_4 + d.n5_9 + d.n10_19 + d.n20_49 + d.n50_99 + d.n100_249 + d.n250_499 + d.n500_999 + d.n1000),
                 // name: d.grant_title,
                 // org: d.organization,
                 // group: d.group,
@@ -214,7 +222,7 @@ function bubbleChart() {
             .attr('stroke-width', 2)
             .on('mouseover', showDetail)
             .on('mouseout', hideDetail)
-            .on('click', function(event, d) {clicked(event, d);});
+            .on('click', function (event, d) { createPieChart(event, d); });
 
         // @v4 Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
@@ -240,57 +248,89 @@ function bubbleChart() {
         // Set initial layout to single group.
         groupBubbles();
     };
-    
-    function clicked(d) {
+
+    function createPieChart(d) {
         // Remove any existing pie chart
         pieSvg.selectAll("*").remove();
-    
-        // Extract data for the clicked bubble
+
+        // Set the pie chart zipcode and sector
+        pieChartZipcode = d.zipcode;
+        pieChartSector = d.sector;
+
+        console.log(d);
+
+        // Map nan to 0
+        d.n1_4 = isNaN(d.n1_4) ? 0 : d.n1_4;
+        d.n5_9 = isNaN(d.n5_9) ? 0 : d.n5_9;
+        d.n10_19 = isNaN(d.n10_19) ? 0 : d.n10_19;
+        d.n20_49 = isNaN(d.n20_49) ? 0 : d.n20_49;
+        d.n50_99 = isNaN(d.n50_99) ? 0 : d.n50_99;
+        d.n100_249 = isNaN(d.n100_249) ? 0 : d.n100_249;
+        d.n250_499 = isNaN(d.n250_499) ? 0 : d.n250_499;
+        d.n500_999 = isNaN(d.n500_999) ? 0 : d.n500_999;
+        d.n1000 = isNaN(d.n1000) ? 0 : d.n1000;
+
         const rowData = [
-            { size: '1-4', est: +d.n1_4 },
-            { size: '5-9', est: +d.n5_9 },
-            { size: '10-19', est: +d.n10_19 },
-            { size: '20-49', est: +d.n20_49 },
-            { size: '50-99', est: +d.n50_99 },
-            { size: '100-249', est: +d.n100_249 },
-            { size: '250-499', est: +d.n250_499 },
-            { size: '500-999', est: +d.n500_999 },
-            { size: '1000+', est: +d.n1000 }
+            // { size: '1-4', est: +d.n1_4 },
+            // { size: '5-9', est: +d.n5_9 },
+            // { size: '10-19', est: +d.n10_19 },
+            // { size: '20-49', est: +d.n20_49 },
+            // { size: '50-99', est: +d.n50_99 },
+            // { size: '100-249', est: +d.n100_249 },
+            // { size: '250-499', est: +d.n250_499 },
+            // { size: '500-999', est: +d.n500_999 },
+            // { size: '1000+', est: +d.n1000 },
+            { size: 'small', est: +d.n1_4 + +d.n5_9 + +d.n10_19 },
+            { size: 'medium', est: +d.n20_49 + +d.n50_99 },
+            { size: 'large', est: +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000 },
+            { size: 'unknown', est: +d.est - (+d.n1_4 + +d.n5_9 + +d.n10_19 + +d.n20_49 + +d.n50_99 + +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000) }
         ];
+
+        console.log('rowData', rowData);
 
         // Set up dimensions for the pie chart
         const pieWidth = 300;
         const pieHeight = 300;
         const radius = Math.min(pieWidth, pieHeight) / 2;
-    
+
         // Create SVG for the pie chart
         const svgPie = pieSvg.append("svg")
             .attr("width", pieWidth)
             .attr("height", pieHeight)
             .append("g")
             .attr("transform", `translate(${pieWidth / 2}, ${pieHeight / 2})`);
-    
+
         // Set up the pie layout
         const pieLayout = d3.pie()
             .value(d => d.est);
-    
+
         // Set up the arc generator
         const arcGenerator = d3.arc()
             .innerRadius(0)
             .outerRadius(radius);
-    
+
         // Get the color of the clicked bubble
         const baseColor = d.color;
-    
+
         // Generate arcs and bind pie data to them
         const arcs = svgPie.selectAll(".arc")
             .data(pieLayout(rowData))
             .enter()
             .append("g")
             .attr("class", "arc");
-    
+
+        function getColor(d, opacity) {
+            // if unknown, return light grey
+            if (d.data.size === 'unknown') {
+                return d3.rgb('lightgrey').toString()
+            } else {
+                return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
+            }
+        }
+
         // Append paths for the arcs with varying opacity
         arcs.append("path")
+<<<<<<< HEAD
         .attr("d", arcGenerator)
         .attr("fill", (d, i) => {
             const opacity = 0.1 + (0.9 / rowData.length) * i; // Adjust opacity calculation
@@ -321,7 +361,59 @@ function bubbleChart() {
         });
         // //Append text labels for the arcs
 
+=======
+            .attr("d", arcGenerator)
+            .attr("fill", (d, i) => {
+                const opacity = 0.2 + (0.95 / (rowData.length - 1)) * i; // Adjust opacity calculation
+                return getColor(d, opacity);
+                // return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
+            })
+            .attr("stroke", "black") // Add stroke color
+            .style("stroke-width", "2px") // Set stroke width
+            .style("opacity", 1) // Fade in the arcs
+        // .transition() // Apply transition for better visual effect
+        // .duration(1000)
+        // .attrTween("d", function (d) {
+        //     var interpolate = d3.interpolate({ startAngle: 0, endAngle: 0 }, d);
+        //     return function (t) {
+        //         return arcGenerator(interpolate(t));
+        //     };
+        // });
+
+        // // Append text labels for the arcs
+        arcs.append("text")
+            .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
+            .attr("text-anchor", "middle")
+            .text(d => {
+                if (!isNaN(d.data.est) && d.data.est !== 0) {
+                    // return `${d.data.size}: ${d.data.est}`;
+                    return `${d.data.est}`;
+                } else {
+                    return ''; // Return empty string for NaN or zero values
+                }
+            });
+>>>>>>> 726c01e0216974995f24bd384ce21c15f4b347c6
     }
+
+    chart.updatePieChart = function () {
+        // If a pie chart has been created, update it
+        if (pieChartZipcode && pieChartSector) {
+            // Find the bubble in filteredData that matches the pie chart zipcode and sector AND the year
+            const d = nodes.find(d => d.zipcode === pieChartZipcode && d.sector === pieChartSector);
+
+            // If the bubble is found, recreate the pie chart
+            if (d) {
+                createPieChart(d);
+            }
+            else {
+                // Remove the pie chart if the bubble is not found
+                pieSvg.selectAll("*").remove();
+                console.log('Pie chart removed');
+            }
+        }
+    };
+
+
     /*
      * Callback function that is called after every tick of the
      * force simulation.
@@ -515,7 +607,7 @@ function bubbleChart() {
 
         // Transition existing bubbles to new positions
         bubbles.transition()
-            .duration(1000)
+            .duration(100)
             // .attr('cx', function (d) { return d.x; })
             // .attr('cy', function (d) { return d.y; })
             .attr('r', function (d) { return d.radius; });
@@ -636,8 +728,8 @@ function initialize(year, data) {
     maxEstablishments = d3.max(data, function (d) { return +d.est; });
 
     radiusScale = d3.scalePow()
-        // .exponent(0.5)
-        .range([5, 50])
+        .exponent(0.5)
+        .range([5, 30])
         .domain([0, maxEstablishments]);
 
     fillColor = d3.scaleOrdinal()
@@ -665,6 +757,8 @@ function update(year, data) {
     var filteredData = parsedData.filter(function (d) { return d.year === year; });
 
     myBubbleChart.updateBubbles(filteredData);
+
+    myBubbleChart.updatePieChart();
 }
 
 d3.select("#yearSlider")
