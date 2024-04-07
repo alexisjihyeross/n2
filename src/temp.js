@@ -350,19 +350,27 @@ function bubbleChart() {
         //     };
         // });
 
-        // // // Append text labels for the arcs
+        // Append text labels for the arcs outside the pie chart
         arcs.append("text")
-            .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
-            .attr("text-anchor", "middle")
-            .text(d => {
+            .attr("transform", function (d) {
+                var pos = arcGenerator.centroid(d);
+                var midAngle = Math.atan2(pos[1], pos[0]);
+                var x = Math.cos(midAngle) * (radius + 20); // 20 is the distance from the pie
+                var y = Math.sin(midAngle) * (radius + 20); // 20 is the distance from the pie
+                return "translate(" + x + "," + y + ")";
+            })
+            .attr("text-anchor", function (d) {
+                // If the label is on the left side, anchor it end
+                // If the label is on the right side, anchor it start
+                return (d.startAngle + d.endAngle) / 2 > Math.PI ? "end" : "start";
+            })
+            .text(function (d) {
                 if (!isNaN(d.data.est) && d.data.est !== 0) {
-                    // return `${d.data.size}: ${d.data.est}`;
                     return `${d.data.size}`;
                 } else {
                     return ''; // Return empty string for NaN or zero values
                 }
             });
-        // //Append text labels for the arcs
     }
 
     chart.updatePieChart = function () {
@@ -486,10 +494,10 @@ function bubbleChart() {
         var content = '<span class="name">Sector: </span><span class="value">' +
             d.sector + '</span>' + '<br/>' + '<span class="name">Establishments: </span><span class="value">' +
             d.value + '</span>' + '<br/>' + '<span class="name">Zipcode: </span><span class="value">' +
-            d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' +
-            d.year + '</span>' + '<br/>' + '<span class="name">X: </span><span class="value">' +
-            d.x + '</span>' + '<br/>' + '<span class="name">Y: </span><span class="value">' +
-            d.y + '</span>';
+            d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>';
+        // d.year + '</span>' + '<br/>' + '<span class="name">X: </span><span class="value">' +
+        // d.x + '</span>' + '<br/>' + '<span class="name">Y: </span><span class="value">' +
+        // d.y + '</span>';
         // var content = '<span class="name">Zipcode: </span><span class="value">' + d.zipcode + '</span>' + '<br/>' + '<span class="name">Establishments: </span><span class="value">' + d.value + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>';
         // var content = '<span class="name">Title: </span><span class="value">' +
         //     d.name +
@@ -677,10 +685,32 @@ function display(error, rawData) {
     // remove zip 02228
     rawData = rawData.filter(function (d) { return d.zip != '02228'; });
 
+    // Only consider the top 10 sectors
+    // Get the top 10 sectors by number of establishments across all years
+    var topSectors = rawData.reduce(function (acc, curr) {
+        if (acc[curr.sector]) {
+            acc[curr.sector] += +curr.est;
+        } else {
+            acc[curr.sector] = +curr.est;
+        }
+        return acc;
+    }, {});
+
+    // Sort the sectors by number of establishments
+    topSectors = Object.keys(topSectors).sort(function (a, b) {
+        return topSectors[b] - topSectors[a];
+    });
+
+    // Get the top 10 sectors
+    topSectors = topSectors.slice(0, 10);
+
+    // Filter the data to only include the top 10 sectors
+    rawData = rawData.filter(function (d) { return topSectors.includes(d.sector); });
+
     data = rawData;
     console.log('data', data);
 
-    initialize(2015, data); // initial year to be displayed when page loads
+    initialize(2016, data); // initial year to be displayed when page loads
 }
 
 function initialize(year, data) {

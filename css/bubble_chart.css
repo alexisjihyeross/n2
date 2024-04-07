@@ -34,7 +34,7 @@ a, a:visited, a:active {
   #pieChart {
     width: calc(30% - 5px); /* Adjusted width to hold the pie chart */
     height: 600px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   
   #toolbar {
@@ -74,4 +74,3 @@ a, a:visited, a:active {
   .footer {
     text-align: center;
   }
-  
