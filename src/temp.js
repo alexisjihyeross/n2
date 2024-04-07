@@ -14,6 +14,9 @@ var pieChartSector;
 
 var pieChartDim = 200;
 
+var currentYear = 2010;
+var currentSector = 'All';
+
 var idToX = {};
 var idToY = {};
 
@@ -212,7 +215,16 @@ function bubbleChart() {
         // Create a new pie chart with *all* data for the selected year
 
         // First need to create a new filteredData array with all data for the selected year and sum up the number of establishments
-        var filteredData = data.filter(function (d) { return d.year == d3.select("#yearSlider").node().value; });
+        currentYear = d3.select("#yearSlider").node().value;
+        var filteredData = data.filter(function (d) {
+            return d.year == currentYear
+        });
+
+        if (currentSector != 'All') {
+            filteredData = filteredData.filter(function (d) {
+                return d.sector == currentSector;
+            });
+        }
 
         // parse
         filteredData = filteredData.map(function (d) { return parseData(d); });
@@ -299,28 +311,28 @@ function bubbleChart() {
         pieChartSector = d.sector;
 
         const rowData = [
-            { size: '1-4', subest: +d.n1_4, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '5-9', subest: +d.n5_9, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '10-19', subest: +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '20-49', subest: +d.n20_49, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '50-99', subest: +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '100-249', subest: +d.n100_249, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '250-499', subest: +d.n250_499, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '500-999', subest: +d.n500_999, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: '1000+', subest: +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '1-4', subest: +d.n1_4, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '5-9', subest: +d.n5_9, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '10-19', subest: +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '20-49', subest: +d.n20_49, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '50-99', subest: +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '100-249', subest: +d.n100_249, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '250-499', subest: +d.n250_499, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '500-999', subest: +d.n500_999, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '1000+', subest: +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
 
             // TODO: for now, ignoring unknown
-            // { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
         ];
 
         // console.log('rowData', rowData);
 
         // Order the data by size of business (order: Small, Medium, Large, Unknown)
-        // order = ['Small', 'Medium', 'Large', 'Unknown'];
-        // rowData.sort((a, b) => order.indexOf(a.size) - order.indexOf(b.size));
+        order = ['Small', 'Medium', 'Large', 'Unknown'];
+        rowData.sort((a, b) => order.indexOf(a.size) - order.indexOf(b.size));
 
         console.log('rowData', rowData);
 
@@ -849,13 +861,16 @@ function display(error, rawData) {
 
     data = rawData;
 
-    initialize(2010, data); // initial year to be displayed when page loads
+    initialize(currentYear, data); // initial year to be displayed when page loads
 }
 
 function initialize(year, data) {
     // Load data and initialize visualization
 
     uniqueSectors = [...new Set(data.map(d => d.sector))];
+
+
+
     uniqueZips = [...new Set(data.map(d => d.zip))];
 
     numUniqueX = uniqueSectors.length * uniqueZips.length;
@@ -867,13 +882,26 @@ function initialize(year, data) {
     maxEstablishments = d3.max(data, function (d) { return +d.est; });
 
     radiusScale = d3.scalePow()
-        .exponent(0.5)
-        .range([5, 30])
+        .exponent(1)
+        .range([5, 50])
         .domain([0, maxEstablishments]);
+
+    // get colors in d3.schemeCategory20, but map #c7c7c7 and #7f7f7f to different colors 
+    colors = d3.schemeCategory20.map(function (d) {
+        if (d === '#c7c7c7') {
+            return '#ff7f0e';
+        }
+        if (d === '#7f7f7f') {
+            return '#2ca02c';
+        }
+        return d;
+    });
+
+    console.log('length of colors', colors.length);
 
     fillColor = d3.scaleOrdinal()
         .domain(uniqueSectors)
-        .range(d3.schemeCategory20);
+        .range(colors);
     // Parse the data, pass in the unique sectors and unique zipcodes
     parsedData = data.map(function (d) { return parseData(d); });
 
@@ -881,11 +909,22 @@ function initialize(year, data) {
 
     var filteredData = parsedData.filter(function (d) { return d.year === year; });
 
+
+    // populate the #sector-dropdown with the unique sectors
+    // set the color of the dropdown to match the color of the sector
+    var sectorDropdown = d3.select('#sector-dropdown');
+    sectorDropdown.selectAll('option')
+        .data(uniqueSectors)
+        .enter()
+        .append('option')
+        .text(function (d) { return d; })
+        .style('background', function (d) { return fillColor(d); });
+
     myBubbleChart('#vis', filteredData);
     myBubbleChart.createPieChartAll();
 }
 
-function update(year, data) {
+function update(data) {
     // uniqueSectors = [...new Set(data.map(d => d.sector))];
     // uniqueZips = [...new Set(data.map(d => d.zip))];
 
@@ -894,7 +933,11 @@ function update(year, data) {
 
     console.log('parsedData', parsedData);
 
-    var filteredData = parsedData.filter(function (d) { return d.year === year; });
+    var filteredData = parsedData.filter(function (d) { return d.year === currentYear; });
+
+    if (currentSector != 'All') {
+        filteredData = filteredData.filter(function (d) { return d.sector === currentSector; });
+    }
 
     myBubbleChart.updateBubbles(filteredData);
 
@@ -909,14 +952,39 @@ d3.select("#yearSlider")
         // convert selectedZipcode to a number
         selectedYear = +selectedYear;
 
+        currentYear = selectedYear;
         console.log('selected', selectedYear);
 
         // Update the chart with the selected year
-        update(selectedYear, data);
+        update(data);
 
         // Update the year displayed next to the slider
         d3.select("#selectedYear").text(selectedYear);
     });
+
+d3.select("#sector-dropdown")
+    .on("change", function () {
+        var selectedSector = d3.select(this).property('value');
+
+        currentSector = selectedSector;
+        console.log('currentYear', currentYear);
+        console.log('currentSector', currentSector);
+
+        // Update the chart with the selected sector
+        parsedData = data.map(function (d) { return parseData(d); });
+        console.log('parsedData', parsedData);
+        var filteredData = parsedData.filter(function (d) { return d.year == currentYear; });
+
+        if (selectedSector != 'All') {
+            filteredData = filteredData.filter(function (d) { return d.sector == currentSector; });
+        }
+
+        console.log('filteredData', filteredData);
+
+        myBubbleChart.updateBubbles(filteredData);
+        myBubbleChart.updatePieChart();
+    }
+    );
 
 function getXY(d) {
     // Maps sector/zipcode to x position
