@@ -50,15 +50,15 @@ function bubbleChart() {
     // X locations of the zipcode titles.
     var zipcodeTitlesX = {
         '02109': 1 * width / 8 - 15,
-        '02125': 2 * width / 8 - 10,
-        '02127': 3 * width / 8 - 5,
+        '02125': 2 * width / 8 - 5,
+        '02127': 3 * width / 8 + 0,
         '02118': 4 * width / 8 + 5,
         '02128': 5 * width / 8 + 10,
         // '02228': 6 * width / 8 + 15,
     };
 
     // @v4 strength to apply to the position forces
-    var forceStrength = 0.02;
+    var forceStrength = 0.017;
 
     // These will be set in create_nodes and create_vis
     var svg = null;
@@ -275,7 +275,8 @@ function bubbleChart() {
 
         // TODO: hacky, but add zipcode and sector to sumEst to match the format of the other data for the tooltip
         sumEst['zipcode'] = 'All';
-        sumEst['sector'] = 'All';
+
+        sumEst['sector'] = currentSector;
 
         console.log('sumEst', sumEst);
 
@@ -889,10 +890,10 @@ function initialize(year, data) {
     // get colors in d3.schemeCategory20, but map #c7c7c7 and #7f7f7f to different colors 
     colors = d3.schemeCategory20.map(function (d) {
         if (d === '#c7c7c7') {
-            return '#ff7f0e';
+            return '#FDDA0D';
         }
         if (d === '#7f7f7f') {
-            return '#2ca02c';
+            return '#FFFF00';
         }
         return d;
     });
