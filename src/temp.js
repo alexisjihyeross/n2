@@ -12,22 +12,15 @@ var fillColor;
 var pieChartZipcode;
 var pieChartSector;
 
-/* bubbleChart creation function. Returns a function that will
- * instantiate a new bubble chart given a DOM element to display
- * it in and a dataset to visualize.
- *
- * Organization and style inspired by:
- * https://bost.ocks.org/mike/chart/
- *
- */
+var pieChartDim = 200;
+
 function bubbleChart() {
     console.log('bubbleChart function called');
-    // Constants for sizing
     var width = 800;
     var height = 400;
 
-    // tooltip for mouseover functionality
-    var tooltip = floatingTooltip('gates_tooltip', 240);
+    // Tooltip for mouseover functionality 
+    var tooltip = floatingTooltip('tooltip', 240);
 
     // Locations to move bubbles towards, depending
     // on which view mode is selected.
@@ -38,14 +31,8 @@ function bubbleChart() {
         .style("height", height + "px") // Set the height using style
         .style("float", "right"); // Float the pie chart to the right
 
-    // var yearCenters = {
-    //     '02109': { x: width / 3, y: height / 2 },
-    //     '02125': { x: width / 2, y: height / 2 },
-    //     '02127': { x: 2 * width / 3, y: height / 2 }
-    // };
-
-    // Create yearCenters for 02109, 02125, 02127, "02118", "02128", "02228"
-    var yearCenters = {
+    // Create zipcodeCenters for 02109, 02125, 02127, "02118", "02128", "02228"
+    var zipcodeCenters = {
         '02109': { x: 1 * width / 8, y: height / 2 },
         '02125': { x: 2 * width / 8, y: height / 2 },
         '02127': { x: 3 * width / 8, y: height / 2 },
@@ -54,15 +41,8 @@ function bubbleChart() {
         // '02228': { x: 6 * width / 8, y: height / 2 }
     };
 
-    // // X locations of the year titles.
-    // var yearsTitleX = {
-    //     '02109': 160,
-    //     '02125': width / 2,
-    //     '02127': width - 160
-    // };
-
-    // X locations of the year titles.
-    var yearsTitleX = {
+    // X locations of the zipcode titles.
+    var zipcodeTitlesX = {
         '02109': 1 * width / 8 - 15,
         '02125': 2 * width / 8 - 10,
         '02127': 3 * width / 8 - 5,
@@ -79,27 +59,10 @@ function bubbleChart() {
     var bubbles = null;
     var nodes = [];
 
-    // Charge function that is called for each node.
-    // As part of the ManyBody force.
-    // This is what creates the repulsion between nodes.
-    //
-    // Charge is proportional to the diameter of the
-    // circle (which is stored in the radius attribute
-    // of the circle's associated data.
-    //
-    // This is done to allow for accurate collision
-    // detection with nodes of different sizes.
-    //
-    // Charge is negative because we want nodes to repel.
-    // @v4 Before the charge was a stand-alone attribute
-    //  of the force layout. Now we can use it as a separate force!
     function charge(d) {
-        return -Math.pow(d.radius, 2.0) * forceStrength;
+        return -Math.pow(d.radius, 2) * forceStrength;
     }
 
-    // Here we create a force layout and
-    // @v4 We create a force simulation now and
-    //  add forces to it.
     var simulation = d3.forceSimulation()
         .velocityDecay(0.2)
         .force('x', d3.forceX().strength(forceStrength).x(center.x))
@@ -107,168 +70,197 @@ function bubbleChart() {
         .force('charge', d3.forceManyBody().strength(charge))
         .on('tick', ticked);
 
-    // @v4 Force starts up automatically,
-    //  which we don't want as there aren't any nodes yet.
     simulation.stop();
 
-
-
-    // Nice looking colors - no reason to buck the trend
-    // @v4 scales now have a flattened naming scheme
-    // var fillColor = d3.scaleOrdinal()
-    //     .domain(['low', 'medium', 'high'])
-    //     .range(['#d84b2a', '#beccae', '#7aa25c']);
-
-
-    /*
-     * This data manipulation function takes the raw data from
-     * the CSV file and converts it into an array of node objects.
-     * Each node will store data and visualization values to visualize
-     * a bubble.
-     *
-     * rawData is expected to be an array of data objects, read in from
-     * one of d3's loading functions like d3.csv.
-     *
-     * This function returns the new node array, with a node in that
-     * array for each element in the rawData input.
-     */
     function createNodes(rawData) {
         // Use the max total_amount in the data as the max in the scale's domain
         // note we have to ensure the total_amount is a number.
 
-        // Sizes bubbles based on area.
-        // @v4: new flattened scale names.
-
-
-        // Use map() to convert raw data into node data.
-        // Checkout http://learnjsdata.com/ for more on
-        // working with data.
         var myNodes = rawData.map(function (d) {
-            return {
-                id: d.zipcode + d.sector,
-                radius: radiusScale(+d.est),
-                value: +d.est,
-                est: +d.est,
-                color: fillColor(d.sector),
-                zipcode: d.zipcode,
-                year: +d.year,
-                sector: d.sector,
-                group: d.sector,
-                n1_4: +d.n1_4,
-                n5_9: +d.n5_9,
-                n10_19: +d.n10_19,
-                n20_49: +d.n20_49,
-                n50_99: +d.n50_99,
-                n100_249: +d.n100_249,
-                n250_499: +d.n250_499,
-                n500_999: +d.n500_999,
-                n1000: +d.n1000,
-                small: +d.n1_4 + d.n5_9 + d.n10_19,
-                medium: +d.n20_49 + d.n50_99,
-                large: +d.n100_249 + d.n250_499 + d.n500_999 + d.n1000,
-                unknown: +d.est - (+d.n1_4 + d.n5_9 + d.n10_19 + d.n20_49 + d.n50_99 + d.n100_249 + d.n250_499 + d.n500_999 + d.n1000),
-                // name: d.grant_title,
-                // org: d.organization,
-                // group: d.group,
-                // year: d.start_year,
-                x: d.x,
-                y: d.y,
-            };
+            // add id, radius, and x/y properties to each node
+            d.radius = radiusScale(+d.est);
+            d.value = +d.est;
+            d.id = d.zipcode + d.sector;
+            d.group = d.sector;
+            d.color = fillColor(d.sector);
+
+            return d;
+
+            // return {
+            //     id: d.zipcode + d.sector,
+            //     radius: radiusScale(+d.est),
+            //     value: +d.est,
+            //     est: +d.est,
+            //     color: fillColor(d.sector),
+            //     zipcode: d.zipcode,
+            //     year: +d.year,
+            //     sector: d.sector,
+            //     group: d.sector,
+            //     n1_4: +d.n1_4,
+            //     n5_9: +d.n5_9,
+            //     n10_19: +d.n10_19,
+            //     n20_49: +d.n20_49,
+            //     n50_99: +d.n50_99,
+            //     n100_249: +d.n100_249,
+            //     n250_499: +d.n250_499,
+            //     n500_999: +d.n500_999,
+            //     n1000: +d.n1000,
+            //     Small: +d.n1_4 + d.n5_9 + d.n10_19,
+            //     Medium: +d.n20_49 + d.n50_99,
+            //     Large: +d.n100_249 + d.n250_499 + d.n500_999 + d.n1000,
+            //     Unknown: +d.est - (+d.n1_4 + d.n5_9 + d.n10_19 + d.n20_49 + d.n50_99 + d.n100_249 + d.n250_499 + d.n500_999 + d.n1000),
+            //     x: d.x,
+            //     y: d.y,
+            // };
         });
 
-        // sort them to prevent occlusion of smaller nodes.
+        // Sort them so that the smaller nodes are on top of the larger nodes 
         myNodes.sort(function (a, b) { return b.value - a.value; });
-        console.log('nodes', myNodes)
+        // console.log('nodes', myNodes)
         return myNodes;
     }
 
-    /*
-     * Main entry point to the bubble chart. This function is returned
-     * by the parent closure. It prepares the rawData for visualization
-     * and adds an svg element to the provided selector and starts the
-     * visualization creation process.
-     *
-     * selector is expected to be a DOM element or CSS selector that
-     * points to the parent element of the bubble chart. Inside this
-     * element, the code will add the SVG continer for the visualization.
-     *
-     * rawData is expected to be an array of data objects as provided by
-     * a d3 loading function like d3.csv.
-     */
+
+
+    function unclickedBubble() {
+        // function to call when a bubble is unclicked (i.e. white space is clicked)
+        console.log('unclicked bubble');
+        // Remove everything except h3
+        pieSvg.selectAll("*:not(h3)").remove();
+
+        chart.createPieChartAll();
+    }
+
+
+    // functon to call when a bubble is clicked
+    function clickedBubble(d) {
+        console.log('clicked bubble');
+        console.log(d);
+        createPieChart(d, pieChartDim, pieChartDim);
+
+        // select the bubble that matches the clicked bubble
+        // var selectedBubble = d3.select(`circle.bubble[id='${d.id}']`);
+        // console.log(selectedBubble);
+    }
+
     var chart = function chart(selector, rawData) {
-        // convert raw data into nodes data
         nodes = createNodes(rawData);
-        // Create a SVG element inside the provided selector
-        // with desired size.
+
         svg = d3.select(selector)
             .append('svg')
             .attr('width', width)
             .attr('height', height);
 
-        // Bind nodes data to what will become DOM elements to represent them.
         bubbles = svg.selectAll('.bubble')
             .data(nodes, function (d) { return d.id; });
 
         // Create new circle elements each with class `bubble`.
         // There will be one circle.bubble for each object in the nodes array.
         // Initially, their radius (r attribute) will be 0.
-        // @v4 Selections are immutable, so lets capture the
-        //  enter selection to apply our transtition to below.
         var bubblesE = bubbles.enter().append('circle')
             .classed('bubble', true)
             .attr('r', 0)
             .attr('fill', function (d) { return d.color; })
             .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
             .attr('stroke-width', 2)
-            .on('mouseover', showDetail)
-            .on('mouseout', hideDetail)
-            .on('click', function (event, d) { createPieChart(event, d); });
+            .on('mouseover', showBubbleDetail)
+            .on('mouseout', hideBubbleDetail)
+            .on('click', function (event) { clickedBubble(event); });
 
-        // @v4 Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
 
-        // Fancy transition to make bubbles appear, ending with the
-        // correct radius
         bubbles.transition()
             .duration(2000)
             .attr('r', function (d) { return d.radius; });
 
-
-        // Set the simulation's nodes to our newly created nodes array.
-        // @v4 Once we set the nodes, the simulation will start running automatically!
-
-        // Log first node before simulation
-        console.log('First node before simulation', nodes[0]);
-
         simulation.nodes(nodes);
-
-        // Log first node after simulation
-        console.log('First node after simulation', nodes[0]);
 
         // Set initial layout to single group.
         groupBubbles();
     };
 
-    function createPieChart(d) {
-        // Remove any existing pie chart
-        pieSvg.selectAll("*").remove();
+    // when the user clicks outside of a bubble, the pie chart should be removed
+    document.addEventListener('click', function (event) {
+        // If the user clicks outside of the bubble, remove the pie chart (except if the user has clicked the slider)
+        if (!event.target.closest('.bubble') && !event.target.closest('.slider')) {
+            // also check if clicked on the pie chart
+            if (!event.target.closest('.pie')) {
+                unclickedBubble();
+            }
+        }
+    });
+
+    // function to create a pie chart with all data
+    chart.createPieChartAll = function () {
+        console.log('creating pie chart with all data');
+
+        // Create a new pie chart with *all* data for the selected year
+
+        // First need to create a new filteredData array with all data for the selected year and sum up the number of establishments
+        var filteredData = data.filter(function (d) { return d.year == d3.select("#yearSlider").node().value; });
+
+        // parse
+        filteredData = filteredData.map(function (d) { return parseData(d); });
+
+        // console.log('filteredData', filteredData);
+
+        // Create a temporary object to store the sum of establishments for each size of business
+        var sumEst = {};
+        // initialize
+        sumEst['Small'] = 0;
+        sumEst['Medium'] = 0;
+        sumEst['Large'] = 0;
+        sumEst['Unknown'] = 0;
+
+        // Loop through the filteredData array and sum up the number of establishments for each size of business ('Small', 'Medium', 'Large', 'Unknown')
+        filteredData.forEach(function (d) {
+            // for each size of business, add the number of establishments to the sum
+            sumEst['Small'] = (sumEst['Small'] || 0) + d.Small;
+            sumEst['Medium'] = (sumEst['Medium'] || 0) + d.Medium;
+            sumEst['Large'] = (sumEst['Large'] || 0) + d.Large;
+            sumEst['Unknown'] = (sumEst['Unknown'] || 0) + d.Unknown;
+        });
+
+        // Add total
+        sumEst['est'] = sumEst['Small'] + sumEst['Medium'] + sumEst['Large'] + sumEst['Unknown'];
+        sumEst['year'] = d3.select("#yearSlider").node().value;
+
+        // TODO: hacky, but add zipcode and sector to sumEst to match the format of the other data for the tooltip
+        sumEst['zipcode'] = 'All';
+        sumEst['sector'] = 'All';
+
+        console.log('sumEst', sumEst);
+
+        // Create a new pie chart with the sum of establishments for each sector
+        createPieChart(sumEst, 225, 225);
+
+        // Reset the pieChartZipcode and pieChartSector
+        pieChartZipcode = null;
+        pieChartSector = null;
+
+    }
+
+    function createPieChart(d, pieWidth, pieHeight) {
+
+        // Remove any existing pie chart except h3
+        pieSvg.selectAll("*:not(h3)").remove();
+
+        // console.log('creating pie chart');
+        // set the item with class pie-chart-title to have display visible
+        pieSvg.select('.pie-chart-title').style('display', 'block');
+
+        // pieSvg.append('text')
+        //     .attr('x', pieWidth / 3)
+        //     .attr('y', -10) // Position above the pie chart
+        //     .attr('text-anchor', 'middle')
+        //     // centered
+        //     .style('font-size', '13px')
+        //     .style('font-weight', 'bold')
+        //     .text('Proportion of Establishments by Size of Business');
 
         // Set the pie chart zipcode and sector
         pieChartZipcode = d.zipcode;
         pieChartSector = d.sector;
-
-        console.log(d);
-
-        // Map nan to 0
-        d.n1_4 = isNaN(d.n1_4) ? 0 : d.n1_4;
-        d.n5_9 = isNaN(d.n5_9) ? 0 : d.n5_9;
-        d.n10_19 = isNaN(d.n10_19) ? 0 : d.n10_19;
-        d.n20_49 = isNaN(d.n20_49) ? 0 : d.n20_49;
-        d.n50_99 = isNaN(d.n50_99) ? 0 : d.n50_99;
-        d.n100_249 = isNaN(d.n100_249) ? 0 : d.n100_249;
-        d.n250_499 = isNaN(d.n250_499) ? 0 : d.n250_499;
-        d.n500_999 = isNaN(d.n500_999) ? 0 : d.n500_999;
-        d.n1000 = isNaN(d.n1000) ? 0 : d.n1000;
 
         const rowData = [
             // { size: '1-4', est: +d.n1_4 },
@@ -280,21 +272,30 @@ function bubbleChart() {
             // { size: '250-499', est: +d.n250_499 },
             // { size: '500-999', est: +d.n500_999 },
             // { size: '1000+', est: +d.n1000 },
-            { size: 'small', est: +d.n1_4 + +d.n5_9 + +d.n10_19 },
-            { size: 'medium', est: +d.n20_49 + +d.n50_99 },
-            { size: 'large', est: +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000 },
-            { size: 'unknown', est: +d.est - (+d.n1_4 + +d.n5_9 + +d.n10_19 + +d.n20_49 + +d.n50_99 + +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000) }
+            // { size: 'Small', subest: +d.n1_4 + +d.n5_9 + +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Medium', subest: +d.n20_49 + +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Large', subest: +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Unknown', subest: +d.est - (+d.n1_4 + +d.n5_9 + +d.n10_19 + +d.n20_49 + +d.n50_99 + +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000), sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est }
+            { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
         ];
 
         console.log('rowData', rowData);
 
+        // Order the data by size of business (order: Small, Medium, Large, Unknown)
+        order = ['Small', 'Medium', 'Large', 'Unknown'];
+        rowData.sort((a, b) => order.indexOf(a.size) - order.indexOf(b.size));
+
         // Set up dimensions for the pie chart
-        const pieWidth = 300;
-        const pieHeight = 300;
-        const radius = Math.min(pieWidth, pieHeight) / 2;
+        // const pieWidth = 300;
+        // const pieHeight = 300;
+        const radius = Math.min(pieWidth - 20, pieHeight - 20) / 2;
 
         // Create SVG for the pie chart
         const svgPie = pieSvg.append("svg")
+            .attr('class', 'pie')
             .attr("width", pieWidth)
             .attr("height", pieHeight)
             .append("g")
@@ -302,7 +303,7 @@ function bubbleChart() {
 
         // Set up the pie layout
         const pieLayout = d3.pie()
-            .value(d => d.est);
+            .value(d => d.subest);
 
         // Set up the arc generator
         const arcGenerator = d3.arc()
@@ -312,17 +313,21 @@ function bubbleChart() {
         // Get the color of the clicked bubble
         const baseColor = d.color;
 
-        // Generate arcs and bind pie data to them
+        // Generate arcs and bind pie data to them; make sure to preserve order of data
         const arcs = svgPie.selectAll(".arc")
             .data(pieLayout(rowData))
             .enter()
             .append("g")
+            .on('mouseover', showPieDetail)
+            .on('mouseout', hidePieDetail)
             .attr("class", "arc");
+
 
         function getColor(d, opacity) {
             // if unknown, return light grey
-            if (d.data.size === 'unknown') {
-                return d3.rgb('lightgrey').toString()
+            if (d.data.size === 'Unknown') {
+                // return d3.rgb('lightgrey').toString()
+                return d3.rgb('white').toString()
             } else {
                 return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
             }
@@ -350,23 +355,49 @@ function bubbleChart() {
         //     };
         // });
 
-        // Append text labels for the arcs outside the pie chart
+        // // Append text labels for the arcs outside the pie chart
+        // arcs.append("text")
+        //     .attr("transform", function (d) {
+        //         var pos = arcGenerator.centroid(d);
+        //         var midAngle = Math.atan2(pos[1], pos[0]);
+        //         var x = Math.cos(midAngle) * (radius + 20); // 20 is the distance from the pie
+        //         var y = Math.sin(midAngle) * (radius + 20); // 20 is the distance from the pie
+        //         return "translate(" + x + "," + y + ")";
+        //     })
+        //     .attr("text-anchor", function (d) {
+        //         // If the label is on the left side, anchor it end
+        //         // If the label is on the right side, anchor it start
+        //         return (d.startAngle + d.endAngle) / 2 > Math.PI ? "end" : "start";
+        //     })
+        //     .text(function (d) {
+        //         if (!isNaN(d.data.est) && d.data.est !== 0) {
+        //             return `${d.data.size}`;
+        //         } else {
+        //             return ''; // Return empty string for NaN or zero values
+        //         }
+        //     });
+
+        // // // Append text labels for the arcs
         arcs.append("text")
-            .attr("transform", function (d) {
-                var pos = arcGenerator.centroid(d);
-                var midAngle = Math.atan2(pos[1], pos[0]);
-                var x = Math.cos(midAngle) * (radius + 20); // 20 is the distance from the pie
-                var y = Math.sin(midAngle) * (radius + 20); // 20 is the distance from the pie
-                return "translate(" + x + "," + y + ")";
+            .attr("transform", d => {
+                const centroid = arcGenerator.centroid(d);
+                const newX = centroid[0] * 1.2; // Adjust this factor to control the distance from the edge
+                const newY = centroid[1] * 1.2; // Adjust this factor to control the distance from the edge
+                return `translate(${newX}, ${newY})`;
             })
-            .attr("text-anchor", function (d) {
-                // If the label is on the left side, anchor it end
-                // If the label is on the right side, anchor it start
-                return (d.startAngle + d.endAngle) / 2 > Math.PI ? "end" : "start";
-            })
-            .text(function (d) {
-                if (!isNaN(d.data.est) && d.data.est !== 0) {
-                    return `${d.data.size}`;
+            .attr("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .text(d => {
+                if (!isNaN(d.data.subest) && d.data.subest !== 0) {
+                    // return `${d.data.size}: ${d.data.subest}`;
+
+                    // Check if the arc is at least 5% of the total
+                    if (d.endAngle - d.startAngle > 0.5) {
+                        return `${d.data.size}`;
+                    } else {
+                        return '';
+                    }
+                    // return `${d.data.size}`;
                 } else {
                     return ''; // Return empty string for NaN or zero values
                 }
@@ -381,30 +412,39 @@ function bubbleChart() {
 
             // If the bubble is found, recreate the pie chart
             if (d) {
-                createPieChart(d);
+                console.log('Bubble found');
+                console.log(d);
+                createPieChart(d, pieChartDim, pieChartDim);
             }
             else {
+                console.log('Bubble not found');
+
+                pieSvg.selectAll("*:not(h3)").remove();
+                // set the item with class pie-chart-title to have display invisible
+                pieSvg.select('.pie-chart-title').style('display', 'none');
                 // Remove the pie chart if the bubble is not found
-                pieSvg.selectAll("*").remove();
                 console.log('Pie chart removed');
+
+                // create a new pie chart with all data
+                chart.createPieChartAll();
             }
+        }
+        else {
+            console.log('Pie chart not created');
+            pieSvg.selectAll("*:not(h3)").remove();
+            // set the item with class pie-chart-title to have display invisible
+            pieSvg.select('.pie-chart-title').style('display', 'none');
+            // Remove the pie chart if the bubble is not found
+            console.log('Pie chart removed');
+
+            // create a new pie chart with all data
+            chart.createPieChartAll();
         }
     };
 
 
-    /*
-     * Callback function that is called after every tick of the
-     * force simulation.
-     * Here we do the acutal repositioning of the SVG circles
-     * based on the current x and y values of their bound node data.
-     * These x and y values are modified by the force simulation.
-     */
     function ticked() {
         bubbles
-            .each(function (d) {
-                d.previousX = d.x; // Store the previous x position
-                d.previousY = d.y; // Store the previous y position
-            })
             .attr('cx', function (d) { return d.x; })
             .attr('cy', function (d) { return d.y; });
     }
@@ -413,12 +453,12 @@ function bubbleChart() {
      * Provides a x value for each node to be used with the split by year
      * x force.
      */
-    function nodeYearPos(d) {
+    function nodeZipcodePos(d) {
         // console.log(d);
         // console.log(d.zipcode);
-        // console.log(yearCenters[d.zipcode]);
-        // console.log(yearCenters[d.zipcode].x);
-        return yearCenters[d.zipcode].x;
+        // console.log(zipcodeCenters[d.zipcode]);
+        // console.log(zipcodeCenters[d.zipcode].x);
+        return zipcodeCenters[d.zipcode].x;
     }
 
 
@@ -429,7 +469,7 @@ function bubbleChart() {
      * center of the visualization.
      */
     function groupBubbles() {
-        hideYearTitles();
+        hideZipcodeTitles();
 
         // @v4 Reset the 'x' force to draw the bubbles to the center.
         simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
@@ -447,75 +487,65 @@ function bubbleChart() {
      */
     function splitBubbles() {
         console.log('splitting bubbles...');
-        showYearTitles();
+        showZipcodeTitles();
 
         // @v4 Reset the 'x' force to draw the bubbles to their year centers
-        simulation.force('x', d3.forceX().strength(forceStrength).x(nodeYearPos));
+        simulation.force('x', d3.forceX().strength(forceStrength).x(nodeZipcodePos));
 
         // @v4 We can reset the alpha value and restart the simulation
         simulation.alpha(1).restart();
     }
 
     /*
-     * Hides Year title displays.
+     * Hides Zipcode title displays.
      */
-    function hideYearTitles() {
+    function hideZipcodeTitles() {
         svg.selectAll('.year').remove();
     }
 
     /*
-     * Shows Year title displays.
+     * Shows Zipcode title displays.
      */
-    function showYearTitles() {
+    function showZipcodeTitles() {
         // Another way to do this would be to create
         // the year texts once and then just hide them.
-        var yearsData = d3.keys(yearsTitleX);
+        var yearsData = d3.keys(zipcodeTitlesX);
         var years = svg.selectAll('.year')
             .data(yearsData);
 
         years.enter().append('text')
             .attr('class', 'year')
-            .attr('x', function (d) { return yearsTitleX[d]; })
+            .attr('x', function (d) { return zipcodeTitlesX[d]; })
             .attr('y', 40)
             .attr('text-anchor', 'middle')
             .text(function (d) { return d; });
     }
 
+    function getSharedTooltipContent(d) {
+        // console.log("getting shared tooltip content");
+        // console.log(d);
+        // Describe the tooltip content: sector, number of establishments, zipcode, year, and x/y
+        var content = '<span class="name">Sector: </span><span class="value">' +
+            d.sector + '</span>' + '<br/>' + '<span class="name">Zipcode: </span><span class="value">' +
+            d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>' + '</br><span class="name">Total Establishments: </span><span class="value">' +
+            d.est + '</span>';
 
-    /*
-     * Function called on mouseover to display the
-     * details of a bubble in the tooltip.
-     */
-    function showDetail(d) {
+        return content;
+    }
+
+    function showBubbleDetail(d) {
+        // console.log(d);
+
         // change outline to indicate hover state.
         d3.select(this).attr('stroke', 'black');
 
         // Describe the tooltip content: sector, number of establishments, zipcode, year, and x/y
-        var content = '<span class="name">Sector: </span><span class="value">' +
-            d.sector + '</span>' + '<br/>' + '<span class="name">Establishments: </span><span class="value">' +
-            d.value + '</span>' + '<br/>' + '<span class="name">Zipcode: </span><span class="value">' +
-            d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>';
-        // d.year + '</span>' + '<br/>' + '<span class="name">X: </span><span class="value">' +
-        // d.x + '</span>' + '<br/>' + '<span class="name">Y: </span><span class="value">' +
-        // d.y + '</span>';
-        // var content = '<span class="name">Zipcode: </span><span class="value">' + d.zipcode + '</span>' + '<br/>' + '<span class="name">Establishments: </span><span class="value">' + d.value + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>';
-        // var content = '<span class="name">Title: </span><span class="value">' +
-        //     d.name +
-        //     '</span><br/>' +
-        //     '<span class="name">Amount: </span><span class="value">$' +
-        //     addCommas(d.value) +
-        //     '</span><br/>' +
-        //     '<span class="name">Year: </span><span class="value">' +
-        //     d.year +
-        //     '</span>';
+        var content = getSharedTooltipContent(d);
 
         tooltip.showTooltip(content, d3.event);
     }
 
-    /*
-     * Hides tooltip
-     */
-    function hideDetail(d) {
+    function hideBubbleDetail(d) {
         // reset outline
         d3.select(this)
             .attr('stroke', d3.rgb(d.color).darker());
@@ -523,13 +553,48 @@ function bubbleChart() {
         tooltip.hideTooltip();
     }
 
-    /*
-     * Externally accessible function (this is attached to the
-     * returned chart function). Allows the visualization to toggle
-     * between "single group" and "split by year" modes.
-     *
-     * displayName is expected to be a string and either 'year' or 'all'.
-     */
+    // Function to show tooltip on mouseover for the pie chart
+    function showPieDetail(d) {
+        // change outline to indicate hover state.
+        // d3.select(this).attr('stroke', 'black');
+
+        // function to get description of size of business
+        function getDescription(size) {
+            if (size === 'Small') {
+                return 'Small Business (1-19 employees)';
+            } else if (size === 'Medium') {
+                return 'Medium Business (20-99 employees)';
+            } else if (size === 'Large') {
+                return 'Large Business (100+ employees)';
+            } else {
+                return 'Unknown Number of Employees';
+            }
+        }
+
+        // Describe the tooltip content: sector, zipcode, year, and description of size of business
+        var sharedContent = getSharedTooltipContent(d.data);
+        console.log('sharedContent', sharedContent);
+        // var content = '<span class="name">Business Size: </span><span class="value">' +
+        //     getDescription(d.data.size) + '</span>' + '<br/>' + '<span class="name">Number of Establishments: </span><span class="value">' +
+        //     d.data.subest + '</span>';
+        var content = '<span class="name">' +
+            getDescription(d.data.size) + '</span>' + '<br/>' + '<span class="name">' +
+            d.data.subest + ' establishments </span>';
+
+        content = content + '<br><br>' + sharedContent;
+
+        tooltip.showTooltip(content, d3.event);
+    }
+
+    // Function to hide tooltip on mouseout for the pie chart
+    function hidePieDetail(d) {
+        // reset outline
+        // d3.select(this)
+        // .attr('stroke', d3.rgb(d.color).darker());
+
+        tooltip.hideTooltip();
+    }
+
     chart.toggleDisplay = function (displayName) {
         if (displayName === 'year') {
             splitBubbles();
@@ -550,12 +615,9 @@ function bubbleChart() {
 
         // Set the data by joining the nodes with the data
         bubbles = bubbles.data(nodes, function (d) { return d.id; });
-        // .data(nodes);
 
         // Remove bubbles that no longer exist in the filtered data
         bubbles.exit().remove();
-
-        console.log('updating nodes...');
 
         // Enter new bubbles
         var bubblesE = bubbles.enter().append('circle')
@@ -564,8 +626,8 @@ function bubbleChart() {
             .attr('fill', function (d) { return d.color; })
             .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
             .attr('stroke-width', 2)
-            .on('mouseover', showDetail)
-            .on('mouseout', hideDetail);
+            .on('mouseover', showBubbleDetail)
+            .on('mouseout', hideBubbleDetail);
 
         // Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
@@ -586,8 +648,8 @@ function bubbleChart() {
         // Transition existing bubbles to new positions
         bubbles.transition()
             .duration(100)
-            // .attr('cx', function (d) { return d.x; })
-            // .attr('cy', function (d) { return d.y; })
+            .attr('cx', function (d) { console.log(d.x); return d.x; })
+            .attr('cy', function (d) { return d.y; })
             .attr('r', function (d) { return d.radius; });
 
         // Set the simulation's nodes to our newly created nodes array.
@@ -603,29 +665,6 @@ function bubbleChart() {
 }
 
 
-
-
-
-/*
- * Function called once data is loaded from CSV.
- * Calls bubble chart function to display inside #vis div.
- */
-// function display(error, data) {
-//     if (error) {
-//         console.log(error);
-//     }
-
-//     console.log(data);
-
-//     // Filter by year
-//     // data = data.filter(function (d) { return d.year == 2012; });
-
-//     myBubbleChart('#vis', data);
-// }
-
-/*
- * Sets up the layout buttons to allow for toggling between view modes.
- */
 function setupButtons() {
     d3.select('#toolbar')
         .selectAll('.button')
@@ -647,23 +686,6 @@ function setupButtons() {
         });
 }
 
-/*
- * Helper function to convert a number into a string
- * and add commas to it to improve presentation.
- */
-function addCommas(nStr) {
-    nStr += '';
-    var x = nStr.split('.');
-    var x1 = x[0];
-    var x2 = x.length > 1 ? '.' + x[1] : '';
-    var rgx = /(\d+)(\d{3})/;
-    while (rgx.test(x1)) {
-        x1 = x1.replace(rgx, '$1' + ',' + '$2');
-    }
-
-    return x1 + x2;
-}
-
 // Load the data.
 d3.csv('../data/all_data.csv', display);
 
@@ -677,10 +699,6 @@ function display(error, rawData) {
     if (error) {
         console.log(error);
     }
-
-    // Assign loaded data to the data variable. Now it is globally accessible.
-
-    // console.log(data);
 
     // remove zip 02228
     rawData = rawData.filter(function (d) { return d.zip != '02228'; });
@@ -702,15 +720,14 @@ function display(error, rawData) {
     });
 
     // Get the top 10 sectors
-    topSectors = topSectors.slice(0, 10);
+    topSectors = topSectors.slice(0, 20);
 
     // Filter the data to only include the top 10 sectors
     rawData = rawData.filter(function (d) { return topSectors.includes(d.sector); });
 
     data = rawData;
-    console.log('data', data);
 
-    initialize(2016, data); // initial year to be displayed when page loads
+    initialize(2010, data); // initial year to be displayed when page loads
 }
 
 function initialize(year, data) {
@@ -743,6 +760,7 @@ function initialize(year, data) {
     var filteredData = parsedData.filter(function (d) { return d.year === year; });
 
     myBubbleChart('#vis', filteredData);
+    myBubbleChart.createPieChartAll();
 }
 
 function update(year, data) {
@@ -759,13 +777,14 @@ function update(year, data) {
     myBubbleChart.updateBubbles(filteredData);
 
     myBubbleChart.updatePieChart();
+
 }
 
 d3.select("#yearSlider")
     .on("input", function () {
         var selectedYear = this.value;
 
-        // convert selectedYear to a number
+        // convert selectedZipcode to a number
         selectedYear = +selectedYear;
 
         console.log('selected', selectedYear);
@@ -784,36 +803,12 @@ function getXY(d) {
 
     index = 0;
 
-    // for (var i = 0; i < uniqueSectors.length; i++) {
-    //     for (var j = 0; j < uniqueZips.length; j++) {
-    //         sector = uniqueSectors[i];
-    //         zip = uniqueZips[j];
-
-    //         if (sector == d.sector && zip == d.zip) {
-    //             x = randomXArray[index];
-    //             y = randomYArray[index];
-
-    //             console.log('x', x);
-    //             console.log('sector', sector);
-    //             console.log('zip', zip);
-    //             // console.log('y', y);
-
-    //             return { x: x, y: y };
-    //         }
-    //         index++;
-    //     }
-    // }
-
     for (var i = 0; i < uniqueSectors.length; i++) {
         sector = uniqueSectors[i];
 
         if (sector == d.sector) {
             x = randomXArray[index];
             y = randomYArray[index];
-
-            // console.log('x', x);
-            // console.log('sector', sector);
-            // console.log('y', y);
 
             return { x: x, y: y };
         }
@@ -823,6 +818,17 @@ function getXY(d) {
 }
 
 function parseData(d) {
+    // Map nan to 0
+    d.n1_4 = isNaN(d.n1_4) ? 0 : d.n1_4;
+    d.n5_9 = isNaN(d.n5_9) ? 0 : d.n5_9;
+    d.n10_19 = isNaN(d.n10_19) ? 0 : d.n10_19;
+    d.n20_49 = isNaN(d.n20_49) ? 0 : d.n20_49;
+    d.n50_99 = isNaN(d.n50_99) ? 0 : d.n50_99;
+    d.n100_249 = isNaN(d.n100_249) ? 0 : d.n100_249;
+    d.n250_499 = isNaN(d.n250_499) ? 0 : d.n250_499;
+    d.n500_999 = isNaN(d.n500_999) ? 0 : d.n500_999;
+    d.n1000 = isNaN(d.n1000) ? 0 : d.n1000;
+
     return {
         year: +d.year,
         sector: d.sector,
@@ -839,14 +845,12 @@ function parseData(d) {
         n250_499: +d.n250_499,
         n500_999: +d.n500_999,
         n1000: +d.n1000,
-        // x: Math.random() * 900,
-        // y: Math.random() * 800
+        Small: +d.n1_4 + +d.n5_9 + +d.n10_19,
+        Medium: +d.n20_49 + +d.n50_99,
+        Large: +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000,
+        Unknown: +d.est - (+d.n1_4 + +d.n5_9 + +d.n10_19 + +d.n20_49 + +d.n50_99 + +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000),
     };
 }
 
-/*
- * Below is the initialization code as well as some helper functions
- * to create a new bubble chart instance, load the data, and display it.
- */
-
 var myBubbleChart = bubbleChart();
+

@@ -35,6 +35,11 @@ a, a:visited, a:active {
     width: calc(30% - 5px); /* Adjusted width to hold the pie chart */
     height: 600px;
     margin-top: 10px;
+    /* Make everything centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
   }
   
   #toolbar {
@@ -45,6 +50,14 @@ a, a:visited, a:active {
     font-size: 21px;
     fill: #aaa;
     cursor: default;
+  }
+
+  .inactive {
+    opacity: 0.5;
+  }
+
+  .clicked {
+    opacity: 0.2;
   }
   
   .tooltip {
@@ -74,3 +87,24 @@ a, a:visited, a:active {
   .footer {
     text-align: center;
   }
+  
+#vis-container {
+      display: flex;
+      height: 400px;
+      width: 900px;
+    }
+
+    #vis {
+      flex: 1;
+    }
+
+    #pieChart {
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .pie-chart-title {
+      position: fixed;
+      margin-top: -230px;
+    }

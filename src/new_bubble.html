@@ -10,20 +10,6 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/bubble_chart.css">
 
-  <!-- Add CSS styles for positioning the pie chart -->
-  <style>
-    #vis-container {
-      display: flex;
-    }
-
-    #vis {
-      flex: 1;
-    }
-
-    #pieChart {
-      flex: 1;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -34,11 +20,14 @@
     </div>
     <div id="vis-container">
       <div id="vis"></div>
-      <div id="pieChart"></div>
+      <div id="pieChart">
+        <!-- Title: initially not visible -->
+        <h3 class="pie-chart-title" style="display: none;">Proportion of Establishments by Size</h3>
+      </div>
     </div>
     <div id="slider-container">
-        <input type="range" min="2010" max="2021" value="2016" class="slider" id="yearSlider">
-        <span id="selectedYear">2016</span>
+        <input type="range" min="2010" max="2021" value="2010" class="slider" id="yearSlider">
+        <span id="selectedYear">2010</span>
     </div>
   </div>
 
