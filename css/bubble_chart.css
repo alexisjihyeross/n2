@@ -95,7 +95,7 @@ a, a:visited, a:active {
     }
 
     #vis {
-      flex: 1;
+      flex: 2;
     }
 
     #pieChart {

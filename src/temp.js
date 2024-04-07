@@ -14,10 +14,13 @@ var pieChartSector;
 
 var pieChartDim = 200;
 
+var idToX = {};
+var idToY = {};
+
 function bubbleChart() {
     console.log('bubbleChart function called');
-    var width = 800;
-    var height = 400;
+    var width = 650;
+    var height = 300;
 
     // Tooltip for mouseover functionality 
     var tooltip = floatingTooltip('tooltip', 240);
@@ -52,7 +55,7 @@ function bubbleChart() {
     };
 
     // @v4 strength to apply to the position forces
-    var forceStrength = 0.03;
+    var forceStrength = 0.02;
 
     // These will be set in create_nodes and create_vis
     var svg = null;
@@ -64,7 +67,7 @@ function bubbleChart() {
     }
 
     var simulation = d3.forceSimulation()
-        .velocityDecay(0.2)
+        .velocityDecay(0.19)
         .force('x', d3.forceX().strength(forceStrength).x(center.x))
         .force('y', d3.forceY().strength(forceStrength).y(center.y))
         .force('charge', d3.forceManyBody().strength(charge))
@@ -170,13 +173,25 @@ function bubbleChart() {
         bubbles = bubbles.merge(bubblesE);
 
         bubbles.transition()
-            .duration(2000)
+            .duration(100)
             .attr('r', function (d) { return d.radius; });
 
         simulation.nodes(nodes);
 
+
+        console.log(simulation);
+
+
         // Set initial layout to single group.
         groupBubbles();
+
+        // console.log('storing x/y coordinates...');
+        // for all bubbles, add the x/y coordinates to the idToX and idToY objects
+        // bubbles.each(function (d) {
+        //     idToX[d.id] = d.x;
+        //     idToY[d.id] = d.y;
+        // });
+        console.log('idToX', idToX);
     };
 
     // when the user clicks outside of a bubble, the pie chart should be removed
@@ -212,6 +227,17 @@ function bubbleChart() {
         sumEst['Large'] = 0;
         sumEst['Unknown'] = 0;
 
+        sumEst['n1_4'] = 0;
+        sumEst['n5_9'] = 0;
+        sumEst['n10_19'] = 0;
+        sumEst['n20_49'] = 0;
+        sumEst['n50_99'] = 0;
+        sumEst['n100_249'] = 0;
+        sumEst['n250_499'] = 0;
+        sumEst['n500_999'] = 0;
+        sumEst['n1000'] = 0;
+
+
         // Loop through the filteredData array and sum up the number of establishments for each size of business ('Small', 'Medium', 'Large', 'Unknown')
         filteredData.forEach(function (d) {
             // for each size of business, add the number of establishments to the sum
@@ -219,6 +245,16 @@ function bubbleChart() {
             sumEst['Medium'] = (sumEst['Medium'] || 0) + d.Medium;
             sumEst['Large'] = (sumEst['Large'] || 0) + d.Large;
             sumEst['Unknown'] = (sumEst['Unknown'] || 0) + d.Unknown;
+
+            sumEst['n1_4'] = (sumEst['n1_4'] || 0) + d.n1_4;
+            sumEst['n5_9'] = (sumEst['n5_9'] || 0) + d.n5_9;
+            sumEst['n10_19'] = (sumEst['n10_19'] || 0) + d.n10_19;
+            sumEst['n20_49'] = (sumEst['n20_49'] || 0) + d.n20_49;
+            sumEst['n50_99'] = (sumEst['n50_99'] || 0) + d.n50_99;
+            sumEst['n100_249'] = (sumEst['n100_249'] || 0) + d.n100_249;
+            sumEst['n250_499'] = (sumEst['n250_499'] || 0) + d.n250_499;
+            sumEst['n500_999'] = (sumEst['n500_999'] || 0) + d.n500_999;
+            sumEst['n1000'] = (sumEst['n1000'] || 0) + d.n1000;
         });
 
         // Add total
@@ -263,30 +299,30 @@ function bubbleChart() {
         pieChartSector = d.sector;
 
         const rowData = [
-            // { size: '1-4', est: +d.n1_4 },
-            // { size: '5-9', est: +d.n5_9 },
-            // { size: '10-19', est: +d.n10_19 },
-            // { size: '20-49', est: +d.n20_49 },
-            // { size: '50-99', est: +d.n50_99 },
-            // { size: '100-249', est: +d.n100_249 },
-            // { size: '250-499', est: +d.n250_499 },
-            // { size: '500-999', est: +d.n500_999 },
-            // { size: '1000+', est: +d.n1000 },
-            // { size: 'Small', subest: +d.n1_4 + +d.n5_9 + +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Medium', subest: +d.n20_49 + +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Large', subest: +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: 'Unknown', subest: +d.est - (+d.n1_4 + +d.n5_9 + +d.n10_19 + +d.n20_49 + +d.n50_99 + +d.n100_249 + +d.n250_499 + +d.n500_999 + +d.n1000), sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est }
-            { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '1-4', subest: +d.n1_4, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '5-9', subest: +d.n5_9, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '10-19', subest: +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '20-49', subest: +d.n20_49, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '50-99', subest: +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '100-249', subest: +d.n100_249, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '250-499', subest: +d.n250_499, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '500-999', subest: +d.n500_999, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: '1000+', subest: +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+
+            // TODO: for now, ignoring unknown
+            // { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
         ];
 
-        console.log('rowData', rowData);
+        // console.log('rowData', rowData);
 
         // Order the data by size of business (order: Small, Medium, Large, Unknown)
-        order = ['Small', 'Medium', 'Large', 'Unknown'];
-        rowData.sort((a, b) => order.indexOf(a.size) - order.indexOf(b.size));
+        // order = ['Small', 'Medium', 'Large', 'Unknown'];
+        // rowData.sort((a, b) => order.indexOf(a.size) - order.indexOf(b.size));
+
+        console.log('rowData', rowData);
 
         // Set up dimensions for the pie chart
         // const pieWidth = 300;
@@ -339,7 +375,7 @@ function bubbleChart() {
             .attr("fill", (d, i) => {
                 // const opacity = 0.1 + (0.9 / rowData.length) * i; // Adjust opacity calculation
                 // return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
-                const opacity = 0.2 + (0.95 / (rowData.length - 1)) * i; // Adjust opacity calculation
+                const opacity = 0.1 + (0.95 / (rowData.length - 1)) * i; // Adjust opacity calculation
                 return getColor(d, opacity);
                 // return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
             })
@@ -444,10 +480,13 @@ function bubbleChart() {
 
 
     function ticked() {
-        bubbles
-            .attr('cx', function (d) { return d.x; })
-            .attr('cy', function (d) { return d.y; });
-    }
+        // https://stackoverflow.com/questions/51153379/getting-d3-force-to-work-in-update-pattern
+
+        d3.selectAll('.bubble')
+            .attr('cx', function (d) { idToX[d.id] = d.x; return d.x; })
+            .attr('cy', function (d) { idToY[d.id] = d.y; return d.y; });
+    };
+
 
     /*
      * Provides a x value for each node to be used with the split by year
@@ -489,8 +528,9 @@ function bubbleChart() {
         console.log('splitting bubbles...');
         showZipcodeTitles();
 
+        splitForceStrength = 0.03;
         // @v4 Reset the 'x' force to draw the bubbles to their year centers
-        simulation.force('x', d3.forceX().strength(forceStrength).x(nodeZipcodePos));
+        simulation.force('x', d3.forceX().strength(splitForceStrength).x(nodeZipcodePos));
 
         // @v4 We can reset the alpha value and restart the simulation
         simulation.alpha(1).restart();
@@ -530,6 +570,9 @@ function bubbleChart() {
             d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>' + '</br><span class="name">Total Establishments: </span><span class="value">' +
             d.est + '</span>';
 
+        // Add x/y coordinates
+        // content = content + '<br><br>' + '<span class="name">x: </span><span class="value">' + d.x + '</span>' + '<br/>' + '<span class="name">y: </span><span class="value">' + d.y + '</span>';
+
         return content;
     }
 
@@ -566,9 +609,28 @@ function bubbleChart() {
                 return 'Medium Business (20-99 employees)';
             } else if (size === 'Large') {
                 return 'Large Business (100+ employees)';
-            } else {
+            } else if (size == 'Unknown') {
                 return 'Unknown Number of Employees';
+            } else if (size === '1-4') {
+                return '1-4 employees';
+            } else if (size === '5-9') {
+                return '5-9 employees';
+            } else if (size === '10-19') {
+                return '10-19 employees';
+            } else if (size === '20-49') {
+                return '20-49 employees';
+            } else if (size === '50-99') {
+                return '50-99 employees';
+            } else if (size === '100-249') {
+                return '100-249 employees';
+            } else if (size === '250-499') {
+                return '250-499 employees';
+            } else if (size === '500-999') {
+                return '500-999 employees';
+            } else if (size === '1000+') {
+                return '1000+ employees';
             }
+
         }
 
         // Describe the tooltip content: sector, zipcode, year, and description of size of business
@@ -605,6 +667,7 @@ function bubbleChart() {
 
     // Update function to update the bubbles based on filtered data
     chart.updateBubbles = function (filteredData) {
+        console.log('updating bubbles...');
         console.log('filteredData', filteredData);
 
         // Update the existing nodes' data with filtered data
@@ -615,48 +678,101 @@ function bubbleChart() {
 
         // Set the data by joining the nodes with the data
         bubbles = bubbles.data(nodes, function (d) { return d.id; });
+        // bubbles = bubbles.data(nodes);
 
+        console.log('num bubbles before exit', bubbles.size())
         // Remove bubbles that no longer exist in the filtered data
         bubbles.exit().remove();
+
+        console.log('num bubbles after exit', bubbles.size())
 
         // Enter new bubbles
         var bubblesE = bubbles.enter().append('circle')
             .classed('bubble', true)
             .attr('r', function (d) { return 0; }) // Set initial radius
+            .attr('cx', function (d) { console.log('new d:', d); return d.x; })
+            .attr('cy', function (d) { return d.y; })
             .attr('fill', function (d) { return d.color; })
             .attr('stroke', function (d) { return d3.rgb(d.color).darker(); })
             .attr('stroke-width', 2)
             .on('mouseover', showBubbleDetail)
-            .on('mouseout', hideBubbleDetail);
+            .on('mouseout', hideBubbleDetail)
+            .on('click', function (event) { clickedBubble(event); });
+
+        console.log('new bubbles:', bubblesE.size());
 
         // Merge the original empty selection and the enter selection
         bubbles = bubbles.merge(bubblesE);
+
+        console.log("total bubbles", bubbles.size());
+
+        console.log('idToX', idToX);
 
         // Update the x and y properties of the nodes based on the current positions of bubbles
         bubbles.each(function (d, i) {
             var cx = +d3.select(this).attr('cx');
             var cy = +d3.select(this).attr('cy');
+
             nodes[i].x = cx;
             nodes[i].y = cy;
+
+            // if d.id not in idToX, add it
+            if (!idToX[d.id]) {
+                idToX[d.id] = cx;
+            }
+            if (!idToY[d.id]) {
+                idToY[d.id] = cy;
+            }
         });
 
         // Make sure the length of the nodes array is the same as the length of the bubbles array
         console.log('nodes', nodes.length);
         console.log('bubbles', bubbles.size());
 
+        function getX(d) {
+            if (d.id in idToX) {
+                // console.log('idToX[d.id]', idToX[d.id]);
+                return idToX[d.id];
+            } else {
+                console.log('id not in idToX', d.id);
+                return d.x;
+            }
+        }
+
+        function getY(d) {
+            if (d.id in idToY) {
+                // console.log('idToY[d.id]', idToY[d.id]);
+                return idToY[d.id];
+            } else {
+                console.log('id not in idToY', d.id);
+                return d.y;
+            }
+        }
 
         // Transition existing bubbles to new positions
         bubbles.transition()
             .duration(100)
-            .attr('cx', function (d) { console.log(d.x); return d.x; })
-            .attr('cy', function (d) { return d.y; })
+            .attr('cx', function (d) { return getX(d); })
+            .attr('cy', function (d) { return getY(d); })
             .attr('r', function (d) { return d.radius; });
 
         // Set the simulation's nodes to our newly created nodes array.
-        simulation.nodes(nodes);
 
+        // if nodes is not empty
+        console.log('simulation...');
+        console.log(nodes);
+        simulation.nodes(nodes);
+        // reset the charge force based on the current nodes
+        // simulation.force('charge', null);
+
+        // simulation.force('charge', d3.forceManyBody().strength(charge));
+        // simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
+
+        console.log('restart simulation...');
         // Restart the simulation
         simulation.alpha(1).restart();
+
+        // groupBubbles();
     };
 
 
@@ -725,6 +841,12 @@ function display(error, rawData) {
     // Filter the data to only include the top 10 sectors
     rawData = rawData.filter(function (d) { return topSectors.includes(d.sector); });
 
+    // Only include Utilities sector
+    // rawData = rawData.filter(function (d) { return d.sector === 'Utilities'; });
+
+    // remove unclassified; TODO: want this?
+    rawData = rawData.filter(function (d) { return d.sector != 'Unclassified'; });
+
     data = rawData;
 
     initialize(2010, data); // initial year to be displayed when page loads
@@ -764,8 +886,8 @@ function initialize(year, data) {
 }
 
 function update(year, data) {
-    uniqueSectors = [...new Set(data.map(d => d.sector))];
-    uniqueZips = [...new Set(data.map(d => d.zip))];
+    // uniqueSectors = [...new Set(data.map(d => d.sector))];
+    // uniqueZips = [...new Set(data.map(d => d.zip))];
 
     // Parse the data, pass in the unique sectors and unique zipcodes
     parsedData = data.map(function (d) { return parseData(d); });
@@ -799,8 +921,6 @@ d3.select("#yearSlider")
 function getXY(d) {
     // Maps sector/zipcode to x position
 
-    var xMap = {};
-
     index = 0;
 
     for (var i = 0; i < uniqueSectors.length; i++) {
@@ -814,7 +934,9 @@ function getXY(d) {
         }
         index++;
     }
-
+    console.log('no match for sector');
+    console.log('d.sector', d.sector);
+    console.log('uniqueSectors', uniqueSectors);
 }
 
 function parseData(d) {
@@ -830,6 +952,7 @@ function parseData(d) {
     d.n1000 = isNaN(d.n1000) ? 0 : d.n1000;
 
     return {
+        id: d.zipcode + d.sector,
         year: +d.year,
         sector: d.sector,
         est: +d.est,
