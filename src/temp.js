@@ -330,47 +330,17 @@ function bubbleChart() {
 
         // Append paths for the arcs with varying opacity
         arcs.append("path")
-<<<<<<< HEAD
-        .attr("d", arcGenerator)
-        .attr("fill", (d, i) => {
-            const opacity = 0.1 + (0.9 / rowData.length) * i; // Adjust opacity calculation
-            return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
-        })
-        .attr("stroke", "black") // Add stroke color
-        .style("stroke-width", "2px") // Set stroke width
-        .style("opacity", 1) // Fade in the arcs
-        .transition() // Apply transition for better visual effect
-        .duration(1000)
-        .attrTween("d", function(d) {
-            var interpolate = d3.interpolate({startAngle: 0, endAngle: 0}, d);
-            return function(t) {
-                return arcGenerator(interpolate(t));
-            };
-        });
-    
-        // // // Append text labels for the arcs
-        arcs.append("text")
-        .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
-        .attr("text-anchor", "middle")
-        .text(d => {
-            if (!isNaN(d.data.est) && d.data.est !== 0) {
-                return `${d.data.size}: ${d.data.est}`;
-            } else {
-                return ''; // Return empty string for NaN or zero values
-            }
-        });
-        // //Append text labels for the arcs
-
-=======
             .attr("d", arcGenerator)
             .attr("fill", (d, i) => {
+                // const opacity = 0.1 + (0.9 / rowData.length) * i; // Adjust opacity calculation
+                // return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
                 const opacity = 0.2 + (0.95 / (rowData.length - 1)) * i; // Adjust opacity calculation
                 return getColor(d, opacity);
                 // return d3.rgb(baseColor).toString().replace(")", `, ${opacity})`);
             })
             .attr("stroke", "black") // Add stroke color
             .style("stroke-width", "2px") // Set stroke width
-            .style("opacity", 1) // Fade in the arcs
+            .style("opacity", 1); // Fade in the arcs
         // .transition() // Apply transition for better visual effect
         // .duration(1000)
         // .attrTween("d", function (d) {
@@ -380,19 +350,19 @@ function bubbleChart() {
         //     };
         // });
 
-        // // Append text labels for the arcs
+        // // // Append text labels for the arcs
         arcs.append("text")
             .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
             .attr("text-anchor", "middle")
             .text(d => {
                 if (!isNaN(d.data.est) && d.data.est !== 0) {
                     // return `${d.data.size}: ${d.data.est}`;
-                    return `${d.data.est}`;
+                    return `${d.data.size}`;
                 } else {
                     return ''; // Return empty string for NaN or zero values
                 }
             });
->>>>>>> 726c01e0216974995f24bd384ce21c15f4b347c6
+        // //Append text labels for the arcs
     }
 
     chart.updatePieChart = function () {
