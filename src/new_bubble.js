@@ -1,5 +1,5 @@
 var uniqueSectors;
-var uniqueZips;
+var uniqueneighborhoods;
 
 var randomXArray;
 var randomYArray;
@@ -9,7 +9,7 @@ var maxEstablishments;
 var radiusScale;
 var fillColor;
 
-var pieChartZipcode;
+var pieChartneighborhood;
 var pieChartSector;
 
 var pieChartDim = 200;
@@ -37,24 +37,17 @@ function bubbleChart() {
         .style("height", height + "px") // Set the height using style
         .style("float", "right"); // Float the pie chart to the right
 
-    // Create zipcodeCenters for 02109, 02125, 02127, "02118", "02128", "02228"
-    var zipcodeCenters = {
-        '02109': { x: 1 * width / 8, y: height / 2 },
-        '02125': { x: 2 * width / 8, y: height / 2 },
-        '02127': { x: 3 * width / 8, y: height / 2 },
-        '02118': { x: 4 * width / 8, y: height / 2 },
-        '02128': { x: 5 * width / 8, y: height / 2 },
-        // '02228': { x: 6 * width / 8, y: height / 2 }
-    };
+    var neighborhoodCenters = {
+        'South Boston': { x: 1 * width / 4, y: height / 2 },
+        'East Boston': { x: 2 * width / 4, y: height / 2 },
+        'South End': { x: 3 * width / 4, y: height / 2 },
+    }
 
-    // X locations of the zipcode titles.
-    var zipcodeTitlesX = {
-        '02109': 1 * width / 8 - 15,
-        '02125': 2 * width / 8 - 5,
-        '02127': 3 * width / 8 + 0,
-        '02118': 4 * width / 8 + 5,
-        '02128': 5 * width / 8 + 10,
-        // '02228': 6 * width / 8 + 15,
+    // X locations of the neighborhood titles.
+    var neighborhoodTitlesX = {
+        'South Boston': 1 * width / 4 - 15,
+        'East Boston': 2 * width / 4,
+        'South End': 3 * width / 4 + 15,
     };
 
     // @v4 strength to apply to the position forces
@@ -86,19 +79,19 @@ function bubbleChart() {
             // add id, radius, and x/y properties to each node
             d.radius = radiusScale(+d.est);
             d.value = +d.est;
-            d.id = d.zipcode + d.sector;
+            d.id = d.neighborhood + d.sector;
             d.group = d.sector;
             d.color = fillColor(d.sector);
 
             return d;
 
             // return {
-            //     id: d.zipcode + d.sector,
+            //     id: d.neighborhood + d.sector,
             //     radius: radiusScale(+d.est),
             //     value: +d.est,
             //     est: +d.est,
             //     color: fillColor(d.sector),
-            //     zipcode: d.zipcode,
+            //     neighborhood: d.neighborhood,
             //     year: +d.year,
             //     sector: d.sector,
             //     group: d.sector,
@@ -273,8 +266,8 @@ function bubbleChart() {
         sumEst['est'] = sumEst['Small'] + sumEst['Medium'] + sumEst['Large'] + sumEst['Unknown'];
         sumEst['year'] = d3.select("#yearSlider").node().value;
 
-        // TODO: hacky, but add zipcode and sector to sumEst to match the format of the other data for the tooltip
-        sumEst['zipcode'] = 'All';
+        // TODO: hacky, but add neighborhood and sector to sumEst to match the format of the other data for the tooltip
+        sumEst['neighborhood'] = 'All';
 
         sumEst['sector'] = currentSector;
 
@@ -283,8 +276,8 @@ function bubbleChart() {
         // Create a new pie chart with the sum of establishments for each sector
         createPieChart(sumEst, 225, 225);
 
-        // Reset the pieChartZipcode and pieChartSector
-        pieChartZipcode = null;
+        // Reset the pieChartneighborhood and pieChartSector
+        pieChartneighborhood = null;
         pieChartSector = null;
 
     }
@@ -307,26 +300,26 @@ function bubbleChart() {
         //     .style('font-weight', 'bold')
         //     .text('Proportion of Establishments by Size of Business');
 
-        // Set the pie chart zipcode and sector
-        pieChartZipcode = d.zipcode;
+        // Set the pie chart neighborhood and sector
+        pieChartneighborhood = d.neighborhood;
         pieChartSector = d.sector;
 
         const rowData = [
-            // { size: '1-4', subest: +d.n1_4, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '5-9', subest: +d.n5_9, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '10-19', subest: +d.n10_19, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '20-49', subest: +d.n20_49, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '50-99', subest: +d.n50_99, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '100-249', subest: +d.n100_249, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '250-499', subest: +d.n250_499, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '500-999', subest: +d.n500_999, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            // { size: '1000+', subest: +d.n1000, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Small', subest: d.Small, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Medium', subest: d.Medium, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
-            { size: 'Large', subest: d.Large, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            // { size: '1-4', subest: +d.n1_4, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '5-9', subest: +d.n5_9, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '10-19', subest: +d.n10_19, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '20-49', subest: +d.n20_49, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '50-99', subest: +d.n50_99, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '100-249', subest: +d.n100_249, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '250-499', subest: +d.n250_499, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '500-999', subest: +d.n500_999, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            // { size: '1000+', subest: +d.n1000, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            { size: 'Small', subest: d.Small, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            { size: 'Medium', subest: d.Medium, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
+            { size: 'Large', subest: d.Large, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
 
             // TODO: for now, ignoring unknown
-            { size: 'Unknown', subest: d.Unknown, sector: d.sector, zipcode: d.zipcode, year: d.year, est: d.est },
+            { size: 'Unknown', subest: d.Unknown, sector: d.sector, neighborhood: d.neighborhood, year: d.year, est: d.est },
         ];
 
         // console.log('rowData', rowData);
@@ -455,9 +448,9 @@ function bubbleChart() {
 
     chart.updatePieChart = function () {
         // If a pie chart has been created, update it
-        if (pieChartZipcode && pieChartSector) {
-            // Find the bubble in filteredData that matches the pie chart zipcode and sector AND the year
-            const d = nodes.find(d => d.zipcode === pieChartZipcode && d.sector === pieChartSector);
+        if (pieChartneighborhood && pieChartSector) {
+            // Find the bubble in filteredData that matches the pie chart neighborhood and sector AND the year
+            const d = nodes.find(d => d.neighborhood === pieChartneighborhood && d.sector === pieChartSector);
 
             // If the bubble is found, recreate the pie chart
             if (d) {
@@ -505,12 +498,12 @@ function bubbleChart() {
      * Provides a x value for each node to be used with the split by year
      * x force.
      */
-    function nodeZipcodePos(d) {
+    function nodeneighborhoodPos(d) {
         // console.log(d);
-        // console.log(d.zipcode);
-        // console.log(zipcodeCenters[d.zipcode]);
-        // console.log(zipcodeCenters[d.zipcode].x);
-        return zipcodeCenters[d.zipcode].x;
+        // console.log(d.neighborhood);
+        // console.log(neighborhoodCenters[d.neighborhood]);
+        // console.log(neighborhoodCenters[d.neighborhood].x);
+        return neighborhoodCenters[d.neighborhood].x;
     }
 
 
@@ -521,7 +514,7 @@ function bubbleChart() {
      * center of the visualization.
      */
     function groupBubbles() {
-        hideZipcodeTitles();
+        hideneighborhoodTitles();
 
         // @v4 Reset the 'x' force to draw the bubbles to the center.
         simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
@@ -539,36 +532,36 @@ function bubbleChart() {
      */
     function splitBubbles() {
         console.log('splitting bubbles...');
-        showZipcodeTitles();
+        showneighborhoodTitles();
 
         splitForceStrength = 0.03;
         // @v4 Reset the 'x' force to draw the bubbles to their year centers
-        simulation.force('x', d3.forceX().strength(splitForceStrength).x(nodeZipcodePos));
+        simulation.force('x', d3.forceX().strength(splitForceStrength).x(nodeneighborhoodPos));
 
         // @v4 We can reset the alpha value and restart the simulation
         simulation.alpha(1).restart();
     }
 
     /*
-     * Hides Zipcode title displays.
+     * Hides neighborhood title displays.
      */
-    function hideZipcodeTitles() {
+    function hideneighborhoodTitles() {
         svg.selectAll('.year').remove();
     }
 
     /*
-     * Shows Zipcode title displays.
+     * Shows neighborhood title displays.
      */
-    function showZipcodeTitles() {
+    function showneighborhoodTitles() {
         // Another way to do this would be to create
         // the year texts once and then just hide them.
-        var yearsData = d3.keys(zipcodeTitlesX);
+        var yearsData = d3.keys(neighborhoodTitlesX);
         var years = svg.selectAll('.year')
             .data(yearsData);
 
         years.enter().append('text')
             .attr('class', 'year')
-            .attr('x', function (d) { return zipcodeTitlesX[d]; })
+            .attr('x', function (d) { return neighborhoodTitlesX[d]; })
             .attr('y', 40)
             .attr('text-anchor', 'middle')
             .text(function (d) { return d; });
@@ -577,10 +570,10 @@ function bubbleChart() {
     function getSharedTooltipContent(d) {
         // console.log("getting shared tooltip content");
         // console.log(d);
-        // Describe the tooltip content: sector, number of establishments, zipcode, year, and x/y
+        // Describe the tooltip content: sector, number of establishments, neighborhood, year, and x/y
         var content = '<span class="name">Sector: </span><span class="value">' +
-            d.sector + '</span>' + '<br/>' + '<span class="name">Zipcode: </span><span class="value">' +
-            d.zipcode + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>' + '</br><span class="name">Total Establishments: </span><span class="value">' +
+            d.sector + '</span>' + '<br/>' + '<span class="name">neighborhood: </span><span class="value">' +
+            d.neighborhood + '</span>' + '<br/>' + '<span class="name">Year: </span><span class="value">' + d.year + '</span>' + '</br><span class="name">Total Establishments: </span><span class="value">' +
             d.est + '</span>';
 
         // Add x/y coordinates
@@ -595,7 +588,7 @@ function bubbleChart() {
         // change outline to indicate hover state.
         d3.select(this).attr('stroke', 'black');
 
-        // Describe the tooltip content: sector, number of establishments, zipcode, year, and x/y
+        // Describe the tooltip content: sector, number of establishments, neighborhood, year, and x/y
         var content = getSharedTooltipContent(d);
 
         tooltip.showTooltip(content, d3.event);
@@ -646,7 +639,7 @@ function bubbleChart() {
 
         }
 
-        // Describe the tooltip content: sector, zipcode, year, and description of size of business
+        // Describe the tooltip content: sector, neighborhood, year, and description of size of business
         var sharedContent = getSharedTooltipContent(d.data);
         console.log('sharedContent', sharedContent);
         // var content = '<span class="name">Business Size: </span><span class="value">' +
@@ -829,8 +822,8 @@ function display(error, rawData) {
         console.log(error);
     }
 
-    // remove zip 02228
-    rawData = rawData.filter(function (d) { return d.zip != '02228'; });
+    // remove neighborhood 02228
+    // rawData = rawData.filter(function (d) { return d.neighborhood != '02228'; });
 
     // Only consider the top 10 sectors
     // Get the top 10 sectors by number of establishments across all years
@@ -872,15 +865,16 @@ function initialize(year, data) {
 
 
 
-    uniqueZips = [...new Set(data.map(d => d.zip))];
+    uniqueneighborhoods = [...new Set(data.map(d => d.neighborhood))];
 
-    numUniqueX = uniqueSectors.length * uniqueZips.length;
+    numUniqueX = uniqueSectors.length * uniqueneighborhoods.length;
 
     randomXArray = Array.from({ length: numUniqueX }, () => Math.random() * 900);
 
     randomYArray = Array.from({ length: numUniqueX }, () => Math.random() * 800);
 
     maxEstablishments = d3.max(data, function (d) { return +d.est; });
+    console.log('maxEstablishments', maxEstablishments);
 
     radiusScale = d3.scalePow()
         .exponent(1)
@@ -903,7 +897,7 @@ function initialize(year, data) {
     fillColor = d3.scaleOrdinal()
         .domain(uniqueSectors)
         .range(colors);
-    // Parse the data, pass in the unique sectors and unique zipcodes
+    // Parse the data, pass in the unique sectors and unique neighborhoods
     parsedData = data.map(function (d) { return parseData(d); });
 
     console.log('parsedData', parsedData);
@@ -927,9 +921,9 @@ function initialize(year, data) {
 
 function update(data) {
     // uniqueSectors = [...new Set(data.map(d => d.sector))];
-    // uniqueZips = [...new Set(data.map(d => d.zip))];
+    // uniqueneighborhoods = [...new Set(data.map(d => d.neighborhood))];
 
-    // Parse the data, pass in the unique sectors and unique zipcodes
+    // Parse the data, pass in the unique sectors and unique neighborhoods
     parsedData = data.map(function (d) { return parseData(d); });
 
     console.log('parsedData', parsedData);
@@ -950,7 +944,7 @@ d3.select("#yearSlider")
     .on("input", function () {
         var selectedYear = this.value;
 
-        // convert selectedZipcode to a number
+        // convert selectedneighborhood to a number
         selectedYear = +selectedYear;
 
         currentYear = selectedYear;
@@ -988,7 +982,7 @@ d3.select("#sector-dropdown")
     );
 
 function getXY(d) {
-    // Maps sector/zipcode to x position
+    // Maps sector/neighborhood to x position
 
     index = 0;
 
@@ -1021,11 +1015,11 @@ function parseData(d) {
     d.n1000 = isNaN(d.n1000) ? 0 : d.n1000;
 
     return {
-        id: d.zipcode + d.sector,
+        id: d.neighborhood + d.sector,
         year: +d.year,
         sector: d.sector,
         est: +d.est,
-        zipcode: d.zip,
+        neighborhood: d.neighborhood,
         x: getXY(d).x,
         y: getXY(d).y,
         n1_4: +d.n1_4,

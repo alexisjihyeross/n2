@@ -1,1030 +1,617 @@
-zip,naics,est,n1_4,n5_9,n10_19,n20_49,n50_99,n100_249,n250_499,n500_999,n1000,year,sector,name,city,stabbr,cty_name
-02109,22----,1,1,0,0,0,0,0,0,0,0,2010,Utilities,,,,
-02109,23----,15,10,1,0,2,1,1,0,0,0,2010,Construction,,,,
-02109,31----,5,3,1,1,0,0,0,0,0,0,2010,Manufacturing,,,,
-02109,42----,18,12,1,4,1,0,0,0,0,0,2010,Wholesale Trade,,,,
-02109,44----,92,42,19,17,12,1,1,0,0,0,2010,Retail Trade,,,,
-02109,48----,5,3,0,1,0,0,0,1,0,0,2010,Transportation and Warehousing,,,,
-02109,51----,27,13,4,1,5,3,1,0,0,0,2010,Information,,,,
-02109,52----,240,96,50,31,25,9,14,6,3,6,2010,Finance and Insurance,,,,
-02109,53----,81,36,18,11,11,3,2,0,0,0,2010,Real Estate and Rental and Leasing,,,,
-02109,54----,375,213,63,41,40,8,6,2,2,0,2010,"Professional, Scientific, and Technical Services",,,,
-02109,55----,12,4,0,1,2,1,2,2,0,0,2010,Management of Companies and Enterprises,,,,
-02109,56----,89,34,13,10,14,8,6,2,1,1,2010,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,9,4,1,3,1,0,0,0,0,0,2010,Educational Services,,,,
-02109,62----,27,11,8,2,3,0,2,1,0,0,2010,Health Care and Social Assistance,,,,
-02109,71----,9,5,0,1,3,0,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,
-02109,72----,110,31,17,22,26,7,6,1,0,0,2010,Accommodation and Food Services,,,,
-02109,81----,65,35,14,14,2,0,0,0,0,0,2010,Other Services (except Public Administration),,,,
-02109,99----,2,2,0,0,0,0,0,0,0,0,2010,Unclassified,,,,
-02118,22----,1,1,0,0,0,0,0,0,0,0,2010,Utilities,,,,
-02118,23----,22,13,3,3,1,0,1,1,0,0,2010,Construction,,,,
-02118,31----,21,6,1,4,4,4,2,0,0,0,2010,Manufacturing,,,,
-02118,42----,87,27,20,20,13,6,1,0,0,0,2010,Wholesale Trade,,,,
-02118,44----,97,56,25,11,3,1,1,0,0,0,2010,Retail Trade,,,,
-02118,48----,7,4,0,2,1,0,0,0,0,0,2010,Transportation and Warehousing,,,,
-02118,51----,19,11,3,2,2,0,0,1,0,0,2010,Information,,,,
-02118,52----,21,9,8,4,0,0,0,0,0,0,2010,Finance and Insurance,,,,
-02118,53----,42,26,7,6,3,0,0,0,0,0,2010,Real Estate and Rental and Leasing,,,,
-02118,54----,123,81,22,10,7,3,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,
-02118,55----,3,1,0,1,0,0,1,0,0,0,2010,Management of Companies and Enterprises,,,,
-02118,56----,23,9,6,2,3,2,1,0,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,7,4,1,1,1,0,0,0,0,0,2010,Educational Services,,,,
-02118,62----,86,27,13,13,17,9,4,2,0,1,2010,Health Care and Social Assistance,,,,
-02118,71----,14,8,1,1,2,2,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,
-02118,72----,88,35,15,11,22,4,1,0,0,0,2010,Accommodation and Food Services,,,,
-02118,81----,77,35,11,23,7,1,0,0,0,0,2010,Other Services (except Public Administration),,,,
-02118,99----,3,3,0,0,0,0,0,0,0,0,2010,Unclassified,,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2010,Utilities,,,,
-02125,23----,42,28,5,2,5,1,1,0,0,0,2010,Construction,,,,
-02125,31----,7,1,0,2,1,3,0,0,0,0,2010,Manufacturing,,,,
-02125,42----,8,6,0,1,1,0,0,0,0,0,2010,Wholesale Trade,,,,
-02125,44----,84,44,14,15,8,1,1,1,0,0,2010,Retail Trade,,,,
-02125,48----,7,6,1,0,0,0,0,0,0,0,2010,Transportation and Warehousing,,,,
-02125,51----,14,8,1,1,0,2,1,0,0,1,2010,Information,,,,
-02125,52----,18,6,7,2,0,0,1,2,0,0,2010,Finance and Insurance,,,,
-02125,53----,26,17,7,0,1,0,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,
-02125,54----,20,16,0,2,1,1,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,
-02125,55----,3,2,0,1,0,0,0,0,0,0,2010,Management of Companies and Enterprises,,,,
-02125,56----,16,9,3,3,0,1,0,0,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,9,3,1,2,2,0,0,1,0,0,2010,Educational Services,,,,
-02125,62----,42,11,10,16,2,1,1,1,0,0,2010,Health Care and Social Assistance,,,,
-02125,71----,4,3,1,0,0,0,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,
-02125,72----,56,29,9,8,8,1,1,0,0,0,2010,Accommodation and Food Services,,,,
-02125,81----,57,29,12,8,4,2,2,0,0,0,2010,Other Services (except Public Administration),,,,
-02127,21----,1,0,0,1,0,0,0,0,0,0,2010,"Mining, Quarrying, and Oil and Gas Extraction",,,,
-02127,22----,2,1,0,0,0,1,0,0,0,0,2010,Utilities,,,,
-02127,23----,56,24,16,5,8,3,0,0,0,0,2010,Construction,,,,
-02127,31----,21,6,3,4,5,1,1,0,1,0,2010,Manufacturing,,,,
-02127,42----,42,20,10,7,4,1,0,0,0,0,2010,Wholesale Trade,,,,
-02127,44----,68,42,15,6,4,1,0,0,0,0,2010,Retail Trade,,,,
-02127,48----,24,12,3,2,3,2,1,1,0,0,2010,Transportation and Warehousing,,,,
-02127,51----,19,12,2,1,2,1,1,0,0,0,2010,Information,,,,
-02127,52----,30,12,8,4,3,2,1,0,0,0,2010,Finance and Insurance,,,,
-02127,53----,30,19,4,3,3,0,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,
-02127,54----,55,39,10,3,1,1,1,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,
-02127,55----,8,3,0,2,1,0,1,0,0,1,2010,Management of Companies and Enterprises,,,,
-02127,56----,24,13,1,3,3,3,0,1,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,9,3,0,3,2,0,0,1,0,0,2010,Educational Services,,,,
-02127,62----,40,17,9,5,3,4,1,1,0,0,2010,Health Care and Social Assistance,,,,
-02127,71----,12,6,2,1,2,1,0,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,
-02127,72----,88,40,20,11,15,2,0,0,0,0,2010,Accommodation and Food Services,,,,
-02127,81----,94,63,22,4,2,0,3,0,0,0,2010,Other Services (except Public Administration),,,,
-02127,99----,1,1,0,0,0,0,0,0,0,0,2010,Unclassified,,,,
-02128,23----,35,20,7,3,4,0,1,0,0,0,2010,Construction,,,,
-02128,31----,17,4,3,3,2,4,0,1,0,0,2010,Manufacturing,,,,
-02128,42----,16,8,4,1,2,1,0,0,0,0,2010,Wholesale Trade,,,,
-02128,44----,100,55,24,10,7,3,1,0,0,0,2010,Retail Trade,,,,
-02128,48----,128,45,25,15,18,15,4,1,2,3,2010,Transportation and Warehousing,,,,
-02128,51----,12,8,2,1,0,1,0,0,0,0,2010,Information,,,,
-02128,52----,28,10,10,4,4,0,0,0,0,0,2010,Finance and Insurance,,,,
-02128,53----,32,12,7,6,2,4,1,0,0,0,2010,Real Estate and Rental and Leasing,,,,
-02128,54----,35,30,2,1,2,0,0,0,0,0,2010,"Professional, Scientific, and Technical Services",,,,
-02128,55----,5,3,1,1,0,0,0,0,0,0,2010,Management of Companies and Enterprises,,,,
-02128,56----,31,14,8,0,4,2,2,1,0,0,2010,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,7,3,3,0,1,0,0,0,0,0,2010,Educational Services,,,,
-02128,62----,49,16,10,12,7,1,2,0,1,0,2010,Health Care and Social Assistance,,,,
-02128,71----,6,3,1,1,0,0,1,0,0,0,2010,"Arts, Entertainment, and Recreation",,,,
-02128,72----,129,42,31,25,17,6,5,3,0,0,2010,Accommodation and Food Services,,,,
-02128,81----,81,57,14,8,1,1,0,0,0,0,2010,Other Services (except Public Administration),,,,
-02228,48----,1,1,0,0,0,0,0,0,0,0,2010,Transportation and Warehousing,,,,
-02109,22----,1,1,0,0,0,0,0,0,0,0,2011,Utilities,,,,
-02109,23----,18,12,0,2,2,1,1,0,0,0,2011,Construction,,,,
-02109,31----,5,3,1,1,0,0,0,0,0,0,2011,Manufacturing,,,,
-02109,42----,17,10,3,3,0,1,0,0,0,0,2011,Wholesale Trade,,,,
-02109,44----,83,32,26,14,9,1,1,0,0,0,2011,Retail Trade,,,,
-02109,48----,5,2,1,1,0,0,0,1,0,0,2011,Transportation and Warehousing,,,,
-02109,51----,39,20,6,2,7,2,2,0,0,0,2011,Information,,,,
-02109,52----,245,97,51,35,24,10,14,4,4,6,2011,Finance and Insurance,,,,
-02109,53----,84,38,17,14,11,2,2,0,0,0,2011,Real Estate and Rental and Leasing,,,,
-02109,54----,376,214,68,36,37,10,4,5,2,0,2011,"Professional, Scientific, and Technical Services",,,,
-02109,55----,8,3,0,0,1,1,2,1,0,0,2011,Management of Companies and Enterprises,,,,
-02109,56----,120,48,17,10,22,10,7,3,2,1,2011,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,11,5,1,4,1,0,0,0,0,0,2011,Educational Services,,,,
-02109,62----,28,10,10,2,2,1,3,0,0,0,2011,Health Care and Social Assistance,,,,
-02109,71----,7,3,1,1,2,0,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,
-02109,72----,111,31,18,21,26,9,5,1,0,0,2011,Accommodation and Food Services,,,,
-02109,81----,63,32,23,6,1,1,0,0,0,0,2011,Other Services (except Public Administration),,,,
-02109,99----,3,3,0,0,0,0,0,0,0,0,2011,Unclassified,,,,
-02118,23----,21,14,0,2,3,0,1,1,0,0,2011,Construction,,,,
-02118,31----,23,8,1,5,2,7,0,0,0,0,2011,Manufacturing,,,,
-02118,42----,89,30,21,15,17,5,1,0,0,0,2011,Wholesale Trade,,,,
-02118,44----,92,53,23,12,1,3,0,0,0,0,2011,Retail Trade,,,,
-02118,48----,7,3,1,2,1,0,0,0,0,0,2011,Transportation and Warehousing,,,,
-02118,51----,17,7,6,2,1,0,0,1,0,0,2011,Information,,,,
-02118,52----,24,13,5,6,0,0,0,0,0,0,2011,Finance and Insurance,,,,
-02118,53----,43,28,6,5,4,0,0,0,0,0,2011,Real Estate and Rental and Leasing,,,,
-02118,54----,134,87,30,8,8,1,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,
-02118,55----,3,1,0,1,0,0,1,0,0,0,2011,Management of Companies and Enterprises,,,,
-02118,56----,23,9,4,4,3,2,1,0,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,9,5,1,2,0,1,0,0,0,0,2011,Educational Services,,,,
-02118,62----,86,24,18,11,17,9,5,1,0,1,2011,Health Care and Social Assistance,,,,
-02118,71----,14,8,1,2,1,2,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,
-02118,72----,90,35,15,15,18,6,1,0,0,0,2011,Accommodation and Food Services,,,,
-02118,81----,80,38,27,7,7,1,0,0,0,0,2011,Other Services (except Public Administration),,,,
-02118,99----,4,4,0,0,0,0,0,0,0,0,2011,Unclassified,,,,
-02125,22----,2,1,0,0,0,0,0,0,1,0,2011,Utilities,,,,
-02125,23----,34,20,5,3,3,3,0,0,0,0,2011,Construction,,,,
-02125,31----,9,3,1,0,3,2,0,0,0,0,2011,Manufacturing,,,,
-02125,42----,8,6,0,1,1,0,0,0,0,0,2011,Wholesale Trade,,,,
-02125,44----,83,41,15,15,8,2,1,1,0,0,2011,Retail Trade,,,,
-02125,48----,6,4,1,1,0,0,0,0,0,0,2011,Transportation and Warehousing,,,,
-02125,51----,14,7,2,1,0,2,1,0,0,1,2011,Information,,,,
-02125,52----,21,9,6,2,1,0,1,2,0,0,2011,Finance and Insurance,,,,
-02125,53----,26,16,7,1,1,0,1,0,0,0,2011,Real Estate and Rental and Leasing,,,,
-02125,54----,21,16,1,2,1,1,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,
-02125,55----,3,2,0,0,1,0,0,0,0,0,2011,Management of Companies and Enterprises,,,,
-02125,56----,19,14,0,4,1,0,0,0,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,9,2,1,3,2,0,0,1,0,0,2011,Educational Services,,,,
-02125,62----,46,16,9,15,2,2,1,1,0,0,2011,Health Care and Social Assistance,,,,
-02125,71----,5,4,1,0,0,0,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,
-02125,72----,58,30,13,7,6,1,1,0,0,0,2011,Accommodation and Food Services,,,,
-02125,81----,59,29,14,9,2,3,2,0,0,0,2011,Other Services (except Public Administration),,,,
-02127,21----,1,0,1,0,0,0,0,0,0,0,2011,"Mining, Quarrying, and Oil and Gas Extraction",,,,
-02127,22----,2,1,0,0,0,1,0,0,0,0,2011,Utilities,,,,
-02127,23----,51,22,10,7,8,4,0,0,0,0,2011,Construction,,,,
-02127,31----,21,8,1,5,5,1,0,0,1,0,2011,Manufacturing,,,,
-02127,42----,41,19,11,5,5,1,0,0,0,0,2011,Wholesale Trade,,,,
-02127,44----,68,40,17,6,4,0,1,0,0,0,2011,Retail Trade,,,,
-02127,48----,26,12,5,3,2,1,2,1,0,0,2011,Transportation and Warehousing,,,,
-02127,51----,21,12,3,3,1,1,1,0,0,0,2011,Information,,,,
-02127,52----,29,11,8,3,4,2,1,0,0,0,2011,Finance and Insurance,,,,
-02127,53----,29,16,6,3,3,0,1,0,0,0,2011,Real Estate and Rental and Leasing,,,,
-02127,54----,62,40,16,3,1,1,1,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,
-02127,55----,8,2,1,0,2,3,0,0,0,0,2011,Management of Companies and Enterprises,,,,
-02127,56----,25,13,3,3,1,4,0,1,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,9,3,0,2,3,0,0,1,0,0,2011,Educational Services,,,,
-02127,62----,41,19,8,5,3,4,1,1,0,0,2011,Health Care and Social Assistance,,,,
-02127,71----,13,6,2,2,2,1,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,
-02127,72----,80,38,12,12,15,3,0,0,0,0,2011,Accommodation and Food Services,,,,
-02127,81----,89,59,18,6,3,0,3,0,0,0,2011,Other Services (except Public Administration),,,,
-02127,99----,2,2,0,0,0,0,0,0,0,0,2011,Unclassified,,,,
-02128,23----,38,21,8,2,5,2,0,0,0,0,2011,Construction,,,,
-02128,31----,16,5,2,3,1,4,0,1,0,0,2011,Manufacturing,,,,
-02128,42----,15,8,4,0,2,1,0,0,0,0,2011,Wholesale Trade,,,,
-02128,44----,113,71,21,10,6,4,1,0,0,0,2011,Retail Trade,,,,
-02128,48----,129,47,25,17,16,12,5,3,1,3,2011,Transportation and Warehousing,,,,
-02128,51----,5,3,0,1,0,1,0,0,0,0,2011,Information,,,,
-02128,52----,27,11,10,3,3,0,0,0,0,0,2011,Finance and Insurance,,,,
-02128,53----,33,15,6,6,2,2,2,0,0,0,2011,Real Estate and Rental and Leasing,,,,
-02128,54----,36,29,2,2,3,0,0,0,0,0,2011,"Professional, Scientific, and Technical Services",,,,
-02128,55----,2,1,0,1,0,0,0,0,0,0,2011,Management of Companies and Enterprises,,,,
-02128,56----,29,13,6,1,4,2,2,1,0,0,2011,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,8,5,2,0,1,0,0,0,0,0,2011,Educational Services,,,,
-02128,62----,45,13,12,9,7,1,2,0,1,0,2011,Health Care and Social Assistance,,,,
-02128,71----,6,3,1,1,0,1,0,0,0,0,2011,"Arts, Entertainment, and Recreation",,,,
-02128,72----,121,35,31,23,15,10,4,3,0,0,2011,Accommodation and Food Services,,,,
-02128,81----,83,55,19,5,3,1,0,0,0,0,2011,Other Services (except Public Administration),,,,
-02128,99----,1,1,0,0,0,0,0,0,0,0,2011,Unclassified,,,,
-02228,48----,1,1,0,0,0,0,0,0,0,0,2011,Transportation and Warehousing,,,,
-02228,81----,1,1,0,0,0,0,0,0,0,0,2011,Other Services (except Public Administration),,,,
-02109,11----,1,0,0,1,0,0,0,0,0,0,2012,"Agriculture, Forestry, Fishing and Hunting",,,,
-02109,22----,1,1,0,0,0,0,0,0,0,0,2012,Utilities,,,,
-02109,23----,15,11,1,1,1,0,1,0,0,0,2012,Construction,,,,
-02109,31----,7,5,1,1,0,0,0,0,0,0,2012,Manufacturing,,,,
-02109,42----,23,12,6,1,3,0,1,0,0,0,2012,Wholesale Trade,,,,
-02109,44----,91,39,25,15,10,1,1,0,0,0,2012,Retail Trade,,,,
-02109,48----,14,6,2,1,2,1,1,1,0,0,2012,Transportation and Warehousing,,,,
-02109,51----,42,19,8,4,9,0,2,0,0,0,2012,Information,,,,
-02109,52----,236,95,48,28,25,12,11,5,3,9,2012,Finance and Insurance,,,,
-02109,53----,88,45,17,13,8,3,2,0,0,0,2012,Real Estate and Rental and Leasing,,,,
-02109,54----,383,210,69,45,36,11,5,3,3,1,2012,"Professional, Scientific, and Technical Services",,,,
-02109,55----,12,6,0,1,1,2,1,1,0,0,2012,Management of Companies and Enterprises,,,,
-02109,56----,138,60,27,12,17,11,6,2,2,1,2012,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,18,8,5,3,2,0,0,0,0,0,2012,Educational Services,,,,
-02109,62----,33,14,7,8,1,0,3,0,0,0,2012,Health Care and Social Assistance,,,,
-02109,71----,7,3,0,2,2,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02109,72----,115,33,20,20,27,7,7,1,0,0,2012,Accommodation and Food Services,,,,
-02109,81----,72,36,22,9,3,2,0,0,0,0,2012,Other Services (except Public Administration),,,,
-02109,99----,1,1,0,0,0,0,0,0,0,0,2012,Unclassified,,,,
-02118,23----,22,13,2,2,3,1,0,1,0,0,2012,Construction,,,,
-02118,31----,21,6,1,3,4,7,0,0,0,0,2012,Manufacturing,,,,
-02118,42----,78,24,18,16,15,4,1,0,0,0,2012,Wholesale Trade,,,,
-02118,44----,98,58,20,14,1,3,2,0,0,0,2012,Retail Trade,,,,
-02118,48----,9,3,2,2,2,0,0,0,0,0,2012,Transportation and Warehousing,,,,
-02118,51----,14,6,5,1,2,0,0,0,0,0,2012,Information,,,,
-02118,52----,23,11,7,5,0,0,0,0,0,0,2012,Finance and Insurance,,,,
-02118,53----,45,29,9,4,3,0,0,0,0,0,2012,Real Estate and Rental and Leasing,,,,
-02118,54----,139,90,27,13,7,2,0,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,
-02118,55----,3,1,1,1,0,0,0,0,0,0,2012,Management of Companies and Enterprises,,,,
-02118,56----,21,10,4,2,3,0,2,0,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,10,5,3,1,1,0,0,0,0,0,2012,Educational Services,,,,
-02118,62----,88,32,12,10,19,8,4,2,0,1,2012,Health Care and Social Assistance,,,,
-02118,71----,13,8,1,0,2,1,1,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02118,72----,92,34,18,13,22,5,0,0,0,0,2012,Accommodation and Food Services,,,,
-02118,81----,74,35,27,5,6,1,0,0,0,0,2012,Other Services (except Public Administration),,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2012,Utilities,,,,
-02125,23----,31,23,3,1,1,3,0,0,0,0,2012,Construction,,,,
-02125,31----,9,2,1,1,2,3,0,0,0,0,2012,Manufacturing,,,,
-02125,42----,12,7,2,1,1,1,0,0,0,0,2012,Wholesale Trade,,,,
-02125,44----,79,38,16,14,6,3,1,1,0,0,2012,Retail Trade,,,,
-02125,48----,7,5,2,0,0,0,0,0,0,0,2012,Transportation and Warehousing,,,,
-02125,51----,15,9,1,0,0,2,2,0,0,1,2012,Information,,,,
-02125,52----,17,6,6,1,1,0,1,2,0,0,2012,Finance and Insurance,,,,
-02125,53----,25,13,7,1,2,1,1,0,0,0,2012,Real Estate and Rental and Leasing,,,,
-02125,54----,16,11,0,2,1,0,2,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,
-02125,55----,4,3,0,0,1,0,0,0,0,0,2012,Management of Companies and Enterprises,,,,
-02125,56----,19,11,2,3,2,1,0,0,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,10,2,3,2,2,0,0,1,0,0,2012,Educational Services,,,,
-02125,62----,52,20,15,11,2,2,1,1,0,0,2012,Health Care and Social Assistance,,,,
-02125,71----,3,2,1,0,0,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02125,72----,66,37,8,6,12,2,1,0,0,0,2012,Accommodation and Food Services,,,,
-02125,81----,60,35,11,6,4,3,1,0,0,0,2012,Other Services (except Public Administration),,,,
-02127,21----,1,0,0,1,0,0,0,0,0,0,2012,"Mining, Quarrying, and Oil and Gas Extraction",,,,
-02127,22----,2,1,0,0,0,1,0,0,0,0,2012,Utilities,,,,
-02127,23----,53,27,10,7,7,2,0,0,0,0,2012,Construction,,,,
-02127,31----,20,7,2,3,5,2,0,0,1,0,2012,Manufacturing,,,,
-02127,42----,31,9,12,3,6,1,0,0,0,0,2012,Wholesale Trade,,,,
-02127,44----,71,42,18,8,2,0,1,0,0,0,2012,Retail Trade,,,,
-02127,48----,24,11,5,0,1,3,3,1,0,0,2012,Transportation and Warehousing,,,,
-02127,51----,21,13,2,2,1,2,1,0,0,0,2012,Information,,,,
-02127,52----,29,11,9,2,5,1,1,0,0,0,2012,Finance and Insurance,,,,
-02127,53----,26,16,5,2,2,0,1,0,0,0,2012,Real Estate and Rental and Leasing,,,,
-02127,54----,73,47,13,7,4,1,1,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,
-02127,55----,9,2,1,1,2,1,2,0,0,0,2012,Management of Companies and Enterprises,,,,
-02127,56----,24,9,5,4,3,2,0,1,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,8,4,0,1,2,0,0,1,0,0,2012,Educational Services,,,,
-02127,62----,42,22,4,7,3,4,1,1,0,0,2012,Health Care and Social Assistance,,,,
-02127,71----,11,4,3,3,1,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02127,72----,82,37,14,14,15,2,0,0,0,0,2012,Accommodation and Food Services,,,,
-02127,81----,94,52,29,8,2,2,1,0,0,0,2012,Other Services (except Public Administration),,,,
-02127,99----,1,1,0,0,0,0,0,0,0,0,2012,Unclassified,,,,
-02128,23----,40,25,7,3,2,3,0,0,0,0,2012,Construction,,,,
-02128,31----,12,4,3,0,1,3,0,1,0,0,2012,Manufacturing,,,,
-02128,42----,15,8,4,0,2,1,0,0,0,0,2012,Wholesale Trade,,,,
-02128,44----,104,63,22,9,7,2,1,0,0,0,2012,Retail Trade,,,,
-02128,48----,130,50,22,18,16,11,4,4,2,3,2012,Transportation and Warehousing,,,,
-02128,51----,4,4,0,0,0,0,0,0,0,0,2012,Information,,,,
-02128,52----,21,7,10,2,2,0,0,0,0,0,2012,Finance and Insurance,,,,
-02128,53----,32,17,4,5,1,3,2,0,0,0,2012,Real Estate and Rental and Leasing,,,,
-02128,54----,32,25,3,2,2,0,0,0,0,0,2012,"Professional, Scientific, and Technical Services",,,,
-02128,55----,6,2,1,1,1,0,0,0,0,1,2012,Management of Companies and Enterprises,,,,
-02128,56----,33,13,7,3,5,2,2,1,0,0,2012,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,6,4,1,0,1,0,0,0,0,0,2012,Educational Services,,,,
-02128,62----,45,12,10,13,5,3,1,0,1,0,2012,Health Care and Social Assistance,,,,
-02128,71----,7,3,1,2,0,0,1,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02128,72----,125,31,32,29,21,4,5,3,0,0,2012,Accommodation and Food Services,,,,
-02128,81----,86,60,16,6,3,1,0,0,0,0,2012,Other Services (except Public Administration),,,,
-02228,71----,1,1,0,0,0,0,0,0,0,0,2012,"Arts, Entertainment, and Recreation",,,,
-02228,81----,1,1,0,0,0,0,0,0,0,0,2012,Other Services (except Public Administration),,,,
-02109,11----,1,0,0,1,0,0,0,0,0,0,2013,"Agriculture, Forestry, Fishing and Hunting",,,,
-02109,22----,1,1,0,0,0,0,0,0,0,0,2013,Utilities,,,,
-02109,23----,12,9,0,1,1,0,1,0,0,0,2013,Construction,,,,
-02109,31----,7,4,2,1,0,0,0,0,0,0,2013,Manufacturing,,,,
-02109,42----,32,19,4,6,1,1,1,0,0,0,2013,Wholesale Trade,,,,
-02109,44----,85,35,26,11,10,2,1,0,0,0,2013,Retail Trade,,,,
-02109,48----,7,5,1,1,0,0,0,0,0,0,2013,Transportation and Warehousing,,,,
-02109,51----,47,17,12,5,8,2,2,0,0,1,2013,Information,,,,
-02109,52----,239,100,44,25,26,15,14,5,3,7,2013,Finance and Insurance,,,,
-02109,53----,85,42,16,15,7,2,3,0,0,0,2013,Real Estate and Rental and Leasing,,,,
-02109,54----,394,217,68,46,33,16,9,2,3,0,2013,"Professional, Scientific, and Technical Services",,,,
-02109,55----,13,7,1,0,1,2,1,1,0,0,2013,Management of Companies and Enterprises,,,,
-02109,56----,138,63,24,9,16,15,4,5,1,1,2013,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,17,9,3,3,1,1,0,0,0,0,2013,Educational Services,,,,
-02109,62----,32,15,5,8,1,1,2,0,0,0,2013,Health Care and Social Assistance,,,,
-02109,71----,9,5,0,2,2,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02109,72----,120,29,21,25,28,13,3,1,0,0,2013,Accommodation and Food Services,,,,
-02109,81----,69,36,18,7,5,3,0,0,0,0,2013,Other Services (except Public Administration),,,,
-02118,23----,26,16,2,1,5,1,0,1,0,0,2013,Construction,,,,
-02118,31----,19,6,0,4,3,5,1,0,0,0,2013,Manufacturing,,,,
-02118,42----,79,26,18,15,16,3,1,0,0,0,2013,Wholesale Trade,,,,
-02118,44----,93,53,23,11,1,3,2,0,0,0,2013,Retail Trade,,,,
-02118,48----,10,6,0,2,2,0,0,0,0,0,2013,Transportation and Warehousing,,,,
-02118,51----,19,10,5,1,2,1,0,0,0,0,2013,Information,,,,
-02118,52----,23,10,9,3,0,0,1,0,0,0,2013,Finance and Insurance,,,,
-02118,53----,50,32,10,5,3,0,0,0,0,0,2013,Real Estate and Rental and Leasing,,,,
-02118,54----,146,91,32,10,11,1,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,
-02118,55----,7,1,2,2,2,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,
-02118,56----,20,9,4,2,2,3,0,0,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,12,6,4,1,1,0,0,0,0,0,2013,Educational Services,,,,
-02118,62----,94,35,12,16,16,7,5,2,0,1,2013,Health Care and Social Assistance,,,,
-02118,71----,15,10,1,0,3,0,1,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02118,72----,90,27,17,14,24,8,0,0,0,0,2013,Accommodation and Food Services,,,,
-02118,81----,70,42,16,4,7,1,0,0,0,0,2013,Other Services (except Public Administration),,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2013,Utilities,,,,
-02125,23----,32,21,5,2,2,1,1,0,0,0,2013,Construction,,,,
-02125,31----,10,3,1,1,2,3,0,0,0,0,2013,Manufacturing,,,,
-02125,42----,10,5,3,1,1,0,0,0,0,0,2013,Wholesale Trade,,,,
-02125,44----,86,46,14,14,6,4,1,1,0,0,2013,Retail Trade,,,,
-02125,48----,8,4,2,2,0,0,0,0,0,0,2013,Transportation and Warehousing,,,,
-02125,51----,22,11,4,1,2,1,2,0,1,0,2013,Information,,,,
-02125,52----,19,7,7,2,0,0,1,2,0,0,2013,Finance and Insurance,,,,
-02125,53----,27,15,6,2,2,1,1,0,0,0,2013,Real Estate and Rental and Leasing,,,,
-02125,54----,19,14,0,1,3,0,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,
-02125,55----,3,2,0,0,1,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,
-02125,56----,20,10,2,4,2,2,0,0,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,11,3,2,3,2,0,0,1,0,0,2013,Educational Services,,,,
-02125,62----,54,19,15,12,4,2,1,1,0,0,2013,Health Care and Social Assistance,,,,
-02125,71----,4,3,1,0,0,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02125,72----,56,25,9,8,12,1,1,0,0,0,2013,Accommodation and Food Services,,,,
-02125,81----,66,42,10,6,5,2,1,0,0,0,2013,Other Services (except Public Administration),,,,
-02125,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,
-02127,22----,1,0,0,0,0,1,0,0,0,0,2013,Utilities,,,,
-02127,23----,53,27,11,5,6,3,1,0,0,0,2013,Construction,,,,
-02127,31----,22,10,0,3,6,1,1,0,1,0,2013,Manufacturing,,,,
-02127,42----,31,9,13,2,5,2,0,0,0,0,2013,Wholesale Trade,,,,
-02127,44----,73,42,19,8,2,2,0,0,0,0,2013,Retail Trade,,,,
-02127,48----,21,9,4,1,1,4,1,1,0,0,2013,Transportation and Warehousing,,,,
-02127,51----,22,16,0,2,2,1,1,0,0,0,2013,Information,,,,
-02127,52----,31,15,8,2,3,2,1,0,0,0,2013,Finance and Insurance,,,,
-02127,53----,29,19,5,1,3,1,0,0,0,0,2013,Real Estate and Rental and Leasing,,,,
-02127,54----,78,48,18,6,3,2,1,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,
-02127,55----,9,3,1,1,2,0,2,0,0,0,2013,Management of Companies and Enterprises,,,,
-02127,56----,25,11,3,4,2,3,1,1,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,9,3,1,1,3,1,0,0,0,0,2013,Educational Services,,,,
-02127,62----,40,20,6,5,3,3,2,1,0,0,2013,Health Care and Social Assistance,,,,
-02127,71----,12,7,1,3,1,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02127,72----,85,35,17,13,15,4,1,0,0,0,2013,Accommodation and Food Services,,,,
-02127,81----,98,56,27,8,4,1,2,0,0,0,2013,Other Services (except Public Administration),,,,
-02127,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,
-02128,23----,41,27,6,3,3,2,0,0,0,0,2013,Construction,,,,
-02128,31----,12,4,3,0,2,2,1,0,0,0,2013,Manufacturing,,,,
-02128,42----,13,6,5,0,1,1,0,0,0,0,2013,Wholesale Trade,,,,
-02128,44----,110,63,23,13,6,3,2,0,0,0,2013,Retail Trade,,,,
-02128,48----,131,43,31,17,17,8,6,3,3,3,2013,Transportation and Warehousing,,,,
-02128,51----,4,4,0,0,0,0,0,0,0,0,2013,Information,,,,
-02128,52----,24,8,11,3,1,0,0,0,0,1,2013,Finance and Insurance,,,,
-02128,53----,34,20,3,5,1,2,3,0,0,0,2013,Real Estate and Rental and Leasing,,,,
-02128,54----,37,27,7,1,2,0,0,0,0,0,2013,"Professional, Scientific, and Technical Services",,,,
-02128,55----,5,3,1,1,0,0,0,0,0,0,2013,Management of Companies and Enterprises,,,,
-02128,56----,36,14,8,2,5,4,2,1,0,0,2013,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,6,3,2,0,1,0,0,0,0,0,2013,Educational Services,,,,
-02128,62----,46,14,11,11,6,2,1,0,1,0,2013,Health Care and Social Assistance,,,,
-02128,71----,6,2,2,1,0,0,1,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02128,72----,129,35,28,32,21,5,4,4,0,0,2013,Accommodation and Food Services,,,,
-02128,81----,84,59,15,7,2,1,0,0,0,0,2013,Other Services (except Public Administration),,,,
-02128,99----,1,1,0,0,0,0,0,0,0,0,2013,Unclassified,,,,
-02228,71----,1,1,0,0,0,0,0,0,0,0,2013,"Arts, Entertainment, and Recreation",,,,
-02109,11----,1,0,0,1,0,0,0,0,0,0,2014,"Agriculture, Forestry, Fishing and Hunting",,,,
-02109,22----,1,1,0,0,0,0,0,0,0,0,2014,Utilities,,,,
-02109,23----,13,11,0,0,1,0,1,0,0,0,2014,Construction,,,,
-02109,31----,8,6,1,1,0,0,0,0,0,0,2014,Manufacturing,,,,
-02109,42----,30,19,4,2,1,2,2,0,0,0,2014,Wholesale Trade,,,,
-02109,44----,81,36,17,15,10,2,1,0,0,0,2014,Retail Trade,,,,
-02109,48----,8,5,2,1,0,0,0,0,0,0,2014,Transportation and Warehousing,,,,
-02109,51----,46,16,9,7,8,1,3,2,0,0,2014,Information,,,,
-02109,52----,241,111,42,27,24,13,14,3,6,1,2014,Finance and Insurance,,,,
-02109,53----,80,47,10,12,8,2,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,
-02109,54----,397,212,68,52,41,10,9,2,3,0,2014,"Professional, Scientific, and Technical Services",,,,
-02109,55----,11,7,0,0,2,1,1,0,0,0,2014,Management of Companies and Enterprises,,,,
-02109,56----,134,71,18,8,13,11,7,5,1,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,19,8,6,3,1,1,0,0,0,0,2014,Educational Services,,,,
-02109,62----,32,15,7,7,1,0,1,1,0,0,2014,Health Care and Social Assistance,,,,
-02109,71----,9,5,0,2,2,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02109,72----,117,23,23,28,27,12,3,1,0,0,2014,Accommodation and Food Services,,,,
-02109,81----,73,38,15,13,4,3,0,0,0,0,2014,Other Services (except Public Administration),,,,
-02109,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,
-02118,23----,26,15,3,1,4,2,0,0,1,0,2014,Construction,,,,
-02118,31----,24,10,0,5,3,5,1,0,0,0,2014,Manufacturing,,,,
-02118,42----,76,20,20,17,13,4,2,0,0,0,2014,Wholesale Trade,,,,
-02118,44----,101,59,25,10,2,4,1,0,0,0,2014,Retail Trade,,,,
-02118,48----,9,5,0,1,3,0,0,0,0,0,2014,Transportation and Warehousing,,,,
-02118,51----,15,9,2,3,0,1,0,0,0,0,2014,Information,,,,
-02118,52----,24,13,7,3,0,0,1,0,0,0,2014,Finance and Insurance,,,,
-02118,53----,48,29,10,4,4,1,0,0,0,0,2014,Real Estate and Rental and Leasing,,,,
-02118,54----,148,100,23,12,10,2,1,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,
-02118,55----,6,0,3,1,2,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,
-02118,56----,25,15,3,2,2,2,1,0,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,12,7,3,1,0,1,0,0,0,0,2014,Educational Services,,,,
-02118,62----,93,30,15,15,17,8,4,3,0,1,2014,Health Care and Social Assistance,,,,
-02118,71----,16,9,2,1,3,1,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02118,72----,94,30,17,17,24,6,0,0,0,0,2014,Accommodation and Food Services,,,,
-02118,81----,69,43,11,6,6,3,0,0,0,0,2014,Other Services (except Public Administration),,,,
-02118,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2014,Utilities,,,,
-02125,23----,37,24,6,3,1,2,0,1,0,0,2014,Construction,,,,
-02125,31----,8,2,1,0,2,3,0,0,0,0,2014,Manufacturing,,,,
-02125,42----,10,5,2,2,1,0,0,0,0,0,2014,Wholesale Trade,,,,
-02125,44----,80,36,17,14,7,4,0,2,0,0,2014,Retail Trade,,,,
-02125,48----,5,2,2,1,0,0,0,0,0,0,2014,Transportation and Warehousing,,,,
-02125,51----,21,10,2,2,1,2,2,0,2,0,2014,Information,,,,
-02125,52----,21,13,3,3,0,0,0,1,1,0,2014,Finance and Insurance,,,,
-02125,53----,25,14,6,1,3,0,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,
-02125,54----,24,19,1,1,2,0,1,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,
-02125,55----,3,2,0,0,1,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,
-02125,56----,24,14,3,4,2,1,0,0,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,10,3,1,3,2,0,0,1,0,0,2014,Educational Services,,,,
-02125,62----,52,18,12,13,3,5,0,1,0,0,2014,Health Care and Social Assistance,,,,
-02125,71----,4,3,1,0,0,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02125,72----,59,25,11,8,10,4,1,0,0,0,2014,Accommodation and Food Services,,,,
-02125,81----,66,38,13,7,4,3,1,0,0,0,2014,Other Services (except Public Administration),,,,
-02125,99----,4,4,0,0,0,0,0,0,0,0,2014,Unclassified,,,,
-02127,22----,1,0,0,0,0,1,0,0,0,0,2014,Utilities,,,,
-02127,23----,54,31,9,5,4,3,2,0,0,0,2014,Construction,,,,
-02127,31----,22,9,1,2,6,1,2,0,1,0,2014,Manufacturing,,,,
-02127,42----,36,12,15,2,5,2,0,0,0,0,2014,Wholesale Trade,,,,
-02127,44----,76,42,19,10,3,2,0,0,0,0,2014,Retail Trade,,,,
-02127,48----,20,8,5,1,1,3,1,1,0,0,2014,Transportation and Warehousing,,,,
-02127,51----,21,12,2,3,1,1,2,0,0,0,2014,Information,,,,
-02127,52----,30,13,7,2,5,2,1,0,0,0,2014,Finance and Insurance,,,,
-02127,53----,35,24,6,1,3,0,1,0,0,0,2014,Real Estate and Rental and Leasing,,,,
-02127,54----,84,53,15,11,2,3,0,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,
-02127,55----,10,4,1,1,2,0,2,0,0,0,2014,Management of Companies and Enterprises,,,,
-02127,56----,29,17,3,2,2,2,2,1,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,9,3,0,2,3,1,0,0,0,0,2014,Educational Services,,,,
-02127,62----,42,21,6,5,4,2,3,1,0,0,2014,Health Care and Social Assistance,,,,
-02127,71----,14,8,2,3,1,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02127,72----,81,29,14,16,17,5,0,0,0,0,2014,Accommodation and Food Services,,,,
-02127,81----,98,55,29,5,6,1,2,0,0,0,2014,Other Services (except Public Administration),,,,
-02127,99----,3,3,0,0,0,0,0,0,0,0,2014,Unclassified,,,,
-02128,23----,38,21,10,3,0,4,0,0,0,0,2014,Construction,,,,
-02128,31----,13,5,2,1,1,3,0,1,0,0,2014,Manufacturing,,,,
-02128,42----,12,5,5,0,1,1,0,0,0,0,2014,Wholesale Trade,,,,
-02128,44----,110,66,25,9,5,3,2,0,0,0,2014,Retail Trade,,,,
-02128,48----,135,48,23,21,18,11,6,3,2,3,2014,Transportation and Warehousing,,,,
-02128,51----,7,6,1,0,0,0,0,0,0,0,2014,Information,,,,
-02128,52----,22,8,8,4,1,0,0,0,0,1,2014,Finance and Insurance,,,,
-02128,53----,37,19,7,5,0,3,2,1,0,0,2014,Real Estate and Rental and Leasing,,,,
-02128,54----,35,25,7,2,1,0,0,0,0,0,2014,"Professional, Scientific, and Technical Services",,,,
-02128,55----,4,2,1,1,0,0,0,0,0,0,2014,Management of Companies and Enterprises,,,,
-02128,56----,37,11,11,4,4,4,2,1,0,0,2014,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,7,4,2,0,1,0,0,0,0,0,2014,Educational Services,,,,
-02128,62----,45,14,11,9,5,4,1,0,1,0,2014,Health Care and Social Assistance,,,,
-02128,71----,5,2,0,1,0,1,1,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02128,72----,131,36,25,38,18,6,4,4,0,0,2014,Accommodation and Food Services,,,,
-02128,81----,85,59,15,8,2,1,0,0,0,0,2014,Other Services (except Public Administration),,,,
-02128,99----,1,1,0,0,0,0,0,0,0,0,2014,Unclassified,,,,
-02228,71----,1,1,0,0,0,0,0,0,0,0,2014,"Arts, Entertainment, and Recreation",,,,
-02109,11----,1,0,0,1,0,0,0,0,0,0,2015,"Agriculture, Forestry, Fishing and Hunting",,,,
-02109,22----,1,1,0,0,0,0,0,0,0,0,2015,Utilities,,,,
-02109,23----,14,9,1,1,1,0,1,1,0,0,2015,Construction,,,,
-02109,31----,8,5,2,1,0,0,0,0,0,0,2015,Manufacturing,,,,
-02109,42----,27,15,5,2,0,2,3,0,0,0,2015,Wholesale Trade,,,,
-02109,44----,84,36,22,11,11,3,1,0,0,0,2015,Retail Trade,,,,
-02109,48----,6,4,2,0,0,0,0,0,0,0,2015,Transportation and Warehousing,,,,
-02109,51----,49,18,7,6,11,3,4,0,0,0,2015,Information,,,,
-02109,52----,266,120,41,27,37,16,12,8,4,1,2015,Finance and Insurance,,,,
-02109,53----,81,49,5,15,8,3,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,
-02109,54----,421,241,52,57,42,12,9,4,3,1,2015,"Professional, Scientific, and Technical Services",,,,
-02109,55----,13,6,3,0,1,1,1,1,0,0,2015,Management of Companies and Enterprises,,,,
-02109,56----,128,64,17,11,14,12,6,4,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,18,7,4,3,3,1,0,0,0,0,2015,Educational Services,,,,
-02109,62----,29,14,4,8,1,0,2,0,0,0,2015,Health Care and Social Assistance,,,,
-02109,71----,15,9,0,2,4,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02109,72----,118,32,20,24,27,10,4,1,0,0,2015,Accommodation and Food Services,,,,
-02109,81----,71,42,13,8,5,3,0,0,0,0,2015,Other Services (except Public Administration),,,,
-02109,99----,3,3,0,0,0,0,0,0,0,0,2015,Unclassified,,,,
-02118,23----,25,13,4,2,2,3,0,0,1,0,2015,Construction,,,,
-02118,31----,24,10,0,5,3,5,1,0,0,0,2015,Manufacturing,,,,
-02118,42----,76,19,22,17,10,6,2,0,0,0,2015,Wholesale Trade,,,,
-02118,44----,110,64,26,11,3,4,2,0,0,0,2015,Retail Trade,,,,
-02118,48----,12,8,0,3,1,0,0,0,0,0,2015,Transportation and Warehousing,,,,
-02118,51----,15,10,2,2,0,1,0,0,0,0,2015,Information,,,,
-02118,52----,25,14,7,4,0,0,0,0,0,0,2015,Finance and Insurance,,,,
-02118,53----,56,38,10,2,4,2,0,0,0,0,2015,Real Estate and Rental and Leasing,,,,
-02118,54----,156,100,28,15,9,2,2,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,
-02118,55----,7,0,2,3,1,1,0,0,0,0,2015,Management of Companies and Enterprises,,,,
-02118,56----,24,12,4,4,1,1,2,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,15,8,4,2,1,0,0,0,0,0,2015,Educational Services,,,,
-02118,62----,91,32,15,10,20,6,4,3,0,1,2015,Health Care and Social Assistance,,,,
-02118,71----,17,10,2,1,3,1,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02118,72----,94,29,18,15,23,9,0,0,0,0,2015,Accommodation and Food Services,,,,
-02118,81----,75,47,14,5,6,3,0,0,0,0,2015,Other Services (except Public Administration),,,,
-02118,99----,4,4,0,0,0,0,0,0,0,0,2015,Unclassified,,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2015,Utilities,,,,
-02125,23----,37,25,5,1,4,1,1,0,0,0,2015,Construction,,,,
-02125,31----,8,3,1,0,1,3,0,0,0,0,2015,Manufacturing,,,,
-02125,42----,9,4,2,1,2,0,0,0,0,0,2015,Wholesale Trade,,,,
-02125,44----,87,48,16,9,9,3,0,2,0,0,2015,Retail Trade,,,,
-02125,48----,6,3,1,2,0,0,0,0,0,0,2015,Transportation and Warehousing,,,,
-02125,51----,18,7,2,2,3,0,2,0,1,1,2015,Information,,,,
-02125,52----,19,9,6,2,0,0,0,1,1,0,2015,Finance and Insurance,,,,
-02125,53----,24,12,7,2,2,0,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,
-02125,54----,30,24,2,1,2,0,1,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,
-02125,55----,3,2,0,0,1,0,0,0,0,0,2015,Management of Companies and Enterprises,,,,
-02125,56----,22,14,2,3,2,1,0,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,13,6,0,4,1,1,0,1,0,0,2015,Educational Services,,,,
-02125,62----,49,17,10,13,4,4,0,1,0,0,2015,Health Care and Social Assistance,,,,
-02125,71----,4,3,1,0,0,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02125,72----,62,30,9,7,12,3,1,0,0,0,2015,Accommodation and Food Services,,,,
-02125,81----,63,35,12,7,5,3,1,0,0,0,2015,Other Services (except Public Administration),,,,
-02125,99----,3,3,0,0,0,0,0,0,0,0,2015,Unclassified,,,,
-02127,22----,1,0,0,0,0,1,0,0,0,0,2015,Utilities,,,,
-02127,23----,57,35,8,6,3,5,0,0,0,0,2015,Construction,,,,
-02127,31----,19,8,0,4,3,1,2,0,1,0,2015,Manufacturing,,,,
-02127,42----,37,13,14,3,4,3,0,0,0,0,2015,Wholesale Trade,,,,
-02127,44----,73,41,15,12,3,2,0,0,0,0,2015,Retail Trade,,,,
-02127,48----,21,7,5,1,2,4,1,1,0,0,2015,Transportation and Warehousing,,,,
-02127,51----,21,13,3,1,1,1,2,0,0,0,2015,Information,,,,
-02127,52----,30,16,3,3,5,2,1,0,0,0,2015,Finance and Insurance,,,,
-02127,53----,38,28,6,1,2,0,1,0,0,0,2015,Real Estate and Rental and Leasing,,,,
-02127,54----,93,58,16,11,5,3,0,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,
-02127,55----,10,3,2,1,1,1,2,0,0,0,2015,Management of Companies and Enterprises,,,,
-02127,56----,26,14,4,2,1,2,2,1,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,10,3,1,2,2,2,0,0,0,0,2015,Educational Services,,,,
-02127,62----,40,17,10,5,3,2,2,1,0,0,2015,Health Care and Social Assistance,,,,
-02127,71----,12,6,3,2,1,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02127,72----,86,31,19,13,19,4,0,0,0,0,2015,Accommodation and Food Services,,,,
-02127,81----,86,49,24,4,6,1,2,0,0,0,2015,Other Services (except Public Administration),,,,
-02127,99----,5,5,0,0,0,0,0,0,0,0,2015,Unclassified,,,,
-02128,23----,38,21,9,4,1,3,0,0,0,0,2015,Construction,,,,
-02128,31----,13,7,1,0,1,3,1,0,0,0,2015,Manufacturing,,,,
-02128,42----,15,8,5,0,1,1,0,0,0,0,2015,Wholesale Trade,,,,
-02128,44----,112,67,25,8,7,3,2,0,0,0,2015,Retail Trade,,,,
-02128,48----,135,53,20,22,16,13,3,2,4,2,2015,Transportation and Warehousing,,,,
-02128,51----,8,6,1,0,1,0,0,0,0,0,2015,Information,,,,
-02128,52----,19,6,8,3,1,0,0,0,0,1,2015,Finance and Insurance,,,,
-02128,53----,37,18,6,7,0,3,2,1,0,0,2015,Real Estate and Rental and Leasing,,,,
-02128,54----,36,27,6,2,1,0,0,0,0,0,2015,"Professional, Scientific, and Technical Services",,,,
-02128,55----,6,2,2,2,0,0,0,0,0,0,2015,Management of Companies and Enterprises,,,,
-02128,56----,40,15,13,3,4,2,3,0,0,0,2015,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,8,6,1,0,1,0,0,0,0,0,2015,Educational Services,,,,
-02128,62----,47,16,11,8,7,3,1,0,1,0,2015,Health Care and Social Assistance,,,,
-02128,71----,6,3,0,1,0,2,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02128,72----,144,41,25,44,19,7,4,3,1,0,2015,Accommodation and Food Services,,,,
-02128,81----,87,62,13,8,3,1,0,0,0,0,2015,Other Services (except Public Administration),,,,
-02228,71----,1,1,0,0,0,0,0,0,0,0,2015,"Arts, Entertainment, and Recreation",,,,
-02109,11----,1,0,0,1,0,0,0,0,0,0,2016,"Agriculture, Forestry, Fishing and Hunting",,,,
-02109,22----,2,1,0,0,1,0,0,0,0,0,2016,Utilities,,,,
-02109,23----,16,10,2,1,1,0,1,1,0,0,2016,Construction,,,,
-02109,31----,10,5,5,0,0,0,0,0,0,0,2016,Manufacturing,,,,
-02109,42----,26,15,5,2,1,2,1,0,0,0,2016,Wholesale Trade,,,,
-02109,44----,88,38,21,17,8,4,0,0,0,0,2016,Retail Trade,,,,
-02109,48----,7,4,3,0,0,0,0,0,0,0,2016,Transportation and Warehousing,,,,
-02109,51----,56,22,9,6,11,3,3,2,0,0,2016,Information,,,,
-02109,52----,251,105,42,24,37,17,14,8,3,1,2016,Finance and Insurance,,,,
-02109,53----,81,47,8,15,7,3,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,
-02109,54----,435,247,63,52,39,15,10,4,4,1,2016,"Professional, Scientific, and Technical Services",,,,
-02109,55----,16,8,3,1,1,0,2,1,0,0,2016,Management of Companies and Enterprises,,,,
-02109,56----,127,64,22,5,15,10,6,5,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,22,11,5,2,3,1,0,0,0,0,2016,Educational Services,,,,
-02109,62----,30,14,5,6,3,0,2,0,0,0,2016,Health Care and Social Assistance,,,,
-02109,71----,16,9,2,1,3,1,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02109,72----,121,33,16,25,31,12,3,1,0,0,2016,Accommodation and Food Services,,,,
-02109,81----,67,38,11,10,5,3,0,0,0,0,2016,Other Services (except Public Administration),,,,
-02109,99----,4,4,0,0,0,0,0,0,0,0,2016,Unclassified,,,,
-02118,23----,24,11,4,5,2,1,0,0,1,0,2016,Construction,,,,
-02118,31----,18,4,1,5,3,4,1,0,0,0,2016,Manufacturing,,,,
-02118,42----,72,20,18,17,10,4,3,0,0,0,2016,Wholesale Trade,,,,
-02118,44----,111,67,27,9,3,3,1,1,0,0,2016,Retail Trade,,,,
-02118,48----,10,7,0,1,2,0,0,0,0,0,2016,Transportation and Warehousing,,,,
-02118,51----,13,10,1,2,0,0,0,0,0,0,2016,Information,,,,
-02118,52----,24,12,6,4,0,0,2,0,0,0,2016,Finance and Insurance,,,,
-02118,53----,61,45,8,3,4,1,0,0,0,0,2016,Real Estate and Rental and Leasing,,,,
-02118,54----,146,93,25,13,9,5,1,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,
-02118,55----,6,0,1,3,1,1,0,0,0,0,2016,Management of Companies and Enterprises,,,,
-02118,56----,24,11,4,3,3,1,2,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,14,8,3,1,2,0,0,0,0,0,2016,Educational Services,,,,
-02118,62----,91,33,13,14,16,6,5,3,0,1,2016,Health Care and Social Assistance,,,,
-02118,71----,16,9,3,1,2,1,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02118,72----,103,41,15,15,22,10,0,0,0,0,2016,Accommodation and Food Services,,,,
-02118,81----,74,48,11,8,4,3,0,0,0,0,2016,Other Services (except Public Administration),,,,
-02118,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,
-02125,22----,1,0,0,0,0,0,0,0,1,0,2016,Utilities,,,,
-02125,23----,40,25,6,3,4,1,0,1,0,0,2016,Construction,,,,
-02125,31----,8,4,1,0,0,3,0,0,0,0,2016,Manufacturing,,,,
-02125,42----,9,3,2,2,2,0,0,0,0,0,2016,Wholesale Trade,,,,
-02125,44----,82,43,15,11,7,4,0,2,0,0,2016,Retail Trade,,,,
-02125,48----,7,4,2,1,0,0,0,0,0,0,2016,Transportation and Warehousing,,,,
-02125,51----,17,4,3,2,4,0,2,0,2,0,2016,Information,,,,
-02125,52----,21,11,6,2,0,0,1,0,0,1,2016,Finance and Insurance,,,,
-02125,53----,27,16,3,5,2,0,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,
-02125,54----,26,20,1,2,1,1,1,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,
-02125,55----,2,1,0,0,1,0,0,0,0,0,2016,Management of Companies and Enterprises,,,,
-02125,56----,20,10,2,4,3,1,0,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,11,4,0,3,3,0,0,1,0,0,2016,Educational Services,,,,
-02125,62----,52,21,12,10,4,2,3,0,0,0,2016,Health Care and Social Assistance,,,,
-02125,71----,5,4,1,0,0,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02125,72----,63,27,13,7,11,4,1,0,0,0,2016,Accommodation and Food Services,,,,
-02125,81----,63,34,13,6,7,2,1,0,0,0,2016,Other Services (except Public Administration),,,,
-02125,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,
-02127,22----,1,0,0,0,0,1,0,0,0,0,2016,Utilities,,,,
-02127,23----,58,35,9,6,3,3,2,0,0,0,2016,Construction,,,,
-02127,31----,21,8,4,2,3,2,1,0,1,0,2016,Manufacturing,,,,
-02127,42----,36,14,14,2,4,2,0,0,0,0,2016,Wholesale Trade,,,,
-02127,44----,80,49,15,11,4,1,0,0,0,0,2016,Retail Trade,,,,
-02127,48----,21,10,3,1,1,4,1,1,0,0,2016,Transportation and Warehousing,,,,
-02127,51----,21,13,3,1,1,1,2,0,0,0,2016,Information,,,,
-02127,52----,32,15,7,3,4,2,1,0,0,0,2016,Finance and Insurance,,,,
-02127,53----,37,26,6,2,2,0,1,0,0,0,2016,Real Estate and Rental and Leasing,,,,
-02127,54----,96,64,13,9,8,2,0,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,
-02127,55----,9,2,2,0,2,1,2,0,0,0,2016,Management of Companies and Enterprises,,,,
-02127,56----,27,16,4,2,0,2,1,1,1,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,10,4,1,2,2,1,0,0,0,0,2016,Educational Services,,,,
-02127,62----,41,16,12,5,3,1,3,1,0,0,2016,Health Care and Social Assistance,,,,
-02127,71----,12,6,3,2,1,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02127,72----,89,30,14,17,19,7,2,0,0,0,2016,Accommodation and Food Services,,,,
-02127,81----,83,43,23,9,5,1,2,0,0,0,2016,Other Services (except Public Administration),,,,
-02127,99----,2,2,0,0,0,0,0,0,0,0,2016,Unclassified,,,,
-02128,23----,46,30,9,3,1,3,0,0,0,0,2016,Construction,,,,
-02128,31----,16,8,2,1,1,3,0,1,0,0,2016,Manufacturing,,,,
-02128,42----,17,8,6,0,2,0,1,0,0,0,2016,Wholesale Trade,,,,
-02128,44----,117,69,26,10,7,4,1,0,0,0,2016,Retail Trade,,,,
-02128,48----,130,51,21,18,17,11,5,2,2,3,2016,Transportation and Warehousing,,,,
-02128,51----,12,11,1,0,0,0,0,0,0,0,2016,Information,,,,
-02128,52----,21,10,5,5,1,0,0,0,0,0,2016,Finance and Insurance,,,,
-02128,53----,38,17,7,7,3,1,3,0,0,0,2016,Real Estate and Rental and Leasing,,,,
-02128,54----,36,25,7,3,1,0,0,0,0,0,2016,"Professional, Scientific, and Technical Services",,,,
-02128,55----,5,3,0,1,1,0,0,0,0,0,2016,Management of Companies and Enterprises,,,,
-02128,56----,50,24,13,2,4,3,4,0,0,0,2016,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,7,5,1,0,1,0,0,0,0,0,2016,Educational Services,,,,
-02128,62----,45,17,9,8,7,2,1,0,0,1,2016,Health Care and Social Assistance,,,,
-02128,71----,7,3,1,0,1,2,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02128,72----,138,41,22,35,25,8,2,4,1,0,2016,Accommodation and Food Services,,,,
-02128,81----,89,60,17,9,2,1,0,0,0,0,2016,Other Services (except Public Administration),,,,
-02128,99----,1,1,0,0,0,0,0,0,0,0,2016,Unclassified,,,,
-02228,71----,1,1,0,0,0,0,0,0,0,0,2016,"Arts, Entertainment, and Recreation",,,,
-02109,23----,15,8,N,N,N,N,N,N,N,N,2017,Construction,,,,
-02109,31----,11,9,N,N,N,N,N,N,N,N,2017,Manufacturing,,,,
-02109,42----,33,21,5,3,N,N,N,N,N,N,2017,Wholesale Trade,,,,
-02109,44----,90,37,24,15,9,5,N,N,N,N,2017,Retail Trade,,,,
-02109,48----,8,5,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,,,,
-02109,51----,67,28,10,8,11,4,4,N,N,N,2017,Information,,,,
-02109,52----,239,99,42,27,33,15,12,9,N,N,2017,Finance and Insurance,,,,
-02109,53----,77,46,7,12,7,4,N,N,N,N,2017,Real Estate and Rental and Leasing,,,,
-02109,54----,463,242,78,55,46,22,11,5,3,N,2017,"Professional, Scientific, and Technical Services",,,,
-02109,55----,16,6,3,3,N,N,3,N,N,N,2017,Management of Companies and Enterprises,,,,
-02109,56----,124,71,15,9,13,8,4,4,N,N,2017,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,28,12,6,N,3,5,N,N,N,N,2017,Educational Services,,,,
-02109,62----,41,22,7,7,3,N,N,N,N,N,2017,Health Care and Social Assistance,,,,
-02109,71----,12,7,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",,,,
-02109,72----,112,29,19,21,27,12,3,N,N,N,2017,Accommodation and Food Services,,,,
-02109,81----,70,43,7,12,5,3,N,N,N,N,2017,Other Services (except Public Administration),,,,
-02118,23----,24,14,N,N,3,3,N,N,N,N,2017,Construction,,,,
-02118,31----,18,5,N,3,3,4,N,N,N,N,2017,Manufacturing,,,,
-02118,42----,60,15,15,13,12,3,N,N,N,N,2017,Wholesale Trade,,,,
-02118,44----,113,66,25,11,4,5,N,N,N,N,2017,Retail Trade,,,,
-02118,48----,9,6,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,,,,
-02118,51----,10,6,N,N,N,N,N,N,N,N,2017,Information,,,,
-02118,52----,27,14,6,4,N,N,N,N,N,N,2017,Finance and Insurance,,,,
-02118,53----,58,41,10,N,4,N,N,N,N,N,2017,Real Estate and Rental and Leasing,,,,
-02118,54----,140,82,26,17,10,N,3,N,N,N,2017,"Professional, Scientific, and Technical Services",,,,
-02118,55----,5,N,N,N,N,N,N,N,N,N,2017,Management of Companies and Enterprises,,,,
-02118,56----,25,12,5,N,3,N,3,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,17,11,N,4,N,N,N,N,N,N,2017,Educational Services,,,,
-02118,62----,93,36,8,15,18,9,4,N,N,N,2017,Health Care and Social Assistance,,,,
-02118,71----,15,10,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",,,,
-02118,72----,105,29,22,13,29,12,N,N,N,N,2017,Accommodation and Food Services,,,,
-02118,81----,78,46,18,6,3,4,N,N,N,N,2017,Other Services (except Public Administration),,,,
-02125,23----,36,23,4,N,5,N,N,N,N,N,2017,Construction,,,,
-02125,31----,7,N,N,N,N,3,N,N,N,N,2017,Manufacturing,,,,
-02125,42----,8,3,N,N,N,N,N,N,N,N,2017,Wholesale Trade,,,,
-02125,44----,84,48,12,12,6,4,N,N,N,N,2017,Retail Trade,,,,
-02125,48----,10,6,N,N,N,N,N,N,N,N,2017,Transportation and Warehousing,,,,
-02125,51----,18,5,3,N,N,N,N,N,N,N,2017,Information,,,,
-02125,52----,22,8,7,4,N,N,N,N,N,N,2017,Finance and Insurance,,,,
-02125,53----,27,16,5,3,N,N,N,N,N,N,2017,Real Estate and Rental and Leasing,,,,
-02125,54----,23,17,3,N,N,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",,,,
-02125,56----,25,14,4,3,3,N,N,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,10,3,N,N,N,N,N,N,N,N,2017,Educational Services,,,,
-02125,62----,53,24,12,8,5,N,3,N,N,N,2017,Health Care and Social Assistance,,,,
-02125,71----,4,3,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",,,,
-02125,72----,72,32,13,8,14,5,N,N,N,N,2017,Accommodation and Food Services,,,,
-02125,81----,75,40,16,8,8,N,N,N,N,N,2017,Other Services (except Public Administration),,,,
-02127,23----,55,33,7,5,5,4,N,N,N,N,2017,Construction,,,,
-02127,31----,19,8,3,N,N,N,N,N,N,N,2017,Manufacturing,,,,
-02127,42----,35,14,8,4,9,N,N,N,N,N,2017,Wholesale Trade,,,,
-02127,44----,77,44,16,11,3,3,N,N,N,N,2017,Retail Trade,,,,
-02127,48----,19,9,N,N,N,4,N,N,N,N,2017,Transportation and Warehousing,,,,
-02127,51----,16,9,N,N,N,N,3,N,N,N,2017,Information,,,,
-02127,52----,38,17,10,5,N,3,N,N,N,N,2017,Finance and Insurance,,,,
-02127,53----,45,32,6,3,3,N,N,N,N,N,2017,Real Estate and Rental and Leasing,,,,
-02127,54----,91,59,12,9,8,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",,,,
-02127,55----,9,N,N,N,3,N,N,N,N,N,2017,Management of Companies and Enterprises,,,,
-02127,56----,28,15,8,N,N,N,N,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,6,N,N,N,N,N,N,N,N,N,2017,Educational Services,,,,
-02127,62----,52,21,9,9,9,N,N,N,N,N,2017,Health Care and Social Assistance,,,,
-02127,71----,14,6,3,N,3,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",,,,
-02127,72----,90,30,16,14,22,5,3,N,N,N,2017,Accommodation and Food Services,,,,
-02127,81----,83,47,21,9,N,N,N,N,N,N,2017,Other Services (except Public Administration),,,,
-02127,99----,3,3,N,N,N,N,N,N,N,N,2017,Unclassified,,,,
-02128,23----,50,32,11,3,N,4,N,N,N,N,2017,Construction,,,,
-02128,31----,15,7,N,N,N,N,N,N,N,N,2017,Manufacturing,,,,
-02128,42----,21,14,4,N,N,N,N,N,N,N,2017,Wholesale Trade,,,,
-02128,44----,115,67,29,8,4,5,N,N,N,N,2017,Retail Trade,,,,
-02128,48----,112,46,12,17,15,7,8,N,N,3,2017,Transportation and Warehousing,,,,
-02128,51----,11,11,N,N,N,N,N,N,N,N,2017,Information,,,,
-02128,52----,18,7,5,5,N,N,N,N,N,N,2017,Finance and Insurance,,,,
-02128,53----,44,22,6,8,4,N,3,N,N,N,2017,Real Estate and Rental and Leasing,,,,
-02128,54----,37,27,6,3,N,N,N,N,N,N,2017,"Professional, Scientific, and Technical Services",,,,
-02128,55----,6,3,N,N,N,N,N,N,N,N,2017,Management of Companies and Enterprises,,,,
-02128,56----,53,25,12,6,3,3,4,N,N,N,2017,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,5,3,N,N,N,N,N,N,N,N,2017,Educational Services,,,,
-02128,62----,47,17,8,11,6,3,N,N,N,N,2017,Health Care and Social Assistance,,,,
-02128,71----,10,8,N,N,N,N,N,N,N,N,2017,"Arts, Entertainment, and Recreation",,,,
-02128,72----,146,38,25,43,24,8,3,4,N,N,2017,Accommodation and Food Services,,,,
-02128,81----,89,57,19,8,4,N,N,N,N,N,2017,Other Services (except Public Administration),,,,
-02109,23----,12,6,N,N,N,N,N,N,N,N,2018,Construction,,,,
-02109,31----,14,10,3,N,N,N,N,N,N,N,2018,Manufacturing,,,,
-02109,42----,35,22,5,N,N,5,N,N,N,N,2018,Wholesale Trade,,,,
-02109,44----,91,37,20,21,8,4,N,N,N,N,2018,Retail Trade,,,,
-02109,48----,10,8,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,,,,
-02109,51----,61,22,11,9,10,5,N,N,N,N,2018,Information,,,,
-02109,52----,242,99,36,34,29,20,11,9,3,N,2018,Finance and Insurance,,,,
-02109,53----,83,51,11,11,7,N,N,N,N,N,2018,Real Estate and Rental and Leasing,,,,
-02109,54----,475,251,75,60,47,24,8,7,N,N,2018,"Professional, Scientific, and Technical Services",,,,
-02109,55----,16,6,4,N,N,N,3,N,N,N,2018,Management of Companies and Enterprises,,,,
-02109,56----,122,65,18,10,15,7,5,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,,,,
-02109,61----,31,15,7,N,3,5,N,N,N,N,2018,Educational Services,,,,
-02109,62----,46,25,4,12,N,N,N,N,N,N,2018,Health Care and Social Assistance,,,,
-02109,71----,12,6,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",,,,
-02109,72----,117,33,16,26,25,13,3,N,N,N,2018,Accommodation and Food Services,,,,
-02109,81----,77,48,13,8,6,N,N,N,N,N,2018,Other Services (except Public Administration),,,,
-02109,99----,3,3,N,N,N,N,N,N,N,N,2018,Unclassified,,,,
-02118,23----,24,12,3,3,3,N,N,N,N,N,2018,Construction,,,,
-02118,31----,20,5,3,4,3,3,N,N,N,N,2018,Manufacturing,,,,
-02118,42----,57,11,16,12,11,5,N,N,N,N,2018,Wholesale Trade,,,,
-02118,44----,105,58,27,8,5,5,N,N,N,N,2018,Retail Trade,,,,
-02118,48----,9,5,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,,,,
-02118,51----,10,6,N,N,N,N,N,N,N,N,2018,Information,,,,
-02118,52----,27,15,5,5,N,N,N,N,N,N,2018,Finance and Insurance,,,,
-02118,53----,71,54,9,3,3,N,N,N,N,N,2018,Real Estate and Rental and Leasing,,,,
-02118,54----,141,88,25,15,8,N,3,N,N,N,2018,"Professional, Scientific, and Technical Services",,,,
-02118,55----,4,N,N,N,N,N,N,N,N,N,2018,Management of Companies and Enterprises,,,,
-02118,56----,25,12,4,4,N,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,,,,
-02118,61----,16,10,N,N,3,N,N,N,N,N,2018,Educational Services,,,,
-02118,62----,101,39,11,17,15,12,4,N,N,N,2018,Health Care and Social Assistance,,,,
-02118,71----,13,7,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",,,,
-02118,72----,108,34,22,15,27,10,N,N,N,N,2018,Accommodation and Food Services,,,,
-02118,81----,81,53,12,8,4,4,N,N,N,N,2018,Other Services (except Public Administration),,,,
-02125,23----,34,19,5,3,6,N,N,N,N,N,2018,Construction,,,,
-02125,31----,9,4,N,N,N,3,N,N,N,N,2018,Manufacturing,,,,
-02125,42----,9,4,N,N,N,N,N,N,N,N,2018,Wholesale Trade,,,,
-02125,44----,85,47,13,14,6,3,N,N,N,N,2018,Retail Trade,,,,
-02125,48----,12,8,N,N,N,N,N,N,N,N,2018,Transportation and Warehousing,,,,
-02125,51----,20,7,N,3,N,N,N,N,N,N,2018,Information,,,,
-02125,52----,22,9,5,5,N,N,N,N,N,N,2018,Finance and Insurance,,,,
-02125,53----,30,23,N,N,N,N,N,N,N,N,2018,Real Estate and Rental and Leasing,,,,
-02125,54----,26,19,N,3,N,N,N,N,N,N,2018,"Professional, Scientific, and Technical Services",,,,
-02125,56----,22,11,4,3,3,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,,,,
-02125,61----,11,3,4,N,3,N,N,N,N,N,2018,Educational Services,,,,
-02125,62----,55,24,11,9,7,N,3,N,N,N,2018,Health Care and Social Assistance,,,,
-02125,71----,4,3,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",,,,
-02125,72----,66,29,9,14,10,3,N,N,N,N,2018,Accommodation and Food Services,,,,
-02125,81----,64,35,13,6,7,N,N,N,N,N,2018,Other Services (except Public Administration),,,,
-02127,23----,53,29,9,6,5,N,N,N,N,N,2018,Construction,,,,
-02127,31----,19,5,5,3,N,N,N,N,N,N,2018,Manufacturing,,,,
-02127,42----,32,12,9,6,5,N,N,N,N,N,2018,Wholesale Trade,,,,
-02127,44----,74,41,21,7,3,N,N,N,N,N,2018,Retail Trade,,,,
-02127,48----,19,9,N,N,N,4,N,N,N,N,2018,Transportation and Warehousing,,,,
-02127,51----,17,8,4,N,N,N,N,N,N,N,2018,Information,,,,
-02127,52----,37,14,12,5,3,N,N,N,N,N,2018,Finance and Insurance,,,,
-02127,53----,45,35,N,5,N,N,N,N,N,N,2018,Real Estate and Rental and Leasing,,,,
-02127,54----,89,56,13,6,11,3,N,N,N,N,2018,"Professional, Scientific, and Technical Services",,,,
-02127,55----,9,N,N,N,N,N,N,N,N,N,2018,Management of Companies and Enterprises,,,,
-02127,56----,28,14,4,7,N,N,N,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,,,,
-02127,61----,8,3,N,N,3,N,N,N,N,N,2018,Educational Services,,,,
-02127,62----,53,19,14,6,12,N,N,N,N,N,2018,Health Care and Social Assistance,,,,
-02127,71----,15,8,N,3,3,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",,,,
-02127,72----,91,27,18,13,25,5,3,N,N,N,2018,Accommodation and Food Services,,,,
-02127,81----,79,48,15,10,N,N,N,N,N,N,2018,Other Services (except Public Administration),,,,
-02127,99----,3,3,N,N,N,N,N,N,N,N,2018,Unclassified,,,,
-02128,23----,63,46,9,N,N,4,N,N,N,N,2018,Construction,,,,
-02128,31----,12,3,3,N,N,4,N,N,N,N,2018,Manufacturing,,,,
-02128,42----,22,13,6,N,N,N,N,N,N,N,2018,Wholesale Trade,,,,
-02128,44----,108,66,23,9,6,3,N,N,N,N,2018,Retail Trade,,,,
-02128,48----,118,44,19,16,11,15,5,N,4,3,2018,Transportation and Warehousing,,,,
-02128,51----,14,12,N,N,N,N,N,N,N,N,2018,Information,,,,
-02128,52----,19,9,4,5,N,N,N,N,N,N,2018,Finance and Insurance,,,,
-02128,53----,45,25,6,6,4,N,3,N,N,N,2018,Real Estate and Rental and Leasing,,,,
-02128,54----,43,30,10,N,N,N,N,N,N,N,2018,"Professional, Scientific, and Technical Services",,,,
-02128,55----,6,N,N,N,3,N,N,N,N,N,2018,Management of Companies and Enterprises,,,,
-02128,56----,62,36,7,7,5,3,4,N,N,N,2018,Administrative and Support and Waste Management and Remediation Services,,,,
-02128,61----,5,N,N,N,N,N,N,N,N,N,2018,Educational Services,,,,
-02128,62----,49,20,9,9,5,4,N,N,N,N,2018,Health Care and Social Assistance,,,,
-02128,71----,11,5,N,N,N,N,N,N,N,N,2018,"Arts, Entertainment, and Recreation",,,,
-02128,72----,144,33,31,32,33,7,4,3,N,N,2018,Accommodation and Food Services,,,,
-02128,81----,88,53,20,8,5,N,N,N,N,N,2018,Other Services (except Public Administration),,,,
-02109,23----,15,9,N,N,N,N,N,N,N,N,2019,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,31----,12,7,3,N,N,N,N,N,N,N,2019,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,42----,33,20,4,3,N,5,N,N,N,N,2019,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,44----,90,41,21,12,11,5,N,N,N,N,2019,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,48----,11,7,3,N,N,N,N,N,N,N,2019,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,51----,61,19,13,10,11,4,N,N,N,N,2019,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,52----,238,94,36,35,30,20,11,9,N,N,2019,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,53----,77,51,8,8,6,N,3,N,N,N,2019,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,54----,445,222,75,58,48,22,10,6,3,N,2019,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,55----,15,8,3,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,56----,118,59,20,9,17,6,5,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,61----,30,12,7,N,3,3,N,N,N,N,2019,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,62----,46,21,8,12,N,N,N,N,N,N,2019,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,71----,13,6,3,N,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,72----,112,31,18,22,24,13,3,N,N,N,2019,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,81----,77,43,15,12,4,N,N,N,N,N,2019,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,23----,27,14,6,N,N,N,N,N,N,N,2019,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,31----,19,8,N,3,4,N,N,N,N,N,2019,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,42----,57,10,16,12,14,3,N,N,N,N,2019,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,44----,107,61,22,11,8,3,N,N,N,N,2019,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,48----,8,4,N,N,N,N,N,N,N,N,2019,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,51----,11,6,N,N,N,N,N,N,N,N,2019,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,52----,30,17,6,5,N,N,N,N,N,N,2019,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,53----,70,48,13,3,4,N,N,N,N,N,2019,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,54----,138,85,25,16,8,3,N,N,N,N,2019,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,55----,3,N,N,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,56----,28,10,8,5,N,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,61----,16,9,N,N,3,N,N,N,N,N,2019,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,62----,111,42,16,18,17,9,6,N,N,N,2019,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,71----,16,9,N,3,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,72----,195,103,24,24,27,15,N,N,N,N,2019,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,81----,85,60,11,8,N,3,N,N,N,N,2019,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,99----,5,5,N,N,N,N,N,N,N,N,2019,Unclassified,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02125,23----,39,26,5,N,5,N,N,N,N,N,2019,Construction,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,31----,10,4,N,N,N,3,N,N,N,N,2019,Manufacturing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,42----,9,4,3,N,N,N,N,N,N,N,2019,Wholesale Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,44----,86,45,14,15,8,N,N,N,N,N,2019,Retail Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,48----,10,7,N,N,N,N,N,N,N,N,2019,Transportation and Warehousing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,51----,19,5,3,3,N,N,N,N,N,N,2019,Information,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,52----,22,10,5,5,N,N,N,N,N,N,2019,Finance and Insurance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,53----,29,20,5,N,N,N,N,N,N,N,2019,Real Estate and Rental and Leasing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,54----,32,23,5,3,N,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,56----,22,12,N,4,4,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,61----,12,3,3,3,N,N,N,N,N,N,2019,Educational Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,62----,62,27,11,11,7,3,3,N,N,N,2019,Health Care and Social Assistance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,71----,7,6,N,N,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,72----,64,24,11,12,10,6,N,N,N,N,2019,Accommodation and Food Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,81----,61,31,13,7,7,N,N,N,N,N,2019,Other Services (except Public Administration),"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02127,23----,53,26,12,5,6,3,N,N,N,N,2019,Construction,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,31----,19,8,4,N,N,N,N,N,N,N,2019,Manufacturing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,42----,32,9,11,6,5,N,N,N,N,N,2019,Wholesale Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,44----,76,41,21,9,4,N,N,N,N,N,2019,Retail Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,48----,20,8,3,N,N,4,N,N,N,N,2019,Transportation and Warehousing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,51----,18,10,3,N,N,N,N,N,N,N,2019,Information,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,52----,39,19,8,7,N,N,N,N,N,N,2019,Finance and Insurance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,53----,49,35,6,6,N,N,N,N,N,N,2019,Real Estate and Rental and Leasing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,54----,93,60,10,8,12,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,55----,9,N,N,N,N,N,N,N,N,N,2019,Management of Companies and Enterprises,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,56----,28,13,6,3,3,N,N,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,61----,8,4,N,N,N,N,N,N,N,N,2019,Educational Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,62----,56,17,15,10,11,N,N,N,N,N,2019,Health Care and Social Assistance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,71----,14,7,N,4,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,72----,95,35,13,15,24,5,3,N,N,N,2019,Accommodation and Food Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,81----,77,46,15,11,N,N,N,N,N,N,2019,Other Services (except Public Administration),"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02128,23----,74,54,12,N,N,3,N,N,N,N,2019,Construction,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,31----,14,6,N,N,N,4,N,N,N,N,2019,Manufacturing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,42----,21,12,6,N,N,N,N,N,N,N,2019,Wholesale Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,44----,108,63,30,5,5,4,N,N,N,N,2019,Retail Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,48----,118,46,17,15,11,10,11,N,3,4,2019,Transportation and Warehousing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,51----,15,10,5,N,N,N,N,N,N,N,2019,Information,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,52----,17,7,5,4,N,N,N,N,N,N,2019,Finance and Insurance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,53----,48,26,5,8,6,N,3,N,N,N,2019,Real Estate and Rental and Leasing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,54----,49,36,10,N,N,N,N,N,N,N,2019,"Professional, Scientific, and Technical Services","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,55----,5,N,N,N,3,N,N,N,N,N,2019,Management of Companies and Enterprises,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,56----,70,40,11,7,4,5,3,N,N,N,2019,Administrative and Support and Waste Management and Remediation Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,61----,4,N,N,N,N,N,N,N,N,N,2019,Educational Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,62----,53,20,8,14,4,5,N,N,N,N,2019,Health Care and Social Assistance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,71----,12,6,N,3,N,N,N,N,N,N,2019,"Arts, Entertainment, and Recreation","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,72----,151,45,23,33,33,8,4,5,N,N,2019,Accommodation and Food Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,81----,90,56,21,6,6,N,N,N,N,N,2019,Other Services (except Public Administration),"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02109,23----,15,7,N,3,N,N,N,N,N,N,2020,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,31----,9,4,4,N,N,N,N,N,N,N,2020,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,42----,29,17,4,N,N,3,N,N,N,N,2020,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,44----,91,51,13,12,10,5,N,N,N,N,2020,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,48----,10,9,N,N,N,N,N,N,N,N,2020,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,51----,63,20,11,11,13,3,3,N,N,N,2020,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,52----,235,99,33,28,31,21,15,5,N,N,2020,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,53----,81,50,9,10,7,N,3,N,N,N,2020,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,54----,445,232,69,49,49,21,15,5,4,N,2020,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,55----,17,10,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,56----,117,64,17,7,18,4,5,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,61----,33,16,5,N,3,5,N,N,N,N,2020,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,62----,49,24,9,10,N,N,3,N,N,N,2020,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,71----,16,12,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,72----,108,29,16,24,20,14,4,N,N,N,2020,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,81----,84,48,20,10,4,N,N,N,N,N,2020,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,23----,25,11,6,N,N,3,N,N,N,N,2020,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,31----,19,7,N,3,3,N,N,N,N,N,2020,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,42----,56,13,14,12,12,3,N,N,N,N,2020,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,44----,97,54,21,9,8,3,N,N,N,N,2020,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,48----,6,N,N,N,N,N,N,N,N,N,2020,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,51----,12,7,N,N,N,N,N,N,N,N,2020,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,52----,31,16,9,5,N,N,N,N,N,N,2020,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,53----,72,49,12,6,4,N,N,N,N,N,2020,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,54----,138,89,22,15,9,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,55----,3,N,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,56----,29,14,4,6,N,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,61----,14,7,N,N,N,N,N,N,N,N,2020,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,62----,109,39,19,19,13,12,4,N,N,N,2020,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,71----,12,6,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,72----,198,103,33,22,25,13,N,N,N,N,2020,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,81----,95,60,19,8,5,3,N,N,N,N,2020,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,99----,4,4,N,N,N,N,N,N,N,N,2020,Unclassified,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02125,23----,39,26,5,N,4,N,N,N,N,N,2020,Construction,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,31----,8,N,N,N,N,N,N,N,N,N,2020,Manufacturing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,42----,9,4,N,N,N,N,N,N,N,N,2020,Wholesale Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,44----,88,50,13,10,11,N,N,N,N,N,2020,Retail Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,48----,14,10,3,N,N,N,N,N,N,N,2020,Transportation and Warehousing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,51----,19,5,3,3,N,N,N,N,N,N,2020,Information,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,52----,21,8,5,5,N,N,N,N,N,N,2020,Finance and Insurance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,53----,28,20,3,N,N,N,N,N,N,N,2020,Real Estate and Rental and Leasing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,54----,35,27,N,5,N,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,56----,22,13,N,N,5,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,61----,12,4,N,4,N,N,N,N,N,N,2020,Educational Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,62----,61,29,11,11,5,N,3,N,N,N,2020,Health Care and Social Assistance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,71----,8,5,N,N,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,72----,64,21,13,13,10,6,N,N,N,N,2020,Accommodation and Food Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,81----,70,37,13,10,7,N,N,N,N,N,2020,Other Services (except Public Administration),"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02127,23----,53,30,7,6,5,4,N,N,N,N,2020,Construction,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,31----,17,4,4,4,N,4,N,N,N,N,2020,Manufacturing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,42----,31,10,8,7,5,N,N,N,N,N,2020,Wholesale Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,44----,69,37,22,5,4,N,N,N,N,N,2020,Retail Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,48----,19,8,N,N,3,N,3,N,N,N,2020,Transportation and Warehousing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,51----,19,10,4,N,N,N,N,N,N,N,2020,Information,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,52----,37,17,10,5,N,N,N,N,N,N,2020,Finance and Insurance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,53----,44,32,6,4,N,N,N,N,N,N,2020,Real Estate and Rental and Leasing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,54----,95,60,13,6,13,3,N,N,N,N,2020,"Professional, Scientific, and Technical Services","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,55----,10,3,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,56----,26,11,5,4,3,N,N,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,61----,6,N,N,N,N,N,N,N,N,N,2020,Educational Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,62----,55,21,13,6,11,N,N,N,N,N,2020,Health Care and Social Assistance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,71----,14,6,N,5,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,72----,83,27,9,16,22,5,4,N,N,N,2020,Accommodation and Food Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,81----,81,52,16,8,N,N,N,N,N,N,2020,Other Services (except Public Administration),"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,99----,3,N,N,N,N,N,N,N,N,N,2020,Unclassified,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02128,23----,65,47,8,6,N,3,N,N,N,N,2020,Construction,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,31----,13,5,5,N,N,N,N,N,N,N,2020,Manufacturing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,42----,23,13,7,N,N,N,N,N,N,N,2020,Wholesale Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,44----,107,76,18,5,4,3,N,N,N,N,2020,Retail Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,48----,116,46,17,13,10,11,11,N,N,4,2020,Transportation and Warehousing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,51----,15,12,N,N,N,N,N,N,N,N,2020,Information,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,52----,19,9,5,4,N,N,N,N,N,N,2020,Finance and Insurance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,53----,47,27,4,8,4,N,3,N,N,N,2020,Real Estate and Rental and Leasing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,54----,49,36,10,N,N,N,N,N,N,N,2020,"Professional, Scientific, and Technical Services","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,55----,5,N,N,N,N,N,N,N,N,N,2020,Management of Companies and Enterprises,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,56----,70,41,13,5,4,4,3,N,N,N,2020,Administrative and Support and Waste Management and Remediation Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,61----,4,N,N,N,N,N,N,N,N,N,2020,Educational Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,62----,54,23,10,11,4,4,N,N,N,N,2020,Health Care and Social Assistance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,71----,14,7,N,3,N,N,N,N,N,N,2020,"Arts, Entertainment, and Recreation","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,72----,145,42,23,31,31,8,5,5,N,N,2020,Accommodation and Food Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,81----,91,58,18,6,7,N,N,N,N,N,2020,Other Services (except Public Administration),"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,99----,3,3,N,N,N,N,N,N,N,N,2020,Unclassified,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02109,23----,16,9,N,N,N,N,N,N,N,N,2021,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,31----,11,9,N,N,N,N,N,N,N,N,2021,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,42----,29,16,4,3,N,3,N,N,N,N,2021,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,44----,80,45,12,13,7,N,N,N,N,N,2021,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,48----,9,7,N,N,N,N,N,N,N,N,2021,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,51----,68,27,12,8,12,6,N,N,N,N,2021,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,52----,197,103,23,25,19,16,7,N,N,N,2021,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,53----,77,48,11,8,7,N,N,N,N,N,2021,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,54----,443,231,72,48,50,14,18,5,4,N,2021,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,55----,14,7,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,56----,120,66,19,9,15,6,4,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,61----,30,13,5,3,N,5,N,N,N,N,2021,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,62----,49,30,5,7,N,N,3,N,N,N,2021,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,71----,12,8,3,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,72----,100,51,14,10,18,6,N,N,N,N,2021,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02109,81----,81,54,15,8,3,N,N,N,N,N,2021,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,23----,23,12,4,N,N,N,N,N,N,N,2021,Construction,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,31----,18,4,3,4,3,N,N,N,N,N,2021,Manufacturing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,42----,52,12,15,12,9,N,N,N,N,N,2021,Wholesale Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,44----,94,56,18,10,5,3,N,N,N,N,2021,Retail Trade,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,48----,8,5,N,N,N,N,N,N,N,N,2021,Transportation and Warehousing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,51----,9,5,N,N,N,N,N,N,N,N,2021,Information,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,52----,31,14,10,4,N,N,N,N,N,N,2021,Finance and Insurance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,53----,75,54,10,7,3,N,N,N,N,N,2021,Real Estate and Rental and Leasing,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,54----,143,83,29,19,8,3,N,N,N,N,2021,"Professional, Scientific, and Technical Services","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,55----,3,N,N,N,3,N,N,N,N,N,2021,Management of Companies and Enterprises,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,56----,28,13,6,4,3,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,61----,14,8,N,N,N,N,N,N,N,N,2021,Educational Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,62----,109,40,13,21,20,10,3,N,N,N,2021,Health Care and Social Assistance,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,71----,13,5,N,4,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation","BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,72----,184,104,31,16,27,5,N,N,N,N,2021,Accommodation and Food Services,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,81----,87,60,12,11,3,N,N,N,N,N,2021,Other Services (except Public Administration),"BOSTON, MA",BOSTON,MA,SUFFOLK
-02118,99----,3,3,N,N,N,N,N,N,N,N,2021,Unclassified,"BOSTON, MA",BOSTON,MA,SUFFOLK
-02125,23----,41,28,6,N,3,N,N,N,N,N,2021,Construction,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,31----,8,4,N,N,N,N,N,N,N,N,2021,Manufacturing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,42----,9,4,N,N,N,N,N,N,N,N,2021,Wholesale Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,44----,90,51,15,13,7,N,N,N,N,N,2021,Retail Trade,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,48----,14,9,3,N,N,N,N,N,N,N,2021,Transportation and Warehousing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,51----,19,8,N,3,N,3,N,N,N,N,2021,Information,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,52----,25,12,5,5,N,N,N,N,N,N,2021,Finance and Insurance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,53----,29,20,5,N,N,N,N,N,N,N,2021,Real Estate and Rental and Leasing,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,54----,35,27,4,3,N,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,56----,19,12,N,3,3,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,61----,11,4,3,N,N,N,N,N,N,N,2021,Educational Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,62----,62,27,9,9,11,3,3,N,N,N,2021,Health Care and Social Assistance,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,71----,7,7,N,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation","DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,72----,67,29,9,13,12,4,N,N,N,N,2021,Accommodation and Food Services,"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02125,81----,76,47,12,9,6,N,N,N,N,N,2021,Other Services (except Public Administration),"DORCHESTER, MA",DORCHESTER,MA,SUFFOLK
-02127,23----,56,29,14,6,3,3,N,N,N,N,2021,Construction,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,31----,17,3,4,5,N,3,N,N,N,N,2021,Manufacturing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,42----,35,13,10,7,5,N,N,N,N,N,2021,Wholesale Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,44----,75,47,16,8,3,N,N,N,N,N,2021,Retail Trade,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,48----,24,12,N,N,4,N,N,N,N,N,2021,Transportation and Warehousing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,51----,17,7,5,N,N,N,N,N,N,N,2021,Information,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,52----,38,18,12,3,3,N,N,N,N,N,2021,Finance and Insurance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,53----,50,35,8,4,N,N,N,N,N,N,2021,Real Estate and Rental and Leasing,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,54----,100,68,10,7,12,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,55----,8,N,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,56----,26,10,7,N,6,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,61----,6,N,N,N,N,N,N,N,N,N,2021,Educational Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,62----,58,19,15,9,12,N,N,N,N,N,2021,Health Care and Social Assistance,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,71----,18,10,N,5,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation","SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,72----,90,31,19,12,20,5,3,N,N,N,2021,Accommodation and Food Services,"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02127,81----,80,51,18,6,N,N,N,N,N,N,2021,Other Services (except Public Administration),"SOUTH BOSTON, MA",SOUTH BOSTON,MA,SUFFOLK
-02128,23----,68,49,9,5,N,3,N,N,N,N,2021,Construction,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,31----,11,4,3,N,N,N,N,N,N,N,2021,Manufacturing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,42----,22,13,5,N,N,N,N,N,N,N,2021,Wholesale Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,44----,102,73,17,3,8,N,N,N,N,N,2021,Retail Trade,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,48----,112,46,18,9,16,11,4,3,N,4,2021,Transportation and Warehousing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,51----,10,7,N,N,N,N,N,N,N,N,2021,Information,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,52----,21,11,7,3,N,N,N,N,N,N,2021,Finance and Insurance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,53----,52,36,5,5,5,N,N,N,N,N,2021,Real Estate and Rental and Leasing,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,54----,55,39,13,N,3,N,N,N,N,N,2021,"Professional, Scientific, and Technical Services","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,55----,5,N,N,N,N,N,N,N,N,N,2021,Management of Companies and Enterprises,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,56----,71,47,10,4,8,N,N,N,N,N,2021,Administrative and Support and Waste Management and Remediation Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,61----,4,3,N,N,N,N,N,N,N,N,2021,Educational Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,62----,64,24,12,9,7,3,9,N,N,N,2021,Health Care and Social Assistance,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,71----,12,5,4,N,N,N,N,N,N,N,2021,"Arts, Entertainment, and Recreation","EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,72----,139,54,31,24,21,3,5,N,N,N,2021,Accommodation and Food Services,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,81----,100,71,20,6,3,N,N,N,N,N,2021,Other Services (except Public Administration),"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
-02128,99----,4,4,N,N,N,N,N,N,N,N,2021,Unclassified,"EAST BOSTON, MA",EAST BOSTON,MA,SUFFOLK
+year,neighborhood,sector,est,n1_4,n5_9,n10_19,n20_49,n50_99,n100_249,n250_499,n500_999,n1000
+2010,South Boston,Utilities,4,2,0,0,0,1,0,0,1,0
+2010,South Boston,Construction,113,62,22,7,15,5,2,0,0,0
+2010,South Boston,Manufacturing,33,10,4,7,6,4,1,0,1,0
+2010,South Boston,Wholesale Trade,68,38,11,12,6,1,0,0,0,0
+2010,South Boston,Retail Trade,244,128,48,38,24,3,2,1,0,0
+2010,South Boston,Transportation and Warehousing,36,21,4,3,3,2,1,2,0,0
+2010,South Boston,Information,60,33,7,3,7,6,3,0,0,1
+2010,South Boston,Finance and Insurance,288,114,65,37,28,11,16,8,3,6
+2010,South Boston,Real Estate and Rental and Leasing,137,72,29,14,15,3,4,0,0,0
+2010,South Boston,"Professional, Scientific, and Technical Services",450,268,73,46,42,10,7,2,2,0
+2010,South Boston,Management of Companies and Enterprises,23,9,0,4,3,1,3,2,0,1
+2010,South Boston,Administrative and Support and Waste Management and Remediation Services,129,56,17,16,17,12,6,3,1,1
+2010,South Boston,Educational Services,27,10,2,8,5,0,0,2,0,0
+2010,South Boston,Health Care and Social Assistance,109,39,27,23,8,5,4,3,0,0
+2010,South Boston,"Arts, Entertainment, and Recreation",25,14,3,2,5,1,0,0,0,0
+2010,South Boston,Accommodation and Food Services,254,100,46,41,49,10,7,1,0,0
+2010,South Boston,Other Services (except Public Administration),216,127,48,26,8,2,5,0,0,0
+2010,South Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
+2010,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,0,1,0,0,0,0,0,0
+2010,South End,Utilities,1,1,0,0,0,0,0,0,0,0
+2010,South End,Construction,22,13,3,3,1,0,1,1,0,0
+2010,South End,Manufacturing,21,6,1,4,4,4,2,0,0,0
+2010,South End,Wholesale Trade,87,27,20,20,13,6,1,0,0,0
+2010,South End,Retail Trade,97,56,25,11,3,1,1,0,0,0
+2010,South End,Transportation and Warehousing,7,4,0,2,1,0,0,0,0,0
+2010,South End,Information,19,11,3,2,2,0,0,1,0,0
+2010,South End,Finance and Insurance,21,9,8,4,0,0,0,0,0,0
+2010,South End,Real Estate and Rental and Leasing,42,26,7,6,3,0,0,0,0,0
+2010,South End,"Professional, Scientific, and Technical Services",123,81,22,10,7,3,0,0,0,0
+2010,South End,Management of Companies and Enterprises,3,1,0,1,0,0,1,0,0,0
+2010,South End,Administrative and Support and Waste Management and Remediation Services,23,9,6,2,3,2,1,0,0,0
+2010,South End,Educational Services,7,4,1,1,1,0,0,0,0,0
+2010,South End,Health Care and Social Assistance,86,27,13,13,17,9,4,2,0,1
+2010,South End,"Arts, Entertainment, and Recreation",14,8,1,1,2,2,0,0,0,0
+2010,South End,Accommodation and Food Services,88,35,15,11,22,4,1,0,0,0
+2010,South End,Other Services (except Public Administration),77,35,11,23,7,1,0,0,0,0
+2010,South End,Unclassified,3,3,0,0,0,0,0,0,0,0
+2010,East Boston,Construction,35,20,7,3,4,0,1,0,0,0
+2010,East Boston,Manufacturing,17,4,3,3,2,4,0,1,0,0
+2010,East Boston,Wholesale Trade,16,8,4,1,2,1,0,0,0,0
+2010,East Boston,Retail Trade,100,55,24,10,7,3,1,0,0,0
+2010,East Boston,Transportation and Warehousing,129,46,25,15,18,15,4,1,2,3
+2010,East Boston,Information,12,8,2,1,0,1,0,0,0,0
+2010,East Boston,Finance and Insurance,28,10,10,4,4,0,0,0,0,0
+2010,East Boston,Real Estate and Rental and Leasing,32,12,7,6,2,4,1,0,0,0
+2010,East Boston,"Professional, Scientific, and Technical Services",35,30,2,1,2,0,0,0,0,0
+2010,East Boston,Management of Companies and Enterprises,5,3,1,1,0,0,0,0,0,0
+2010,East Boston,Administrative and Support and Waste Management and Remediation Services,31,14,8,0,4,2,2,1,0,0
+2010,East Boston,Educational Services,7,3,3,0,1,0,0,0,0,0
+2010,East Boston,Health Care and Social Assistance,49,16,10,12,7,1,2,0,1,0
+2010,East Boston,"Arts, Entertainment, and Recreation",6,3,1,1,0,0,1,0,0,0
+2010,East Boston,Accommodation and Food Services,129,42,31,25,17,6,5,3,0,0
+2010,East Boston,Other Services (except Public Administration),81,57,14,8,1,1,0,0,0,0
+2011,South Boston,Utilities,5,3,0,0,0,1,0,0,1,0
+2011,South Boston,Construction,103,54,15,12,13,8,1,0,0,0
+2011,South Boston,Manufacturing,35,14,3,6,8,3,0,0,1,0
+2011,South Boston,Wholesale Trade,66,35,14,9,6,2,0,0,0,0
+2011,South Boston,Retail Trade,234,113,58,35,21,3,3,1,0,0
+2011,South Boston,Transportation and Warehousing,37,18,7,5,2,1,2,2,0,0
+2011,South Boston,Information,74,39,11,6,8,5,4,0,0,1
+2011,South Boston,Finance and Insurance,295,117,65,40,29,12,16,6,4,6
+2011,South Boston,Real Estate and Rental and Leasing,139,70,30,18,15,2,4,0,0,0
+2011,South Boston,"Professional, Scientific, and Technical Services",459,270,85,41,39,12,5,5,2,0
+2011,South Boston,Management of Companies and Enterprises,19,7,1,0,4,4,2,1,0,0
+2011,South Boston,Administrative and Support and Waste Management and Remediation Services,164,75,20,17,24,14,7,4,2,1
+2011,South Boston,Educational Services,29,10,2,9,6,0,0,2,0,0
+2011,South Boston,Health Care and Social Assistance,115,45,27,22,7,7,5,2,0,0
+2011,South Boston,"Arts, Entertainment, and Recreation",25,13,4,3,4,1,0,0,0,0
+2011,South Boston,Accommodation and Food Services,249,99,43,40,47,13,6,1,0,0
+2011,South Boston,Other Services (except Public Administration),211,120,55,21,6,4,5,0,0,0
+2011,South Boston,Unclassified,5,5,0,0,0,0,0,0,0,0
+2011,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,1,0,0,0,0,0,0,0
+2011,South End,Construction,21,14,0,2,3,0,1,1,0,0
+2011,South End,Manufacturing,23,8,1,5,2,7,0,0,0,0
+2011,South End,Wholesale Trade,89,30,21,15,17,5,1,0,0,0
+2011,South End,Retail Trade,92,53,23,12,1,3,0,0,0,0
+2011,South End,Transportation and Warehousing,7,3,1,2,1,0,0,0,0,0
+2011,South End,Information,17,7,6,2,1,0,0,1,0,0
+2011,South End,Finance and Insurance,24,13,5,6,0,0,0,0,0,0
+2011,South End,Real Estate and Rental and Leasing,43,28,6,5,4,0,0,0,0,0
+2011,South End,"Professional, Scientific, and Technical Services",134,87,30,8,8,1,0,0,0,0
+2011,South End,Management of Companies and Enterprises,3,1,0,1,0,0,1,0,0,0
+2011,South End,Administrative and Support and Waste Management and Remediation Services,23,9,4,4,3,2,1,0,0,0
+2011,South End,Educational Services,9,5,1,2,0,1,0,0,0,0
+2011,South End,Health Care and Social Assistance,86,24,18,11,17,9,5,1,0,1
+2011,South End,"Arts, Entertainment, and Recreation",14,8,1,2,1,2,0,0,0,0
+2011,South End,Accommodation and Food Services,90,35,15,15,18,6,1,0,0,0
+2011,South End,Other Services (except Public Administration),80,38,27,7,7,1,0,0,0,0
+2011,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
+2011,East Boston,Construction,38,21,8,2,5,2,0,0,0,0
+2011,East Boston,Manufacturing,16,5,2,3,1,4,0,1,0,0
+2011,East Boston,Wholesale Trade,15,8,4,0,2,1,0,0,0,0
+2011,East Boston,Retail Trade,113,71,21,10,6,4,1,0,0,0
+2011,East Boston,Transportation and Warehousing,130,48,25,17,16,12,5,3,1,3
+2011,East Boston,Information,5,3,0,1,0,1,0,0,0,0
+2011,East Boston,Finance and Insurance,27,11,10,3,3,0,0,0,0,0
+2011,East Boston,Real Estate and Rental and Leasing,33,15,6,6,2,2,2,0,0,0
+2011,East Boston,"Professional, Scientific, and Technical Services",36,29,2,2,3,0,0,0,0,0
+2011,East Boston,Management of Companies and Enterprises,2,1,0,1,0,0,0,0,0,0
+2011,East Boston,Administrative and Support and Waste Management and Remediation Services,29,13,6,1,4,2,2,1,0,0
+2011,East Boston,Educational Services,8,5,2,0,1,0,0,0,0,0
+2011,East Boston,Health Care and Social Assistance,45,13,12,9,7,1,2,0,1,0
+2011,East Boston,"Arts, Entertainment, and Recreation",6,3,1,1,0,1,0,0,0,0
+2011,East Boston,Accommodation and Food Services,121,35,31,23,15,10,4,3,0,0
+2011,East Boston,Other Services (except Public Administration),84,56,19,5,3,1,0,0,0,0
+2011,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
+2012,South Boston,Utilities,4,2,0,0,0,1,0,0,1,0
+2012,South Boston,Construction,99,61,14,9,9,5,1,0,0,0
+2012,South Boston,Manufacturing,36,14,4,5,7,5,0,0,1,0
+2012,South Boston,Wholesale Trade,66,28,20,5,10,2,1,0,0,0
+2012,South Boston,Retail Trade,241,119,59,37,18,4,3,1,0,0
+2012,South Boston,Transportation and Warehousing,45,22,9,1,3,4,4,2,0,0
+2012,South Boston,Information,78,41,11,6,10,4,5,0,0,1
+2012,South Boston,Finance and Insurance,282,112,63,31,31,13,13,7,3,9
+2012,South Boston,Real Estate and Rental and Leasing,139,74,29,16,12,4,4,0,0,0
+2012,South Boston,"Professional, Scientific, and Technical Services",472,268,82,54,41,12,8,3,3,1
+2012,South Boston,Management of Companies and Enterprises,25,11,1,2,4,3,3,1,0,0
+2012,South Boston,Administrative and Support and Waste Management and Remediation Services,181,80,34,19,22,14,6,3,2,1
+2012,South Boston,Educational Services,36,14,8,6,6,0,0,2,0,0
+2012,South Boston,Health Care and Social Assistance,127,56,26,26,6,6,5,2,0,0
+2012,South Boston,"Arts, Entertainment, and Recreation",21,9,4,5,3,0,0,0,0,0
+2012,South Boston,Accommodation and Food Services,263,107,42,40,54,11,8,1,0,0
+2012,South Boston,Other Services (except Public Administration),226,123,62,23,9,7,2,0,0,0
+2012,South Boston,Unclassified,2,2,0,0,0,0,0,0,0,0
+2012,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,0,1,0,0,0,0,0,0
+2012,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
+2012,South End,Construction,22,13,2,2,3,1,0,1,0,0
+2012,South End,Manufacturing,21,6,1,3,4,7,0,0,0,0
+2012,South End,Wholesale Trade,78,24,18,16,15,4,1,0,0,0
+2012,South End,Retail Trade,98,58,20,14,1,3,2,0,0,0
+2012,South End,Transportation and Warehousing,9,3,2,2,2,0,0,0,0,0
+2012,South End,Information,14,6,5,1,2,0,0,0,0,0
+2012,South End,Finance and Insurance,23,11,7,5,0,0,0,0,0,0
+2012,South End,Real Estate and Rental and Leasing,45,29,9,4,3,0,0,0,0,0
+2012,South End,"Professional, Scientific, and Technical Services",139,90,27,13,7,2,0,0,0,0
+2012,South End,Management of Companies and Enterprises,3,1,1,1,0,0,0,0,0,0
+2012,South End,Administrative and Support and Waste Management and Remediation Services,21,10,4,2,3,0,2,0,0,0
+2012,South End,Educational Services,10,5,3,1,1,0,0,0,0,0
+2012,South End,Health Care and Social Assistance,88,32,12,10,19,8,4,2,0,1
+2012,South End,"Arts, Entertainment, and Recreation",13,8,1,0,2,1,1,0,0,0
+2012,South End,Accommodation and Food Services,92,34,18,13,22,5,0,0,0,0
+2012,South End,Other Services (except Public Administration),74,35,27,5,6,1,0,0,0,0
+2012,East Boston,Construction,40,25,7,3,2,3,0,0,0,0
+2012,East Boston,Manufacturing,12,4,3,0,1,3,0,1,0,0
+2012,East Boston,Wholesale Trade,15,8,4,0,2,1,0,0,0,0
+2012,East Boston,Retail Trade,104,63,22,9,7,2,1,0,0,0
+2012,East Boston,Transportation and Warehousing,130,50,22,18,16,11,4,4,2,3
+2012,East Boston,Information,4,4,0,0,0,0,0,0,0,0
+2012,East Boston,Finance and Insurance,21,7,10,2,2,0,0,0,0,0
+2012,East Boston,Real Estate and Rental and Leasing,32,17,4,5,1,3,2,0,0,0
+2012,East Boston,"Professional, Scientific, and Technical Services",32,25,3,2,2,0,0,0,0,0
+2012,East Boston,Management of Companies and Enterprises,6,2,1,1,1,0,0,0,0,1
+2012,East Boston,Administrative and Support and Waste Management and Remediation Services,33,13,7,3,5,2,2,1,0,0
+2012,East Boston,Educational Services,6,4,1,0,1,0,0,0,0,0
+2012,East Boston,Health Care and Social Assistance,45,12,10,13,5,3,1,0,1,0
+2012,East Boston,"Arts, Entertainment, and Recreation",8,4,1,2,0,0,1,0,0,0
+2012,East Boston,Accommodation and Food Services,125,31,32,29,21,4,5,3,0,0
+2012,East Boston,Other Services (except Public Administration),87,61,16,6,3,1,0,0,0,0
+2013,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2013,South Boston,Construction,97,57,16,8,9,4,3,0,0,0
+2013,South Boston,Manufacturing,39,17,3,5,8,4,1,0,1,0
+2013,South Boston,Wholesale Trade,73,33,20,9,7,3,1,0,0,0
+2013,South Boston,Retail Trade,244,123,59,33,18,8,2,1,0,0
+2013,South Boston,Transportation and Warehousing,36,18,7,4,1,4,1,1,0,0
+2013,South Boston,Information,91,44,16,8,12,4,5,0,1,1
+2013,South Boston,Finance and Insurance,289,122,59,29,29,17,16,7,3,7
+2013,South Boston,Real Estate and Rental and Leasing,141,76,27,18,12,4,4,0,0,0
+2013,South Boston,"Professional, Scientific, and Technical Services",491,279,86,53,39,18,11,2,3,0
+2013,South Boston,Management of Companies and Enterprises,25,12,2,1,4,2,3,1,0,0
+2013,South Boston,Administrative and Support and Waste Management and Remediation Services,183,84,29,17,20,20,5,6,1,1
+2013,South Boston,Educational Services,37,15,6,7,6,2,0,1,0,0
+2013,South Boston,Health Care and Social Assistance,126,54,26,25,8,6,5,2,0,0
+2013,South Boston,"Arts, Entertainment, and Recreation",25,15,2,5,3,0,0,0,0,0
+2013,South Boston,Accommodation and Food Services,261,89,47,46,55,18,5,1,0,0
+2013,South Boston,Other Services (except Public Administration),233,134,55,21,14,6,3,0,0,0
+2013,South Boston,Unclassified,2,2,0,0,0,0,0,0,0,0
+2013,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
+2013,South End,Construction,26,16,2,1,5,1,0,1,0,0
+2013,South End,Manufacturing,19,6,0,4,3,5,1,0,0,0
+2013,South End,Wholesale Trade,79,26,18,15,16,3,1,0,0,0
+2013,South End,Retail Trade,93,53,23,11,1,3,2,0,0,0
+2013,South End,Transportation and Warehousing,10,6,0,2,2,0,0,0,0,0
+2013,South End,Information,19,10,5,1,2,1,0,0,0,0
+2013,South End,Finance and Insurance,23,10,9,3,0,0,1,0,0,0
+2013,South End,Real Estate and Rental and Leasing,50,32,10,5,3,0,0,0,0,0
+2013,South End,"Professional, Scientific, and Technical Services",146,91,32,10,11,1,1,0,0,0
+2013,South End,Management of Companies and Enterprises,7,1,2,2,2,0,0,0,0,0
+2013,South End,Administrative and Support and Waste Management and Remediation Services,20,9,4,2,2,3,0,0,0,0
+2013,South End,Educational Services,12,6,4,1,1,0,0,0,0,0
+2013,South End,Health Care and Social Assistance,94,35,12,16,16,7,5,2,0,1
+2013,South End,"Arts, Entertainment, and Recreation",15,10,1,0,3,0,1,0,0,0
+2013,South End,Accommodation and Food Services,90,27,17,14,24,8,0,0,0,0
+2013,South End,Other Services (except Public Administration),70,42,16,4,7,1,0,0,0,0
+2013,East Boston,Construction,41,27,6,3,3,2,0,0,0,0
+2013,East Boston,Manufacturing,12,4,3,0,2,2,1,0,0,0
+2013,East Boston,Wholesale Trade,13,6,5,0,1,1,0,0,0,0
+2013,East Boston,Retail Trade,110,63,23,13,6,3,2,0,0,0
+2013,East Boston,Transportation and Warehousing,131,43,31,17,17,8,6,3,3,3
+2013,East Boston,Information,4,4,0,0,0,0,0,0,0,0
+2013,East Boston,Finance and Insurance,24,8,11,3,1,0,0,0,0,1
+2013,East Boston,Real Estate and Rental and Leasing,34,20,3,5,1,2,3,0,0,0
+2013,East Boston,"Professional, Scientific, and Technical Services",37,27,7,1,2,0,0,0,0,0
+2013,East Boston,Management of Companies and Enterprises,5,3,1,1,0,0,0,0,0,0
+2013,East Boston,Administrative and Support and Waste Management and Remediation Services,36,14,8,2,5,4,2,1,0,0
+2013,East Boston,Educational Services,6,3,2,0,1,0,0,0,0,0
+2013,East Boston,Health Care and Social Assistance,46,14,11,11,6,2,1,0,1,0
+2013,East Boston,"Arts, Entertainment, and Recreation",7,3,2,1,0,0,1,0,0,0
+2013,East Boston,Accommodation and Food Services,129,35,28,32,21,5,4,4,0,0
+2013,East Boston,Other Services (except Public Administration),84,59,15,7,2,1,0,0,0,0
+2013,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
+2014,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2014,South Boston,Construction,104,66,15,8,6,5,3,1,0,0
+2014,South Boston,Manufacturing,38,17,3,3,8,4,2,0,1,0
+2014,South Boston,Wholesale Trade,76,36,21,6,7,4,2,0,0,0
+2014,South Boston,Retail Trade,237,114,53,39,20,8,1,2,0,0
+2014,South Boston,Transportation and Warehousing,33,15,9,3,1,3,1,1,0,0
+2014,South Boston,Information,88,38,13,12,10,4,7,2,2,0
+2014,South Boston,Finance and Insurance,292,137,52,32,29,15,15,4,7,1
+2014,South Boston,Real Estate and Rental and Leasing,140,85,22,14,14,2,3,0,0,0
+2014,South Boston,"Professional, Scientific, and Technical Services",505,284,84,64,45,13,10,2,3,0
+2014,South Boston,Management of Companies and Enterprises,24,13,1,1,5,1,3,0,0,0
+2014,South Boston,Administrative and Support and Waste Management and Remediation Services,187,102,24,14,17,14,9,6,1,0
+2014,South Boston,Educational Services,38,14,7,8,6,2,0,1,0,0
+2014,South Boston,Health Care and Social Assistance,126,54,25,25,8,7,4,3,0,0
+2014,South Boston,"Arts, Entertainment, and Recreation",27,16,3,5,3,0,0,0,0,0
+2014,South Boston,Accommodation and Food Services,257,77,48,52,54,21,4,1,0,0
+2014,South Boston,Other Services (except Public Administration),237,131,57,25,14,7,3,0,0,0
+2014,South Boston,Unclassified,8,8,0,0,0,0,0,0,0,0
+2014,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
+2014,South End,Construction,26,15,3,1,4,2,0,0,1,0
+2014,South End,Manufacturing,24,10,0,5,3,5,1,0,0,0
+2014,South End,Wholesale Trade,76,20,20,17,13,4,2,0,0,0
+2014,South End,Retail Trade,101,59,25,10,2,4,1,0,0,0
+2014,South End,Transportation and Warehousing,9,5,0,1,3,0,0,0,0,0
+2014,South End,Information,15,9,2,3,0,1,0,0,0,0
+2014,South End,Finance and Insurance,24,13,7,3,0,0,1,0,0,0
+2014,South End,Real Estate and Rental and Leasing,48,29,10,4,4,1,0,0,0,0
+2014,South End,"Professional, Scientific, and Technical Services",148,100,23,12,10,2,1,0,0,0
+2014,South End,Management of Companies and Enterprises,6,0,3,1,2,0,0,0,0,0
+2014,South End,Administrative and Support and Waste Management and Remediation Services,25,15,3,2,2,2,1,0,0,0
+2014,South End,Educational Services,12,7,3,1,0,1,0,0,0,0
+2014,South End,Health Care and Social Assistance,93,30,15,15,17,8,4,3,0,1
+2014,South End,"Arts, Entertainment, and Recreation",16,9,2,1,3,1,0,0,0,0
+2014,South End,Accommodation and Food Services,94,30,17,17,24,6,0,0,0,0
+2014,South End,Other Services (except Public Administration),69,43,11,6,6,3,0,0,0,0
+2014,South End,Unclassified,1,1,0,0,0,0,0,0,0,0
+2014,East Boston,Construction,38,21,10,3,0,4,0,0,0,0
+2014,East Boston,Manufacturing,13,5,2,1,1,3,0,1,0,0
+2014,East Boston,Wholesale Trade,12,5,5,0,1,1,0,0,0,0
+2014,East Boston,Retail Trade,110,66,25,9,5,3,2,0,0,0
+2014,East Boston,Transportation and Warehousing,135,48,23,21,18,11,6,3,2,3
+2014,East Boston,Information,7,6,1,0,0,0,0,0,0,0
+2014,East Boston,Finance and Insurance,22,8,8,4,1,0,0,0,0,1
+2014,East Boston,Real Estate and Rental and Leasing,37,19,7,5,0,3,2,1,0,0
+2014,East Boston,"Professional, Scientific, and Technical Services",35,25,7,2,1,0,0,0,0,0
+2014,East Boston,Management of Companies and Enterprises,4,2,1,1,0,0,0,0,0,0
+2014,East Boston,Administrative and Support and Waste Management and Remediation Services,37,11,11,4,4,4,2,1,0,0
+2014,East Boston,Educational Services,7,4,2,0,1,0,0,0,0,0
+2014,East Boston,Health Care and Social Assistance,45,14,11,9,5,4,1,0,1,0
+2014,East Boston,"Arts, Entertainment, and Recreation",6,3,0,1,0,1,1,0,0,0
+2014,East Boston,Accommodation and Food Services,131,36,25,38,18,6,4,4,0,0
+2014,East Boston,Other Services (except Public Administration),85,59,15,8,2,1,0,0,0,0
+2014,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
+2015,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2015,South Boston,Construction,108,69,14,8,8,6,2,1,0,0
+2015,South Boston,Manufacturing,35,16,3,5,4,4,2,0,1,0
+2015,South Boston,Wholesale Trade,73,32,21,6,6,5,3,0,0,0
+2015,South Boston,Retail Trade,244,125,53,32,23,8,1,2,0,0
+2015,South Boston,Transportation and Warehousing,33,14,8,3,2,4,1,1,0,0
+2015,South Boston,Information,88,38,12,9,15,4,8,0,1,1
+2015,South Boston,Finance and Insurance,315,145,50,32,42,18,13,9,5,1
+2015,South Boston,Real Estate and Rental and Leasing,143,89,18,18,12,3,3,0,0,0
+2015,South Boston,"Professional, Scientific, and Technical Services",544,323,70,69,49,15,10,4,3,1
+2015,South Boston,Management of Companies and Enterprises,26,11,5,1,3,2,3,1,0,0
+2015,South Boston,Administrative and Support and Waste Management and Remediation Services,176,92,23,16,17,15,8,5,0,0
+2015,South Boston,Educational Services,41,16,5,9,6,4,0,1,0,0
+2015,South Boston,Health Care and Social Assistance,118,48,24,26,8,6,4,2,0,0
+2015,South Boston,"Arts, Entertainment, and Recreation",31,18,4,4,5,0,0,0,0,0
+2015,South Boston,Accommodation and Food Services,266,93,48,44,58,17,5,1,0,0
+2015,South Boston,Other Services (except Public Administration),220,126,49,19,16,7,3,0,0,0
+2015,South Boston,Unclassified,11,11,0,0,0,0,0,0,0,0
+2015,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
+2015,South End,Construction,25,13,4,2,2,3,0,0,1,0
+2015,South End,Manufacturing,24,10,0,5,3,5,1,0,0,0
+2015,South End,Wholesale Trade,76,19,22,17,10,6,2,0,0,0
+2015,South End,Retail Trade,110,64,26,11,3,4,2,0,0,0
+2015,South End,Transportation and Warehousing,12,8,0,3,1,0,0,0,0,0
+2015,South End,Information,15,10,2,2,0,1,0,0,0,0
+2015,South End,Finance and Insurance,25,14,7,4,0,0,0,0,0,0
+2015,South End,Real Estate and Rental and Leasing,56,38,10,2,4,2,0,0,0,0
+2015,South End,"Professional, Scientific, and Technical Services",156,100,28,15,9,2,2,0,0,0
+2015,South End,Management of Companies and Enterprises,7,0,2,3,1,1,0,0,0,0
+2015,South End,Administrative and Support and Waste Management and Remediation Services,24,12,4,4,1,1,2,0,0,0
+2015,South End,Educational Services,15,8,4,2,1,0,0,0,0,0
+2015,South End,Health Care and Social Assistance,91,32,15,10,20,6,4,3,0,1
+2015,South End,"Arts, Entertainment, and Recreation",17,10,2,1,3,1,0,0,0,0
+2015,South End,Accommodation and Food Services,94,29,18,15,23,9,0,0,0,0
+2015,South End,Other Services (except Public Administration),75,47,14,5,6,3,0,0,0,0
+2015,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
+2015,East Boston,Construction,38,21,9,4,1,3,0,0,0,0
+2015,East Boston,Manufacturing,13,7,1,0,1,3,1,0,0,0
+2015,East Boston,Wholesale Trade,15,8,5,0,1,1,0,0,0,0
+2015,East Boston,Retail Trade,112,67,25,8,7,3,2,0,0,0
+2015,East Boston,Transportation and Warehousing,135,53,20,22,16,13,3,2,4,2
+2015,East Boston,Information,8,6,1,0,1,0,0,0,0,0
+2015,East Boston,Finance and Insurance,19,6,8,3,1,0,0,0,0,1
+2015,East Boston,Real Estate and Rental and Leasing,37,18,6,7,0,3,2,1,0,0
+2015,East Boston,"Professional, Scientific, and Technical Services",36,27,6,2,1,0,0,0,0,0
+2015,East Boston,Management of Companies and Enterprises,6,2,2,2,0,0,0,0,0,0
+2015,East Boston,Administrative and Support and Waste Management and Remediation Services,40,15,13,3,4,2,3,0,0,0
+2015,East Boston,Educational Services,8,6,1,0,1,0,0,0,0,0
+2015,East Boston,Health Care and Social Assistance,47,16,11,8,7,3,1,0,1,0
+2015,East Boston,"Arts, Entertainment, and Recreation",7,4,0,1,0,2,0,0,0,0
+2015,East Boston,Accommodation and Food Services,144,41,25,44,19,7,4,3,1,0
+2015,East Boston,Other Services (except Public Administration),87,62,13,8,3,1,0,0,0,0
+2016,South Boston,Utilities,4,1,0,0,1,1,0,0,1,0
+2016,South Boston,Construction,114,70,17,10,8,4,3,2,0,0
+2016,South Boston,Manufacturing,39,17,10,2,3,5,1,0,1,0
+2016,South Boston,Wholesale Trade,71,32,21,6,7,4,1,0,0,0
+2016,South Boston,Retail Trade,250,130,51,39,19,9,0,2,0,0
+2016,South Boston,Transportation and Warehousing,35,18,8,2,1,4,1,1,0,0
+2016,South Boston,Information,94,39,15,9,16,4,7,2,2,0
+2016,South Boston,Finance and Insurance,304,131,55,29,41,19,16,8,3,2
+2016,South Boston,Real Estate and Rental and Leasing,145,89,17,22,11,3,3,0,0,0
+2016,South Boston,"Professional, Scientific, and Technical Services",557,331,77,63,48,18,11,4,4,1
+2016,South Boston,Management of Companies and Enterprises,27,11,5,1,4,1,4,1,0,0
+2016,South Boston,Administrative and Support and Waste Management and Remediation Services,174,90,28,11,18,13,7,6,1,0
+2016,South Boston,Educational Services,43,19,6,7,8,2,0,1,0,0
+2016,South Boston,Health Care and Social Assistance,123,51,29,21,10,3,8,1,0,0
+2016,South Boston,"Arts, Entertainment, and Recreation",33,19,6,3,4,1,0,0,0,0
+2016,South Boston,Accommodation and Food Services,273,90,43,49,61,23,6,1,0,0
+2016,South Boston,Other Services (except Public Administration),213,115,47,25,17,6,3,0,0,0
+2016,South Boston,Unclassified,8,8,0,0,0,0,0,0,0,0
+2016,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
+2016,South End,Construction,24,11,4,5,2,1,0,0,1,0
+2016,South End,Manufacturing,18,4,1,5,3,4,1,0,0,0
+2016,South End,Wholesale Trade,72,20,18,17,10,4,3,0,0,0
+2016,South End,Retail Trade,111,67,27,9,3,3,1,1,0,0
+2016,South End,Transportation and Warehousing,10,7,0,1,2,0,0,0,0,0
+2016,South End,Information,13,10,1,2,0,0,0,0,0,0
+2016,South End,Finance and Insurance,24,12,6,4,0,0,2,0,0,0
+2016,South End,Real Estate and Rental and Leasing,61,45,8,3,4,1,0,0,0,0
+2016,South End,"Professional, Scientific, and Technical Services",146,93,25,13,9,5,1,0,0,0
+2016,South End,Management of Companies and Enterprises,6,0,1,3,1,1,0,0,0,0
+2016,South End,Administrative and Support and Waste Management and Remediation Services,24,11,4,3,3,1,2,0,0,0
+2016,South End,Educational Services,14,8,3,1,2,0,0,0,0,0
+2016,South End,Health Care and Social Assistance,91,33,13,14,16,6,5,3,0,1
+2016,South End,"Arts, Entertainment, and Recreation",16,9,3,1,2,1,0,0,0,0
+2016,South End,Accommodation and Food Services,103,41,15,15,22,10,0,0,0,0
+2016,South End,Other Services (except Public Administration),74,48,11,8,4,3,0,0,0,0
+2016,South End,Unclassified,2,2,0,0,0,0,0,0,0,0
+2016,East Boston,Construction,46,30,9,3,1,3,0,0,0,0
+2016,East Boston,Manufacturing,16,8,2,1,1,3,0,1,0,0
+2016,East Boston,Wholesale Trade,17,8,6,0,2,0,1,0,0,0
+2016,East Boston,Retail Trade,117,69,26,10,7,4,1,0,0,0
+2016,East Boston,Transportation and Warehousing,130,51,21,18,17,11,5,2,2,3
+2016,East Boston,Information,12,11,1,0,0,0,0,0,0,0
+2016,East Boston,Finance and Insurance,21,10,5,5,1,0,0,0,0,0
+2016,East Boston,Real Estate and Rental and Leasing,38,17,7,7,3,1,3,0,0,0
+2016,East Boston,"Professional, Scientific, and Technical Services",36,25,7,3,1,0,0,0,0,0
+2016,East Boston,Management of Companies and Enterprises,5,3,0,1,1,0,0,0,0,0
+2016,East Boston,Administrative and Support and Waste Management and Remediation Services,50,24,13,2,4,3,4,0,0,0
+2016,East Boston,Educational Services,7,5,1,0,1,0,0,0,0,0
+2016,East Boston,Health Care and Social Assistance,45,17,9,8,7,2,1,0,0,1
+2016,East Boston,"Arts, Entertainment, and Recreation",8,4,1,0,1,2,0,0,0,0
+2016,East Boston,Accommodation and Food Services,138,41,22,35,25,8,2,4,1,0
+2016,East Boston,Other Services (except Public Administration),89,60,17,9,2,1,0,0,0,0
+2016,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
+2017,South Boston,Construction,106,64,11,5,10,4,0,0,0,0
+2017,South Boston,Manufacturing,37,17,3,0,0,3,0,0,0,0
+2017,South Boston,Wholesale Trade,76,38,13,7,9,0,0,0,0,0
+2017,South Boston,Retail Trade,251,129,52,38,18,12,0,0,0,0
+2017,South Boston,Transportation and Warehousing,37,20,0,0,0,4,0,0,0,0
+2017,South Boston,Information,101,42,13,8,11,4,7,0,0,0
+2017,South Boston,Finance and Insurance,299,124,59,36,33,18,12,9,0,0
+2017,South Boston,Real Estate and Rental and Leasing,149,94,18,18,10,4,0,0,0,0
+2017,South Boston,"Professional, Scientific, and Technical Services",577,318,93,64,54,22,11,5,3,0
+2017,South Boston,Management of Companies and Enterprises,25,6,3,3,3,0,3,0,0,0
+2017,South Boston,Administrative and Support and Waste Management and Remediation Services,177,100,27,12,16,8,4,4,0,0
+2017,South Boston,Educational Services,44,15,6,0,3,5,0,0,0,0
+2017,South Boston,Health Care and Social Assistance,146,67,28,24,17,0,3,0,0,0
+2017,South Boston,"Arts, Entertainment, and Recreation",30,16,3,0,3,0,0,0,0,0
+2017,South Boston,Accommodation and Food Services,274,91,48,43,63,22,6,0,0,0
+2017,South Boston,Other Services (except Public Administration),228,130,44,29,13,3,0,0,0,0
+2017,South Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
+2017,South End,Construction,24,14,0,0,3,3,0,0,0,0
+2017,South End,Manufacturing,18,5,0,3,3,4,0,0,0,0
+2017,South End,Wholesale Trade,60,15,15,13,12,3,0,0,0,0
+2017,South End,Retail Trade,113,66,25,11,4,5,0,0,0,0
+2017,South End,Transportation and Warehousing,9,6,0,0,0,0,0,0,0,0
+2017,South End,Information,10,6,0,0,0,0,0,0,0,0
+2017,South End,Finance and Insurance,27,14,6,4,0,0,0,0,0,0
+2017,South End,Real Estate and Rental and Leasing,58,41,10,0,4,0,0,0,0,0
+2017,South End,"Professional, Scientific, and Technical Services",140,82,26,17,10,0,3,0,0,0
+2017,South End,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
+2017,South End,Administrative and Support and Waste Management and Remediation Services,25,12,5,0,3,0,3,0,0,0
+2017,South End,Educational Services,17,11,0,4,0,0,0,0,0,0
+2017,South End,Health Care and Social Assistance,93,36,8,15,18,9,4,0,0,0
+2017,South End,"Arts, Entertainment, and Recreation",15,10,0,0,0,0,0,0,0,0
+2017,South End,Accommodation and Food Services,105,29,22,13,29,12,0,0,0,0
+2017,South End,Other Services (except Public Administration),78,46,18,6,3,4,0,0,0,0
+2017,East Boston,Construction,50,32,11,3,0,4,0,0,0,0
+2017,East Boston,Manufacturing,15,7,0,0,0,0,0,0,0,0
+2017,East Boston,Wholesale Trade,21,14,4,0,0,0,0,0,0,0
+2017,East Boston,Retail Trade,115,67,29,8,4,5,0,0,0,0
+2017,East Boston,Transportation and Warehousing,112,46,12,17,15,7,8,0,0,3
+2017,East Boston,Information,11,11,0,0,0,0,0,0,0,0
+2017,East Boston,Finance and Insurance,18,7,5,5,0,0,0,0,0,0
+2017,East Boston,Real Estate and Rental and Leasing,44,22,6,8,4,0,3,0,0,0
+2017,East Boston,"Professional, Scientific, and Technical Services",37,27,6,3,0,0,0,0,0,0
+2017,East Boston,Management of Companies and Enterprises,6,3,0,0,0,0,0,0,0,0
+2017,East Boston,Administrative and Support and Waste Management and Remediation Services,53,25,12,6,3,3,4,0,0,0
+2017,East Boston,Educational Services,5,3,0,0,0,0,0,0,0,0
+2017,East Boston,Health Care and Social Assistance,47,17,8,11,6,3,0,0,0,0
+2017,East Boston,"Arts, Entertainment, and Recreation",10,8,0,0,0,0,0,0,0,0
+2017,East Boston,Accommodation and Food Services,146,38,25,43,24,8,3,4,0,0
+2017,East Boston,Other Services (except Public Administration),89,57,19,8,4,0,0,0,0,0
+2018,South Boston,Construction,99,54,14,9,11,0,0,0,0,0
+2018,South Boston,Manufacturing,42,19,8,3,0,3,0,0,0,0
+2018,South Boston,Wholesale Trade,76,38,14,6,5,5,0,0,0,0
+2018,South Boston,Retail Trade,250,125,54,42,17,7,0,0,0,0
+2018,South Boston,Transportation and Warehousing,41,25,0,0,0,4,0,0,0,0
+2018,South Boston,Information,98,37,15,12,10,5,0,0,0,0
+2018,South Boston,Finance and Insurance,301,122,53,44,32,20,11,9,3,0
+2018,South Boston,Real Estate and Rental and Leasing,158,109,11,16,7,0,0,0,0,0
+2018,South Boston,"Professional, Scientific, and Technical Services",590,326,88,69,58,27,8,7,0,0
+2018,South Boston,Management of Companies and Enterprises,25,6,4,0,0,0,3,0,0,0
+2018,South Boston,Administrative and Support and Waste Management and Remediation Services,172,90,26,20,18,7,5,0,0,0
+2018,South Boston,Educational Services,50,21,11,0,9,5,0,0,0,0
+2018,South Boston,Health Care and Social Assistance,154,68,29,27,19,0,3,0,0,0
+2018,South Boston,"Arts, Entertainment, and Recreation",31,17,0,3,3,0,0,0,0,0
+2018,South Boston,Accommodation and Food Services,274,89,43,53,60,21,6,0,0,0
+2018,South Boston,Other Services (except Public Administration),220,131,41,24,13,0,0,0,0,0
+2018,South Boston,Unclassified,6,6,0,0,0,0,0,0,0,0
+2018,South End,Construction,24,12,3,3,3,0,0,0,0,0
+2018,South End,Manufacturing,20,5,3,4,3,3,0,0,0,0
+2018,South End,Wholesale Trade,57,11,16,12,11,5,0,0,0,0
+2018,South End,Retail Trade,105,58,27,8,5,5,0,0,0,0
+2018,South End,Transportation and Warehousing,9,5,0,0,0,0,0,0,0,0
+2018,South End,Information,10,6,0,0,0,0,0,0,0,0
+2018,South End,Finance and Insurance,27,15,5,5,0,0,0,0,0,0
+2018,South End,Real Estate and Rental and Leasing,71,54,9,3,3,0,0,0,0,0
+2018,South End,"Professional, Scientific, and Technical Services",141,88,25,15,8,0,3,0,0,0
+2018,South End,Management of Companies and Enterprises,4,0,0,0,0,0,0,0,0,0
+2018,South End,Administrative and Support and Waste Management and Remediation Services,25,12,4,4,0,0,0,0,0,0
+2018,South End,Educational Services,16,10,0,0,3,0,0,0,0,0
+2018,South End,Health Care and Social Assistance,101,39,11,17,15,12,4,0,0,0
+2018,South End,"Arts, Entertainment, and Recreation",13,7,0,0,0,0,0,0,0,0
+2018,South End,Accommodation and Food Services,108,34,22,15,27,10,0,0,0,0
+2018,South End,Other Services (except Public Administration),81,53,12,8,4,4,0,0,0,0
+2018,East Boston,Construction,63,46,9,0,0,4,0,0,0,0
+2018,East Boston,Manufacturing,12,3,3,0,0,4,0,0,0,0
+2018,East Boston,Wholesale Trade,22,13,6,0,0,0,0,0,0,0
+2018,East Boston,Retail Trade,108,66,23,9,6,3,0,0,0,0
+2018,East Boston,Transportation and Warehousing,118,44,19,16,11,15,5,0,4,3
+2018,East Boston,Information,14,12,0,0,0,0,0,0,0,0
+2018,East Boston,Finance and Insurance,19,9,4,5,0,0,0,0,0,0
+2018,East Boston,Real Estate and Rental and Leasing,45,25,6,6,4,0,3,0,0,0
+2018,East Boston,"Professional, Scientific, and Technical Services",43,30,10,0,0,0,0,0,0,0
+2018,East Boston,Management of Companies and Enterprises,6,0,0,0,3,0,0,0,0,0
+2018,East Boston,Administrative and Support and Waste Management and Remediation Services,62,36,7,7,5,3,4,0,0,0
+2018,East Boston,Educational Services,5,0,0,0,0,0,0,0,0,0
+2018,East Boston,Health Care and Social Assistance,49,20,9,9,5,4,0,0,0,0
+2018,East Boston,"Arts, Entertainment, and Recreation",11,5,0,0,0,0,0,0,0,0
+2018,East Boston,Accommodation and Food Services,144,33,31,32,33,7,4,3,0,0
+2018,East Boston,Other Services (except Public Administration),88,53,20,8,5,0,0,0,0,0
+2019,South Boston,Construction,107,61,17,5,11,3,0,0,0,0
+2019,South Boston,Manufacturing,41,19,7,0,0,3,0,0,0,0
+2019,South Boston,Wholesale Trade,74,33,18,9,5,5,0,0,0,0
+2019,South Boston,Retail Trade,252,127,56,36,23,5,0,0,0,0
+2019,South Boston,Transportation and Warehousing,41,22,6,0,0,4,0,0,0,0
+2019,South Boston,Information,98,34,19,13,11,4,0,0,0,0
+2019,South Boston,Finance and Insurance,299,123,49,47,30,20,11,9,0,0
+2019,South Boston,Real Estate and Rental and Leasing,155,106,19,14,6,0,3,0,0,0
+2019,South Boston,"Professional, Scientific, and Technical Services",570,305,90,69,60,22,10,6,3,0
+2019,South Boston,Management of Companies and Enterprises,24,8,3,0,0,0,0,0,0,0
+2019,South Boston,Administrative and Support and Waste Management and Remediation Services,168,84,26,16,24,6,5,0,0,0
+2019,South Boston,Educational Services,50,19,10,3,3,3,0,0,0,0
+2019,South Boston,Health Care and Social Assistance,164,65,34,33,18,3,3,0,0,0
+2019,South Boston,"Arts, Entertainment, and Recreation",34,19,3,4,0,0,0,0,0,0
+2019,South Boston,Accommodation and Food Services,271,90,42,49,58,24,6,0,0,0
+2019,South Boston,Other Services (except Public Administration),215,120,43,30,11,0,0,0,0,0
+2019,South End,Construction,27,14,6,0,0,0,0,0,0,0
+2019,South End,Manufacturing,19,8,0,3,4,0,0,0,0,0
+2019,South End,Wholesale Trade,57,10,16,12,14,3,0,0,0,0
+2019,South End,Retail Trade,107,61,22,11,8,3,0,0,0,0
+2019,South End,Transportation and Warehousing,8,4,0,0,0,0,0,0,0,0
+2019,South End,Information,11,6,0,0,0,0,0,0,0,0
+2019,South End,Finance and Insurance,30,17,6,5,0,0,0,0,0,0
+2019,South End,Real Estate and Rental and Leasing,70,48,13,3,4,0,0,0,0,0
+2019,South End,"Professional, Scientific, and Technical Services",138,85,25,16,8,3,0,0,0,0
+2019,South End,Management of Companies and Enterprises,3,0,0,0,0,0,0,0,0,0
+2019,South End,Administrative and Support and Waste Management and Remediation Services,28,10,8,5,0,0,0,0,0,0
+2019,South End,Educational Services,16,9,0,0,3,0,0,0,0,0
+2019,South End,Health Care and Social Assistance,111,42,16,18,17,9,6,0,0,0
+2019,South End,"Arts, Entertainment, and Recreation",16,9,0,3,0,0,0,0,0,0
+2019,South End,Accommodation and Food Services,195,103,24,24,27,15,0,0,0,0
+2019,South End,Other Services (except Public Administration),85,60,11,8,0,3,0,0,0,0
+2019,South End,Unclassified,5,5,0,0,0,0,0,0,0,0
+2019,East Boston,Construction,74,54,12,0,0,3,0,0,0,0
+2019,East Boston,Manufacturing,14,6,0,0,0,4,0,0,0,0
+2019,East Boston,Wholesale Trade,21,12,6,0,0,0,0,0,0,0
+2019,East Boston,Retail Trade,108,63,30,5,5,4,0,0,0,0
+2019,East Boston,Transportation and Warehousing,118,46,17,15,11,10,11,0,3,4
+2019,East Boston,Information,15,10,5,0,0,0,0,0,0,0
+2019,East Boston,Finance and Insurance,17,7,5,4,0,0,0,0,0,0
+2019,East Boston,Real Estate and Rental and Leasing,48,26,5,8,6,0,3,0,0,0
+2019,East Boston,"Professional, Scientific, and Technical Services",49,36,10,0,0,0,0,0,0,0
+2019,East Boston,Management of Companies and Enterprises,5,0,0,0,3,0,0,0,0,0
+2019,East Boston,Administrative and Support and Waste Management and Remediation Services,70,40,11,7,4,5,3,0,0,0
+2019,East Boston,Educational Services,4,0,0,0,0,0,0,0,0,0
+2019,East Boston,Health Care and Social Assistance,53,20,8,14,4,5,0,0,0,0
+2019,East Boston,"Arts, Entertainment, and Recreation",12,6,0,3,0,0,0,0,0,0
+2019,East Boston,Accommodation and Food Services,151,45,23,33,33,8,4,5,0,0
+2019,East Boston,Other Services (except Public Administration),90,56,21,6,6,0,0,0,0,0
+2020,South Boston,Construction,107,63,12,9,9,4,0,0,0,0
+2020,South Boston,Manufacturing,34,8,8,4,0,4,0,0,0,0
+2020,South Boston,Wholesale Trade,69,31,12,7,5,3,0,0,0,0
+2020,South Boston,Retail Trade,248,138,48,27,25,5,0,0,0,0
+2020,South Boston,Transportation and Warehousing,43,27,3,0,3,0,3,0,0,0
+2020,South Boston,Information,101,35,18,14,13,3,3,0,0,0
+2020,South Boston,Finance and Insurance,293,124,48,38,31,21,15,5,0,0
+2020,South Boston,Real Estate and Rental and Leasing,153,102,18,14,7,0,3,0,0,0
+2020,South Boston,"Professional, Scientific, and Technical Services",575,319,82,60,62,24,15,5,4,0
+2020,South Boston,Management of Companies and Enterprises,27,13,0,0,0,0,0,0,0,0
+2020,South Boston,Administrative and Support and Waste Management and Remediation Services,165,88,22,11,26,4,5,0,0,0
+2020,South Boston,Educational Services,51,20,5,4,3,5,0,0,0,0
+2020,South Boston,Health Care and Social Assistance,165,74,33,27,16,0,6,0,0,0
+2020,South Boston,"Arts, Entertainment, and Recreation",38,23,0,5,0,0,0,0,0,0
+2020,South Boston,Accommodation and Food Services,255,77,38,53,52,25,8,0,0,0
+2020,South Boston,Other Services (except Public Administration),235,137,49,28,11,0,0,0,0,0
+2020,South Boston,Unclassified,3,0,0,0,0,0,0,0,0,0
+2020,South End,Construction,25,11,6,0,0,3,0,0,0,0
+2020,South End,Manufacturing,19,7,0,3,3,0,0,0,0,0
+2020,South End,Wholesale Trade,56,13,14,12,12,3,0,0,0,0
+2020,South End,Retail Trade,97,54,21,9,8,3,0,0,0,0
+2020,South End,Transportation and Warehousing,6,0,0,0,0,0,0,0,0,0
+2020,South End,Information,12,7,0,0,0,0,0,0,0,0
+2020,South End,Finance and Insurance,31,16,9,5,0,0,0,0,0,0
+2020,South End,Real Estate and Rental and Leasing,72,49,12,6,4,0,0,0,0,0
+2020,South End,"Professional, Scientific, and Technical Services",138,89,22,15,9,0,0,0,0,0
+2020,South End,Management of Companies and Enterprises,3,0,0,0,0,0,0,0,0,0
+2020,South End,Administrative and Support and Waste Management and Remediation Services,29,14,4,6,0,0,0,0,0,0
+2020,South End,Educational Services,14,7,0,0,0,0,0,0,0,0
+2020,South End,Health Care and Social Assistance,109,39,19,19,13,12,4,0,0,0
+2020,South End,"Arts, Entertainment, and Recreation",12,6,0,0,0,0,0,0,0,0
+2020,South End,Accommodation and Food Services,198,103,33,22,25,13,0,0,0,0
+2020,South End,Other Services (except Public Administration),95,60,19,8,5,3,0,0,0,0
+2020,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
+2020,East Boston,Construction,65,47,8,6,0,3,0,0,0,0
+2020,East Boston,Manufacturing,13,5,5,0,0,0,0,0,0,0
+2020,East Boston,Wholesale Trade,23,13,7,0,0,0,0,0,0,0
+2020,East Boston,Retail Trade,107,76,18,5,4,3,0,0,0,0
+2020,East Boston,Transportation and Warehousing,116,46,17,13,10,11,11,0,0,4
+2020,East Boston,Information,15,12,0,0,0,0,0,0,0,0
+2020,East Boston,Finance and Insurance,19,9,5,4,0,0,0,0,0,0
+2020,East Boston,Real Estate and Rental and Leasing,47,27,4,8,4,0,3,0,0,0
+2020,East Boston,"Professional, Scientific, and Technical Services",49,36,10,0,0,0,0,0,0,0
+2020,East Boston,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
+2020,East Boston,Administrative and Support and Waste Management and Remediation Services,70,41,13,5,4,4,3,0,0,0
+2020,East Boston,Educational Services,4,0,0,0,0,0,0,0,0,0
+2020,East Boston,Health Care and Social Assistance,54,23,10,11,4,4,0,0,0,0
+2020,East Boston,"Arts, Entertainment, and Recreation",14,7,0,3,0,0,0,0,0,0
+2020,East Boston,Accommodation and Food Services,145,42,23,31,31,8,5,5,0,0
+2020,East Boston,Other Services (except Public Administration),91,58,18,6,7,0,0,0,0,0
+2020,East Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
+2021,South Boston,Construction,113,66,20,6,6,3,0,0,0,0
+2021,South Boston,Manufacturing,36,16,4,5,0,3,0,0,0,0
+2021,South Boston,Wholesale Trade,73,33,14,10,5,3,0,0,0,0
+2021,South Boston,Retail Trade,245,143,43,34,17,0,0,0,0,0
+2021,South Boston,Transportation and Warehousing,47,28,3,0,4,0,0,0,0,0
+2021,South Boston,Information,104,42,17,11,12,9,0,0,0,0
+2021,South Boston,Finance and Insurance,260,133,40,33,22,16,7,0,0,0
+2021,South Boston,Real Estate and Rental and Leasing,156,103,24,12,7,0,0,0,0,0
+2021,South Boston,"Professional, Scientific, and Technical Services",578,326,86,58,62,14,18,5,4,0
+2021,South Boston,Management of Companies and Enterprises,22,7,0,0,0,0,0,0,0,0
+2021,South Boston,Administrative and Support and Waste Management and Remediation Services,165,88,26,12,24,6,4,0,0,0
+2021,South Boston,Educational Services,47,17,8,3,0,5,0,0,0,0
+2021,South Boston,Health Care and Social Assistance,169,76,29,25,23,3,6,0,0,0
+2021,South Boston,"Arts, Entertainment, and Recreation",37,25,3,5,0,0,0,0,0,0
+2021,South Boston,Accommodation and Food Services,257,111,42,35,50,15,3,0,0,0
+2021,South Boston,Other Services (except Public Administration),237,152,45,23,9,0,0,0,0,0
+2021,South End,Construction,23,12,4,0,0,0,0,0,0,0
+2021,South End,Manufacturing,18,4,3,4,3,0,0,0,0,0
+2021,South End,Wholesale Trade,52,12,15,12,9,0,0,0,0,0
+2021,South End,Retail Trade,94,56,18,10,5,3,0,0,0,0
+2021,South End,Transportation and Warehousing,8,5,0,0,0,0,0,0,0,0
+2021,South End,Information,9,5,0,0,0,0,0,0,0,0
+2021,South End,Finance and Insurance,31,14,10,4,0,0,0,0,0,0
+2021,South End,Real Estate and Rental and Leasing,75,54,10,7,3,0,0,0,0,0
+2021,South End,"Professional, Scientific, and Technical Services",143,83,29,19,8,3,0,0,0,0
+2021,South End,Management of Companies and Enterprises,3,0,0,0,3,0,0,0,0,0
+2021,South End,Administrative and Support and Waste Management and Remediation Services,28,13,6,4,3,0,0,0,0,0
+2021,South End,Educational Services,14,8,0,0,0,0,0,0,0,0
+2021,South End,Health Care and Social Assistance,109,40,13,21,20,10,3,0,0,0
+2021,South End,"Arts, Entertainment, and Recreation",13,5,0,4,0,0,0,0,0,0
+2021,South End,Accommodation and Food Services,184,104,31,16,27,5,0,0,0,0
+2021,South End,Other Services (except Public Administration),87,60,12,11,3,0,0,0,0,0
+2021,South End,Unclassified,3,3,0,0,0,0,0,0,0,0
+2021,East Boston,Construction,68,49,9,5,0,3,0,0,0,0
+2021,East Boston,Manufacturing,11,4,3,0,0,0,0,0,0,0
+2021,East Boston,Wholesale Trade,22,13,5,0,0,0,0,0,0,0
+2021,East Boston,Retail Trade,102,73,17,3,8,0,0,0,0,0
+2021,East Boston,Transportation and Warehousing,112,46,18,9,16,11,4,3,0,4
+2021,East Boston,Information,10,7,0,0,0,0,0,0,0,0
+2021,East Boston,Finance and Insurance,21,11,7,3,0,0,0,0,0,0
+2021,East Boston,Real Estate and Rental and Leasing,52,36,5,5,5,0,0,0,0,0
+2021,East Boston,"Professional, Scientific, and Technical Services",55,39,13,0,3,0,0,0,0,0
+2021,East Boston,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
+2021,East Boston,Administrative and Support and Waste Management and Remediation Services,71,47,10,4,8,0,0,0,0,0
+2021,East Boston,Educational Services,4,3,0,0,0,0,0,0,0,0
+2021,East Boston,Health Care and Social Assistance,64,24,12,9,7,3,9,0,0,0
+2021,East Boston,"Arts, Entertainment, and Recreation",12,5,4,0,0,0,0,0,0,0
+2021,East Boston,Accommodation and Food Services,139,54,31,24,21,3,5,0,0,0
+2021,East Boston,Other Services (except Public Administration),100,71,20,6,3,0,0,0,0,0
+2021,East Boston,Unclassified,4,4,0,0,0,0,0,0,0,0
