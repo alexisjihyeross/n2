@@ -1,617 +1,357 @@
 year,neighborhood,sector,est,n1_4,n5_9,n10_19,n20_49,n50_99,n100_249,n250_499,n500_999,n1000
-2010,South Boston,Utilities,4,2,0,0,0,1,0,0,1,0
+2010,South Boston,Natural Resources and Mining,5,2,0,1,0,1,0,0,1,0
 2010,South Boston,Construction,113,62,22,7,15,5,2,0,0,0
 2010,South Boston,Manufacturing,33,10,4,7,6,4,1,0,1,0
-2010,South Boston,Wholesale Trade,68,38,11,12,6,1,0,0,0,0
-2010,South Boston,Retail Trade,244,128,48,38,24,3,2,1,0,0
-2010,South Boston,Transportation and Warehousing,36,21,4,3,3,2,1,2,0,0
+2010,South Boston,"Trade, Transportation, and Utilities",348,187,63,53,33,6,3,3,0,0
 2010,South Boston,Information,60,33,7,3,7,6,3,0,0,1
-2010,South Boston,Finance and Insurance,288,114,65,37,28,11,16,8,3,6
-2010,South Boston,Real Estate and Rental and Leasing,137,72,29,14,15,3,4,0,0,0
-2010,South Boston,"Professional, Scientific, and Technical Services",450,268,73,46,42,10,7,2,2,0
-2010,South Boston,Management of Companies and Enterprises,23,9,0,4,3,1,3,2,0,1
-2010,South Boston,Administrative and Support and Waste Management and Remediation Services,129,56,17,16,17,12,6,3,1,1
-2010,South Boston,Educational Services,27,10,2,8,5,0,0,2,0,0
-2010,South Boston,Health Care and Social Assistance,109,39,27,23,8,5,4,3,0,0
-2010,South Boston,"Arts, Entertainment, and Recreation",25,14,3,2,5,1,0,0,0,0
-2010,South Boston,Accommodation and Food Services,254,100,46,41,49,10,7,1,0,0
-2010,South Boston,Other Services (except Public Administration),216,127,48,26,8,2,5,0,0,0
+2010,South Boston,Financial Activities,288,114,65,37,28,11,16,8,3,6
+2010,South Boston,Professional and Business Services,739,405,119,80,77,26,20,7,3,2
+2010,South Boston,Education and Health Services,136,49,29,31,13,5,4,5,0,0
+2010,South Boston,Leisure and Hospitality,279,114,49,43,54,11,7,1,0,0
+2010,South Boston,Other Services,216,127,48,26,8,2,5,0,0,0
 2010,South Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
-2010,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,0,1,0,0,0,0,0,0
-2010,South End,Utilities,1,1,0,0,0,0,0,0,0,0
+2010,South End,Natural Resources and Mining,1,1,0,0,0,0,0,0,0,0
 2010,South End,Construction,22,13,3,3,1,0,1,1,0,0
 2010,South End,Manufacturing,21,6,1,4,4,4,2,0,0,0
-2010,South End,Wholesale Trade,87,27,20,20,13,6,1,0,0,0
-2010,South End,Retail Trade,97,56,25,11,3,1,1,0,0,0
-2010,South End,Transportation and Warehousing,7,4,0,2,1,0,0,0,0,0
+2010,South End,"Trade, Transportation, and Utilities",191,87,45,33,17,7,2,0,0,0
 2010,South End,Information,19,11,3,2,2,0,0,1,0,0
-2010,South End,Finance and Insurance,21,9,8,4,0,0,0,0,0,0
-2010,South End,Real Estate and Rental and Leasing,42,26,7,6,3,0,0,0,0,0
-2010,South End,"Professional, Scientific, and Technical Services",123,81,22,10,7,3,0,0,0,0
-2010,South End,Management of Companies and Enterprises,3,1,0,1,0,0,1,0,0,0
-2010,South End,Administrative and Support and Waste Management and Remediation Services,23,9,6,2,3,2,1,0,0,0
-2010,South End,Educational Services,7,4,1,1,1,0,0,0,0,0
-2010,South End,Health Care and Social Assistance,86,27,13,13,17,9,4,2,0,1
-2010,South End,"Arts, Entertainment, and Recreation",14,8,1,1,2,2,0,0,0,0
-2010,South End,Accommodation and Food Services,88,35,15,11,22,4,1,0,0,0
-2010,South End,Other Services (except Public Administration),77,35,11,23,7,1,0,0,0,0
+2010,South End,Financial Activities,21,9,8,4,0,0,0,0,0,0
+2010,South End,Professional and Business Services,191,117,35,19,13,5,2,0,0,0
+2010,South End,Education and Health Services,93,31,14,14,18,9,4,2,0,1
+2010,South End,Leisure and Hospitality,102,43,16,12,24,6,1,0,0,0
+2010,South End,Other Services,77,35,11,23,7,1,0,0,0,0
 2010,South End,Unclassified,3,3,0,0,0,0,0,0,0,0
 2010,East Boston,Construction,35,20,7,3,4,0,1,0,0,0
 2010,East Boston,Manufacturing,17,4,3,3,2,4,0,1,0,0
-2010,East Boston,Wholesale Trade,16,8,4,1,2,1,0,0,0,0
-2010,East Boston,Retail Trade,100,55,24,10,7,3,1,0,0,0
-2010,East Boston,Transportation and Warehousing,129,46,25,15,18,15,4,1,2,3
+2010,East Boston,"Trade, Transportation, and Utilities",245,109,53,26,27,19,5,1,2,3
 2010,East Boston,Information,12,8,2,1,0,1,0,0,0,0
-2010,East Boston,Finance and Insurance,28,10,10,4,4,0,0,0,0,0
-2010,East Boston,Real Estate and Rental and Leasing,32,12,7,6,2,4,1,0,0,0
-2010,East Boston,"Professional, Scientific, and Technical Services",35,30,2,1,2,0,0,0,0,0
-2010,East Boston,Management of Companies and Enterprises,5,3,1,1,0,0,0,0,0,0
-2010,East Boston,Administrative and Support and Waste Management and Remediation Services,31,14,8,0,4,2,2,1,0,0
-2010,East Boston,Educational Services,7,3,3,0,1,0,0,0,0,0
-2010,East Boston,Health Care and Social Assistance,49,16,10,12,7,1,2,0,1,0
-2010,East Boston,"Arts, Entertainment, and Recreation",6,3,1,1,0,0,1,0,0,0
-2010,East Boston,Accommodation and Food Services,129,42,31,25,17,6,5,3,0,0
-2010,East Boston,Other Services (except Public Administration),81,57,14,8,1,1,0,0,0,0
-2011,South Boston,Utilities,5,3,0,0,0,1,0,0,1,0
+2010,East Boston,Financial Activities,28,10,10,4,4,0,0,0,0,0
+2010,East Boston,Professional and Business Services,103,59,18,8,8,6,3,1,0,0
+2010,East Boston,Education and Health Services,56,19,13,12,8,1,2,0,1,0
+2010,East Boston,Leisure and Hospitality,135,45,32,26,17,6,6,3,0,0
+2010,East Boston,Other Services,81,57,14,8,1,1,0,0,0,0
+2011,South Boston,Natural Resources and Mining,6,3,1,0,0,1,0,0,1,0
 2011,South Boston,Construction,103,54,15,12,13,8,1,0,0,0
 2011,South Boston,Manufacturing,35,14,3,6,8,3,0,0,1,0
-2011,South Boston,Wholesale Trade,66,35,14,9,6,2,0,0,0,0
-2011,South Boston,Retail Trade,234,113,58,35,21,3,3,1,0,0
-2011,South Boston,Transportation and Warehousing,37,18,7,5,2,1,2,2,0,0
+2011,South Boston,"Trade, Transportation, and Utilities",337,166,79,49,29,6,5,3,0,0
 2011,South Boston,Information,74,39,11,6,8,5,4,0,0,1
-2011,South Boston,Finance and Insurance,295,117,65,40,29,12,16,6,4,6
-2011,South Boston,Real Estate and Rental and Leasing,139,70,30,18,15,2,4,0,0,0
-2011,South Boston,"Professional, Scientific, and Technical Services",459,270,85,41,39,12,5,5,2,0
-2011,South Boston,Management of Companies and Enterprises,19,7,1,0,4,4,2,1,0,0
-2011,South Boston,Administrative and Support and Waste Management and Remediation Services,164,75,20,17,24,14,7,4,2,1
-2011,South Boston,Educational Services,29,10,2,9,6,0,0,2,0,0
-2011,South Boston,Health Care and Social Assistance,115,45,27,22,7,7,5,2,0,0
-2011,South Boston,"Arts, Entertainment, and Recreation",25,13,4,3,4,1,0,0,0,0
-2011,South Boston,Accommodation and Food Services,249,99,43,40,47,13,6,1,0,0
-2011,South Boston,Other Services (except Public Administration),211,120,55,21,6,4,5,0,0,0
+2011,South Boston,Financial Activities,295,117,65,40,29,12,16,6,4,6
+2011,South Boston,Professional and Business Services,781,422,136,76,82,32,18,10,4,1
+2011,South Boston,Education and Health Services,144,55,29,31,13,7,5,4,0,0
+2011,South Boston,Leisure and Hospitality,274,112,47,43,51,14,6,1,0,0
+2011,South Boston,Other Services,211,120,55,21,6,4,5,0,0,0
 2011,South Boston,Unclassified,5,5,0,0,0,0,0,0,0,0
-2011,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,1,0,0,0,0,0,0,0
 2011,South End,Construction,21,14,0,2,3,0,1,1,0,0
 2011,South End,Manufacturing,23,8,1,5,2,7,0,0,0,0
-2011,South End,Wholesale Trade,89,30,21,15,17,5,1,0,0,0
-2011,South End,Retail Trade,92,53,23,12,1,3,0,0,0,0
-2011,South End,Transportation and Warehousing,7,3,1,2,1,0,0,0,0,0
+2011,South End,"Trade, Transportation, and Utilities",188,86,45,29,19,8,1,0,0,0
 2011,South End,Information,17,7,6,2,1,0,0,1,0,0
-2011,South End,Finance and Insurance,24,13,5,6,0,0,0,0,0,0
-2011,South End,Real Estate and Rental and Leasing,43,28,6,5,4,0,0,0,0,0
-2011,South End,"Professional, Scientific, and Technical Services",134,87,30,8,8,1,0,0,0,0
-2011,South End,Management of Companies and Enterprises,3,1,0,1,0,0,1,0,0,0
-2011,South End,Administrative and Support and Waste Management and Remediation Services,23,9,4,4,3,2,1,0,0,0
-2011,South End,Educational Services,9,5,1,2,0,1,0,0,0,0
-2011,South End,Health Care and Social Assistance,86,24,18,11,17,9,5,1,0,1
-2011,South End,"Arts, Entertainment, and Recreation",14,8,1,2,1,2,0,0,0,0
-2011,South End,Accommodation and Food Services,90,35,15,15,18,6,1,0,0,0
-2011,South End,Other Services (except Public Administration),80,38,27,7,7,1,0,0,0,0
+2011,South End,Financial Activities,24,13,5,6,0,0,0,0,0,0
+2011,South End,Professional and Business Services,203,125,40,18,15,3,2,0,0,0
+2011,South End,Education and Health Services,95,29,19,13,17,10,5,1,0,1
+2011,South End,Leisure and Hospitality,104,43,16,17,19,8,1,0,0,0
+2011,South End,Other Services,80,38,27,7,7,1,0,0,0,0
 2011,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
 2011,East Boston,Construction,38,21,8,2,5,2,0,0,0,0
 2011,East Boston,Manufacturing,16,5,2,3,1,4,0,1,0,0
-2011,East Boston,Wholesale Trade,15,8,4,0,2,1,0,0,0,0
-2011,East Boston,Retail Trade,113,71,21,10,6,4,1,0,0,0
-2011,East Boston,Transportation and Warehousing,130,48,25,17,16,12,5,3,1,3
+2011,East Boston,"Trade, Transportation, and Utilities",258,127,50,27,24,17,6,3,1,3
 2011,East Boston,Information,5,3,0,1,0,1,0,0,0,0
-2011,East Boston,Finance and Insurance,27,11,10,3,3,0,0,0,0,0
-2011,East Boston,Real Estate and Rental and Leasing,33,15,6,6,2,2,2,0,0,0
-2011,East Boston,"Professional, Scientific, and Technical Services",36,29,2,2,3,0,0,0,0,0
-2011,East Boston,Management of Companies and Enterprises,2,1,0,1,0,0,0,0,0,0
-2011,East Boston,Administrative and Support and Waste Management and Remediation Services,29,13,6,1,4,2,2,1,0,0
-2011,East Boston,Educational Services,8,5,2,0,1,0,0,0,0,0
-2011,East Boston,Health Care and Social Assistance,45,13,12,9,7,1,2,0,1,0
-2011,East Boston,"Arts, Entertainment, and Recreation",6,3,1,1,0,1,0,0,0,0
-2011,East Boston,Accommodation and Food Services,121,35,31,23,15,10,4,3,0,0
-2011,East Boston,Other Services (except Public Administration),84,56,19,5,3,1,0,0,0,0
+2011,East Boston,Financial Activities,27,11,10,3,3,0,0,0,0,0
+2011,East Boston,Professional and Business Services,100,58,14,10,9,4,4,1,0,0
+2011,East Boston,Education and Health Services,53,18,14,9,8,1,2,0,1,0
+2011,East Boston,Leisure and Hospitality,127,38,32,24,15,11,4,3,0,0
+2011,East Boston,Other Services,84,56,19,5,3,1,0,0,0,0
 2011,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
-2012,South Boston,Utilities,4,2,0,0,0,1,0,0,1,0
+2012,South Boston,Natural Resources and Mining,6,2,0,2,0,1,0,0,1,0
 2012,South Boston,Construction,99,61,14,9,9,5,1,0,0,0
 2012,South Boston,Manufacturing,36,14,4,5,7,5,0,0,1,0
-2012,South Boston,Wholesale Trade,66,28,20,5,10,2,1,0,0,0
-2012,South Boston,Retail Trade,241,119,59,37,18,4,3,1,0,0
-2012,South Boston,Transportation and Warehousing,45,22,9,1,3,4,4,2,0,0
+2012,South Boston,"Trade, Transportation, and Utilities",352,169,88,43,31,10,8,3,0,0
 2012,South Boston,Information,78,41,11,6,10,4,5,0,0,1
-2012,South Boston,Finance and Insurance,282,112,63,31,31,13,13,7,3,9
-2012,South Boston,Real Estate and Rental and Leasing,139,74,29,16,12,4,4,0,0,0
-2012,South Boston,"Professional, Scientific, and Technical Services",472,268,82,54,41,12,8,3,3,1
-2012,South Boston,Management of Companies and Enterprises,25,11,1,2,4,3,3,1,0,0
-2012,South Boston,Administrative and Support and Waste Management and Remediation Services,181,80,34,19,22,14,6,3,2,1
-2012,South Boston,Educational Services,36,14,8,6,6,0,0,2,0,0
-2012,South Boston,Health Care and Social Assistance,127,56,26,26,6,6,5,2,0,0
-2012,South Boston,"Arts, Entertainment, and Recreation",21,9,4,5,3,0,0,0,0,0
-2012,South Boston,Accommodation and Food Services,263,107,42,40,54,11,8,1,0,0
-2012,South Boston,Other Services (except Public Administration),226,123,62,23,9,7,2,0,0,0
+2012,South Boston,Financial Activities,282,112,63,31,31,13,13,7,3,9
+2012,South Boston,Professional and Business Services,817,433,146,91,79,33,21,7,5,2
+2012,South Boston,Education and Health Services,163,70,34,32,12,6,5,4,0,0
+2012,South Boston,Leisure and Hospitality,284,116,46,45,57,11,8,1,0,0
+2012,South Boston,Other Services,226,123,62,23,9,7,2,0,0,0
 2012,South Boston,Unclassified,2,2,0,0,0,0,0,0,0,0
-2012,South Boston,"Mining, Quarrying, and Oil and Gas Extraction",1,0,0,1,0,0,0,0,0,0
-2012,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
 2012,South End,Construction,22,13,2,2,3,1,0,1,0,0
 2012,South End,Manufacturing,21,6,1,3,4,7,0,0,0,0
-2012,South End,Wholesale Trade,78,24,18,16,15,4,1,0,0,0
-2012,South End,Retail Trade,98,58,20,14,1,3,2,0,0,0
-2012,South End,Transportation and Warehousing,9,3,2,2,2,0,0,0,0,0
+2012,South End,"Trade, Transportation, and Utilities",185,85,40,32,18,7,3,0,0,0
 2012,South End,Information,14,6,5,1,2,0,0,0,0,0
-2012,South End,Finance and Insurance,23,11,7,5,0,0,0,0,0,0
-2012,South End,Real Estate and Rental and Leasing,45,29,9,4,3,0,0,0,0,0
-2012,South End,"Professional, Scientific, and Technical Services",139,90,27,13,7,2,0,0,0,0
-2012,South End,Management of Companies and Enterprises,3,1,1,1,0,0,0,0,0,0
-2012,South End,Administrative and Support and Waste Management and Remediation Services,21,10,4,2,3,0,2,0,0,0
-2012,South End,Educational Services,10,5,3,1,1,0,0,0,0,0
-2012,South End,Health Care and Social Assistance,88,32,12,10,19,8,4,2,0,1
-2012,South End,"Arts, Entertainment, and Recreation",13,8,1,0,2,1,1,0,0,0
-2012,South End,Accommodation and Food Services,92,34,18,13,22,5,0,0,0,0
-2012,South End,Other Services (except Public Administration),74,35,27,5,6,1,0,0,0,0
+2012,South End,Financial Activities,23,11,7,5,0,0,0,0,0,0
+2012,South End,Professional and Business Services,208,130,41,20,13,2,2,0,0,0
+2012,South End,Education and Health Services,98,37,15,11,20,8,4,2,0,1
+2012,South End,Leisure and Hospitality,105,42,19,13,24,6,1,0,0,0
+2012,South End,Other Services,74,35,27,5,6,1,0,0,0,0
 2012,East Boston,Construction,40,25,7,3,2,3,0,0,0,0
 2012,East Boston,Manufacturing,12,4,3,0,1,3,0,1,0,0
-2012,East Boston,Wholesale Trade,15,8,4,0,2,1,0,0,0,0
-2012,East Boston,Retail Trade,104,63,22,9,7,2,1,0,0,0
-2012,East Boston,Transportation and Warehousing,130,50,22,18,16,11,4,4,2,3
+2012,East Boston,"Trade, Transportation, and Utilities",249,121,48,27,25,14,5,4,2,3
 2012,East Boston,Information,4,4,0,0,0,0,0,0,0,0
-2012,East Boston,Finance and Insurance,21,7,10,2,2,0,0,0,0,0
-2012,East Boston,Real Estate and Rental and Leasing,32,17,4,5,1,3,2,0,0,0
-2012,East Boston,"Professional, Scientific, and Technical Services",32,25,3,2,2,0,0,0,0,0
-2012,East Boston,Management of Companies and Enterprises,6,2,1,1,1,0,0,0,0,1
-2012,East Boston,Administrative and Support and Waste Management and Remediation Services,33,13,7,3,5,2,2,1,0,0
-2012,East Boston,Educational Services,6,4,1,0,1,0,0,0,0,0
-2012,East Boston,Health Care and Social Assistance,45,12,10,13,5,3,1,0,1,0
-2012,East Boston,"Arts, Entertainment, and Recreation",8,4,1,2,0,0,1,0,0,0
-2012,East Boston,Accommodation and Food Services,125,31,32,29,21,4,5,3,0,0
-2012,East Boston,Other Services (except Public Administration),87,61,16,6,3,1,0,0,0,0
-2013,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2012,East Boston,Financial Activities,21,7,10,2,2,0,0,0,0,0
+2012,East Boston,Professional and Business Services,103,57,15,11,9,5,4,1,0,1
+2012,East Boston,Education and Health Services,51,16,11,13,6,3,1,0,1,0
+2012,East Boston,Leisure and Hospitality,133,35,33,31,21,4,6,3,0,0
+2012,East Boston,Other Services,87,61,16,6,3,1,0,0,0,0
+2013,South Boston,Natural Resources and Mining,4,1,0,1,0,1,0,0,1,0
 2013,South Boston,Construction,97,57,16,8,9,4,3,0,0,0
 2013,South Boston,Manufacturing,39,17,3,5,8,4,1,0,1,0
-2013,South Boston,Wholesale Trade,73,33,20,9,7,3,1,0,0,0
-2013,South Boston,Retail Trade,244,123,59,33,18,8,2,1,0,0
-2013,South Boston,Transportation and Warehousing,36,18,7,4,1,4,1,1,0,0
+2013,South Boston,"Trade, Transportation, and Utilities",353,174,86,46,26,15,4,2,0,0
 2013,South Boston,Information,91,44,16,8,12,4,5,0,1,1
-2013,South Boston,Finance and Insurance,289,122,59,29,29,17,16,7,3,7
-2013,South Boston,Real Estate and Rental and Leasing,141,76,27,18,12,4,4,0,0,0
-2013,South Boston,"Professional, Scientific, and Technical Services",491,279,86,53,39,18,11,2,3,0
-2013,South Boston,Management of Companies and Enterprises,25,12,2,1,4,2,3,1,0,0
-2013,South Boston,Administrative and Support and Waste Management and Remediation Services,183,84,29,17,20,20,5,6,1,1
-2013,South Boston,Educational Services,37,15,6,7,6,2,0,1,0,0
-2013,South Boston,Health Care and Social Assistance,126,54,26,25,8,6,5,2,0,0
-2013,South Boston,"Arts, Entertainment, and Recreation",25,15,2,5,3,0,0,0,0,0
-2013,South Boston,Accommodation and Food Services,261,89,47,46,55,18,5,1,0,0
-2013,South Boston,Other Services (except Public Administration),233,134,55,21,14,6,3,0,0,0
+2013,South Boston,Financial Activities,289,122,59,29,29,17,16,7,3,7
+2013,South Boston,Professional and Business Services,840,451,144,89,75,44,23,9,4,1
+2013,South Boston,Education and Health Services,163,69,32,32,14,8,5,3,0,0
+2013,South Boston,Leisure and Hospitality,286,104,49,51,58,18,5,1,0,0
+2013,South Boston,Other Services,233,134,55,21,14,6,3,0,0,0
 2013,South Boston,Unclassified,2,2,0,0,0,0,0,0,0,0
-2013,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
 2013,South End,Construction,26,16,2,1,5,1,0,1,0,0
 2013,South End,Manufacturing,19,6,0,4,3,5,1,0,0,0
-2013,South End,Wholesale Trade,79,26,18,15,16,3,1,0,0,0
-2013,South End,Retail Trade,93,53,23,11,1,3,2,0,0,0
-2013,South End,Transportation and Warehousing,10,6,0,2,2,0,0,0,0,0
+2013,South End,"Trade, Transportation, and Utilities",182,85,41,28,19,6,3,0,0,0
 2013,South End,Information,19,10,5,1,2,1,0,0,0,0
-2013,South End,Finance and Insurance,23,10,9,3,0,0,1,0,0,0
-2013,South End,Real Estate and Rental and Leasing,50,32,10,5,3,0,0,0,0,0
-2013,South End,"Professional, Scientific, and Technical Services",146,91,32,10,11,1,1,0,0,0
-2013,South End,Management of Companies and Enterprises,7,1,2,2,2,0,0,0,0,0
-2013,South End,Administrative and Support and Waste Management and Remediation Services,20,9,4,2,2,3,0,0,0,0
-2013,South End,Educational Services,12,6,4,1,1,0,0,0,0,0
-2013,South End,Health Care and Social Assistance,94,35,12,16,16,7,5,2,0,1
-2013,South End,"Arts, Entertainment, and Recreation",15,10,1,0,3,0,1,0,0,0
-2013,South End,Accommodation and Food Services,90,27,17,14,24,8,0,0,0,0
-2013,South End,Other Services (except Public Administration),70,42,16,4,7,1,0,0,0,0
+2013,South End,Financial Activities,23,10,9,3,0,0,1,0,0,0
+2013,South End,Professional and Business Services,223,133,48,19,18,4,1,0,0,0
+2013,South End,Education and Health Services,106,41,16,17,17,7,5,2,0,1
+2013,South End,Leisure and Hospitality,105,37,18,14,27,8,1,0,0,0
+2013,South End,Other Services,70,42,16,4,7,1,0,0,0,0
 2013,East Boston,Construction,41,27,6,3,3,2,0,0,0,0
 2013,East Boston,Manufacturing,12,4,3,0,2,2,1,0,0,0
-2013,East Boston,Wholesale Trade,13,6,5,0,1,1,0,0,0,0
-2013,East Boston,Retail Trade,110,63,23,13,6,3,2,0,0,0
-2013,East Boston,Transportation and Warehousing,131,43,31,17,17,8,6,3,3,3
+2013,East Boston,"Trade, Transportation, and Utilities",254,112,59,30,24,12,8,3,3,3
 2013,East Boston,Information,4,4,0,0,0,0,0,0,0,0
-2013,East Boston,Finance and Insurance,24,8,11,3,1,0,0,0,0,1
-2013,East Boston,Real Estate and Rental and Leasing,34,20,3,5,1,2,3,0,0,0
-2013,East Boston,"Professional, Scientific, and Technical Services",37,27,7,1,2,0,0,0,0,0
-2013,East Boston,Management of Companies and Enterprises,5,3,1,1,0,0,0,0,0,0
-2013,East Boston,Administrative and Support and Waste Management and Remediation Services,36,14,8,2,5,4,2,1,0,0
-2013,East Boston,Educational Services,6,3,2,0,1,0,0,0,0,0
-2013,East Boston,Health Care and Social Assistance,46,14,11,11,6,2,1,0,1,0
-2013,East Boston,"Arts, Entertainment, and Recreation",7,3,2,1,0,0,1,0,0,0
-2013,East Boston,Accommodation and Food Services,129,35,28,32,21,5,4,4,0,0
-2013,East Boston,Other Services (except Public Administration),84,59,15,7,2,1,0,0,0,0
+2013,East Boston,Financial Activities,24,8,11,3,1,0,0,0,0,1
+2013,East Boston,Professional and Business Services,112,64,19,9,8,6,5,1,0,0
+2013,East Boston,Education and Health Services,52,17,13,11,7,2,1,0,1,0
+2013,East Boston,Leisure and Hospitality,136,38,30,33,21,5,5,4,0,0
+2013,East Boston,Other Services,84,59,15,7,2,1,0,0,0,0
 2013,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
-2014,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2014,South Boston,Natural Resources and Mining,4,1,0,1,0,1,0,0,1,0
 2014,South Boston,Construction,104,66,15,8,6,5,3,1,0,0
 2014,South Boston,Manufacturing,38,17,3,3,8,4,2,0,1,0
-2014,South Boston,Wholesale Trade,76,36,21,6,7,4,2,0,0,0
-2014,South Boston,Retail Trade,237,114,53,39,20,8,1,2,0,0
-2014,South Boston,Transportation and Warehousing,33,15,9,3,1,3,1,1,0,0
+2014,South Boston,"Trade, Transportation, and Utilities",346,165,83,48,28,15,4,3,0,0
 2014,South Boston,Information,88,38,13,12,10,4,7,2,2,0
-2014,South Boston,Finance and Insurance,292,137,52,32,29,15,15,4,7,1
-2014,South Boston,Real Estate and Rental and Leasing,140,85,22,14,14,2,3,0,0,0
-2014,South Boston,"Professional, Scientific, and Technical Services",505,284,84,64,45,13,10,2,3,0
-2014,South Boston,Management of Companies and Enterprises,24,13,1,1,5,1,3,0,0,0
-2014,South Boston,Administrative and Support and Waste Management and Remediation Services,187,102,24,14,17,14,9,6,1,0
-2014,South Boston,Educational Services,38,14,7,8,6,2,0,1,0,0
-2014,South Boston,Health Care and Social Assistance,126,54,25,25,8,7,4,3,0,0
-2014,South Boston,"Arts, Entertainment, and Recreation",27,16,3,5,3,0,0,0,0,0
-2014,South Boston,Accommodation and Food Services,257,77,48,52,54,21,4,1,0,0
-2014,South Boston,Other Services (except Public Administration),237,131,57,25,14,7,3,0,0,0
+2014,South Boston,Financial Activities,292,137,52,32,29,15,15,4,7,1
+2014,South Boston,Professional and Business Services,856,484,131,93,81,30,25,8,4,0
+2014,South Boston,Education and Health Services,164,68,32,33,14,9,4,4,0,0
+2014,South Boston,Leisure and Hospitality,284,93,51,57,57,21,4,1,0,0
+2014,South Boston,Other Services,237,131,57,25,14,7,3,0,0,0
 2014,South Boston,Unclassified,8,8,0,0,0,0,0,0,0,0
-2014,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
 2014,South End,Construction,26,15,3,1,4,2,0,0,1,0
 2014,South End,Manufacturing,24,10,0,5,3,5,1,0,0,0
-2014,South End,Wholesale Trade,76,20,20,17,13,4,2,0,0,0
-2014,South End,Retail Trade,101,59,25,10,2,4,1,0,0,0
-2014,South End,Transportation and Warehousing,9,5,0,1,3,0,0,0,0,0
+2014,South End,"Trade, Transportation, and Utilities",186,84,45,28,18,8,3,0,0,0
 2014,South End,Information,15,9,2,3,0,1,0,0,0,0
-2014,South End,Finance and Insurance,24,13,7,3,0,0,1,0,0,0
-2014,South End,Real Estate and Rental and Leasing,48,29,10,4,4,1,0,0,0,0
-2014,South End,"Professional, Scientific, and Technical Services",148,100,23,12,10,2,1,0,0,0
-2014,South End,Management of Companies and Enterprises,6,0,3,1,2,0,0,0,0,0
-2014,South End,Administrative and Support and Waste Management and Remediation Services,25,15,3,2,2,2,1,0,0,0
-2014,South End,Educational Services,12,7,3,1,0,1,0,0,0,0
-2014,South End,Health Care and Social Assistance,93,30,15,15,17,8,4,3,0,1
-2014,South End,"Arts, Entertainment, and Recreation",16,9,2,1,3,1,0,0,0,0
-2014,South End,Accommodation and Food Services,94,30,17,17,24,6,0,0,0,0
-2014,South End,Other Services (except Public Administration),69,43,11,6,6,3,0,0,0,0
+2014,South End,Financial Activities,24,13,7,3,0,0,1,0,0,0
+2014,South End,Professional and Business Services,227,144,39,19,18,5,2,0,0,0
+2014,South End,Education and Health Services,105,37,18,16,17,9,4,3,0,1
+2014,South End,Leisure and Hospitality,110,39,19,18,27,7,0,0,0,0
+2014,South End,Other Services,69,43,11,6,6,3,0,0,0,0
 2014,South End,Unclassified,1,1,0,0,0,0,0,0,0,0
 2014,East Boston,Construction,38,21,10,3,0,4,0,0,0,0
 2014,East Boston,Manufacturing,13,5,2,1,1,3,0,1,0,0
-2014,East Boston,Wholesale Trade,12,5,5,0,1,1,0,0,0,0
-2014,East Boston,Retail Trade,110,66,25,9,5,3,2,0,0,0
-2014,East Boston,Transportation and Warehousing,135,48,23,21,18,11,6,3,2,3
+2014,East Boston,"Trade, Transportation, and Utilities",257,119,53,30,24,15,8,3,2,3
 2014,East Boston,Information,7,6,1,0,0,0,0,0,0,0
-2014,East Boston,Finance and Insurance,22,8,8,4,1,0,0,0,0,1
-2014,East Boston,Real Estate and Rental and Leasing,37,19,7,5,0,3,2,1,0,0
-2014,East Boston,"Professional, Scientific, and Technical Services",35,25,7,2,1,0,0,0,0,0
-2014,East Boston,Management of Companies and Enterprises,4,2,1,1,0,0,0,0,0,0
-2014,East Boston,Administrative and Support and Waste Management and Remediation Services,37,11,11,4,4,4,2,1,0,0
-2014,East Boston,Educational Services,7,4,2,0,1,0,0,0,0,0
-2014,East Boston,Health Care and Social Assistance,45,14,11,9,5,4,1,0,1,0
-2014,East Boston,"Arts, Entertainment, and Recreation",6,3,0,1,0,1,1,0,0,0
-2014,East Boston,Accommodation and Food Services,131,36,25,38,18,6,4,4,0,0
-2014,East Boston,Other Services (except Public Administration),85,59,15,8,2,1,0,0,0,0
+2014,East Boston,Financial Activities,22,8,8,4,1,0,0,0,0,1
+2014,East Boston,Professional and Business Services,113,57,26,12,5,7,4,2,0,0
+2014,East Boston,Education and Health Services,52,18,13,9,6,4,1,0,1,0
+2014,East Boston,Leisure and Hospitality,137,39,25,39,18,7,5,4,0,0
+2014,East Boston,Other Services,85,59,15,8,2,1,0,0,0,0
 2014,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
-2015,South Boston,Utilities,3,1,0,0,0,1,0,0,1,0
+2015,South Boston,Natural Resources and Mining,4,1,0,1,0,1,0,0,1,0
 2015,South Boston,Construction,108,69,14,8,8,6,2,1,0,0
 2015,South Boston,Manufacturing,35,16,3,5,4,4,2,0,1,0
-2015,South Boston,Wholesale Trade,73,32,21,6,6,5,3,0,0,0
-2015,South Boston,Retail Trade,244,125,53,32,23,8,1,2,0,0
-2015,South Boston,Transportation and Warehousing,33,14,8,3,2,4,1,1,0,0
+2015,South Boston,"Trade, Transportation, and Utilities",350,171,82,41,31,17,5,3,0,0
 2015,South Boston,Information,88,38,12,9,15,4,8,0,1,1
-2015,South Boston,Finance and Insurance,315,145,50,32,42,18,13,9,5,1
-2015,South Boston,Real Estate and Rental and Leasing,143,89,18,18,12,3,3,0,0,0
-2015,South Boston,"Professional, Scientific, and Technical Services",544,323,70,69,49,15,10,4,3,1
-2015,South Boston,Management of Companies and Enterprises,26,11,5,1,3,2,3,1,0,0
-2015,South Boston,Administrative and Support and Waste Management and Remediation Services,176,92,23,16,17,15,8,5,0,0
-2015,South Boston,Educational Services,41,16,5,9,6,4,0,1,0,0
-2015,South Boston,Health Care and Social Assistance,118,48,24,26,8,6,4,2,0,0
-2015,South Boston,"Arts, Entertainment, and Recreation",31,18,4,4,5,0,0,0,0,0
-2015,South Boston,Accommodation and Food Services,266,93,48,44,58,17,5,1,0,0
-2015,South Boston,Other Services (except Public Administration),220,126,49,19,16,7,3,0,0,0
+2015,South Boston,Financial Activities,315,145,50,32,42,18,13,9,5,1
+2015,South Boston,Professional and Business Services,889,515,116,104,81,35,24,10,3,1
+2015,South Boston,Education and Health Services,159,64,29,35,14,10,4,3,0,0
+2015,South Boston,Leisure and Hospitality,297,111,52,48,63,17,5,1,0,0
+2015,South Boston,Other Services,220,126,49,19,16,7,3,0,0,0
 2015,South Boston,Unclassified,11,11,0,0,0,0,0,0,0,0
-2015,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
 2015,South End,Construction,25,13,4,2,2,3,0,0,1,0
 2015,South End,Manufacturing,24,10,0,5,3,5,1,0,0,0
-2015,South End,Wholesale Trade,76,19,22,17,10,6,2,0,0,0
-2015,South End,Retail Trade,110,64,26,11,3,4,2,0,0,0
-2015,South End,Transportation and Warehousing,12,8,0,3,1,0,0,0,0,0
+2015,South End,"Trade, Transportation, and Utilities",198,91,48,31,14,10,4,0,0,0
 2015,South End,Information,15,10,2,2,0,1,0,0,0,0
-2015,South End,Finance and Insurance,25,14,7,4,0,0,0,0,0,0
-2015,South End,Real Estate and Rental and Leasing,56,38,10,2,4,2,0,0,0,0
-2015,South End,"Professional, Scientific, and Technical Services",156,100,28,15,9,2,2,0,0,0
-2015,South End,Management of Companies and Enterprises,7,0,2,3,1,1,0,0,0,0
-2015,South End,Administrative and Support and Waste Management and Remediation Services,24,12,4,4,1,1,2,0,0,0
-2015,South End,Educational Services,15,8,4,2,1,0,0,0,0,0
-2015,South End,Health Care and Social Assistance,91,32,15,10,20,6,4,3,0,1
-2015,South End,"Arts, Entertainment, and Recreation",17,10,2,1,3,1,0,0,0,0
-2015,South End,Accommodation and Food Services,94,29,18,15,23,9,0,0,0,0
-2015,South End,Other Services (except Public Administration),75,47,14,5,6,3,0,0,0,0
+2015,South End,Financial Activities,25,14,7,4,0,0,0,0,0,0
+2015,South End,Professional and Business Services,243,150,44,24,15,6,4,0,0,0
+2015,South End,Education and Health Services,106,40,19,12,21,6,4,3,0,1
+2015,South End,Leisure and Hospitality,111,39,20,16,26,10,0,0,0,0
+2015,South End,Other Services,75,47,14,5,6,3,0,0,0,0
 2015,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
 2015,East Boston,Construction,38,21,9,4,1,3,0,0,0,0
 2015,East Boston,Manufacturing,13,7,1,0,1,3,1,0,0,0
-2015,East Boston,Wholesale Trade,15,8,5,0,1,1,0,0,0,0
-2015,East Boston,Retail Trade,112,67,25,8,7,3,2,0,0,0
-2015,East Boston,Transportation and Warehousing,135,53,20,22,16,13,3,2,4,2
+2015,East Boston,"Trade, Transportation, and Utilities",262,128,50,30,24,17,5,2,4,2
 2015,East Boston,Information,8,6,1,0,1,0,0,0,0,0
-2015,East Boston,Finance and Insurance,19,6,8,3,1,0,0,0,0,1
-2015,East Boston,Real Estate and Rental and Leasing,37,18,6,7,0,3,2,1,0,0
-2015,East Boston,"Professional, Scientific, and Technical Services",36,27,6,2,1,0,0,0,0,0
-2015,East Boston,Management of Companies and Enterprises,6,2,2,2,0,0,0,0,0,0
-2015,East Boston,Administrative and Support and Waste Management and Remediation Services,40,15,13,3,4,2,3,0,0,0
-2015,East Boston,Educational Services,8,6,1,0,1,0,0,0,0,0
-2015,East Boston,Health Care and Social Assistance,47,16,11,8,7,3,1,0,1,0
-2015,East Boston,"Arts, Entertainment, and Recreation",7,4,0,1,0,2,0,0,0,0
-2015,East Boston,Accommodation and Food Services,144,41,25,44,19,7,4,3,1,0
-2015,East Boston,Other Services (except Public Administration),87,62,13,8,3,1,0,0,0,0
-2016,South Boston,Utilities,4,1,0,0,1,1,0,0,1,0
+2015,East Boston,Financial Activities,19,6,8,3,1,0,0,0,0,1
+2015,East Boston,Professional and Business Services,119,62,27,14,5,5,5,1,0,0
+2015,East Boston,Education and Health Services,55,22,12,8,8,3,1,0,1,0
+2015,East Boston,Leisure and Hospitality,151,45,25,45,19,9,4,3,1,0
+2015,East Boston,Other Services,87,62,13,8,3,1,0,0,0,0
+2016,South Boston,Natural Resources and Mining,5,1,0,1,1,1,0,0,1,0
 2016,South Boston,Construction,114,70,17,10,8,4,3,2,0,0
 2016,South Boston,Manufacturing,39,17,10,2,3,5,1,0,1,0
-2016,South Boston,Wholesale Trade,71,32,21,6,7,4,1,0,0,0
-2016,South Boston,Retail Trade,250,130,51,39,19,9,0,2,0,0
-2016,South Boston,Transportation and Warehousing,35,18,8,2,1,4,1,1,0,0
+2016,South Boston,"Trade, Transportation, and Utilities",356,180,80,47,27,17,2,3,0,0
 2016,South Boston,Information,94,39,15,9,16,4,7,2,2,0
-2016,South Boston,Finance and Insurance,304,131,55,29,41,19,16,8,3,2
-2016,South Boston,Real Estate and Rental and Leasing,145,89,17,22,11,3,3,0,0,0
-2016,South Boston,"Professional, Scientific, and Technical Services",557,331,77,63,48,18,11,4,4,1
-2016,South Boston,Management of Companies and Enterprises,27,11,5,1,4,1,4,1,0,0
-2016,South Boston,Administrative and Support and Waste Management and Remediation Services,174,90,28,11,18,13,7,6,1,0
-2016,South Boston,Educational Services,43,19,6,7,8,2,0,1,0,0
-2016,South Boston,Health Care and Social Assistance,123,51,29,21,10,3,8,1,0,0
-2016,South Boston,"Arts, Entertainment, and Recreation",33,19,6,3,4,1,0,0,0,0
-2016,South Boston,Accommodation and Food Services,273,90,43,49,61,23,6,1,0,0
-2016,South Boston,Other Services (except Public Administration),213,115,47,25,17,6,3,0,0,0
+2016,South Boston,Financial Activities,304,131,55,29,41,19,16,8,3,2
+2016,South Boston,Professional and Business Services,903,521,127,97,81,35,25,11,5,1
+2016,South Boston,Education and Health Services,166,70,35,28,18,5,8,2,0,0
+2016,South Boston,Leisure and Hospitality,306,109,49,52,65,24,6,1,0,0
+2016,South Boston,Other Services,213,115,47,25,17,6,3,0,0,0
 2016,South Boston,Unclassified,8,8,0,0,0,0,0,0,0,0
-2016,South Boston,"Agriculture, Forestry, Fishing and Hunting",1,0,0,1,0,0,0,0,0,0
 2016,South End,Construction,24,11,4,5,2,1,0,0,1,0
 2016,South End,Manufacturing,18,4,1,5,3,4,1,0,0,0
-2016,South End,Wholesale Trade,72,20,18,17,10,4,3,0,0,0
-2016,South End,Retail Trade,111,67,27,9,3,3,1,1,0,0
-2016,South End,Transportation and Warehousing,10,7,0,1,2,0,0,0,0,0
+2016,South End,"Trade, Transportation, and Utilities",193,94,45,27,15,7,4,1,0,0
 2016,South End,Information,13,10,1,2,0,0,0,0,0,0
-2016,South End,Finance and Insurance,24,12,6,4,0,0,2,0,0,0
-2016,South End,Real Estate and Rental and Leasing,61,45,8,3,4,1,0,0,0,0
-2016,South End,"Professional, Scientific, and Technical Services",146,93,25,13,9,5,1,0,0,0
-2016,South End,Management of Companies and Enterprises,6,0,1,3,1,1,0,0,0,0
-2016,South End,Administrative and Support and Waste Management and Remediation Services,24,11,4,3,3,1,2,0,0,0
-2016,South End,Educational Services,14,8,3,1,2,0,0,0,0,0
-2016,South End,Health Care and Social Assistance,91,33,13,14,16,6,5,3,0,1
-2016,South End,"Arts, Entertainment, and Recreation",16,9,3,1,2,1,0,0,0,0
-2016,South End,Accommodation and Food Services,103,41,15,15,22,10,0,0,0,0
-2016,South End,Other Services (except Public Administration),74,48,11,8,4,3,0,0,0,0
+2016,South End,Financial Activities,24,12,6,4,0,0,2,0,0,0
+2016,South End,Professional and Business Services,237,149,38,22,17,8,3,0,0,0
+2016,South End,Education and Health Services,105,41,16,15,18,6,5,3,0,1
+2016,South End,Leisure and Hospitality,119,50,18,16,24,11,0,0,0,0
+2016,South End,Other Services,74,48,11,8,4,3,0,0,0,0
 2016,South End,Unclassified,2,2,0,0,0,0,0,0,0,0
 2016,East Boston,Construction,46,30,9,3,1,3,0,0,0,0
 2016,East Boston,Manufacturing,16,8,2,1,1,3,0,1,0,0
-2016,East Boston,Wholesale Trade,17,8,6,0,2,0,1,0,0,0
-2016,East Boston,Retail Trade,117,69,26,10,7,4,1,0,0,0
-2016,East Boston,Transportation and Warehousing,130,51,21,18,17,11,5,2,2,3
+2016,East Boston,"Trade, Transportation, and Utilities",264,128,53,28,26,15,7,2,2,3
 2016,East Boston,Information,12,11,1,0,0,0,0,0,0,0
-2016,East Boston,Finance and Insurance,21,10,5,5,1,0,0,0,0,0
-2016,East Boston,Real Estate and Rental and Leasing,38,17,7,7,3,1,3,0,0,0
-2016,East Boston,"Professional, Scientific, and Technical Services",36,25,7,3,1,0,0,0,0,0
-2016,East Boston,Management of Companies and Enterprises,5,3,0,1,1,0,0,0,0,0
-2016,East Boston,Administrative and Support and Waste Management and Remediation Services,50,24,13,2,4,3,4,0,0,0
-2016,East Boston,Educational Services,7,5,1,0,1,0,0,0,0,0
-2016,East Boston,Health Care and Social Assistance,45,17,9,8,7,2,1,0,0,1
-2016,East Boston,"Arts, Entertainment, and Recreation",8,4,1,0,1,2,0,0,0,0
-2016,East Boston,Accommodation and Food Services,138,41,22,35,25,8,2,4,1,0
-2016,East Boston,Other Services (except Public Administration),89,60,17,9,2,1,0,0,0,0
+2016,East Boston,Financial Activities,21,10,5,5,1,0,0,0,0,0
+2016,East Boston,Professional and Business Services,129,69,27,13,9,4,7,0,0,0
+2016,East Boston,Education and Health Services,52,22,10,8,8,2,1,0,0,1
+2016,East Boston,Leisure and Hospitality,146,45,23,35,26,10,2,4,1,0
+2016,East Boston,Other Services,89,60,17,9,2,1,0,0,0,0
 2016,East Boston,Unclassified,1,1,0,0,0,0,0,0,0,0
 2017,South Boston,Construction,106,64,11,5,10,4,0,0,0,0
 2017,South Boston,Manufacturing,37,17,3,0,0,3,0,0,0,0
-2017,South Boston,Wholesale Trade,76,38,13,7,9,0,0,0,0,0
-2017,South Boston,Retail Trade,251,129,52,38,18,12,0,0,0,0
-2017,South Boston,Transportation and Warehousing,37,20,0,0,0,4,0,0,0,0
+2017,South Boston,"Trade, Transportation, and Utilities",364,187,65,45,27,16,0,0,0,0
 2017,South Boston,Information,101,42,13,8,11,4,7,0,0,0
-2017,South Boston,Finance and Insurance,299,124,59,36,33,18,12,9,0,0
-2017,South Boston,Real Estate and Rental and Leasing,149,94,18,18,10,4,0,0,0,0
-2017,South Boston,"Professional, Scientific, and Technical Services",577,318,93,64,54,22,11,5,3,0
-2017,South Boston,Management of Companies and Enterprises,25,6,3,3,3,0,3,0,0,0
-2017,South Boston,Administrative and Support and Waste Management and Remediation Services,177,100,27,12,16,8,4,4,0,0
-2017,South Boston,Educational Services,44,15,6,0,3,5,0,0,0,0
-2017,South Boston,Health Care and Social Assistance,146,67,28,24,17,0,3,0,0,0
-2017,South Boston,"Arts, Entertainment, and Recreation",30,16,3,0,3,0,0,0,0,0
-2017,South Boston,Accommodation and Food Services,274,91,48,43,63,22,6,0,0,0
-2017,South Boston,Other Services (except Public Administration),228,130,44,29,13,3,0,0,0,0
+2017,South Boston,Financial Activities,299,124,59,36,33,18,12,9,0,0
+2017,South Boston,Professional and Business Services,928,518,141,97,83,34,18,9,3,0
+2017,South Boston,Education and Health Services,190,82,34,24,20,5,3,0,0,0
+2017,South Boston,Leisure and Hospitality,304,107,51,43,66,22,6,0,0,0
+2017,South Boston,Other Services,228,130,44,29,13,3,0,0,0,0
 2017,South Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
 2017,South End,Construction,24,14,0,0,3,3,0,0,0,0
 2017,South End,Manufacturing,18,5,0,3,3,4,0,0,0,0
-2017,South End,Wholesale Trade,60,15,15,13,12,3,0,0,0,0
-2017,South End,Retail Trade,113,66,25,11,4,5,0,0,0,0
-2017,South End,Transportation and Warehousing,9,6,0,0,0,0,0,0,0,0
+2017,South End,"Trade, Transportation, and Utilities",182,87,40,24,16,8,0,0,0,0
 2017,South End,Information,10,6,0,0,0,0,0,0,0,0
-2017,South End,Finance and Insurance,27,14,6,4,0,0,0,0,0,0
-2017,South End,Real Estate and Rental and Leasing,58,41,10,0,4,0,0,0,0,0
-2017,South End,"Professional, Scientific, and Technical Services",140,82,26,17,10,0,3,0,0,0
-2017,South End,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
-2017,South End,Administrative and Support and Waste Management and Remediation Services,25,12,5,0,3,0,3,0,0,0
-2017,South End,Educational Services,17,11,0,4,0,0,0,0,0,0
-2017,South End,Health Care and Social Assistance,93,36,8,15,18,9,4,0,0,0
-2017,South End,"Arts, Entertainment, and Recreation",15,10,0,0,0,0,0,0,0,0
-2017,South End,Accommodation and Food Services,105,29,22,13,29,12,0,0,0,0
-2017,South End,Other Services (except Public Administration),78,46,18,6,3,4,0,0,0,0
+2017,South End,Financial Activities,27,14,6,4,0,0,0,0,0,0
+2017,South End,Professional and Business Services,228,135,41,17,17,0,6,0,0,0
+2017,South End,Education and Health Services,110,47,8,19,18,9,4,0,0,0
+2017,South End,Leisure and Hospitality,120,39,22,13,29,12,0,0,0,0
+2017,South End,Other Services,78,46,18,6,3,4,0,0,0,0
 2017,East Boston,Construction,50,32,11,3,0,4,0,0,0,0
 2017,East Boston,Manufacturing,15,7,0,0,0,0,0,0,0,0
-2017,East Boston,Wholesale Trade,21,14,4,0,0,0,0,0,0,0
-2017,East Boston,Retail Trade,115,67,29,8,4,5,0,0,0,0
-2017,East Boston,Transportation and Warehousing,112,46,12,17,15,7,8,0,0,3
+2017,East Boston,"Trade, Transportation, and Utilities",248,127,45,25,19,12,8,0,0,3
 2017,East Boston,Information,11,11,0,0,0,0,0,0,0,0
-2017,East Boston,Finance and Insurance,18,7,5,5,0,0,0,0,0,0
-2017,East Boston,Real Estate and Rental and Leasing,44,22,6,8,4,0,3,0,0,0
-2017,East Boston,"Professional, Scientific, and Technical Services",37,27,6,3,0,0,0,0,0,0
-2017,East Boston,Management of Companies and Enterprises,6,3,0,0,0,0,0,0,0,0
-2017,East Boston,Administrative and Support and Waste Management and Remediation Services,53,25,12,6,3,3,4,0,0,0
-2017,East Boston,Educational Services,5,3,0,0,0,0,0,0,0,0
-2017,East Boston,Health Care and Social Assistance,47,17,8,11,6,3,0,0,0,0
-2017,East Boston,"Arts, Entertainment, and Recreation",10,8,0,0,0,0,0,0,0,0
-2017,East Boston,Accommodation and Food Services,146,38,25,43,24,8,3,4,0,0
-2017,East Boston,Other Services (except Public Administration),89,57,19,8,4,0,0,0,0,0
+2017,East Boston,Financial Activities,18,7,5,5,0,0,0,0,0,0
+2017,East Boston,Professional and Business Services,140,77,24,17,7,3,7,0,0,0
+2017,East Boston,Education and Health Services,52,20,8,11,6,3,0,0,0,0
+2017,East Boston,Leisure and Hospitality,156,46,25,43,24,8,3,4,0,0
+2017,East Boston,Other Services,89,57,19,8,4,0,0,0,0,0
 2018,South Boston,Construction,99,54,14,9,11,0,0,0,0,0
 2018,South Boston,Manufacturing,42,19,8,3,0,3,0,0,0,0
-2018,South Boston,Wholesale Trade,76,38,14,6,5,5,0,0,0,0
-2018,South Boston,Retail Trade,250,125,54,42,17,7,0,0,0,0
-2018,South Boston,Transportation and Warehousing,41,25,0,0,0,4,0,0,0,0
+2018,South Boston,"Trade, Transportation, and Utilities",367,188,68,48,22,16,0,0,0,0
 2018,South Boston,Information,98,37,15,12,10,5,0,0,0,0
-2018,South Boston,Finance and Insurance,301,122,53,44,32,20,11,9,3,0
-2018,South Boston,Real Estate and Rental and Leasing,158,109,11,16,7,0,0,0,0,0
-2018,South Boston,"Professional, Scientific, and Technical Services",590,326,88,69,58,27,8,7,0,0
-2018,South Boston,Management of Companies and Enterprises,25,6,4,0,0,0,3,0,0,0
-2018,South Boston,Administrative and Support and Waste Management and Remediation Services,172,90,26,20,18,7,5,0,0,0
-2018,South Boston,Educational Services,50,21,11,0,9,5,0,0,0,0
-2018,South Boston,Health Care and Social Assistance,154,68,29,27,19,0,3,0,0,0
-2018,South Boston,"Arts, Entertainment, and Recreation",31,17,0,3,3,0,0,0,0,0
-2018,South Boston,Accommodation and Food Services,274,89,43,53,60,21,6,0,0,0
-2018,South Boston,Other Services (except Public Administration),220,131,41,24,13,0,0,0,0,0
+2018,South Boston,Financial Activities,301,122,53,44,32,20,11,9,3,0
+2018,South Boston,Professional and Business Services,945,531,129,105,83,34,16,7,0,0
+2018,South Boston,Education and Health Services,204,89,40,27,28,5,3,0,0,0
+2018,South Boston,Leisure and Hospitality,305,106,43,56,63,21,6,0,0,0
+2018,South Boston,Other Services,220,131,41,24,13,0,0,0,0,0
 2018,South Boston,Unclassified,6,6,0,0,0,0,0,0,0,0
 2018,South End,Construction,24,12,3,3,3,0,0,0,0,0
 2018,South End,Manufacturing,20,5,3,4,3,3,0,0,0,0
-2018,South End,Wholesale Trade,57,11,16,12,11,5,0,0,0,0
-2018,South End,Retail Trade,105,58,27,8,5,5,0,0,0,0
-2018,South End,Transportation and Warehousing,9,5,0,0,0,0,0,0,0,0
+2018,South End,"Trade, Transportation, and Utilities",171,74,43,20,16,10,0,0,0,0
 2018,South End,Information,10,6,0,0,0,0,0,0,0,0
-2018,South End,Finance and Insurance,27,15,5,5,0,0,0,0,0,0
-2018,South End,Real Estate and Rental and Leasing,71,54,9,3,3,0,0,0,0,0
-2018,South End,"Professional, Scientific, and Technical Services",141,88,25,15,8,0,3,0,0,0
-2018,South End,Management of Companies and Enterprises,4,0,0,0,0,0,0,0,0,0
-2018,South End,Administrative and Support and Waste Management and Remediation Services,25,12,4,4,0,0,0,0,0,0
-2018,South End,Educational Services,16,10,0,0,3,0,0,0,0,0
-2018,South End,Health Care and Social Assistance,101,39,11,17,15,12,4,0,0,0
-2018,South End,"Arts, Entertainment, and Recreation",13,7,0,0,0,0,0,0,0,0
-2018,South End,Accommodation and Food Services,108,34,22,15,27,10,0,0,0,0
-2018,South End,Other Services (except Public Administration),81,53,12,8,4,4,0,0,0,0
+2018,South End,Financial Activities,27,15,5,5,0,0,0,0,0,0
+2018,South End,Professional and Business Services,241,154,38,22,11,0,3,0,0,0
+2018,South End,Education and Health Services,117,49,11,17,18,12,4,0,0,0
+2018,South End,Leisure and Hospitality,121,41,22,15,27,10,0,0,0,0
+2018,South End,Other Services,81,53,12,8,4,4,0,0,0,0
 2018,East Boston,Construction,63,46,9,0,0,4,0,0,0,0
 2018,East Boston,Manufacturing,12,3,3,0,0,4,0,0,0,0
-2018,East Boston,Wholesale Trade,22,13,6,0,0,0,0,0,0,0
-2018,East Boston,Retail Trade,108,66,23,9,6,3,0,0,0,0
-2018,East Boston,Transportation and Warehousing,118,44,19,16,11,15,5,0,4,3
+2018,East Boston,"Trade, Transportation, and Utilities",248,123,48,25,17,18,5,0,4,3
 2018,East Boston,Information,14,12,0,0,0,0,0,0,0,0
-2018,East Boston,Finance and Insurance,19,9,4,5,0,0,0,0,0,0
-2018,East Boston,Real Estate and Rental and Leasing,45,25,6,6,4,0,3,0,0,0
-2018,East Boston,"Professional, Scientific, and Technical Services",43,30,10,0,0,0,0,0,0,0
-2018,East Boston,Management of Companies and Enterprises,6,0,0,0,3,0,0,0,0,0
-2018,East Boston,Administrative and Support and Waste Management and Remediation Services,62,36,7,7,5,3,4,0,0,0
-2018,East Boston,Educational Services,5,0,0,0,0,0,0,0,0,0
-2018,East Boston,Health Care and Social Assistance,49,20,9,9,5,4,0,0,0,0
-2018,East Boston,"Arts, Entertainment, and Recreation",11,5,0,0,0,0,0,0,0,0
-2018,East Boston,Accommodation and Food Services,144,33,31,32,33,7,4,3,0,0
-2018,East Boston,Other Services (except Public Administration),88,53,20,8,5,0,0,0,0,0
+2018,East Boston,Financial Activities,19,9,4,5,0,0,0,0,0,0
+2018,East Boston,Professional and Business Services,156,91,23,13,12,3,7,0,0,0
+2018,East Boston,Education and Health Services,54,20,9,9,5,4,0,0,0,0
+2018,East Boston,Leisure and Hospitality,155,38,31,32,33,7,4,3,0,0
+2018,East Boston,Other Services,88,53,20,8,5,0,0,0,0,0
 2019,South Boston,Construction,107,61,17,5,11,3,0,0,0,0
 2019,South Boston,Manufacturing,41,19,7,0,0,3,0,0,0,0
-2019,South Boston,Wholesale Trade,74,33,18,9,5,5,0,0,0,0
-2019,South Boston,Retail Trade,252,127,56,36,23,5,0,0,0,0
-2019,South Boston,Transportation and Warehousing,41,22,6,0,0,4,0,0,0,0
+2019,South Boston,"Trade, Transportation, and Utilities",367,182,80,45,28,14,0,0,0,0
 2019,South Boston,Information,98,34,19,13,11,4,0,0,0,0
-2019,South Boston,Finance and Insurance,299,123,49,47,30,20,11,9,0,0
-2019,South Boston,Real Estate and Rental and Leasing,155,106,19,14,6,0,3,0,0,0
-2019,South Boston,"Professional, Scientific, and Technical Services",570,305,90,69,60,22,10,6,3,0
-2019,South Boston,Management of Companies and Enterprises,24,8,3,0,0,0,0,0,0,0
-2019,South Boston,Administrative and Support and Waste Management and Remediation Services,168,84,26,16,24,6,5,0,0,0
-2019,South Boston,Educational Services,50,19,10,3,3,3,0,0,0,0
-2019,South Boston,Health Care and Social Assistance,164,65,34,33,18,3,3,0,0,0
-2019,South Boston,"Arts, Entertainment, and Recreation",34,19,3,4,0,0,0,0,0,0
-2019,South Boston,Accommodation and Food Services,271,90,42,49,58,24,6,0,0,0
-2019,South Boston,Other Services (except Public Administration),215,120,43,30,11,0,0,0,0,0
+2019,South Boston,Financial Activities,299,123,49,47,30,20,11,9,0,0
+2019,South Boston,Professional and Business Services,917,503,138,99,90,28,18,6,3,0
+2019,South Boston,Education and Health Services,214,84,44,36,21,6,3,0,0,0
+2019,South Boston,Leisure and Hospitality,305,109,45,53,58,24,6,0,0,0
+2019,South Boston,Other Services,215,120,43,30,11,0,0,0,0,0
 2019,South End,Construction,27,14,6,0,0,0,0,0,0,0
 2019,South End,Manufacturing,19,8,0,3,4,0,0,0,0,0
-2019,South End,Wholesale Trade,57,10,16,12,14,3,0,0,0,0
-2019,South End,Retail Trade,107,61,22,11,8,3,0,0,0,0
-2019,South End,Transportation and Warehousing,8,4,0,0,0,0,0,0,0,0
+2019,South End,"Trade, Transportation, and Utilities",172,75,38,23,22,6,0,0,0,0
 2019,South End,Information,11,6,0,0,0,0,0,0,0,0
-2019,South End,Finance and Insurance,30,17,6,5,0,0,0,0,0,0
-2019,South End,Real Estate and Rental and Leasing,70,48,13,3,4,0,0,0,0,0
-2019,South End,"Professional, Scientific, and Technical Services",138,85,25,16,8,3,0,0,0,0
-2019,South End,Management of Companies and Enterprises,3,0,0,0,0,0,0,0,0,0
-2019,South End,Administrative and Support and Waste Management and Remediation Services,28,10,8,5,0,0,0,0,0,0
-2019,South End,Educational Services,16,9,0,0,3,0,0,0,0,0
-2019,South End,Health Care and Social Assistance,111,42,16,18,17,9,6,0,0,0
-2019,South End,"Arts, Entertainment, and Recreation",16,9,0,3,0,0,0,0,0,0
-2019,South End,Accommodation and Food Services,195,103,24,24,27,15,0,0,0,0
-2019,South End,Other Services (except Public Administration),85,60,11,8,0,3,0,0,0,0
+2019,South End,Financial Activities,30,17,6,5,0,0,0,0,0,0
+2019,South End,Professional and Business Services,239,143,46,24,12,3,0,0,0,0
+2019,South End,Education and Health Services,127,51,16,18,20,9,6,0,0,0
+2019,South End,Leisure and Hospitality,211,112,24,27,27,15,0,0,0,0
+2019,South End,Other Services,85,60,11,8,0,3,0,0,0,0
 2019,South End,Unclassified,5,5,0,0,0,0,0,0,0,0
 2019,East Boston,Construction,74,54,12,0,0,3,0,0,0,0
 2019,East Boston,Manufacturing,14,6,0,0,0,4,0,0,0,0
-2019,East Boston,Wholesale Trade,21,12,6,0,0,0,0,0,0,0
-2019,East Boston,Retail Trade,108,63,30,5,5,4,0,0,0,0
-2019,East Boston,Transportation and Warehousing,118,46,17,15,11,10,11,0,3,4
+2019,East Boston,"Trade, Transportation, and Utilities",247,121,53,20,16,14,11,0,3,4
 2019,East Boston,Information,15,10,5,0,0,0,0,0,0,0
-2019,East Boston,Finance and Insurance,17,7,5,4,0,0,0,0,0,0
-2019,East Boston,Real Estate and Rental and Leasing,48,26,5,8,6,0,3,0,0,0
-2019,East Boston,"Professional, Scientific, and Technical Services",49,36,10,0,0,0,0,0,0,0
-2019,East Boston,Management of Companies and Enterprises,5,0,0,0,3,0,0,0,0,0
-2019,East Boston,Administrative and Support and Waste Management and Remediation Services,70,40,11,7,4,5,3,0,0,0
-2019,East Boston,Educational Services,4,0,0,0,0,0,0,0,0,0
-2019,East Boston,Health Care and Social Assistance,53,20,8,14,4,5,0,0,0,0
-2019,East Boston,"Arts, Entertainment, and Recreation",12,6,0,3,0,0,0,0,0,0
-2019,East Boston,Accommodation and Food Services,151,45,23,33,33,8,4,5,0,0
-2019,East Boston,Other Services (except Public Administration),90,56,21,6,6,0,0,0,0,0
+2019,East Boston,Financial Activities,17,7,5,4,0,0,0,0,0,0
+2019,East Boston,Professional and Business Services,172,102,26,15,13,5,6,0,0,0
+2019,East Boston,Education and Health Services,57,20,8,14,4,5,0,0,0,0
+2019,East Boston,Leisure and Hospitality,163,51,23,36,33,8,4,5,0,0
+2019,East Boston,Other Services,90,56,21,6,6,0,0,0,0,0
 2020,South Boston,Construction,107,63,12,9,9,4,0,0,0,0
 2020,South Boston,Manufacturing,34,8,8,4,0,4,0,0,0,0
-2020,South Boston,Wholesale Trade,69,31,12,7,5,3,0,0,0,0
-2020,South Boston,Retail Trade,248,138,48,27,25,5,0,0,0,0
-2020,South Boston,Transportation and Warehousing,43,27,3,0,3,0,3,0,0,0
+2020,South Boston,"Trade, Transportation, and Utilities",360,196,63,34,33,8,3,0,0,0
 2020,South Boston,Information,101,35,18,14,13,3,3,0,0,0
-2020,South Boston,Finance and Insurance,293,124,48,38,31,21,15,5,0,0
-2020,South Boston,Real Estate and Rental and Leasing,153,102,18,14,7,0,3,0,0,0
-2020,South Boston,"Professional, Scientific, and Technical Services",575,319,82,60,62,24,15,5,4,0
-2020,South Boston,Management of Companies and Enterprises,27,13,0,0,0,0,0,0,0,0
-2020,South Boston,Administrative and Support and Waste Management and Remediation Services,165,88,22,11,26,4,5,0,0,0
-2020,South Boston,Educational Services,51,20,5,4,3,5,0,0,0,0
-2020,South Boston,Health Care and Social Assistance,165,74,33,27,16,0,6,0,0,0
-2020,South Boston,"Arts, Entertainment, and Recreation",38,23,0,5,0,0,0,0,0,0
-2020,South Boston,Accommodation and Food Services,255,77,38,53,52,25,8,0,0,0
-2020,South Boston,Other Services (except Public Administration),235,137,49,28,11,0,0,0,0,0
+2020,South Boston,Financial Activities,293,124,48,38,31,21,15,5,0,0
+2020,South Boston,Professional and Business Services,920,522,122,85,95,28,23,5,4,0
+2020,South Boston,Education and Health Services,216,94,38,31,19,5,6,0,0,0
+2020,South Boston,Leisure and Hospitality,293,100,38,58,52,25,8,0,0,0
+2020,South Boston,Other Services,235,137,49,28,11,0,0,0,0,0
 2020,South Boston,Unclassified,3,0,0,0,0,0,0,0,0,0
 2020,South End,Construction,25,11,6,0,0,3,0,0,0,0
 2020,South End,Manufacturing,19,7,0,3,3,0,0,0,0,0
-2020,South End,Wholesale Trade,56,13,14,12,12,3,0,0,0,0
-2020,South End,Retail Trade,97,54,21,9,8,3,0,0,0,0
-2020,South End,Transportation and Warehousing,6,0,0,0,0,0,0,0,0,0
+2020,South End,"Trade, Transportation, and Utilities",159,67,35,21,20,6,0,0,0,0
 2020,South End,Information,12,7,0,0,0,0,0,0,0,0
-2020,South End,Finance and Insurance,31,16,9,5,0,0,0,0,0,0
-2020,South End,Real Estate and Rental and Leasing,72,49,12,6,4,0,0,0,0,0
-2020,South End,"Professional, Scientific, and Technical Services",138,89,22,15,9,0,0,0,0,0
-2020,South End,Management of Companies and Enterprises,3,0,0,0,0,0,0,0,0,0
-2020,South End,Administrative and Support and Waste Management and Remediation Services,29,14,4,6,0,0,0,0,0,0
-2020,South End,Educational Services,14,7,0,0,0,0,0,0,0,0
-2020,South End,Health Care and Social Assistance,109,39,19,19,13,12,4,0,0,0
-2020,South End,"Arts, Entertainment, and Recreation",12,6,0,0,0,0,0,0,0,0
-2020,South End,Accommodation and Food Services,198,103,33,22,25,13,0,0,0,0
-2020,South End,Other Services (except Public Administration),95,60,19,8,5,3,0,0,0,0
+2020,South End,Financial Activities,31,16,9,5,0,0,0,0,0,0
+2020,South End,Professional and Business Services,242,152,38,27,13,0,0,0,0,0
+2020,South End,Education and Health Services,123,46,19,19,13,12,4,0,0,0
+2020,South End,Leisure and Hospitality,210,109,33,22,25,13,0,0,0,0
+2020,South End,Other Services,95,60,19,8,5,3,0,0,0,0
 2020,South End,Unclassified,4,4,0,0,0,0,0,0,0,0
 2020,East Boston,Construction,65,47,8,6,0,3,0,0,0,0
 2020,East Boston,Manufacturing,13,5,5,0,0,0,0,0,0,0
-2020,East Boston,Wholesale Trade,23,13,7,0,0,0,0,0,0,0
-2020,East Boston,Retail Trade,107,76,18,5,4,3,0,0,0,0
-2020,East Boston,Transportation and Warehousing,116,46,17,13,10,11,11,0,0,4
+2020,East Boston,"Trade, Transportation, and Utilities",246,135,42,18,14,14,11,0,0,4
 2020,East Boston,Information,15,12,0,0,0,0,0,0,0,0
-2020,East Boston,Finance and Insurance,19,9,5,4,0,0,0,0,0,0
-2020,East Boston,Real Estate and Rental and Leasing,47,27,4,8,4,0,3,0,0,0
-2020,East Boston,"Professional, Scientific, and Technical Services",49,36,10,0,0,0,0,0,0,0
-2020,East Boston,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
-2020,East Boston,Administrative and Support and Waste Management and Remediation Services,70,41,13,5,4,4,3,0,0,0
-2020,East Boston,Educational Services,4,0,0,0,0,0,0,0,0,0
-2020,East Boston,Health Care and Social Assistance,54,23,10,11,4,4,0,0,0,0
-2020,East Boston,"Arts, Entertainment, and Recreation",14,7,0,3,0,0,0,0,0,0
-2020,East Boston,Accommodation and Food Services,145,42,23,31,31,8,5,5,0,0
-2020,East Boston,Other Services (except Public Administration),91,58,18,6,7,0,0,0,0,0
+2020,East Boston,Financial Activities,19,9,5,4,0,0,0,0,0,0
+2020,East Boston,Professional and Business Services,171,104,27,13,8,4,6,0,0,0
+2020,East Boston,Education and Health Services,58,23,10,11,4,4,0,0,0,0
+2020,East Boston,Leisure and Hospitality,159,49,23,34,31,8,5,5,0,0
+2020,East Boston,Other Services,91,58,18,6,7,0,0,0,0,0
 2020,East Boston,Unclassified,3,3,0,0,0,0,0,0,0,0
 2021,South Boston,Construction,113,66,20,6,6,3,0,0,0,0
 2021,South Boston,Manufacturing,36,16,4,5,0,3,0,0,0,0
-2021,South Boston,Wholesale Trade,73,33,14,10,5,3,0,0,0,0
-2021,South Boston,Retail Trade,245,143,43,34,17,0,0,0,0,0
-2021,South Boston,Transportation and Warehousing,47,28,3,0,4,0,0,0,0,0
+2021,South Boston,"Trade, Transportation, and Utilities",365,204,60,44,26,3,0,0,0,0
 2021,South Boston,Information,104,42,17,11,12,9,0,0,0,0
-2021,South Boston,Finance and Insurance,260,133,40,33,22,16,7,0,0,0
-2021,South Boston,Real Estate and Rental and Leasing,156,103,24,12,7,0,0,0,0,0
-2021,South Boston,"Professional, Scientific, and Technical Services",578,326,86,58,62,14,18,5,4,0
-2021,South Boston,Management of Companies and Enterprises,22,7,0,0,0,0,0,0,0,0
-2021,South Boston,Administrative and Support and Waste Management and Remediation Services,165,88,26,12,24,6,4,0,0,0
-2021,South Boston,Educational Services,47,17,8,3,0,5,0,0,0,0
-2021,South Boston,Health Care and Social Assistance,169,76,29,25,23,3,6,0,0,0
-2021,South Boston,"Arts, Entertainment, and Recreation",37,25,3,5,0,0,0,0,0,0
-2021,South Boston,Accommodation and Food Services,257,111,42,35,50,15,3,0,0,0
-2021,South Boston,Other Services (except Public Administration),237,152,45,23,9,0,0,0,0,0
+2021,South Boston,Financial Activities,260,133,40,33,22,16,7,0,0,0
+2021,South Boston,Professional and Business Services,921,524,136,82,93,20,22,5,4,0
+2021,South Boston,Education and Health Services,216,93,37,28,23,8,6,0,0,0
+2021,South Boston,Leisure and Hospitality,294,136,45,40,50,15,3,0,0,0
+2021,South Boston,Other Services,237,152,45,23,9,0,0,0,0,0
 2021,South End,Construction,23,12,4,0,0,0,0,0,0,0
 2021,South End,Manufacturing,18,4,3,4,3,0,0,0,0,0
-2021,South End,Wholesale Trade,52,12,15,12,9,0,0,0,0,0
-2021,South End,Retail Trade,94,56,18,10,5,3,0,0,0,0
-2021,South End,Transportation and Warehousing,8,5,0,0,0,0,0,0,0,0
+2021,South End,"Trade, Transportation, and Utilities",154,73,33,22,14,3,0,0,0,0
 2021,South End,Information,9,5,0,0,0,0,0,0,0,0
-2021,South End,Finance and Insurance,31,14,10,4,0,0,0,0,0,0
-2021,South End,Real Estate and Rental and Leasing,75,54,10,7,3,0,0,0,0,0
-2021,South End,"Professional, Scientific, and Technical Services",143,83,29,19,8,3,0,0,0,0
-2021,South End,Management of Companies and Enterprises,3,0,0,0,3,0,0,0,0,0
-2021,South End,Administrative and Support and Waste Management and Remediation Services,28,13,6,4,3,0,0,0,0,0
-2021,South End,Educational Services,14,8,0,0,0,0,0,0,0,0
-2021,South End,Health Care and Social Assistance,109,40,13,21,20,10,3,0,0,0
-2021,South End,"Arts, Entertainment, and Recreation",13,5,0,4,0,0,0,0,0,0
-2021,South End,Accommodation and Food Services,184,104,31,16,27,5,0,0,0,0
-2021,South End,Other Services (except Public Administration),87,60,12,11,3,0,0,0,0,0
+2021,South End,Financial Activities,31,14,10,4,0,0,0,0,0,0
+2021,South End,Professional and Business Services,249,150,45,30,17,3,0,0,0,0
+2021,South End,Education and Health Services,123,48,13,21,20,10,3,0,0,0
+2021,South End,Leisure and Hospitality,197,109,31,20,27,5,0,0,0,0
+2021,South End,Other Services,87,60,12,11,3,0,0,0,0,0
 2021,South End,Unclassified,3,3,0,0,0,0,0,0,0,0
 2021,East Boston,Construction,68,49,9,5,0,3,0,0,0,0
 2021,East Boston,Manufacturing,11,4,3,0,0,0,0,0,0,0
-2021,East Boston,Wholesale Trade,22,13,5,0,0,0,0,0,0,0
-2021,East Boston,Retail Trade,102,73,17,3,8,0,0,0,0,0
-2021,East Boston,Transportation and Warehousing,112,46,18,9,16,11,4,3,0,4
+2021,East Boston,"Trade, Transportation, and Utilities",236,132,40,12,24,11,4,3,0,4
 2021,East Boston,Information,10,7,0,0,0,0,0,0,0,0
-2021,East Boston,Finance and Insurance,21,11,7,3,0,0,0,0,0,0
-2021,East Boston,Real Estate and Rental and Leasing,52,36,5,5,5,0,0,0,0,0
-2021,East Boston,"Professional, Scientific, and Technical Services",55,39,13,0,3,0,0,0,0,0
-2021,East Boston,Management of Companies and Enterprises,5,0,0,0,0,0,0,0,0,0
-2021,East Boston,Administrative and Support and Waste Management and Remediation Services,71,47,10,4,8,0,0,0,0,0
-2021,East Boston,Educational Services,4,3,0,0,0,0,0,0,0,0
-2021,East Boston,Health Care and Social Assistance,64,24,12,9,7,3,9,0,0,0
-2021,East Boston,"Arts, Entertainment, and Recreation",12,5,4,0,0,0,0,0,0,0
-2021,East Boston,Accommodation and Food Services,139,54,31,24,21,3,5,0,0,0
-2021,East Boston,Other Services (except Public Administration),100,71,20,6,3,0,0,0,0,0
+2021,East Boston,Financial Activities,21,11,7,3,0,0,0,0,0,0
+2021,East Boston,Professional and Business Services,183,122,28,9,16,0,0,0,0,0
+2021,East Boston,Education and Health Services,68,27,12,9,7,3,9,0,0,0
+2021,East Boston,Leisure and Hospitality,151,59,35,24,21,3,5,0,0,0
+2021,East Boston,Other Services,100,71,20,6,3,0,0,0,0,0
 2021,East Boston,Unclassified,4,4,0,0,0,0,0,0,0,0
