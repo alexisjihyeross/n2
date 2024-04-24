@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <title>Establishments in Boston across Zipcodes and Years</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/bubble_chart.css">
+  <link rel="stylesheet" href="css/dot.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <!-- <link rel="stylesheet" href="css/bubble_chart.css"> -->
 
 </head>
 <body>
@@ -27,7 +28,9 @@
     <div id="sector-dropdown-container">
       <label for="sector-dropdown">Select a Sector:</label>
       <select id="sector-dropdown">
-        <option value="All">All</option>
+        <option value="Leisure and Hospitality">Leisure and Hospitality</option>
+        <option value="Financial Activities">Financial Activities</option>
+        <option value="Trade, Transportation, and Utilities">Trade, Transportation, and Utilities</option>
       </select>
     </div>
   </div>
@@ -35,6 +38,6 @@
 
   <script src="//d3js.org/d3.v4.min.js"></script>
   <script src="new_bubble_tooltip.js"></script>
-  <script src="new_bubble.js"></script>
+  <script src="dot.js"></script>
 </body>
 </html>

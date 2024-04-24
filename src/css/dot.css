@@ -1,0 +1,24 @@
+#vis {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: visible;
+    padding: 10px;
+}
+
+.dot {
+    fill: #1f77b4;
+    stroke: #fff;
+    stroke-width: 1.5;
+}
+
+/* Default font */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}

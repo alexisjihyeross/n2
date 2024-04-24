@@ -84,33 +84,6 @@ function bubbleChart() {
             d.color = fillColor(d.sector);
 
             return d;
-
-            // return {
-            //     id: d.neighborhood + d.sector,
-            //     radius: radiusScale(+d.est),
-            //     value: +d.est,
-            //     est: +d.est,
-            //     color: fillColor(d.sector),
-            //     neighborhood: d.neighborhood,
-            //     year: +d.year,
-            //     sector: d.sector,
-            //     group: d.sector,
-            //     n1_4: +d.n1_4,
-            //     n5_9: +d.n5_9,
-            //     n10_19: +d.n10_19,
-            //     n20_49: +d.n20_49,
-            //     n50_99: +d.n50_99,
-            //     n100_249: +d.n100_249,
-            //     n250_499: +d.n250_499,
-            //     n500_999: +d.n500_999,
-            //     n1000: +d.n1000,
-            //     Small: +d.n1_4 + d.n5_9 + d.n10_19,
-            //     Medium: +d.n20_49 + d.n50_99,
-            //     Large: +d.n100_249 + d.n250_499 + d.n500_999 + d.n1000,
-            //     Unknown: +d.est - (+d.n1_4 + d.n5_9 + d.n10_19 + d.n20_49 + d.n50_99 + d.n100_249 + d.n250_499 + d.n500_999 + d.n1000),
-            //     x: d.x,
-            //     y: d.y,
-            // };
         });
 
         // Sort them so that the smaller nodes are on top of the larger nodes 
@@ -179,7 +152,7 @@ function bubbleChart() {
 
 
         // Set initial layout to single group.
-        groupBubbles();
+        splitBubbles();
 
         // console.log('storing x/y coordinates...');
         // for all bubbles, add the x/y coordinates to the idToX and idToY objects
@@ -507,29 +480,6 @@ function bubbleChart() {
     }
 
 
-    /*
-     * Sets visualization in "single group mode".
-     * The year labels are hidden and the force layout
-     * tick function is set to move all nodes to the
-     * center of the visualization.
-     */
-    function groupBubbles() {
-        hideneighborhoodTitles();
-
-        // @v4 Reset the 'x' force to draw the bubbles to the center.
-        simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
-
-        // @v4 We can reset the alpha value and restart the simulation
-        simulation.alpha(1).restart();
-    }
-
-
-    /*
-     * Sets visualization in "split by year mode".
-     * The year labels are shown and the force layout
-     * tick function is set to move nodes to the
-     * yearCenter of their data's year.
-     */
     function splitBubbles() {
         console.log('splitting bubbles...');
         showneighborhoodTitles();
@@ -663,14 +613,6 @@ function bubbleChart() {
         tooltip.hideTooltip();
     }
 
-    chart.toggleDisplay = function (displayName) {
-        if (displayName === 'year') {
-            splitBubbles();
-        } else {
-            groupBubbles();
-        }
-    };
-
     // Update function to update the bubbles based on filtered data
     chart.updateBubbles = function (filteredData) {
         console.log('updating bubbles...');
@@ -786,33 +728,11 @@ function bubbleChart() {
     return chart;
 }
 
-
-function setupButtons() {
-    d3.select('#toolbar')
-        .selectAll('.button')
-        .on('click', function () {
-            // Remove active class from all buttons
-            d3.selectAll('.button').classed('active', false);
-            // Find the button just clicked
-            var button = d3.select(this);
-
-            // Set it as the active button
-            button.classed('active', true);
-
-            // Get the id of the button
-            var buttonId = button.attr('id');
-
-            // Toggle the bubble chart based on
-            // the currently clicked button.
-            myBubbleChart.toggleDisplay(buttonId);
-        });
-}
-
 // Load the data.
 d3.csv('../data/all_data.csv', display);
 
 // setup the buttons.
-setupButtons();
+// setupButtons();
 
 // We define data here so it's accessible within update function and the load function.
 var data;
@@ -917,6 +837,8 @@ function initialize(year, data) {
 
     myBubbleChart('#vis', filteredData);
     myBubbleChart.createPieChartAll();
+
+    splitBubbles();
 }
 
 function update(data) {
@@ -1039,4 +961,3 @@ function parseData(d) {
 }
 
 var myBubbleChart = bubbleChart();
-
