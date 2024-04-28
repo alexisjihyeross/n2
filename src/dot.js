@@ -21,11 +21,12 @@ function expandData(data) {
 d3.csv("../data/all_data.csv", function (error, data) {
     if (error) throw error;
 
-    var width = 1200;
-    var height = 800;
+    var width = 1300;
+    var height = 1000;
 
     var svg = d3.select("#vis")
         .append("svg")
+        .attr("class", "container")
         .attr("width", width)
         .attr("height", height);
 
@@ -118,18 +119,18 @@ d3.csv("../data/all_data.csv", function (error, data) {
 
             console.log('enterGroup: ', enterGroup.size());
 
-            var colSize = 225;
-            var numPerRow = 20;
-            var spaceBetween = 10;
-            var LeftPadding = 50;
+            var colSize = 250;
+            var numPerRow = 15;
+            var spaceBetween = 15;
+            var LeftPadding = 0;
+            var circleWidth = 18;
 
-            var rad = 4;
-
+            var xLength = 4;
 
             // Adding the neighborhood headers here
             enterGroup.append("text")
                 .attr("class", "header")
-                .attr("x", function () { return (col * colSize + numPerRow * 5) + 10; })
+                .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + 10 - 100; })
                 .attr("y", 20)
                 .text(sector)
                 // center the text
@@ -150,17 +151,41 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 });
             console.log('dots: ', dots.size());
 
+            // var enterDots = dots.enter()
+            //     .append("circle")
+            //     .style("fill", "transparent")
+            //     .attr("class", "dot")
+            //     .attr("cx", function (d, i) {
+            //         // console.log('Entering dot: ', d);
+            //         return (col * colSize) + (i % numPerRow) * spaceBetween + 15;
+            //     })
+            //     .attr("cy", function (d, i) { return 40 + 10 * Math.floor(i / numPerRow); })
+            //     .style("stroke", "none")
+            //     .attr("r", 3);
+
+            // add images instead of dots
             var enterDots = dots.enter()
-                .append("circle")
-                .style("fill", "transparent")
+                .append("svg:image")
                 .attr("class", "dot")
-                .attr("cx", function (d, i) {
-                    // console.log('Entering dot: ', d);
-                    return (col * colSize) + (i % numPerRow) * spaceBetween + 15;
+                .attr("xlink:href", function (d, i) {
+                    // return "icons/" + 'money.svg';
+                    var est2010 = originalDataByNeighborhood[selectedNeighborhood][d.sector];
+                    if (i >= est2010) {
+                        return "icons/" + d.sector + " - green.svg";
+                    }
+                    else {
+                        return "icons/" + d.sector + " - gray.svg";
+                    }
                 })
-                .attr("cy", function (d, i) { return 40 + 10 * Math.floor(i / numPerRow); })
-                .style("stroke", "none")
-                .attr("r", 3);
+                .attr("x", function (d, i) {
+                    return (col * colSize) + (i % numPerRow) * spaceBetween + 15;
+                }
+                )
+                .attr("y", function (d, i) {
+                    return 40 + spaceBetween * Math.floor(i / numPerRow);
+                })
+                .attr("width", circleWidth)
+                .attr("height", circleWidth);
 
             console.log('num enter dots', enterDots.size());
 
@@ -178,24 +203,24 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .each(function (d, i) { // for each missing dot
 
                     var parent = d3.select(this.parentNode);
-                    var cx = +d3.select(this).attr('cx');
-                    var cy = +d3.select(this).attr('cy');
+                    var cx = +d3.select(this).attr('x') + circleWidth / 2;
+                    var cy = +d3.select(this).attr('y') + circleWidth / 2;
 
                     // Create the "X" with two lines 
                     parent.append("line")
-                        .attr("x1", cx - 3)
-                        .attr("y1", cy - 3)
-                        .attr("x2", cx + 3)
-                        .attr("y2", cy + 3)
+                        .attr("x1", cx - xLength)
+                        .attr("y1", cy - xLength)
+                        .attr("x2", cx + xLength)
+                        .attr("y2", cy + xLength)
                         .attr("class", "dot")
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
                     parent.append("line")
-                        .attr("x1", cx - 3)
-                        .attr("y1", cy + 3)
-                        .attr("x2", cx + 3)
-                        .attr("y2", cy - 3)
+                        .attr("x1", cx - xLength)
+                        .attr("y1", cy + xLength)
+                        .attr("x2", cx + xLength)
+                        .attr("y2", cy - xLength)
                         .attr("class", "dot")
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
