@@ -207,21 +207,23 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var cy = +d3.select(this).attr('y') + circleWidth / 2;
 
                     // Create the "X" with two lines 
-                    parent.append("line")
+                    var line1 = parent.append("line")
                         .attr("x1", cx - xLength)
                         .attr("y1", cy - xLength)
                         .attr("x2", cx + xLength)
                         .attr("y2", cy + xLength)
-                        .attr("class", "dot")
+                        // .attr("class", "dot")
+                        .attr("class", "line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
-                    parent.append("line")
+                    var line2 = parent.append("line")
                         .attr("x1", cx - xLength)
                         .attr("y1", cy + xLength)
                         .attr("x2", cx + xLength)
                         .attr("y2", cy - xLength)
-                        .attr("class", "dot")
+                        // .attr("class", "dot")
+                        .attr("class", "line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
@@ -242,6 +244,11 @@ d3.csv("../data/all_data.csv", function (error, data) {
             dots.merge(enterDots)
                 // .transition()
                 // .duration(1000)
+                // .each(function (d, i) {
+                //     var selectedX = d3.selectAll(".line-" + d.neighborhood + "-" + d.sector + "-" + d.index);
+                //     console.log('selectedX: ', selectedX.size());
+                //     selectedX.remove();
+                // })
                 .style("fill", function (d, i) {
                     var est2010 = originalDataByNeighborhood[selectedNeighborhood][d.sector];
                     if (i >= est2010) {
