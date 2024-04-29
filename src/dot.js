@@ -22,7 +22,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
     if (error) throw error;
 
     var width = 1300;
-    var height = 1000;
+    var height = 700;
 
     var svg = d3.select("#vis")
         .append("svg")
@@ -166,6 +166,16 @@ d3.csv("../data/all_data.csv", function (error, data) {
             // add images instead of dots
             var enterDots = dots.enter()
                 .append("svg:image")
+                .each(function (d, i) {
+                    var className = ".line-" + d.neighborhood + "-" + d.sector + "-" + d.index;
+                    // replace white spaces with underscores
+                    className = className.replace(/ /g, "_");
+                    console.log(d.index)
+                    var selectedX = d3.select("svg").selectAll(className);
+                    console.log('selectedX: ', selectedX.size());
+                    console.log(className);
+                    selectedX.remove();
+                })
                 .attr("class", "dot")
                 .attr("xlink:href", function (d, i) {
                     // return "icons/" + 'money.svg';
@@ -185,7 +195,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     return 40 + spaceBetween * Math.floor(i / numPerRow);
                 })
                 .attr("width", circleWidth)
-                .attr("height", circleWidth);
+                .attr("height", circleWidth)
 
             console.log('num enter dots', enterDots.size());
 
@@ -206,6 +216,10 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var cx = +d3.select(this).attr('x') + circleWidth / 2;
                     var cy = +d3.select(this).attr('y') + circleWidth / 2;
 
+                    var className = "line-" + d.neighborhood + "-" + d.sector + "-" + d.index;
+                    // replace white spaces with underscores
+                    className = className.replace(/ /g, "_");
+
                     // Create the "X" with two lines 
                     var line1 = parent.append("line")
                         .attr("x1", cx - xLength)
@@ -213,7 +227,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy + xLength)
                         // .attr("class", "dot")
-                        .attr("class", "dot line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
+                        .attr("class", "dot " + className)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
@@ -223,7 +237,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy - xLength)
                         // .attr("class", "dot")
-                        .attr("class", "dot line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
+                        .attr("class", "dot " + className)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
@@ -244,11 +258,11 @@ d3.csv("../data/all_data.csv", function (error, data) {
             dots.merge(enterDots)
                 // .transition()
                 // .duration(1000)
-                // .each(function (d, i) {
-                //     var selectedX = d3.selectAll(".line-" + d.neighborhood + "-" + d.sector + "-" + d.index);
-                //     console.log('selectedX: ', selectedX.size());
-                //     selectedX.remove();
-                // })
+                .each(function (d, i) {
+                    var selectedX = d3.selectAll(".line-" + d.neighborhood + "-" + d.sector + "-" + d.index);
+                    console.log('selectedX: ', selectedX.size());
+                    selectedX.remove();
+                })
                 .style("fill", function (d, i) {
                     var est2010 = originalDataByNeighborhood[selectedNeighborhood][d.sector];
                     if (i >= est2010) {
