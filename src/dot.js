@@ -213,7 +213,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy + xLength)
                         // .attr("class", "dot")
-                        .attr("class", "line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
+                        .attr("class", "dot line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
@@ -223,7 +223,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy - xLength)
                         // .attr("class", "dot")
-                        .attr("class", "line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
+                        .attr("class", "dot line-" + d.neighborhood + "-" + d.sector + "-" + d.index)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
