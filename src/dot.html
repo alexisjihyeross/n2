@@ -12,13 +12,6 @@
 <body>
   <div class="container">
     <h1>Change in Businesses in Boston Neighborhoods Since 2010</h1>
-    <div id="vis-container">
-      <div id="vis"></div>
-      <div id="pieChart">
-        <!-- Title: initially not visible -->
-        <h3 class="pie-chart-title" style="display: none;">Proportion of Establishments by Size</h3>
-      </div>
-    </div>
     <div id="slider-container">
         <input type="range" min="2010" max="2020" value="2010" class="slider" id="yearSlider">
         <span id="selectedYear">2010</span>
@@ -42,6 +35,14 @@
       </select> 
     </div>
   </div>
+    <div id="vis-container">
+      <div id="vis"></div>
+      <div id="pieChart">
+        <!-- Title: initially not visible -->
+        <h3 class="pie-chart-title" style="display: none;">Proportion of Establishments by Size</h3>
+      </div>
+    </div>
+    
   
 
   <script src="//d3js.org/d3.v4.min.js"></script>
