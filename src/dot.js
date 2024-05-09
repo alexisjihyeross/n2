@@ -21,8 +21,8 @@ function expandData(data) {
 d3.csv("../data/all_data.csv", function (error, data) {
     if (error) throw error;
 
-    var width = 1300;
-    var height = 700;
+    var width = 1000;
+    var height = 1450;
 
     var svg = d3.select("#vis")
         .append("svg")
@@ -119,10 +119,10 @@ d3.csv("../data/all_data.csv", function (error, data) {
 
             console.log('enterGroup: ', enterGroup.size());
 
-            var colSize = 250;
-            var numPerRow = 15;
+            var colSize = 200;
+            var numPerRow = 10;
             var spaceBetween = 15;
-            var LeftPadding = 0;
+            var LeftPadding = -5;
             var circleWidth = 18;
 
             var xLength = 4;
@@ -130,9 +130,12 @@ d3.csv("../data/all_data.csv", function (error, data) {
             // Adding the neighborhood headers here
             enterGroup.append("text")
                 .attr("class", "header")
-                .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + 10 - 100; })
+                .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + LeftPadding; })
                 .attr("y", 20)
-                .text(sector)
+                .text(
+                    // replace 'and ' with '&' to save space
+                    sector.replace(', and ', '& ').replace(' and ', ' & ')
+                )
                 // center the text
                 .attr("text-anchor", "middle")
                 .attr("font-size", "14px");
