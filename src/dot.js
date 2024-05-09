@@ -113,6 +113,12 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 // Bind data using a key function to ensure each group has a unique sector key
                 .data([sector], function (sector) { return sector; });
 
+
+            group.select(".sector-num-est")
+                .text(
+                    sectorData.length + " est."
+                );
+
             var enterGroup = group.enter()
                 .append("g")
                 .attr("class", function (d) { return "group " + d.replace(/ /g, "_"); });
@@ -139,6 +145,15 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 // center the text
                 .attr("text-anchor", "middle")
                 .attr("font-size", "14px");
+
+
+            enterGroup.append("text")
+                .attr("class", "sector-num-est")
+                .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + LeftPadding; })
+                .attr("y", 35)
+                .text(sectorData.length + " est.")
+                .attr("text-anchor", "middle")
+                .attr("font-size", "12px");
 
             var exitGroup = group.exit()
             console.log('exitGroup: ', exitGroup.size());
@@ -173,10 +188,10 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var className = ".line-" + d.neighborhood + "-" + d.sector + "-" + d.index;
                     // replace white spaces with underscores
                     className = className.replace(/ /g, "_");
-                    console.log(d.index)
+                    // console.log(d.index)
                     var selectedX = d3.select("svg").selectAll(className);
-                    console.log('selectedX: ', selectedX.size());
-                    console.log(className);
+                    // console.log('selectedX: ', selectedX.size());
+                    // console.log(className);
                     selectedX.remove();
                 })
                 .attr("class", "dot")
