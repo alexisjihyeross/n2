@@ -12,6 +12,11 @@
     overflow: auto;
 }
 
+.extra {
+  /* italics */
+  font-style: italic;
+}
+
 h1 {
     font-size: 24px;
     margin: 0 0 10px;

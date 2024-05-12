@@ -5,6 +5,8 @@ var lightRedColor = "#E3735E";
 
 var originalDataByNeighborhood = {};
 
+var EstToTruncate = 600;
+
 function expandData(data) {
     var expandedData = [];
     data.forEach(function (d) {
@@ -54,7 +56,12 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 originalDataByNeighborhood[d.neighborhood] = {};
             }
             if (!originalDataByNeighborhood[d.neighborhood][d.sector]) {
-                originalDataByNeighborhood[d.neighborhood][d.sector] = d.est;
+                // store the number of establishments in 2010, check if > EstToTruncate
+                if (d.est > EstToTruncate) {
+                    originalDataByNeighborhood[d.neighborhood][d.sector] = d.est - EstToTruncate;
+                } else {
+                    originalDataByNeighborhood[d.neighborhood][d.sector] = d.est;
+                }
             }
         }
     });
@@ -103,6 +110,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 return;
             }
 
+
             // var group = matrixGroup.selectAll(".group." + sector.replace(/ /g, "_"))
             // .data([sector]);
             // var group = matrixGroup.selectAll(".group")
@@ -134,7 +142,49 @@ d3.csv("../data/all_data.csv", function (error, data) {
             var LeftPadding = -5;
             var circleWidth = 18;
 
+            var doTypeOffset = false;
+
+            // if the number of establishments > 500, add an offset to the x position
+            if (sectorData.length >= EstToTruncate) {
+
+                var numOffset = 30;
+                // remove the first EstToTruncateestablishments, only show ones after that
+                sectorData = sectorData.slice(EstToTruncate);
+
+                var doTypeOffset = true;
+                console.log('setting offset for: ', sector);
+
+            } else {
+                var numOffset = 0;
+            }
+
+            console.log(doTypeOffset);
+
+            var offsetStart = 50;
+
+            // console.log(sectorData);
+
             var xLength = 4;
+
+            if (doTypeOffset) {
+
+                // remove elements with class extra
+                group.selectAll(".extra").remove();
+
+                console.log('do type offset');
+                console.log('enterGroup: ', enterGroup.size());
+                // add text to show that only EstToTruncateestablishments are shown
+                group.append("text")
+                    .attr("class", "extra")
+                    .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + LeftPadding; })
+                    .attr("y", 40 + spaceBetween * Math.floor((70) / numPerRow))
+                    .text("+ " + EstToTruncate + " more establishments")
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", "12px");
+            }
+
+            console.log('enterGroup: ', enterGroup.size());
+
 
             // Adding the neighborhood headers here
             enterGroup.append("text")
@@ -157,6 +207,14 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .text(sectorData.length + " establishments")
                 .attr("text-anchor", "middle")
                 .attr("font-size", "12px");
+
+            // enterGroup.append("text")
+            //     .attr("class", "extra")
+            //     .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + LeftPadding; })
+            //     .attr("y", 65)
+            //     .text("+ " + EstToTruncate + " more")
+            //     .attr("text-anchor", "middle")
+            //     .attr("font-size", "12px");
 
             var exitGroup = group.exit()
             // console.log('exitGroup: ', exitGroup.size());
@@ -214,11 +272,19 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     }
                 })
                 .attr("x", function (d, i) {
-                    return (col * colSize) + (i % numPerRow) * spaceBetween + 15;
+                    if (i < offsetStart) {
+                        return (col * colSize) + ((i) % numPerRow) * spaceBetween + 15;
+                    } else {
+                        return (col * colSize) + ((i + numOffset) % numPerRow) * spaceBetween + 15;
+                    }
                 }
                 )
                 .attr("y", function (d, i) {
-                    return 40 + spaceBetween * Math.floor(i / numPerRow);
+                    if (i < offsetStart) {
+                        return 40 + spaceBetween * Math.floor((i) / numPerRow);
+                    } else {
+                        return 40 + spaceBetween * Math.floor((i + numOffset) / numPerRow);
+                    }
                 })
                 .attr("width", circleWidth)
                 .attr("height", circleWidth)
