@@ -64,7 +64,10 @@ d3.csv("../data/all_data.csv", function (error, data) {
     function updateNeighborhood() {
         yearSlider.property("value", 2010);
         // remove all elements with dot class
-        matrixGroup.selectAll(".dot").remove();
+        // matrixGroup.selectAll(".dot").remove();
+        var dots = d3.selectAll(".dot");
+        console.log('num dots: ', dots.size());
+        dots.remove();
         updateVisualization();
     }
 
@@ -123,7 +126,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .append("g")
                 .attr("class", function (d) { return "group " + d.replace(/ /g, "_"); });
 
-            console.log('enterGroup: ', enterGroup.size());
+            // console.log('enterGroup: ', enterGroup.size());
 
             var colSize = 200;
             var numPerRow = 10;
@@ -156,7 +159,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .attr("font-size", "12px");
 
             var exitGroup = group.exit()
-            console.log('exitGroup: ', exitGroup.size());
+            // console.log('exitGroup: ', exitGroup.size());
             // TODO: don't understand why this is not working; if uncommented, it removes groups (shouldn't)
             // exitGroup.remove();
 
@@ -167,7 +170,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var id = d.neighborhood + "-" + d.sector + "-" + d.index;
                     return id;
                 });
-            console.log('dots: ', dots.size());
+            // console.log('dots: ', dots.size());
 
             // var enterDots = dots.enter()
             //     .append("circle")
@@ -220,10 +223,10 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .attr("width", circleWidth)
                 .attr("height", circleWidth)
 
-            console.log('num enter dots', enterDots.size());
+            // console.log('num enter dots', enterDots.size());
 
             var exitDots = dots.exit();
-            console.log('num exit dots', exitDots.size());
+            // console.log('num exit dots', exitDots.size());
 
             var exitDotsToColor =
                 exitDots.filter(function (d, i) {
@@ -231,7 +234,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     return d.index < originalEst;
                 });
 
-            console.log('num exit dots to color', exitDotsToColor.size());
+            // console.log('num exit dots to color', exitDotsToColor.size());
             exitDotsToColor
                 .each(function (d, i) { // for each missing dot
 
@@ -243,6 +246,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var className = "line-" + d.neighborhood + "-" + newSector + "-" + d.index;
                     // replace white spaces with underscores
                     className = className.replace(/ /g, "_");
+                    className = 'dot ' + className;
                     // className = className.replace(",", "_");
                     console.log('className: ', className);
 
@@ -268,7 +272,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
-                    console.log('adding x for:', className);
+                    // console.log('adding x for:', className);
 
                 })
                 .remove()
@@ -279,7 +283,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var originalEst = originalDataByNeighborhood[selectedNeighborhood][d.sector];
                     return d.index >= originalEst;
                 });
-            console.log('num exit dots to remove', exitDotsToRemove.size());
+            // console.log('num exit dots to remove', exitDotsToRemove.size());
             exitDotsToRemove
                 .style("opacity", 0)
                 .remove();
@@ -288,7 +292,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 // .transition()
                 // .duration(1000)
                 .each(function (d, i) {
-                    console.log('trying to remove x for:')
+                    // console.log('trying to remove x for:')
                     var newSector = d.sector.replace(/,/g, '');
                     var className = ".line-" + d.neighborhood + "-" + newSector + "-" + d.index;
                     // var className = ".line-" + d.neighborhood + "-" + d.sector.replace(',', '_') + "-" + d.index;
