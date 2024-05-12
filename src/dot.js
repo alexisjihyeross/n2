@@ -116,7 +116,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
 
             group.select(".sector-num-est")
                 .text(
-                    sectorData.length + " est."
+                    sectorData.length + " establishments"
                 );
 
             var enterGroup = group.enter()
@@ -151,7 +151,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .attr("class", "sector-num-est")
                 .attr("x", function () { return (col * colSize + numPerRow * numPerRow) + LeftPadding; })
                 .attr("y", 35)
-                .text(sectorData.length + " est.")
+                .text(sectorData.length + " establishments")
                 .attr("text-anchor", "middle")
                 .attr("font-size", "12px");
 
@@ -185,13 +185,18 @@ d3.csv("../data/all_data.csv", function (error, data) {
             var enterDots = dots.enter()
                 .append("svg:image")
                 .each(function (d, i) {
-                    var className = ".line-" + d.neighborhood + "-" + d.sector + "-" + d.index;
+                    console.log('trying to remove x for:')
+                    var newSector = d.sector.replace(/,/g, '');
+                    var className = ".line-" + d.neighborhood + "-" + newSector + "-" + d.index;
+                    // var className = ".line-" + d.neighborhood + "-" + d.sector.replace(',', '_') + "-" + d.index;
                     // replace white spaces with underscores
                     className = className.replace(/ /g, "_");
+                    // className = className.replace(",", "_");
                     // console.log(d.index)
-                    var selectedX = d3.select("svg").selectAll(className);
-                    // console.log('selectedX: ', selectedX.size());
                     // console.log(className);
+                    var selectedX = d3.selectAll(className);
+                    // console.log('selectedX: ', selectedX.size());
+                    // console.log('line: ', d3.select('line').size());
                     selectedX.remove();
                 })
                 .attr("class", "dot")
@@ -234,9 +239,12 @@ d3.csv("../data/all_data.csv", function (error, data) {
                     var cx = +d3.select(this).attr('x') + circleWidth / 2;
                     var cy = +d3.select(this).attr('y') + circleWidth / 2;
 
-                    var className = "line-" + d.neighborhood + "-" + d.sector + "-" + d.index;
+                    var newSector = d.sector.replace(/,/g, '');
+                    var className = "line-" + d.neighborhood + "-" + newSector + "-" + d.index;
                     // replace white spaces with underscores
                     className = className.replace(/ /g, "_");
+                    // className = className.replace(",", "_");
+                    console.log('className: ', className);
 
                     // Create the "X" with two lines 
                     var line1 = parent.append("line")
@@ -245,7 +253,8 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy + xLength)
                         // .attr("class", "dot")
-                        .attr("class", "dot " + className)
+                        // .attr("class", "dot " + className)
+                        .attr("class", className)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
 
@@ -255,9 +264,11 @@ d3.csv("../data/all_data.csv", function (error, data) {
                         .attr("x2", cx + xLength)
                         .attr("y2", cy - xLength)
                         // .attr("class", "dot")
-                        .attr("class", "dot " + className)
+                        .attr("class", className)
                         .style("stroke", lightRedColor)
                         .style("stroke-width", "2");
+
+                    console.log('adding x for:', className);
 
                 })
                 .remove()
@@ -277,8 +288,22 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 // .transition()
                 // .duration(1000)
                 .each(function (d, i) {
-                    var selectedX = d3.selectAll(".line-" + d.neighborhood + "-" + d.sector + "-" + d.index);
-                    console.log('selectedX: ', selectedX.size());
+                    console.log('trying to remove x for:')
+                    var newSector = d.sector.replace(/,/g, '');
+                    var className = ".line-" + d.neighborhood + "-" + newSector + "-" + d.index;
+                    // var className = ".line-" + d.neighborhood + "-" + d.sector.replace(',', '_') + "-" + d.index;
+                    // replace white spaces with underscores
+                    className = className.replace(/ /g, "_");
+                    // replace comma with _
+                    className = className.replace(",", "_");
+                    // console.log(d.index)
+                    // var selectedX = d3.selectAll('line').selectAll(className);
+                    var selectedX = d3.selectAll(className);
+                    // console.log('selectedX: ', selectedX.size());
+                    // console.log('selectedXSecond: ', selectedXSecond.size());
+                    // console.log('line all: ', d3.selectAll('line').size());
+                    // console.log(d3.selectAll('line'));
+                    // console.log(className);
                     selectedX.remove();
                 })
                 .style("fill", function (d, i) {
