@@ -96,6 +96,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
             }, {});
         }
 
+
         var sectors = ['Leisure and Hospitality', 'Financial Activities', 'Trade, Transportation, and Utilities', 'Education and Health Services', 'Professional and Business Services'];
 
         // just consider Trade, Transportation, and Utilities
@@ -129,6 +130,8 @@ d3.csv("../data/all_data.csv", function (error, data) {
                 .text(
                     sectorData.length + " establishments"
                 );
+
+            group.selectAll(".extra").remove();
 
             var enterGroup = group.enter()
                 .append("g")
