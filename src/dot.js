@@ -24,7 +24,7 @@ d3.csv("../data/all_data.csv", function (error, data) {
     if (error) throw error;
 
     var width = 1000;
-    var height = 1450;
+    var height = 600;
 
     var svg = d3.select("#vis")
         .append("svg")
